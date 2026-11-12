@@ -1,0 +1,820 @@
+/* Alabama Endangered Species
+   Palette: lichen paper, pine ink, pitcher-plant maroon, goldenrod.
+   Type: a Palatino-family serif for names and reading, the system sans for controls. */
+
+:root {
+  --paper: #eef2eb;
+  --surface: #f9fbf6;
+  --ink: #15302a;
+  --muted: #4c6157;
+  --rule: #c4cec1;
+  --pine: #1d5b45;
+  --endangered: #8b2148;
+  --threatened: #7a5800;
+  --bloom: #b23a6b;
+  --bloom-ink: #ffffff;
+  --cell: #dfe6db;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", P052, "TeX Gyre Pagella", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1f1a;
+    --surface: #162a23;
+    --ink: #e5ede4;
+    --muted: #a5b7ab;
+    --rule: #2d443a;
+    --pine: #8fd3b3;
+    --endangered: #f29ab8;
+    --threatened: #e6b84a;
+    --bloom: #e27ea5;
+    --bloom-ink: #1a0b12;
+    --cell: #213830;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--pine);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--pine);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.wrap {
+  max-width: 74rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  left: -999rem;
+  top: 0.5rem;
+  background: var(--surface);
+  padding: 0.5rem 0.75rem;
+  z-index: 10;
+}
+
+.skip:focus {
+  left: 0.5rem;
+}
+
+/* ---------- header and footer ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 2rem;
+  padding-block: 1rem;
+}
+
+.site-name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-header nav a {
+  color: var(--ink);
+  text-decoration: none;
+  padding-block: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] {
+  border-bottom-color: var(--bloom);
+}
+
+.site-footer {
+  margin-top: 5rem;
+  border-top: 1px solid var(--rule);
+  padding-block: 2rem 3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  max-width: 62ch;
+}
+
+.site-footer p + p {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+/* ---------- home: opening ---------- */
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  padding-block: clamp(2rem, 6vw, 4.5rem) clamp(1.5rem, 4vw, 3rem);
+  align-items: end;
+}
+
+.hero h1,
+.page h1 {
+  font-size: clamp(2.4rem, 6.2vw, 4.4rem);
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  max-width: 14ch;
+}
+
+.lede {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  line-height: 1.5;
+  max-width: 56ch;
+}
+
+.hero .lede {
+  margin-top: 1.5rem;
+}
+
+.hero-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+.hero-photo {
+  margin: 0;
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 3px;
+  background: var(--cell);
+}
+
+.hero-photo figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.hero-photo.photo-failed {
+  display: none;
+}
+
+@media (min-width: 56rem) {
+  .hero {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 3.5rem;
+  }
+}
+
+/* ---------- home: filters ---------- */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem 1.25rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.field {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.field > label,
+.field > legend {
+  font-size: 0.875rem;
+  color: var(--muted);
+  padding: 0;
+}
+
+.field-search {
+  flex: 1 1 14rem;
+}
+
+.controls input[type="search"],
+.controls select {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.7rem;
+  width: 100%;
+}
+
+.controls select {
+  padding-right: 2rem;
+}
+
+.segmented {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.segmented legend {
+  float: left;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.segmented label {
+  position: relative;
+  margin-right: -1px;
+}
+
+.segmented input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.segmented span {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+.segmented label:first-of-type span {
+  border-radius: 4px 0 0 4px;
+}
+
+.segmented label:last-of-type span {
+  border-radius: 0 4px 4px 0;
+}
+
+.segmented input:checked + span {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.segmented input:focus-visible + span {
+  outline: 3px solid var(--pine);
+  outline-offset: 2px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+
+.check input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--bloom);
+  margin: 0;
+}
+
+.count {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding-block: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* ---------- home: the list ---------- */
+
+.entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.entries .entry:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry h3 {
+  font-size: 1.5rem;
+}
+
+.entry h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* The name is the link; stretch it so the whole row is one target. */
+.entry h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.entry:hover h3 a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.sci {
+  font-family: var(--serif);
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.entry .sci {
+  margin-top: 0.15rem;
+}
+
+.entry-summary {
+  margin-top: 0.5rem;
+  max-width: 60ch;
+}
+
+.thumb {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--cell);
+  display: grid;
+  place-items: center;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-empty span,
+.thumb-fallback {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: var(--muted);
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.thumb.photo-failed img {
+  display: none;
+}
+
+.entry-side {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.habitat {
+  color: var(--muted);
+}
+
+.status {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status::before {
+  content: "";
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+}
+
+.status-E {
+  color: var(--endangered);
+}
+
+.status-E::before {
+  background: currentColor;
+}
+
+.status-T {
+  color: var(--threatened);
+}
+
+@media (min-width: 40rem) {
+  .entry {
+    grid-template-columns: 6rem minmax(0, 1fr);
+    gap: 0.75rem 1.5rem;
+  }
+
+  .thumb {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .entry-side {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 62rem) {
+  .entry {
+    grid-template-columns: 6rem minmax(0, 1fr) 19.5rem;
+    align-items: start;
+    padding-block: 1.5rem;
+  }
+
+  .entry-side {
+    grid-column: 3;
+    padding-top: 0.35rem;
+  }
+
+  .entry-tags {
+    display: grid;
+    gap: 0.15rem;
+  }
+}
+
+/* ---------- the flowering strip ---------- */
+
+.bloom {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 2px;
+  max-width: 19.5rem;
+}
+
+.bloom .m {
+  display: grid;
+  place-items: center;
+  height: 1.6rem;
+  background: var(--cell);
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.bloom .m.on {
+  background: var(--bloom);
+  color: var(--bloom-ink);
+}
+
+.bloom .m.now {
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--ink);
+  position: relative;
+  z-index: 1;
+}
+
+.bloom-none {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.bloom-note {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.empty {
+  padding-block: 3rem;
+  border-top: 1px solid var(--rule);
+}
+
+.empty button {
+  font: inherit;
+  margin-top: 1rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------- a plant's page ---------- */
+
+.crumbs {
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.plant-head {
+  padding-block: 1.5rem 2rem;
+}
+
+.plant-head h1 {
+  font-size: clamp(2.3rem, 6vw, 4.2rem);
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+}
+
+.plant-head .sci {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  margin-top: 0.5rem;
+}
+
+.plant-head .lede {
+  margin-top: 1.25rem;
+}
+
+.photo {
+  margin: 0 0 2.5rem;
+}
+
+.photo img {
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 3px;
+  background: var(--cell);
+}
+
+.photo figcaption,
+.photo-fallback {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.photo.photo-failed img {
+  display: none;
+}
+
+.photo-missing {
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--rule);
+  color: var(--muted);
+  max-width: 66ch;
+}
+
+.plant-text > .photo-missing p {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.plant-body {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.plant-text > p,
+.page > p,
+.page li {
+  font-family: var(--serif);
+  font-size: 1.16rem;
+  line-height: 1.65;
+  max-width: 66ch;
+}
+
+.plant-text h2,
+.page h2 {
+  font-size: 1.6rem;
+  margin: 2.25rem 0 0.6rem;
+}
+
+.plant-text > h2:first-of-type {
+  margin-top: 0;
+}
+
+.refs,
+.credits {
+  margin: 0;
+  padding-left: 1.2rem;
+  max-width: 70ch;
+}
+
+.plant-text .refs li,
+.page .refs li,
+.page .credits li {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.45rem;
+}
+
+.host {
+  color: var(--muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.refs-general {
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--sans) !important;
+  font-size: 0.95rem !important;
+  color: var(--muted);
+}
+
+.facts {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.25rem 1.4rem;
+  align-self: start;
+}
+
+.facts dl {
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.facts dt {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0.15rem 0 0;
+}
+
+.facts .bloom {
+  margin-top: 0.35rem;
+}
+
+.cite {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@media (min-width: 60rem) {
+  .plant-body {
+    grid-template-columns: minmax(0, 1fr) 21rem;
+    gap: 4rem;
+  }
+
+  .facts {
+    position: sticky;
+    top: 1.5rem;
+  }
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.pager a {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.pager span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.pager a[rel="next"] {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* ---------- plain pages ---------- */
+
+.page {
+  padding-top: clamp(2rem, 6vw, 4.5rem);
+}
+
+.page .lede {
+  margin-top: 1.5rem;
+}
+
+.page > p + p {
+  margin-top: 0.9rem;
+}
+
+.page ol,
+.page ul {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.page li {
+  margin-bottom: 0.5rem;
+}
+
+@media print {
+  .site-header nav,
+  .controls,
+  .pager,
+  .skip {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

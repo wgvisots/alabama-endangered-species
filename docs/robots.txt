@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wgvisots.github.io/alabama-endangered-species/sitemap.xml

@@ -1,0 +1,47 @@
+{
+  "title": "Alabama Endangered Species",
+  "tagline": "A compendium of the plants and animals in Alabama protected under the federal Endangered Species Act.",
+  "basePath": "/alabama-endangered-species/",
+  "siteUrl": "https://wgvisots.github.io/alabama-endangered-species/",
+  "repoUrl": "https://github.com/wgvisots/alabama-endangered-species",
+  "reviewed": "2026-11-12",
+  "imageHosts": ["https://www.fws.gov/"],
+  "sources": [
+    {
+      "id": "fws-al",
+      "label": "U.S. Fish & Wildlife Service, Alabama Ecological Services Field Office: Alabama Listed Plants",
+      "url": "https://www.fws.gov/project/alabama-listed-plants",
+      "use": "The list of plants and their flowering periods."
+    },
+    {
+      "id": "cfr",
+      "label": "Code of Federal Regulations, 50 CFR 17.12: List of Endangered and Threatened Plants",
+      "url": "https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17",
+      "use": "Each plant's status, listing date, and Federal Register citation."
+    },
+    {
+      "id": "cfr-lii",
+      "label": "50 CFR 17.12 as published by the Legal Information Institute, Cornell Law School",
+      "url": "https://www.law.cornell.edu/cfr/text/50/17.12",
+      "use": "The copy of the federal list that was read for this site."
+    },
+    {
+      "id": "eoa",
+      "label": "Encyclopedia of Alabama: Endangered and Threatened Plants of Alabama, by L. J. Davenport, C. Oberholster, and B. R. Keener",
+      "url": "https://encyclopediaofalabama.org/article/endangered-and-threatened-plants-of-alabama/",
+      "use": "Alabama counties, where a federal document does not give them."
+    },
+    {
+      "id": "apa",
+      "label": "Alabama Plant Atlas",
+      "url": "http://www.floraofalabama.org/Browse.aspx?cat=Scientific+Name",
+      "use": "County maps and specimen photos for every plant in the state.  Further reading."
+    },
+    {
+      "id": "adcnr",
+      "label": "Alabama Department of Conservation and Natural Resources: Alabama Plant Ranking List",
+      "url": "https://www.outdooralabama.com/sites/default/files/SGCN-PLANT-LIST_0.pdf",
+      "use": "State conservation ranks, including many rare plants that are not on the federal list.  Further reading."
+    }
+  ]
+}

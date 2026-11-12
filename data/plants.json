@@ -1,0 +1,1288 @@
+[
+  {
+    "slug": "little-amphianthus",
+    "common": "Little amphianthus",
+    "scientific": "Amphianthus pusillus",
+    "otherNames": [
+      "pool sprite",
+      "snorkelwort",
+      "Gratiola amphiantha"
+    ],
+    "group": "Flowering plant",
+    "family": "Plantaginaceae (plantain family)",
+    "status": "T",
+    "listedDate": "1988-02-05",
+    "fr": "53 FR 3560",
+    "habitatType": "Glades and outcrops",
+    "bloom": [
+      3,
+      4
+    ],
+    "bloomNote": "March to April",
+    "summary": "A thumbnail-sized annual that lives its whole life in rain pools on granite outcrops.",
+    "description": "A tiny aquatic annual only a few centimeters long.  A rosette of small leaves sits underwater, and a thread-like stem carries a pair of floating oval leaves, up to about 8 mm long, to the surface.  The flowers are white and only a few millimeters wide.  It grows fast and can mature in under three weeks.",
+    "habitat": "Shallow, temporary pools on granite and gneiss outcrops.  The pools hold water in late winter and spring and are dry by summer.",
+    "alabama": "Reported from Chambers, Randolph, and Tallapoosa Counties, at the western edge of a range centered in Georgia.",
+    "counties": [
+      "Chambers",
+      "Randolph",
+      "Tallapoosa"
+    ],
+    "range": "Alabama, Georgia, and South Carolina",
+    "threats": "Quarrying of granite outcrops is considered the greatest threat.  Off-road vehicles, dumping, and nutrient runoff from livestock also foul the pools.",
+    "notes": "Many botanists now place this plant in the genus _Gratiola_, as _Gratiola amphiantha_.  The federal list still uses _Amphianthus pusillus_.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2017-03/26793.jpg?itok=HZ1t2tJF",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2017-03/26793.jpg?itok=wtywjf1f",
+      "page": "https://www.fws.gov/media/little-amphianthus",
+      "w": 2448,
+      "h": 3264,
+      "alt": "Tiny floating leaves of little amphianthus in a shallow rock pool.",
+      "caption": "Little amphianthus in a shallow pool on a granite outcrop at Siloam, Georgia.",
+      "credit": "Peter Maholland/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: little amphianthus",
+        "url": "https://www.fws.gov/species/little-amphianthus-amphianthus-pusillus"
+      },
+      {
+        "label": "FWS recovery plan amendment for three granite outcrop plants",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/Granite_outcrop_plants_Recovery%20Plan%20Amendment.pdf"
+      },
+      {
+        "label": "Wikipedia: Gratiola amphiantha",
+        "url": "https://en.wikipedia.org/wiki/Gratiola_amphiantha"
+      }
+    ]
+  },
+  {
+    "slug": "prices-potato-bean",
+    "common": "Price's potato-bean",
+    "scientific": "Apios priceana",
+    "otherNames": [
+      "Price's groundnut",
+      "traveler's delight"
+    ],
+    "group": "Flowering plant",
+    "family": "Fabaceae (pea family)",
+    "status": "T",
+    "listedDate": "1990-01-05",
+    "fr": "55 FR 429",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      6,
+      7
+    ],
+    "bloomNote": "Late June to mid-July; plants do not flower every year",
+    "summary": "A twining vine of forest openings that grows from a single large tuber.",
+    "description": "A perennial twining vine that climbs 3 to 5 meters from a thick tuber, which can reach about 18 cm across.  The leaves are 20 to 30 cm long and usually have seven leaflets.  The pea-like flowers are greenish-white to brownish-pink with a magenta tip and hang in dense clusters.  The pods are 12 to 15 cm long.",
+    "habitat": "Openings in mixed hardwood forest, often on rocky wooded slopes where a ravine meets a creek bottom.  Some populations persist along road and utility rights-of-way.",
+    "alabama": "Reported from ten counties: Autauga, Butler, Dallas, Jackson, Lawrence, Lowndes, Madison, Marshall, Monroe, and Wilcox.",
+    "counties": [
+      "Autauga",
+      "Butler",
+      "Dallas",
+      "Jackson",
+      "Lawrence",
+      "Lowndes",
+      "Madison",
+      "Marshall",
+      "Monroe",
+      "Wilcox"
+    ],
+    "range": "Alabama, Kentucky, Mississippi, and Tennessee; gone from Illinois",
+    "threats": "Habitat destruction is the main threat.  Disease, animals that eat the plant, and past digging of the tubers have also taken a toll.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Price's potato-bean",
+        "url": "https://www.fws.gov/species/travelers-delight-apios-priceana"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/7422"
+      },
+      {
+        "label": "FWS recovery plan (1993)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/930210.pdf"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/3971.pdf"
+      },
+      {
+        "label": "Wikipedia: Apios priceana",
+        "url": "https://en.wikipedia.org/wiki/Apios_priceana"
+      }
+    ]
+  },
+  {
+    "slug": "georgia-rockcress",
+    "common": "Georgia rockcress",
+    "scientific": "Arabis georgiana",
+    "otherNames": [],
+    "group": "Flowering plant",
+    "family": "Brassicaceae (mustard family)",
+    "status": "T",
+    "listedDate": "2014-09-12",
+    "fr": "79 FR 54627",
+    "habitatType": "Bluffs, cliffs, and sinkholes",
+    "bloom": [
+      3,
+      4
+    ],
+    "bloomNote": "March to April; fruit from May into early July",
+    "summary": "A white-flowered mustard of steep river bluffs.",
+    "description": "A perennial herb up to about 90 cm tall.  It has a basal rosette of toothed, lance-shaped leaves 4 to 8 cm long, and smaller leaves that partly clasp the stem.  The flowers are white with four petals, and the fruit is a slender, upright pod 5 to 7 cm long.",
+    "habitat": "Steep river bluffs with shallow soil over rock, rock outcrops, and sandy, eroding riverbanks, in full to partial sun.  It occasionally grows in limestone glades.",
+    "alabama": "Critical habitat was designated in Bibb, Dallas, Elmore, Monroe, Sumter, and Wilcox Counties.  The 2021 status assessment also notes a site in Russell County, along the Chattahoochee River.",
+    "counties": [
+      "Bibb",
+      "Dallas",
+      "Elmore",
+      "Monroe",
+      "Russell",
+      "Sumter",
+      "Wilcox"
+    ],
+    "range": "Alabama and Georgia only",
+    "threats": "Invasive nonnative plants are the primary threat.  Quarrying, development, roads, timber harvest, reservoir flooding, and shade from a closing forest canopy also reduce its habitat.",
+    "notes": "Critical habitat for this species was designated on September 12, 2014 (79 FR 54635).",
+    "image": null,
+    "photoElsewhere": {
+      "label": "A photo by Alan Cressler on the FWS site (copyrighted, shown there by permission)",
+      "url": "https://www.fws.gov/media/arabis-georgiana-alan-cresslerjpg-0"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: Georgia rockcress",
+        "url": "https://www.fws.gov/species/georgia-rockcress-arabis-georgiana"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/4535"
+      },
+      {
+        "label": "FWS species status assessment (2021)",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/196989"
+      },
+      {
+        "label": "FWS critical habitat designation (2014)",
+        "url": "https://www.fws.gov/species-publication-action/designation-critical-habitat-georgia-rockcress"
+      },
+      {
+        "label": "FWS recovery outline (2014)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/20150218GaRockCress%20Recovery%20Outline.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "american-harts-tongue-fern",
+    "common": "American hart's-tongue fern",
+    "scientific": "Asplenium scolopendrium var. americanum",
+    "otherNames": [
+      "hart's tonguefern"
+    ],
+    "group": "Fern or fern ally",
+    "family": "Aspleniaceae (spleenwort family)",
+    "status": "T",
+    "listedDate": "1989-07-14",
+    "fr": "54 FR 29726",
+    "habitatType": "Bluffs, cliffs, and sinkholes",
+    "bloom": null,
+    "bloomNote": "A fern; it reproduces by spores and has no flowers",
+    "summary": "A strap-leaved evergreen fern that survives in the South only in cool limestone sinkholes.",
+    "description": "An evergreen fern with a crown of undivided, strap-shaped fronds, typically 35 to 40 cm long and 2 to 4.5 cm wide, with smooth edges and ear-like lobes at the base.  The spore clusters are brown lines set in two rows on the underside of each frond.",
+    "habitat": "Cool, moist, shaded limestone.  In the North it grows on talus slopes and boulder fields.  In the South it is confined to sinkholes and cave mouths, which stay cooler than the land around them.",
+    "alabama": "Known from limestone sinks in Jackson and Morgan Counties.  The 2019 status assessment reports that one Alabama population, on national wildlife refuge land, was gone by 2012, and that Alabama and Tennessee together held only two populations and roughly 30 plants.",
+    "counties": [
+      "Jackson",
+      "Morgan"
+    ],
+    "range": "New York, Michigan, and Ontario, with outlying populations in Tennessee and Alabama",
+    "threats": "Logging, development, and quarrying caused most past losses.  Invasive plants, drought, a changing climate, collecting, and trampling by visitors are the present concerns.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2020-12/AHTF-johnwiley-USFWS.jpeg?itok=y4nngOAi",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2020-12/AHTF-johnwiley-USFWS.jpeg?itok=XfdPIaF9",
+      "page": "https://www.fws.gov/media/ahtf-johnwiley-usfwsjpeg",
+      "w": 1500,
+      "h": 1125,
+      "alt": "Glossy, strap-shaped fronds of American hart's-tongue fern.",
+      "caption": "American hart's-tongue fern.",
+      "credit": "John Wiley/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: American hart's-tongue fern",
+        "url": "https://www.fws.gov/species/american-harts-tongue-fern-asplenium-scolopendrium-var-americanum"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/4232"
+      },
+      {
+        "label": "FWS species status assessment (2019)",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/174090"
+      }
+    ]
+  },
+  {
+    "slug": "morefields-leather-flower",
+    "common": "Morefield's leather flower",
+    "scientific": "Clematis morefieldii",
+    "otherNames": [
+      "Huntsville vasevine"
+    ],
+    "group": "Flowering plant",
+    "family": "Ranunculaceae (buttercup family)",
+    "status": "E",
+    "listedDate": "1992-05-20",
+    "fr": "57 FR 21562",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      5,
+      6,
+      7
+    ],
+    "bloomNote": "May to July",
+    "summary": "A climbing clematis with pinkish, urn-shaped flowers, found on wooded limestone slopes near Huntsville.",
+    "description": "A perennial vine that climbs to about 5 meters.  The young shoots are covered in dense white hairs, and the compound leaves are velvety underneath, with the end leaflets turned into tendrils.  The flowers are urn-shaped, pinkish, and 2 to 2.5 cm long, borne singly or in small groups where the leaves meet the stem.",
+    "habitat": "Rocky limestone woods with large boulders, often near seeps and streams, where it climbs over shrubs and rocks.",
+    "alabama": "First collected in 1982 on Round Top Mountain in Madison County, near Huntsville.  It is reported from Jackson and Madison Counties.",
+    "counties": [
+      "Jackson",
+      "Madison"
+    ],
+    "range": "Northern Alabama and southern Tennessee",
+    "threats": "Home building, road construction, and quarrying have destroyed or damaged sites.  Logging, invasive plants such as honeysuckle, and the small size of most populations are continuing threats.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Morefield's leather flower",
+        "url": "https://www.fws.gov/species/morefields-leather-flower-clematis-morefieldii"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/133"
+      },
+      {
+        "label": "FWS recovery plan (1994)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/940503.pdf"
+      },
+      {
+        "label": "FWS recovery plan amendment",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/Morefields%20Leather%20Flower%20Recovery%20Plan%20Amendment.pdf"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/2671.pdf"
+      },
+      {
+        "label": "Wikipedia: Clematis morefieldii",
+        "url": "https://en.wikipedia.org/wiki/Clematis_morefieldii"
+      }
+    ]
+  },
+  {
+    "slug": "alabama-leather-flower",
+    "common": "Alabama leather flower",
+    "scientific": "Clematis socialis",
+    "otherNames": [],
+    "group": "Flowering plant",
+    "family": "Ranunculaceae (buttercup family)",
+    "status": "E",
+    "listedDate": "1986-09-26",
+    "fr": "51 FR 34420",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      4,
+      5
+    ],
+    "bloomNote": "Late April to May",
+    "summary": "A low clematis that does not climb, known from a handful of colonies with blue-violet bells.",
+    "description": "Unlike most clematis, it does not climb.  It spreads by underground stems and forms dense patches of upright shoots up to about 30 cm tall.  Each shoot carries one or a few urn-shaped, blue-violet flowers 2 to 3 cm long.  The lower leaves are simple and narrow, and the upper leaves are divided into three to five leaflets.",
+    "habitat": "Wet, silty-clay flats near creeks, at the edge of bottomland woods and in grass and sedge openings.  Every known site has been altered by people, and several are on road or utility rights-of-way.",
+    "alabama": "First found beside a highway in St. Clair County.  It is reported from Cherokee, Etowah, and St. Clair Counties.  As of 2010 there were five known populations, four in Alabama and one in Georgia.",
+    "counties": [
+      "Cherokee",
+      "Etowah",
+      "St. Clair"
+    ],
+    "range": "Alabama and Georgia",
+    "threats": "Road resurfacing, pipeline and utility work, herbicides, and mowing at the wrong season.  Erosion, competition from other plants, and seed-eating mice also press on the small colonies.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Alabama leather flower",
+        "url": "https://www.fws.gov/species/alabama-leather-flower-clematis-socialis"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://www.fws.gov/node/64355"
+      },
+      {
+        "label": "FWS status review (2022)",
+        "url": "https://www.fws.gov/node/4584506"
+      },
+      {
+        "label": "Wikipedia: Clematis socialis",
+        "url": "https://en.wikipedia.org/wiki/Clematis_socialis"
+      }
+    ]
+  },
+  {
+    "slug": "leafy-prairie-clover",
+    "common": "Leafy prairie clover",
+    "scientific": "Dalea foliosa",
+    "otherNames": [
+      "leafy prairie-clover"
+    ],
+    "group": "Flowering plant",
+    "family": "Fabaceae (pea family)",
+    "status": "E",
+    "listedDate": "1991-05-01",
+    "fr": "56 FR 19953",
+    "habitatType": "Glades and outcrops",
+    "bloom": [
+      7,
+      8
+    ],
+    "bloomNote": "Late July to early August",
+    "summary": "A purple-flowered prairie clover of thin-soiled limestone glades.",
+    "description": "A perennial herb 20 to 80 cm tall, with several upright stems from a hard root crown.  The leaves are divided into small, hairless, oval leaflets.  The flowers are small and purple, packed into dense, cone-shaped spikes at the stem tips.",
+    "habitat": "Thin soils over limestone in cedar glades, barrens, and prairie openings, often where seepage keeps the ground moist.",
+    "alabama": "Reported from Colbert, Franklin, Jefferson, Lawrence, and Morgan Counties.  Most known populations are in Tennessee.",
+    "counties": [
+      "Colbert",
+      "Franklin",
+      "Jefferson",
+      "Lawrence",
+      "Morgan"
+    ],
+    "range": "Alabama, Illinois, and Tennessee",
+    "threats": "Loss of glades to development, overgrazing, and road and sewer work.  Where fire is kept out, cedars and invasive shrubs such as Chinese privet and bush honeysuckle shade it out.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-12/Leafy-Prairie-Clover.JPG?itok=ZQPWI7zq",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2021-12/Leafy-Prairie-Clover.JPG?itok=yeRTz6Oh",
+      "page": "https://www.fws.gov/media/leafy-prairie-cloverjpg",
+      "w": 3024,
+      "h": 4032,
+      "alt": "Leafy prairie clover growing on open, rocky ground.",
+      "caption": "Leafy prairie clover in a limestone glade.",
+      "credit": "Robby Cogburn/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: leafy prairie clover",
+        "url": "https://www.fws.gov/species/leafy-prairie-clover-dalea-foliosa"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/5498"
+      },
+      {
+        "label": "FWS recovery plan (1996)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/960930c.pdf"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4522.pdf"
+      },
+      {
+        "label": "Wikipedia: Dalea foliosa",
+        "url": "https://en.wikipedia.org/wiki/Dalea_foliosa"
+      }
+    ]
+  },
+  {
+    "slug": "whorled-sunflower",
+    "common": "Whorled sunflower",
+    "scientific": "Helianthus verticillatus",
+    "otherNames": [],
+    "group": "Flowering plant",
+    "family": "Asteraceae (aster family)",
+    "status": "E",
+    "listedDate": "2014-08-01",
+    "fr": "79 FR 44712",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      8,
+      9,
+      10
+    ],
+    "bloomNote": "Late August to early October",
+    "summary": "A sunflower of wet prairie remnants, known in Alabama only from Cherokee County.",
+    "description": "A perennial sunflower with yellow flower heads.  The name _verticillatus_ means whorled, for leaves set in rings around the stem.  The sources read for this entry give little more, so see the species status assessment for a full botanical description.",
+    "habitat": "Remnant wet prairies and swales at the heads of small streams, on acidic silty and sandy loams, in full sun among grasses such as little bluestem and Indian grass.  Most surviving patches are in old fields and along roadsides, railroads, and farm streams.",
+    "alabama": "Known from Cherokee County, in the headwaters of the Coosa River.  Critical habitat was designated there.",
+    "counties": [
+      "Cherokee"
+    ],
+    "range": "Alabama, Georgia, and Tennessee, with populations found later in Mississippi and Virginia",
+    "threats": "Conversion of prairie remnants to row crops and pine plantations, soil disturbance from logging, mowing and herbicide at the wrong time, and shade from woody and invasive plants.",
+    "notes": "The Service reported in 2023 that eight of nine known populations survive.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2022-05/Helianthus%20verticillatus%20clean%201_0.jpg?itok=8hd4JSxT",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2022-05/Helianthus%20verticillatus%20clean%201_0.jpg?itok=hZ54NsoX",
+      "page": "https://www.fws.gov/media/whorled-sunflower-close",
+      "w": 2560,
+      "h": 2293,
+      "alt": "A yellow whorled sunflower head in bloom.",
+      "caption": "A whorled sunflower in bloom, October 4, 1998.",
+      "credit": "Richard Ware, via USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: whorled sunflower",
+        "url": "https://www.fws.gov/species/whorled-sunflower-helianthus-verticillatus"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/3375"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://ecos.fws.gov/ServCat/DownloadFile/233646"
+      },
+      {
+        "label": "FWS announcement of the final recovery plan (2023)",
+        "url": "https://www.fws.gov/press-release/2023-06/service-announces-availability-final-recovery-plan-whorled-sunflower"
+      },
+      {
+        "label": "Federal Register proposed critical habitat (2013)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/2013-18456.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "louisiana-quillwort",
+    "common": "Louisiana quillwort",
+    "scientific": "Isoetes louisianensis",
+    "otherNames": [],
+    "group": "Fern or fern ally",
+    "family": "Isoetaceae (quillwort family)",
+    "status": "E",
+    "listedDate": "1992-10-28",
+    "fr": "57 FR 48741",
+    "habitatType": "Streams and shoals",
+    "bloom": null,
+    "bloomNote": "A quillwort; it reproduces by spores and has no flowers",
+    "summary": "A grass-like relative of the ferns that grows on sandbars in small streams.",
+    "description": "A small, semi-aquatic plant that looks like a tuft of grass.  Its slender, hollow, quill-like leaves can reach about 40 cm long and 2 to 3 mm wide, and spiral out from a two-lobed base.  It makes no flowers; the spores form inside the widened bases of the leaves.",
+    "habitat": "Sand and gravel bars and wet banks of small to medium streams, where the plants are often under water after rain.",
+    "alabama": "Reported from Conecuh, Covington, Mobile, Monroe, and Washington Counties.",
+    "counties": [
+      "Conecuh",
+      "Covington",
+      "Mobile",
+      "Monroe",
+      "Washington"
+    ],
+    "range": "Louisiana, Mississippi, and Alabama",
+    "threats": "Its very small range is the main reason it was listed.  The recovery plan covers threats site by site.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Louisiana quillwort",
+        "url": "https://www.fws.gov/species/louisiana-quillwort-isoetes-louisianensis"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/7756"
+      },
+      {
+        "label": "FWS recovery plan (1996)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/960930b.pdf"
+      },
+      {
+        "label": "Wikipedia: Isoetes louisianensis",
+        "url": "https://en.wikipedia.org/wiki/Isoetes_louisianensis"
+      }
+    ]
+  },
+  {
+    "slug": "fleshy-fruit-gladecress",
+    "common": "Fleshy-fruit gladecress",
+    "scientific": "Leavenworthia crassa",
+    "otherNames": [
+      "fleshyfruit gladecress"
+    ],
+    "group": "Flowering plant",
+    "family": "Brassicaceae (mustard family)",
+    "status": "E",
+    "listedDate": "2014-08-01",
+    "fr": "79 FR 44712",
+    "habitatType": "Glades and outcrops",
+    "bloom": [
+      3,
+      4
+    ],
+    "bloomNote": "March to April; seed is ripe by late April and the plants are dead by the end of May",
+    "summary": "A winter annual of cedar glades that grows nowhere on earth but two counties in north Alabama.",
+    "description": "A hairless winter annual 10 to 40 cm tall.  The leaves form a flat rosette and are deeply lobed, with the end lobe much the largest.  The four-petaled flowers are yellow with orange, or white with yellow, and both forms often grow in the same population.  The fruit is a plump, rounded pod about 12 mm long with a slender beak.",
+    "habitat": "Open, sunny cedar glades on thin soil over limestone, wet in winter and spring and baked dry in summer.  Most remaining plants are in glade-like pastures, roadsides, and field edges.  Seeds sprout in September and October, and the plants pass the winter as rosettes.",
+    "alabama": "Found only in Alabama, in the Moulton and Tennessee Valleys of Lawrence and Morgan Counties.  The Service counts ten occurrences in eight populations.  All but one are on private land, and one site lies within Bankhead National Forest.",
+    "counties": [
+      "Lawrence",
+      "Morgan"
+    ],
+    "range": "Alabama only",
+    "threats": "Conversion of glades to farmland and building sites, roadside maintenance, and shade and competition as woody and invasive plants move in.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2023-08/FFGC2_0.png?itok=wykeygVr",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2023-08/FFGC2_0.png?itok=FlribQpf",
+      "page": "https://www.fws.gov/media/fleshy-fruit-gladecress",
+      "w": 4000,
+      "h": 3000,
+      "alt": "Fleshy-fruit gladecress in flower.",
+      "caption": "Fleshy-fruit gladecress in Alabama.",
+      "credit": "Laura Elston, Trileaf, via USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: fleshy-fruit gladecress",
+        "url": "https://www.fws.gov/species/fleshy-fruit-gladecress-leavenworthia-crassa"
+      },
+      {
+        "label": "FWS recovery plan (2023)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/079798%2020231006_Fleshy-fruit%20gladecress_RP.pdf"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc6775.pdf"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://ecos.fws.gov/ServCat/DownloadFile/203142"
+      },
+      {
+        "label": "Alabama Plant Atlas: Leavenworthia crassa",
+        "url": "http://www.floraofalabama.org/Plant.aspx?id=1261"
+      },
+      {
+        "label": "Wikipedia: Leavenworthia crassa",
+        "url": "https://en.wikipedia.org/wiki/Leavenworthia_crassa"
+      }
+    ]
+  },
+  {
+    "slug": "lyrate-bladderpod",
+    "common": "Lyrate bladderpod",
+    "scientific": "Lesquerella lyrata",
+    "otherNames": [
+      "lyreleaf bladderpod",
+      "Paysonia lyrata"
+    ],
+    "group": "Flowering plant",
+    "family": "Brassicaceae (mustard family)",
+    "status": "T",
+    "listedDate": "1990-09-28",
+    "fr": "55 FR 39864",
+    "habitatType": "Glades and outcrops",
+    "bloom": [
+      3,
+      4
+    ],
+    "bloomNote": "March to April",
+    "summary": "A yellow-flowered annual mustard known from just three populations, all in northwest Alabama.",
+    "description": "An annual 10 to 30 cm tall, with short hairs on the stems and leaves.  The basal leaves are lyre-shaped, with a large rounded end lobe.  The stem leaves have no stalks and clasp the stem with small ear-like lobes.  The flowers are bright yellow, and the seed pods are smooth and nearly round.",
+    "habitat": "Cedar glades on limestone.  The surviving populations grow in glade-like disturbed ground: pastures, roadsides, and cultivated fields.",
+    "alabama": "Found only in Alabama, with one population each in Colbert, Franklin, and Lawrence Counties.  The Lawrence County population is the largest and is protected on a Nature Conservancy preserve.",
+    "counties": [
+      "Colbert",
+      "Franklin",
+      "Lawrence"
+    ],
+    "range": "Alabama only",
+    "threats": "Home building near the Colbert and Franklin County sites, and roadside mowing or herbicide before the plants set seed.  The seeds can wait in the soil for years, so a site that seems lost may return under good management.",
+    "notes": "Many botanists now call this plant _Paysonia lyrata_.  The federal list still uses _Lesquerella lyrata_.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2024-03/lyrate-bladderpod-tnc-prairie-grove-glades-preserve-al-rob-hurt-usfws.JPG?itok=FyeX0-Z4",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2024-03/lyrate-bladderpod-tnc-prairie-grove-glades-preserve-al-rob-hurt-usfws.JPG?itok=YEran6QI",
+      "page": "https://www.fws.gov/media/lyrate-bladderpod-lesquerella-lyrata-0",
+      "w": 4032,
+      "h": 3024,
+      "alt": "Lyrate bladderpod at a glade preserve in Lawrence County, Alabama.",
+      "caption": "Lyrate bladderpod at The Nature Conservancy's Prairie Grove Glades Preserve, Lawrence County, Alabama.",
+      "credit": "Rob Hurt/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: lyrate bladderpod",
+        "url": "https://www.fws.gov/species/lyrate-bladderpod-lesquerella-lyrata"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc2403.pdf"
+      },
+      {
+        "label": "Wikipedia: Paysonia lyrata",
+        "url": "https://en.wikipedia.org/wiki/Paysonia_lyrata"
+      }
+    ]
+  },
+  {
+    "slug": "pondberry",
+    "common": "Pondberry",
+    "scientific": "Lindera melissifolia",
+    "otherNames": [
+      "southern spicebush"
+    ],
+    "group": "Flowering plant",
+    "family": "Lauraceae (laurel family)",
+    "status": "E",
+    "listedDate": "1986-07-31",
+    "fr": "51 FR 27495",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      2,
+      3
+    ],
+    "bloomNote": "Late February to March, before the leaves; fruit is ripe in October",
+    "summary": "A low, thicket-forming shrub of seasonally flooded woods that flowers before its leaves appear.",
+    "description": "A deciduous shrub, usually low but now and then over 6 feet tall, that spreads by runners into colonies.  The thin, drooping leaves smell of sassafras when crushed.  Small, pale yellow flowers open in late winter before the leaves, with male and female flowers on separate plants.  The fruit is a bright red, oval drupe about half an inch long.",
+    "habitat": "Seasonally flooded wetlands: bottomland hardwood forest, and the margins of sinks, ponds, and depressions, usually in light shade.",
+    "alabama": "Reported from Covington and Wilcox Counties.",
+    "counties": [
+      "Covington",
+      "Wilcox"
+    ],
+    "range": "Alabama, Arkansas, Georgia, Mississippi, Missouri, North Carolina, and South Carolina",
+    "threats": "Ditching and drainage, which change how long the ground stays wet, and conversion of wetlands to other uses.  Timber harvest, hogs and cattle, and laurel wilt disease are also concerns.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-03/1874.jpg?itok=TS2A-mNo",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2005-03/1874.jpg?itok=Y4C5yh5R",
+      "page": "https://www.fws.gov/media/pondberry-twig",
+      "w": 2048,
+      "h": 1536,
+      "alt": "A pondberry twig.",
+      "caption": "A pondberry twig.",
+      "credit": "Peter Pattavina/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: pondberry",
+        "url": "https://www.fws.gov/species/pondberry-lindera-melissifolia"
+      },
+      {
+        "label": "FWS recovery plan (1993)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/930923a.pdf"
+      },
+      {
+        "label": "Wikipedia: Lindera melissifolia",
+        "url": "https://en.wikipedia.org/wiki/Lindera_melissifolia"
+      }
+    ]
+  },
+  {
+    "slug": "mohrs-barbaras-buttons",
+    "common": "Mohr's Barbara's buttons",
+    "scientific": "Marshallia mohrii",
+    "otherNames": [
+      "Coosa Barbara's buttons"
+    ],
+    "group": "Flowering plant",
+    "family": "Asteraceae (aster family)",
+    "status": "T",
+    "listedDate": "1988-09-07",
+    "fr": "53 FR 34698",
+    "habitatType": "Glades and outcrops",
+    "bloom": [
+      5,
+      6
+    ],
+    "bloomNote": "May to June",
+    "summary": "A pale pink, button-flowered herb of moist glades and prairie openings.",
+    "description": "An upright perennial 1 to 2.5 feet tall.  The firm, lance-shaped leaves have three parallel veins and are largest near the base.  Each stem carries several flower heads about an inch across, made up entirely of tubular flowers that are white to pale pink or lavender.",
+    "habitat": "Open to partly shaded ground dominated by grasses and sedges: dolomite glades, prairie remnants, stream margins, and woodland openings.  Several populations are on roadsides and utility rights-of-way.",
+    "alabama": "The Service's 2016 review found surviving populations in Bibb, Calhoun, Cherokee, Jefferson, and Walker Counties.  Older reports also name Blount, Cullman, and Etowah Counties.",
+    "counties": [
+      "Bibb",
+      "Blount",
+      "Calhoun",
+      "Cherokee",
+      "Cullman",
+      "Etowah",
+      "Jefferson",
+      "Walker"
+    ],
+    "range": "Alabama and Georgia only; reported Florida records proved to be in error",
+    "threats": "Conversion of habitat to pine plantations, farms, and building sites; fire exclusion; mowing or herbicide at the wrong time; and invasive plants, chiefly Chinese privet.",
+    "notes": "The 2016 review counted 19 surviving populations out of 28 known.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Mohr's Barbara's buttons",
+        "url": "https://www.fws.gov/species/mohrs-barbaras-buttons-marshallia-mohrii"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/7610"
+      },
+      {
+        "label": "FWS five-year review (2016)",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4801.pdf"
+      },
+      {
+        "label": "FWS recovery plan (1991)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/911126b.pdf"
+      },
+      {
+        "label": "Wikipedia: Marshallia mohrii",
+        "url": "https://en.wikipedia.org/wiki/Marshallia_mohrii"
+      }
+    ]
+  },
+  {
+    "slug": "white-fringeless-orchid",
+    "common": "White fringeless orchid",
+    "scientific": "Platanthera integrilabia",
+    "otherNames": [
+      "monkeyface"
+    ],
+    "group": "Flowering plant",
+    "family": "Orchidaceae (orchid family)",
+    "status": "T",
+    "listedDate": "2016-09-13",
+    "fr": "81 FR 62826",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      7,
+      8
+    ],
+    "bloomNote": "Mid-July to late August",
+    "summary": "A white, sweet-scented orchid of shaded seeps and streamhead swamps.",
+    "description": "A perennial orchid up to about 2 feet tall, with a loose spike of up to 20 white, fragrant flowers.  Each flower has a long, curving nectar spur and a rounded lip without the fringe that marks its relatives.",
+    "habitat": "Wet, flat, boggy ground at the heads of streams and on seepage slopes, in partial shade, often with sphagnum moss.",
+    "alabama": "Reported from Calhoun, Clay, Marion, and Tuscaloosa Counties.",
+    "counties": [
+      "Calhoun",
+      "Clay",
+      "Marion",
+      "Tuscaloosa"
+    ],
+    "range": "Alabama, Georgia, Kentucky, Mississippi, North Carolina, South Carolina, and Tennessee, with most populations on the Cumberland Plateau of Tennessee and Kentucky",
+    "threats": "Draining of wet sites, road building, careless timber harvest, and herbicides.  Deer, feral hogs, invasive plants, shade from a closing canopy, and poaching add to the pressure.  Most populations hold fewer than 100 plants.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-06/8229.jpg?itok=r5K6IPsp",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2005-06/8229.jpg?itok=YvVsa2I7",
+      "page": "https://www.fws.gov/media/white-fringeless-orchid",
+      "w": 1200,
+      "h": 1840,
+      "alt": "A cluster of small white orchid blossoms on a stalk.",
+      "caption": "White fringeless orchid blossoms.",
+      "credit": "Dr. Thomas G. Barnes/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: white fringeless orchid",
+        "url": "https://www.fws.gov/species/white-fringeless-orchid-platanthera-integrilabia"
+      },
+      {
+        "label": "FWS recovery plan (2023)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/077990%2020230207_WFO%20Recovery%20Plan.pdf"
+      },
+      {
+        "label": "Wikipedia: Platanthera integrilabia",
+        "url": "https://en.wikipedia.org/wiki/Platanthera_integrilabia"
+      }
+    ]
+  },
+  {
+    "slug": "harperella",
+    "common": "Harperella",
+    "scientific": "Ptilimnium nodosum",
+    "otherNames": [
+      "piedmont mock bishopweed"
+    ],
+    "group": "Flowering plant",
+    "family": "Apiaceae (carrot family)",
+    "status": "E",
+    "listedDate": "1988-09-28",
+    "fr": "53 FR 37978",
+    "habitatType": "Streams and shoals",
+    "bloom": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bloomNote": "Pond plants begin in May; river plants begin in late June or July and flower until frost",
+    "summary": "A slender, quill-leaved member of the carrot family that grows on rocky stream shoals.",
+    "description": "A perennial herb 6 to 36 inches tall.  Its leaves are reduced to hollow, quill-like tubes, and its small white flowers are held in flat-topped clusters that resemble Queen Anne's lace.",
+    "habitat": "Gravelly and rocky shoals of clear streams, and the edges of shallow upland ponds.  It tolerates only a narrow range of water depths.",
+    "alabama": "Reported from Cherokee, Cullman, DeKalb, Tuscaloosa, and Walker Counties.",
+    "counties": [
+      "Cherokee",
+      "Cullman",
+      "DeKalb",
+      "Tuscaloosa",
+      "Walker"
+    ],
+    "range": "Scattered from Maryland and West Virginia south to Georgia and Alabama, and west to Arkansas",
+    "threats": "Changes to stream flow and water quality: dams, diversions, and reservoirs that drown or dry the shoals, and silt from construction, farming, and development.",
+    "notes": "Some botanists split harperella into three species and treat the Alabama plants as _Ptilimnium fluviatile_.  The federal listing covers all of them under _Ptilimnium nodosum_.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-11/Harperella.jpg?itok=vNqEGpOX",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2021-11/Harperella.jpg?itok=58Zpsm_Z",
+      "page": "https://www.fws.gov/media/harperella",
+      "w": 1200,
+      "h": 2119,
+      "alt": "Harperella plants with long, thin green stems and white flowers at the tips.",
+      "caption": "Harperella in flower.",
+      "credit": "Dale Suiter/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: harperella",
+        "url": "https://www.fws.gov/species/harperella-ptilimnium-nodosum"
+      },
+      {
+        "label": "Wikipedia: Harperella",
+        "url": "https://en.wikipedia.org/wiki/Ptilimnium_nodosum"
+      }
+    ]
+  },
+  {
+    "slug": "krals-water-plantain",
+    "common": "Kral's water-plantain",
+    "scientific": "Sagittaria secundifolia",
+    "otherNames": [
+      "Little River arrowhead"
+    ],
+    "group": "Flowering plant",
+    "family": "Alismataceae (water-plantain family)",
+    "status": "T",
+    "listedDate": "1990-04-13",
+    "fr": "55 FR 13907",
+    "habitatType": "Streams and shoals",
+    "bloom": [
+      5,
+      6,
+      7
+    ],
+    "bloomNote": "Flowers infrequently, from May into July and sometimes into fall",
+    "summary": "An aquatic arrowhead rooted among the boulders of a few clear, rocky streams.",
+    "description": "A perennial aquatic herb with a stout rhizome.  The leaves take their shape from the water: in fast shallows they are stiff, sickle-shaped, and 5 to 8 cm long, and in quiet pools they are quill-like and 10 to 30 cm long.  The flower stalks are 10 to 50 cm tall, with white male flowers 1 to 1.5 cm wide.",
+    "habitat": "Frequently exposed shoals and quiet pools up to about a meter deep, rooted among loose boulders in narrow streams bordered by steep slopes.",
+    "alabama": "Reported from the Little River in Cherokee and DeKalb Counties, Hatchet Creek in Coosa County, and the Sipsey Fork in Winston County.  Sites on federal land include Little River Canyon National Preserve and Bankhead National Forest.",
+    "counties": [
+      "Cherokee",
+      "Coosa",
+      "DeKalb",
+      "Winston"
+    ],
+    "range": "Alabama and Georgia",
+    "threats": "Silt from logging and erosion, falling water quality and nutrient enrichment from sewage, impoundments, and heavy recreational use of the river corridors.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Kral's water-plantain",
+        "url": "https://www.fws.gov/species/krals-water-plantain-sagittaria-secundifolia"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4367.pdf"
+      },
+      {
+        "label": "FWS recovery plan (1991)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/910812.pdf"
+      },
+      {
+        "label": "Wikipedia: Sagittaria secundifolia",
+        "url": "https://en.wikipedia.org/wiki/Sagittaria_secundifolia"
+      }
+    ]
+  },
+  {
+    "slug": "green-pitcher-plant",
+    "common": "Green pitcher plant",
+    "scientific": "Sarracenia oreophila",
+    "otherNames": [
+      "green pitcherplant"
+    ],
+    "group": "Flowering plant",
+    "family": "Sarraceniaceae (pitcher plant family)",
+    "status": "E",
+    "listedDate": "1979-09-21",
+    "fr": "44 FR 54922",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      4,
+      5,
+      6
+    ],
+    "bloomNote": "Mid-April to early June",
+    "summary": "A carnivorous plant of upland bogs and seeps, known from northeast Alabama and a few sites in Georgia and North Carolina.",
+    "description": "A carnivorous perennial that grows from a rhizome.  In spring it sends up hooded, tube-shaped pitcher leaves 20 to 75 cm tall, green to yellow-green and sometimes veined with maroon, and a single yellow flower on a stalk 45 to 70 cm tall.  By late summer the pitchers wither and are replaced by flat, sickle-shaped leaves.",
+    "habitat": "Seepage bogs, sandstone streambanks, and moist oak-pine woodland on poor, acidic soils.  Its sites dry out quickly in midsummer.",
+    "alabama": "Reported from Cherokee, DeKalb, Etowah, Jackson, and Marshall Counties in the northeast, and from Elmore County.",
+    "counties": [
+      "Cherokee",
+      "DeKalb",
+      "Elmore",
+      "Etowah",
+      "Jackson",
+      "Marshall"
+    ],
+    "range": "Alabama, Georgia, and North Carolina; gone from Tennessee",
+    "threats": "Drainage and development of its bog habitat, and collecting for the plant trade, which the recovery plan names as the most serious threat.  Collecting it is illegal, and international trade in wild plants is barred under CITES Appendix I.",
+    "notes": "About 34 natural populations remain, and most hold fewer than 50 plants.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-07/green-pitcher-plant.jpg?itok=eJoSOnBf",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2022-07/green-pitcher-plant.jpg?itok=_q3z1K8h",
+      "page": "https://www.fws.gov/media/green-pitcher-plant-flower-rising-above-pitchers",
+      "w": 5771,
+      "h": 3847,
+      "alt": "A yellow green pitcher plant flower rising above a stand of pitchers.",
+      "caption": "Green pitcher plants in flower, Clay County, North Carolina.",
+      "credit": "Gary Peeples/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: green pitcher plant",
+        "url": "https://www.fws.gov/species/green-pitcher-plant-sarracenia-oreophila"
+      },
+      {
+        "label": "FWS recovery plan (1994)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/941212.pdf"
+      },
+      {
+        "label": "Alabama Plant Atlas: Sarracenia oreophila",
+        "url": "http://www.floraofalabama.org/Plant.aspx?id=3352"
+      },
+      {
+        "label": "Wikipedia: Sarracenia oreophila",
+        "url": "https://en.wikipedia.org/wiki/Sarracenia_oreophila"
+      }
+    ]
+  },
+  {
+    "slug": "alabama-canebrake-pitcher-plant",
+    "common": "Alabama canebrake pitcher plant",
+    "scientific": "Sarracenia rubra ssp. alabamensis",
+    "otherNames": [
+      "Alabama pitcherplant",
+      "Sarracenia alabamensis"
+    ],
+    "group": "Flowering plant",
+    "family": "Sarraceniaceae (pitcher plant family)",
+    "status": "E",
+    "listedDate": "1989-03-10",
+    "fr": "54 FR 10150",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      4,
+      5,
+      6
+    ],
+    "bloomNote": "Late April to early June",
+    "summary": "A maroon-flowered pitcher plant found only in a few seepage bogs in central Alabama.",
+    "description": "A carnivorous perennial that grows from a rhizome and makes two sets of pitchers each year.  The spring pitchers are 20 to 50 cm long and curve backward.  The summer pitchers are larger, 20 to 70 cm, and stand upright.  The flowers are maroon, borne singly on stalks up to 60 cm tall, and open with the spring pitchers.",
+    "habitat": "Permanently wet hillside seepage bogs, where a layer of clay near the surface holds the water.  It cannot stand shade and depends on fire to keep its bogs open.",
+    "alabama": "Found only in Alabama.  The Service's 2012 review counted 11 surviving populations, six in Autauga County and five in Chilton County, and presumed the Elmore County sites lost.  Seventeen populations had been destroyed since 1974.",
+    "counties": [
+      "Autauga",
+      "Chilton",
+      "Elmore"
+    ],
+    "range": "Alabama only",
+    "threats": "Fire exclusion and the woody growth that follows, altered drainage, gravel mining, development, grazing, and roadside mowing.  Poaching has been a problem in the past.  Most sites are privately owned.",
+    "notes": "This plant was first described in 1974 as a full species, _Sarracenia alabamensis_, and some sources still use that name.  The federal list treats it as a subspecies of _Sarracenia rubra_.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Alabama canebrake pitcher plant",
+        "url": "https://www.fws.gov/species/alabama-canebrake-pitcherplant-sarracenia-rubra-ssp-alabamensis"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/1846"
+      },
+      {
+        "label": "FWS five-year review (2012)",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4368.pdf"
+      },
+      {
+        "label": "FWS recovery plan (1992)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/921008.pdf"
+      },
+      {
+        "label": "FWS recovery plan amendment",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/Alabama%20Canebrake%20Pitcher%20Plant%20Recovery%20Plan%20Amendment_1.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "american-chaffseed",
+    "common": "American chaffseed",
+    "scientific": "Schwalbea americana",
+    "otherNames": [
+      "chaffseed"
+    ],
+    "group": "Flowering plant",
+    "family": "Orobanchaceae (broomrape family)",
+    "status": "E",
+    "listedDate": "1992-09-29",
+    "fr": "57 FR 44703",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      4,
+      5,
+      6
+    ],
+    "bloomNote": "April to June in the South",
+    "summary": "A hairy, purple-flowered herb of fire-kept pine savannas that takes part of its food from the roots of its neighbors.",
+    "description": "An upright perennial, hairy throughout, with stems that branch only at the base and stalkless leaves that overlap in a spiral.  The showy flowers are reddish-purple and five-lobed.  It is a partial parasite: its roots fasten onto the roots of other plants.",
+    "habitat": "Open, moist, acidic sandy or peaty ground in longleaf pine flatwoods and savannas kept open by fire.",
+    "alabama": "Reported from Baldwin, Bullock, Geneva, and Mobile Counties.",
+    "counties": [
+      "Baldwin",
+      "Bullock",
+      "Geneva",
+      "Mobile"
+    ],
+    "range": "Scattered from Massachusetts and New Jersey south to Florida and west to Alabama and Louisiana; gone from at least nine other states",
+    "threats": "Fire suppression, above all.  Without regular burning, shrubs and trees close in and the plant disappears.  Its seeds live only about a year in the soil, so there is no lasting seed bank to fall back on.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-09/1776.JPG?itok=-VWnO_j_",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2005-09/1776.JPG?itok=wuHh38f2",
+      "page": "https://www.fws.gov/media/schwalbea-americana-chaffseed",
+      "w": 2048,
+      "h": 1536,
+      "alt": "American chaffseed in a longleaf pine community.",
+      "caption": "American chaffseed in Georgia's Coastal Plain.",
+      "credit": "Peter Pattavina/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: American chaffseed",
+        "url": "https://www.fws.gov/species/american-chaffseed-schwalbea-americana"
+      },
+      {
+        "label": "Wikipedia: Schwalbea",
+        "url": "https://en.wikipedia.org/wiki/Schwalbea"
+      }
+    ]
+  },
+  {
+    "slug": "gentian-pinkroot",
+    "common": "Gentian pinkroot",
+    "scientific": "Spigelia gentianoides",
+    "otherNames": [
+      "purpleflower pinkroot"
+    ],
+    "group": "Flowering plant",
+    "family": "Loganiaceae (logania family)",
+    "status": "E",
+    "listedDate": "1990-11-26",
+    "fr": "55 FR 49046",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      5,
+      6
+    ],
+    "bloomNote": "May to June at peak; plants have been seen in flower from April to October",
+    "summary": "A small pink-flowered herb of fire-kept pinelands, with a close relative on the Bibb County glades.",
+    "description": "A perennial herb with a slender, reddish-tinged stem up to about 30 cm tall and opposite leaves up to 5 cm long.  The pink, tubular flowers are up to 3 cm long, with five pointed lobes that stay nearly closed at the tip.",
+    "habitat": "Well-drained upland pine woods kept open by fire, in longleaf pine and wiregrass country, and mixed pine, oak, and hickory woods.",
+    "alabama": "Known in Alabama from Geneva County.  The Service's five-year review counts seven surviving populations and about 3,900 plants in Geneva County and three counties of the Florida Panhandle.",
+    "counties": [
+      "Geneva"
+    ],
+    "range": "Alabama and Florida",
+    "threats": "Conversion of pinelands to pine plantations, development, and the loss of regular fire, which lets the canopy close and shade the plants out.",
+    "notes": "A related plant on the dolomite glades of Bibb County was first treated as a variety of this species (_var. alabamensis_) and was named a separate species, _Spigelia alabamensis_, in 2011.  The five-year review says the listing now covers only the Florida and Geneva County plants, and calls for the recovery plan to be revised to match.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: gentian pinkroot",
+        "url": "https://www.fws.gov/species/purpleflower-pinkroot-spigelia-gentianoides"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc5966.pdf"
+      },
+      {
+        "label": "FWS recovery plan (2012)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/20120124_Spigelia%20Recovery%20Plan%20FINAL%202.pdf"
+      },
+      {
+        "label": "Wikipedia: Spigelia gentianoides",
+        "url": "https://en.wikipedia.org/wiki/Spigelia_gentianoides"
+      }
+    ]
+  },
+  {
+    "slug": "alabama-streak-sorus-fern",
+    "common": "Alabama streak-sorus fern",
+    "scientific": "Thelypteris pilosa var. alabamensis",
+    "otherNames": [
+      "Alabama maiden fern",
+      "Leptogramma burksiorum",
+      "Thelypteris burksiorum"
+    ],
+    "group": "Fern or fern ally",
+    "family": "Thelypteridaceae (maiden fern family)",
+    "status": "T",
+    "listedDate": "1992-07-08",
+    "fr": "57 FR 30164",
+    "habitatType": "Bluffs, cliffs, and sinkholes",
+    "bloom": null,
+    "bloomNote": "A fern; it reproduces by spores and has no flowers",
+    "summary": "A small fern of shaded sandstone overhangs, known from a single river drainage.",
+    "description": "A small fern with narrow, once-divided fronds, usually 3.5 to 10 cm long and 1.3 to 3.3 cm wide, dull yellow-green and finely hairy on both sides.  The spore clusters are elongated streaks, about 5 mm long, without the protective flap that most ferns have.  That streak gives the plant its name.",
+    "habitat": "Shaded, humid sandstone overhangs and rock faces along the river, under forest that keeps the rock cool and moist.",
+    "alabama": "Found only in Alabama, and only along the Sipsey Fork in Winston County, within Bankhead National Forest.",
+    "counties": [
+      "Winston"
+    ],
+    "range": "Alabama only",
+    "threats": "Rising water behind the reservoir downstream, loss of forest cover and of hemlocks above the bluffs, development of private land, and heavy recreational use of the river corridor.",
+    "notes": "Recent treatments call this fern _Leptogramma burksiorum_ or _Thelypteris burksiorum_.  The federal list still uses _Thelypteris pilosa var. alabamensis_.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Alabama streak-sorus fern",
+        "url": "https://www.fws.gov/species/alabama-streak-sorus-fern-thelypteris-pilosa-var-alabamensis"
+      },
+      {
+        "label": "FWS recovery plan (1996)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/961025.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "relict-trillium",
+    "common": "Relict trillium",
+    "scientific": "Trillium reliquum",
+    "otherNames": [
+      "Confederate wakerobin",
+      "Confederate trillium"
+    ],
+    "group": "Flowering plant",
+    "family": "Melanthiaceae (bunchflower family)",
+    "status": "E",
+    "listedDate": "1988-04-04",
+    "fr": "53 FR 10879",
+    "habitatType": "Woods and pinelands",
+    "bloom": [
+      3,
+      4
+    ],
+    "bloomNote": "March to April, before the forest canopy leafs out",
+    "summary": "A spring wildflower with mottled leaves and a stem that curves along the ground.",
+    "description": "A perennial herb with a whorl of three mottled leaves, patterned in greens, bronze, and purple, often with a silver stripe along the midvein.  The smooth stem is S-shaped and tends to lie along the ground.  A single stalkless flower sits at the center of the leaves, with petals that range from dark purple to greenish or yellow.",
+    "habitat": "Moist, rich soils in undisturbed hardwood forest, often along stream banks and small floodplains.",
+    "alabama": "Reported from Bullock, Henry, and Lee Counties in the southeast.",
+    "counties": [
+      "Bullock",
+      "Henry",
+      "Lee"
+    ],
+    "range": "Alabama, Georgia, and South Carolina",
+    "threats": "Clearing of hardwood forest for farming and pine plantations.  Heavy browsing by white-tailed deer also sets the plants back.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2017-03/26789.jpg?itok=22_r49eT",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2017-03/26789.jpg?itok=aPU1fAj1",
+      "page": "https://www.fws.gov/media/relict-trillium-0",
+      "w": 2448,
+      "h": 3264,
+      "alt": "Relict trillium in bloom, with three mottled leaves around a dark flower.",
+      "caption": "Relict trillium in bloom in Oconee National Forest, Georgia.",
+      "credit": "Peter Maholland/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: relict trillium",
+        "url": "https://www.fws.gov/species/relict-trillium-trillium-reliquum"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4479.pdf"
+      },
+      {
+        "label": "Wikipedia: Trillium reliquum",
+        "url": "https://en.wikipedia.org/wiki/Trillium_reliquum"
+      }
+    ]
+  },
+  {
+    "slug": "tennessee-yellow-eyed-grass",
+    "common": "Tennessee yellow-eyed grass",
+    "scientific": "Xyris tennesseensis",
+    "otherNames": [
+      "Tennessee yelloweyed grass"
+    ],
+    "group": "Flowering plant",
+    "family": "Xyridaceae (yellow-eyed grass family)",
+    "status": "E",
+    "listedDate": "1991-07-26",
+    "fr": "56 FR 34151",
+    "habitatType": "Bogs, seeps, and wet prairies",
+    "bloom": [
+      8,
+      9
+    ],
+    "bloomNote": "August to September; each flower opens in late morning and withers by mid-afternoon",
+    "summary": "A clump-forming wetland plant whose small yellow flowers open for only a few hours a day.",
+    "description": "A perennial that grows in clumps from fleshy, bulb-like bases, 2.3 to 3.3 feet tall.  The leaves are long, narrow, twisted, and deep green.  Brown, cone-shaped flower heads sit singly on slender stalks, and from each a pale yellow flower about a fifth of an inch across opens in late morning.",
+    "habitat": "Open or lightly shaded seeps, fens, wet meadows, and gravelly stream edges, on thin, near-neutral soils over limestone and similar rock.",
+    "alabama": "The Service lists ten Alabama populations: four each in Bibb and Calhoun Counties, and one each in Franklin and Shelby Counties.",
+    "counties": [
+      "Bibb",
+      "Calhoun",
+      "Franklin",
+      "Shelby"
+    ],
+    "range": "Alabama, Georgia, and Tennessee",
+    "threats": "Draining and filling of wetlands, road building, quarrying, logging, grazing, and off-road vehicles.  Without management, woody plants shade it out.  Most sites are privately owned.",
+    "notes": "The Service counts 21 surviving populations across the three states.",
+    "image": null,
+    "photoElsewhere": {
+      "label": "A photo by Al Schotz, Alabama Natural Heritage Program, on the FWS site (copyrighted, shown there by permission)",
+      "url": "https://www.fws.gov/media/xyris-tennesseensisjpg"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: Tennessee yellow-eyed grass",
+        "url": "https://www.fws.gov/species/tennessee-yellow-eyed-grass-xyris-tennesseensis"
+      },
+      {
+        "label": "FWS recovery plan (1994)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/940624.pdf"
+      },
+      {
+        "label": "Wikipedia: Xyris tennesseensis",
+        "url": "https://en.wikipedia.org/wiki/Xyris_tennesseensis"
+      }
+    ]
+  }
+]

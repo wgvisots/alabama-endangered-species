@@ -1,0 +1,28 @@
+# Secrets and credentials.  Nothing of this kind belongs in a public repository.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+secrets.*
+credentials.*
+.netrc
+.npmrc
+
+# Dependencies and tool output.  The build needs none, so these should not appear.
+node_modules/
+npm-debug.log*
+*.log
+
+# Operating system and editor clutter
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
