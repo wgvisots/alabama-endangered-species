@@ -1,0 +1,771 @@
+[
+  {
+    "slug": "alabama-cavefish",
+    "common": "Alabama cavefish",
+    "scientific": "Speoplatyrhinus poulsoni",
+    "otherNames": [],
+    "kind": "Cavefish",
+    "family": "Amblyopsidae (cavefishes)",
+    "status": "E",
+    "listedDate": "1977-09-09",
+    "fr": "42 FR 45526",
+    "habitatType": "Cave waters",
+    "season": null,
+    "summary": "A blind, colorless fish known from a single cave in Lauderdale County, and from nowhere else on earth.",
+    "description": "A small fish, 1.2 to 2.3 inches long, with no eyes and almost no color.  Its head is long and flattened, with a narrow snout, and it has no pelvic fins.  Ridges of sensory bumps run along the head and sides.",
+    "habitat": "Very clear cave water.  The fish has been seen near the surface of a pool about ten feet deep, below a roost of bats, whose droppings feed the cave's small community of crayfish and other animals.",
+    "life": "It is thought to live five to ten years, and its numbers are thought to grow more slowly than those of almost any other cave animal.",
+    "alabama": "Known only from Key Cave, in Lauderdale County, which now lies within Key Cave National Wildlife Refuge.  No count of the fish is given in the sources read, which call the population small.",
+    "counties": [
+      "Lauderdale"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Alabama only",
+    "threats": "Pollution of the groundwater, a falling water table, and any loss of the bats that feed the cave.  Much of the land that drains into the cave's aquifer is unprotected.",
+    "notes": "First listed as threatened in 1977, and reclassified as endangered on September 28, 1988 (53 FR 37968).",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Alabama cavefish",
+        "url": "https://www.fws.gov/species/alabama-cavefish-speoplatyrhinus-poulsoni"
+      },
+      {
+        "label": "Outdoor Alabama: Alabama cavefish",
+        "url": "https://www.outdooralabama.com/cavefish/alabama-cavefish"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/50"
+      }
+    ]
+  },
+  {
+    "slug": "alabama-sturgeon",
+    "common": "Alabama sturgeon",
+    "scientific": "Scaphirhynchus suttkusi",
+    "otherNames": [],
+    "kind": "Sturgeon",
+    "family": "Acipenseridae (sturgeons)",
+    "status": "E",
+    "listedDate": "2000-05-05",
+    "fr": "65 FR 26438",
+    "habitatType": "Large rivers",
+    "season": null,
+    "summary": "A small river sturgeon found only in the Mobile basin, and so rare that it may be close to extinction.",
+    "description": "A small, slender sturgeon about two and a half feet long, with a flattened, shovel-like snout, four barbels, and five rows of bony plates.  The back is tan to golden or brownish-orange, and the belly creamy white.",
+    "habitat": "Deep, fast currents of large rivers, over sand and gravel.",
+    "life": "It feeds mostly on the larvae of insects.  It appears to spawn in late March or early April.",
+    "alabama": "It once lived in all the large rivers of the Mobile basin below the Fall Line.  It is now known only from the lower Alabama River, from R. F. Henry Lock and Dam down to the Tombigbee, and from the lower Cahaba.  The last confirmed capture was in 2007, and the last sighting was of a live fish in April 2009.",
+    "counties": [],
+    "waters": [
+      "Alabama",
+      "Cahaba"
+    ],
+    "range": "Alabama only today; the Mobile basin",
+    "threats": "Its numbers are so low that deaths outrun births.  Overfishing in the past, dams, navigation works, and altered flows brought it to that point.",
+    "notes": "The state's page on the fish suggests that its survival may depend on spawning it in captivity.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Alabama sturgeon",
+        "url": "https://www.fws.gov/species/alabama-sturgeon-scaphirhynchus-suttkusi"
+      },
+      {
+        "label": "FWS recovery plan (2013)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/20130504_NAL%20AL%20Sturgeon%20Recovery%20Plan%2005042013.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: Alabama sturgeon",
+        "url": "https://outdooralabama.com/sturgeon/alabama-sturgeon"
+      }
+    ]
+  },
+  {
+    "slug": "gulf-sturgeon",
+    "common": "Gulf sturgeon",
+    "scientific": "Acipenser oxyrinchus desotoi",
+    "otherNames": [
+      "Atlantic sturgeon (Gulf subspecies)"
+    ],
+    "kind": "Sturgeon",
+    "family": "Acipenseridae (sturgeons)",
+    "status": "T",
+    "listedDate": "1991-09-30",
+    "fr": "56 FR 49653",
+    "habitatType": "Coastal rivers and the Gulf",
+    "season": null,
+    "summary": "An armored giant that winters in the Gulf and climbs Alabama's coastal rivers each spring to spawn.",
+    "description": "A very large fish that can reach about nine feet and 300 pounds, with rows of heavy bony plates along its body.  The snout is V-shaped and often turned up at the tip.  The back is light to medium brown and the belly cream.",
+    "habitat": "It lives in salt water and spawns in fresh.  From November through January it stays in estuaries and near the shore.",
+    "life": "The run upstream usually begins in February, and the fish spawn in the Choctawhatchee in April.  The adults rest in deep pools through the summer and go back down in August or September.  It seems to stop feeding in fresh water.  It does not breed until it is 9 to 12 years old.",
+    "alabama": "The best population in the state is in the Choctawhatchee River near Geneva.  Sturgeon are also seen each year in the Conecuh, have been taken in the Mobile Delta, and are caught by accident in the Alabama and Tombigbee Rivers below their lowest dams.",
+    "counties": [],
+    "waters": [
+      "Choctawhatchee and Pea",
+      "Conecuh",
+      "Mobile-Tensaw Delta",
+      "Alabama",
+      "Tombigbee"
+    ],
+    "range": "Gulf coast rivers and waters from Louisiana to Florida",
+    "threats": "Overfishing for caviar and meat began the decline.  Dams that block the way to spawning grounds, dredging, capture in nets set for other fish, and pollution have kept it down.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2018-07/29515.jpg?itok=Mc9SzWUn",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2018-07/29515.jpg?itok=iq9U5Nrx",
+      "page": "https://www.fws.gov/media/gulf-sturgeon-11",
+      "w": 5760,
+      "h": 3840,
+      "alt": "A Gulf sturgeon.",
+      "caption": "A Gulf sturgeon.",
+      "credit": "Ryan Hagerty/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: Gulf sturgeon",
+        "url": "https://www.outdooralabama.com/sturgeon/gulf-sturgeon"
+      },
+      {
+        "label": "Gulf sturgeon recovery and management plan (1995)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/950922.pdf"
+      },
+      {
+        "label": "FWS: proposal of critical habitat for the Gulf sturgeon (2002)",
+        "url": "https://www.fws.gov/story/2002-06/us-fish-and-wildlife-service-and-national-marine-fisheries-service-propose"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/651"
+      }
+    ]
+  },
+  {
+    "slug": "spring-pygmy-sunfish",
+    "common": "Spring pygmy sunfish",
+    "scientific": "Elassoma alabamae",
+    "otherNames": [],
+    "kind": "Pygmy sunfish",
+    "family": "Elassomatidae (pygmy sunfishes)",
+    "status": "T",
+    "listedDate": "2013-10-02",
+    "fr": "78 FR 60766",
+    "habitatType": "Springs",
+    "season": null,
+    "summary": "A fish less than an inch long that lives a single year, among the water plants of a few springs in the Tennessee Valley.",
+    "description": "A tiny fish, three-quarters of an inch to an inch long.  Breeding males are dark brown, with five to seven narrow bars of silver or gold on each side.  Females are brown above and mottled brown and white on the sides.  Both have a golden crescent behind the eye.",
+    "habitat": "Calm, clear spring pools and spring runs, thick with water plants.",
+    "life": "It spawns in March and April, laying its eggs among the plants, and most adults die afterward.",
+    "alabama": "It lives only in the Tennessee River drainage of north Alabama, and is known today from two spring systems.  The Service names the Beaverdam Creek and Spring system.  A population at a spring in Lauderdale County appears to be gone, and one in Limestone County was brought back by landowners and biologists.",
+    "counties": [
+      "Limestone"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Alabama only",
+    "threats": "The pages read for this entry do not set out the threats; the listing rule, linked below, does.  A fish that lives one year, in two spring systems, has little margin.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/spring-pygmy-sunfish-Matt-Laschet.jpg?itok=ylFTO0u-",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2022-06/spring-pygmy-sunfish-Matt-Laschet.jpg?itok=7eRBwdVA",
+      "page": "https://www.fws.gov/media/spring-pygmy-sunfish-matt-laschetjpg",
+      "w": 5472,
+      "h": 3648,
+      "alt": "A small, marbled brown fish lying on a measuring board, about three centimeters long.",
+      "caption": "A spring pygmy sunfish being measured.",
+      "credit": "Matt Laschet, via USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: spring pygmy sunfish",
+        "url": "https://www.fws.gov/species/spring-pygmy-sunfish-elassoma-alabamae"
+      },
+      {
+        "label": "Outdoor Alabama: spring pygmy sunfish",
+        "url": "https://www.outdooralabama.com/pygmy-sunfish/spring-pygmy-sunfish"
+      },
+      {
+        "label": "Final listing rule (2013)",
+        "url": "https://www.fws.gov/policy/library/2013/2013-23726.html"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/652"
+      }
+    ]
+  },
+  {
+    "slug": "spotfin-chub",
+    "common": "Spotfin chub",
+    "scientific": "Erimonax monachus",
+    "otherNames": [
+      "turquoise shiner",
+      "Cyprinella monacha"
+    ],
+    "kind": "Minnow",
+    "family": "Leuciscidae (minnows)",
+    "status": "T",
+    "listedDate": "1977-09-09",
+    "fr": "42 FR 45526",
+    "presence": "historical",
+    "habitatType": "Upland rivers",
+    "season": null,
+    "summary": "A minnow of clear upland rivers whose breeding males turn turquoise, last collected in Alabama in 1937.",
+    "description": "A slender minnow 2.2 to 3.3 inches long, with a small triangular head, a mouth set low, and a barbel at each corner.  Breeding males turn turquoise to royal blue on the back and upper sides, and the tips of their fins go milky white.",
+    "habitat": "Clear upland rivers of middling size, in moderate to swift current over boulders and bedrock.",
+    "life": "It eats the young of water insects.  It spawns from late May to August, in crevices among rocks.",
+    "alabama": "Alabama has two old records: three fish from Shoal Creek near Florence in 1884, and one from Little Bear Creek near Tuscumbia in 1937.  The state's own account calls its presence here today uncertain.",
+    "counties": [],
+    "countiesText": "None today; once Colbert and Lauderdale",
+    "range": "The Tennessee River drainage",
+    "threats": "The sources read for this entry do not set out the threats.",
+    "notes": "A rule of January 6, 2005 (70 FR 1286) set up an experimental population of this fish, and of the boulder darter, in Shoal Creek, in Lauderdale County and across the line in Tennessee.",
+    "image": null,
+    "refs": [
+      {
+        "label": "Outdoor Alabama: spotfin chub",
+        "url": "https://www.outdooralabama.com/chub/spotfin"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/1521"
+      },
+      {
+        "label": "FWS Tennessee office: status and habitat of federally listed fauna",
+        "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "boulder-darter",
+    "common": "Boulder darter",
+    "scientific": "Etheostoma wapiti",
+    "otherNames": [
+      "Elk River darter"
+    ],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "E",
+    "listedDate": "1988-09-01",
+    "fr": "53 FR 33996",
+    "habitatType": "Rocky riffles",
+    "season": null,
+    "summary": "One of the rarest fish in the country, a darter of the fast, rocky water of the Elk River.",
+    "description": "A darter 1.7 to 2.8 inches long.  Breeding males are olive to gray, with 10 to 14 fine stripes along the rear of the body and a blue throat.",
+    "habitat": "Swift riffles and chutes of small to medium rivers.  Adults have been found only over boulders and broken rock.",
+    "life": "It eats the larvae of insects and other small animals of the riffles.  It probably spawns in late April and May.",
+    "alabama": "In the wild it survives only in the Elk River, which enters Alabama in Limestone County, and in a tributary in Tennessee.  It once lived in Shoal Creek, in Lauderdale County, where none had been found since 1884.  In May 2005 the Service and its partners released 217 hatchery-raised young into Shoal Creek to bring it back.",
+    "counties": [
+      "Lauderdale",
+      "Limestone"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "The Elk River system of Alabama and Tennessee",
+    "threats": "Poor water quality and the building of Wilson Dam drove it from the Tennessee River and its other tributaries.",
+    "notes": "The fish released into Shoal Creek are an experimental population under a rule of January 6, 2005 (70 FR 1286).  The sources read for this entry do not say how they have fared.",
+    "image": null,
+    "refs": [
+      {
+        "label": "Outdoor Alabama: boulder darter",
+        "url": "https://www.outdooralabama.com/darters/boulder"
+      },
+      {
+        "label": "FWS: boulder darter reintroduced into Shoal Creek (2005)",
+        "url": "https://www.fws.gov/story/2005-05/boulder-darter-one-rarest-fish-us-reintroduced-shoal-creek-tennessee-and-alabama"
+      },
+      {
+        "label": "FWS species profile: boulder darter",
+        "url": "https://www.fws.gov/species/boulder-darter-etheostoma-wapiti"
+      },
+      {
+        "label": "FWS Tennessee office: status and habitat of federally listed fauna",
+        "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "goldline-darter",
+    "common": "Goldline darter",
+    "scientific": "Percina aurolineata",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "T",
+    "listedDate": "1992-04-22",
+    "fr": "57 FR 14786",
+    "habitatType": "Rocky riffles",
+    "season": null,
+    "summary": "A darter with a stripe of amber along its back, found in Alabama only in the Cahaba River system.",
+    "description": "A darter 1.6 to 2.9 inches long.  A bright amber or russet stripe runs from the head to the rear of the back, above a row of eight or nine dark blotches, and there are three dark spots at the base of the tail.",
+    "habitat": "Shallow riffles with moderate to swift current in the main channels of free-flowing rivers, over cobble, small boulders, or bedrock, among water willow and river weed.",
+    "life": "It spawns from March into June.",
+    "alabama": "Alabama's fish live in the middle Cahaba River system, including the Little Cahaba River.",
+    "counties": [],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "The Cahaba River system in Alabama, and the Coosawattee River system in Georgia",
+    "threats": "The state's account ties falling numbers in the Little Cahaba to muddier water and silt from the upper part of the watershed.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2003-09/1816.jpg?itok=QPb2ydBi",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2003-09/1816.jpg?itok=zuT3WZj1",
+      "page": "https://www.fws.gov/media/goldline-darters",
+      "w": 2048,
+      "h": 1536,
+      "alt": "Goldline darters.",
+      "caption": "Goldline darters.",
+      "credit": "Peter Pattavina/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: goldline darter",
+        "url": "https://www.outdooralabama.com/darters/goldline"
+      }
+    ]
+  },
+  {
+    "slug": "rush-darter",
+    "common": "Rush darter",
+    "scientific": "Etheostoma phytophilum",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "E",
+    "listedDate": "2011-08-09",
+    "fr": "76 FR 48722",
+    "habitatType": "Spring-fed streams",
+    "season": null,
+    "summary": "A plain little darter of spring-fed streams, known from three small, separate patches of north-central Alabama.",
+    "description": "A small, brownish to yellow fish, two to three inches long, with no bright markings.",
+    "habitat": "Small, clear, cool streams and spring runs, among reeds and rushes.",
+    "life": "It lives two to three years.  It was not recognized as a species until 1999.",
+    "alabama": "It lives only in Alabama, in three separate groups above the Fall Line: in the Clear Creek drainage of Winston County, in the Turkey Creek drainage of Jefferson County, and in the Little Cove Creek drainage of Etowah County.  Most of the fish are on private land.",
+    "counties": [
+      "Etowah",
+      "Jefferson",
+      "Winston"
+    ],
+    "waters": [
+      "Black Warrior"
+    ],
+    "range": "Alabama only",
+    "threats": "Silt and stormwater from spreading towns, changes made to the heads of springs, road work, and logging.  The listing rule judged these threats to be both large and close at hand.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-10/13534.jpg?itok=ZKjRjCCs",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2005-10/13534.jpg?itok=nZ5Vwe-G",
+      "page": "https://www.fws.gov/media/rush-darter",
+      "w": 1316,
+      "h": 500,
+      "alt": "A rush darter.",
+      "caption": "A rush darter.",
+      "credit": "Bernie Kuhajda/University of Alabama, via USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "Final listing rule (2011)",
+        "url": "https://www.fws.gov/policy/library/2011/2011-20018.html"
+      },
+      {
+        "label": "Outdoor Alabama: rush darter",
+        "url": "https://www.outdooralabama.com/darters/rush"
+      },
+      {
+        "label": "FWS species profile: rush darter",
+        "url": "https://www.fws.gov/species/rush-darter-etheostoma-phytophilum"
+      }
+    ]
+  },
+  {
+    "slug": "slackwater-darter",
+    "common": "Slackwater darter",
+    "scientific": "Etheostoma boschungi",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "T",
+    "listedDate": "1977-09-09",
+    "fr": "42 FR 45526",
+    "habitatType": "Slow creeks and seeps",
+    "season": null,
+    "summary": "A darter of slow creeks that leaves them in winter to spawn in flooded fields and seeps.",
+    "description": "A darter 1.6 to 2.4 inches long, with three distinct dark saddles across the back and dusky blotches under the head and body.  Males have a bold bar below the eye, and in breeding season turn deep orange on the breast and cheeks.",
+    "habitat": "For most of the year, gravel-bottomed pools of slow creeks and small rivers.  To spawn, it moves into shallow water seeping through fields and woods that are usually dry in summer.",
+    "life": "It spawns from late January to March, fixing its eggs to plants.  It eats tiny crustaceans and young water insects.",
+    "alabama": "It lives in the Cypress Creek, Swan Creek, upper Shoal Creek, and Flint River systems of north Alabama.  It was first described from a creek in Lauderdale County.",
+    "counties": [],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "North Alabama and south-central Tennessee",
+    "threats": "The pages read for this entry do not set out the threats.  The Service's five-year review of 2008, linked below, covers them.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2024-03/slackwater-darter-cypress-creek-al-rob-hurt-usfws_0.JPG?itok=iuD9t91p",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2024-03/slackwater-darter-cypress-creek-al-rob-hurt-usfws_0.JPG?itok=uzl_qBQA",
+      "page": "https://www.fws.gov/media/slackwater-darter-collected-cypress-creek-al",
+      "w": 3264,
+      "h": 2448,
+      "alt": "A slackwater darter in a viewing container.",
+      "caption": "A slackwater darter collected in Cypress Creek, Alabama.",
+      "credit": "Rob Hurt/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: slackwater darter",
+        "url": "https://www.outdooralabama.com/darters/slackwater"
+      },
+      {
+        "label": "FWS species profile: slackwater darter",
+        "url": "https://www.fws.gov/species/slackwater-darter-etheostoma-boschungi"
+      },
+      {
+        "label": "FWS five-year review (2008)",
+        "url": "https://www.fws.gov/node/5084906"
+      },
+      {
+        "label": "FWS Tennessee office: status and habitat of federally listed fauna",
+        "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "trispot-darter",
+    "common": "Trispot darter",
+    "scientific": "Etheostoma trisella",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "T",
+    "listedDate": "2018-12-28",
+    "fr": "83 FR 67131",
+    "habitatType": "Slow creeks and seeps",
+    "season": null,
+    "summary": "A small darter thought lost from Alabama for half a century, until it turned up again in 2010.",
+    "description": "A small darter, 1.3 to 1.6 inches long, with a yellow-brown back crossed by three dark saddles, a pale belly, and a thin bar below the eye.  Breeding males turn bright orange, with about four green blotches on each side.",
+    "habitat": "Outside the breeding season, slow, clear backwaters and eddies over cobble and gravel.  It breeds in water seeping through marsh grasses in nearby low ground.",
+    "life": "It spawns from January through March, and its sticky eggs cling to plants and stones.  Adults live two to three years.",
+    "alabama": "It was first described from a creek in Cherokee County that Weiss Reservoir flooded in 1960, and after that it was thought to be gone from the state.  In 2010 it was found in a tributary of Big Canoe Creek, and in 2011 in a second.",
+    "counties": [],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "The Coosa River system of Alabama, Georgia, and Tennessee",
+    "threats": "The pages read for this entry do not set out the threats.  The listing rule, linked below, does.",
+    "notes": "A special rule under section 4(d) of the Act, published in 2020 (85 FR 61614), sets out which activities are allowed around the fish.",
+    "image": null,
+    "photoElsewhere": {
+      "label": "A photo of a breeding male by Alan Cressler, on the FWS site (copyrighted, shown there by permission)",
+      "url": "https://www.fws.gov/media/etheostoma-trisella-male-alan-cresslerjpg"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: trispot darter",
+        "url": "https://www.outdooralabama.com/darters/trispot"
+      },
+      {
+        "label": "FWS: section 4(d) rule for the trispot darter",
+        "url": "https://www.fws.gov/species-publication-action/section-4d-rule-trispot-darter"
+      },
+      {
+        "label": "Final listing rule (2018)",
+        "url": "https://www.fws.gov/policy/library/2018/2018-27976.html"
+      }
+    ]
+  },
+  {
+    "slug": "vermilion-darter",
+    "common": "Vermilion darter",
+    "scientific": "Etheostoma chermocki",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "E",
+    "listedDate": "2001-11-28",
+    "fr": "66 FR 59367",
+    "habitatType": "Rocky riffles",
+    "season": null,
+    "summary": "A red-bellied darter whose whole world is the upper reach of one creek on the edge of Birmingham.",
+    "description": "A darter 1.8 to 2.4 inches long.  Breeding males are light olive to straw, with eight dark saddles across the back, brick-red spots along the side, and a dark vermilion belly.  The front fin on the back carries a cherry-red eyespot.",
+    "habitat": "Streams of moderate to swift flow, with riffles of limestone rubble and shale and with bedrock pools.  Near springs, it keeps to swift runs beside watercress and pondweed.",
+    "alabama": "Found only in upper Turkey Creek, in Jefferson County, a tributary of the Locust Fork of the Black Warrior River.",
+    "counties": [
+      "Jefferson"
+    ],
+    "waters": [
+      "Black Warrior"
+    ],
+    "range": "Alabama only",
+    "threats": "Silt from the spread of the city into its watershed.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2025-07/etheostoma-chermocki903a1359.jpg?itok=0imUuKK3",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2025-07/etheostoma-chermocki903a1359.jpg?itok=CK0HTpOy",
+      "page": "https://www.fws.gov/media/vermilion-darter",
+      "w": 6720,
+      "h": 4480,
+      "alt": "A small darter resting on a stream bottom.",
+      "caption": "A vermilion darter.",
+      "credit": "Ryan Hagerty/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: vermilion darter",
+        "url": "https://www.outdooralabama.com/darters/vermilion"
+      },
+      {
+        "label": "FWS: Urban Darter Program",
+        "url": "https://www.fws.gov/project/urban-darter-program"
+      }
+    ]
+  },
+  {
+    "slug": "watercress-darter",
+    "common": "Watercress darter",
+    "scientific": "Etheostoma nuchale",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "E",
+    "listedDate": "1970-10-13",
+    "fr": "35 FR 16047",
+    "habitatType": "Springs",
+    "season": null,
+    "summary": "A bright little darter that lives among the water plants of a few springs in and around Birmingham.",
+    "description": "A darter 1 to 1.8 inches long, with up to nine saddles across the back and usually a pale stripe on the nape.  Breeding males have a reddish-orange belly, a bright blue fin beneath the tail, and blue spots on the tail.",
+    "habitat": "The deep, slow backwaters of springs, in thick beds of watercress and other water plants, where the water holds at 62 to 65 degrees all year.",
+    "life": "It eats the larvae of water insects and tiny crustaceans.  It spawns from March through July.",
+    "alabama": "The recovery plan of 1993 knew it from three springs in Jefferson County, all in the Black Warrior River system, and from one more where it had been introduced.  The Service now counts five places in and around Birmingham.",
+    "counties": [
+      "Jefferson"
+    ],
+    "waters": [
+      "Black Warrior"
+    ],
+    "range": "Alabama only",
+    "threats": "Paving, which cuts the flow of water into the ground that feeds the springs; pumping; runoff from streets; and the chance of a chemical spill on the highways nearby.  At one spring, grass carp stripped out the plants.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/watercress-darter_0.jpg?itok=CR7EeqBB",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2022-06/watercress-darter_0.jpg?itok=1hHOCIhv",
+      "page": "https://www.fws.gov/media/watercress-darter",
+      "w": 4220,
+      "h": 2832,
+      "alt": "A watercress darter, seen close.",
+      "caption": "A watercress darter.",
+      "credit": "USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: watercress darter",
+        "url": "https://www.fws.gov/species/watercress-darter-etheostoma-nuchale"
+      },
+      {
+        "label": "FWS recovery plan (1993)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/930329.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: watercress darter",
+        "url": "https://www.outdooralabama.com/darters/watercress"
+      },
+      {
+        "label": "FWS: Urban Darter Program",
+        "url": "https://www.fws.gov/project/urban-darter-program"
+      }
+    ]
+  },
+  {
+    "slug": "pygmy-sculpin",
+    "common": "Pygmy sculpin",
+    "scientific": "Cottus paulus",
+    "otherNames": [
+      "Cottus pygmaeus"
+    ],
+    "kind": "Sculpin",
+    "family": "Cottidae (sculpins)",
+    "status": "T",
+    "listedDate": "1989-09-28",
+    "fr": "54 FR 39846",
+    "habitatType": "Springs",
+    "season": null,
+    "summary": "An inch-and-a-half fish whose entire range is one large spring near Anniston and the run below it.",
+    "description": "A small sculpin, about 1.5 inches long as an adult, gray to black, with three pale saddles across the back that are creamy white to pinkish.",
+    "habitat": "A large spring of clear water at a constant temperature, thick with plants.  The fish is most common in the gravel-bottomed run below it, in moderate to swift flow.",
+    "life": "It eats small snails, tiny crustaceans, and midge larvae.  It breeds all year, most of all from April to August, and lays its eggs under stones.",
+    "alabama": "Known only from Coldwater Spring and its spring run, a tributary of Choccolocco Creek in Calhoun County.",
+    "counties": [
+      "Calhoun"
+    ],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "The pages read for this entry do not set out the threats.  The spring is also the public water supply of Anniston.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: pygmy sculpin",
+        "url": "https://www.fws.gov/species/pygmy-sculpin-cottus-paulus"
+      },
+      {
+        "label": "Outdoor Alabama: pygmy sculpin",
+        "url": "https://www.outdooralabama.com/sculpin/pygmy-sculpin"
+      }
+    ]
+  },
+  {
+    "slug": "blue-shiner",
+    "common": "Blue shiner",
+    "scientific": "Cyprinella caerulea",
+    "otherNames": [],
+    "kind": "Minnow",
+    "family": "Leuciscidae (minnows)",
+    "status": "T",
+    "listedDate": "1992-04-22",
+    "fr": "57 FR 14786",
+    "habitatType": "Clear streams",
+    "season": null,
+    "summary": "A slim minnow of the upper Coosa whose breeding males turn a brilliant metallic blue.",
+    "description": "A narrow, slender minnow, 2 to 2.8 inches long, with a small triangular head.  Females and males out of season are plain steel-blue or dark silver.  Breeding males turn an intense metallic blue, with yellow or orange fins edged in white.",
+    "habitat": "Clear streams of medium to large size, in shallow pools and backwaters with slow current over sand and gravel.",
+    "life": "It eats mostly insects that fall onto the water.  It spawns from late April to late July.",
+    "alabama": "It lives in the upper Coosa River system: in lower Weogufka Creek, upper Choccolocco Creek, the Little River, and Spring Creek in Cherokee County.  It is gone from the Cahaba River system, where it was last reported in 1971, and from several Coosa tributaries.",
+    "counties": [],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "The upper Coosa River system of Alabama, Georgia, and Tennessee",
+    "threats": "Silt, muddy water, and pollution from farms and towns; the drawing off of water; and the isolation of its scattered populations.  The red shiner, an introduced fish, may breed with it.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-08/903a9427.jpg?itok=52Q4yPoo",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2024-08/903a9427.jpg?itok=grUXueVL",
+      "page": "https://www.fws.gov/media/blue-shiner-swimming-along-rocks-0",
+      "w": 6720,
+      "h": 4480,
+      "alt": "A blue, striped fish swimming along rocks.",
+      "caption": "A blue shiner.",
+      "credit": "Ryan Hagerty/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4467.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: blue shiner",
+        "url": "https://www.outdooralabama.com/shiners/blue"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/463"
+      }
+    ]
+  },
+  {
+    "slug": "cahaba-shiner",
+    "common": "Cahaba shiner",
+    "scientific": "Notropis cahabae",
+    "otherNames": [],
+    "kind": "Minnow",
+    "family": "Leuciscidae (minnows)",
+    "status": "E",
+    "listedDate": "1990-10-25",
+    "fr": "55 FR 42961",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A small silvery minnow of the shoals of the Cahaba River.",
+    "description": "A small, fairly stout minnow, 1.4 to 1.8 inches long, with large eyes.  It is light olive above and silvery below, with a dark stripe along the side, and it takes on no bright breeding colors.",
+    "habitat": "Shallow shoals of the main river, just downstream of riffles, over clean sand or sand and gravel, and shallow water running through beds of water plants.",
+    "life": "It spawns from the middle of May through early July, most of all in June.",
+    "alabama": "It lives in the main channel of the Cahaba River, along about 60 miles from Perry County up to Shelby County.  Most of the fish are in about 15 miles of river in Bibb County.",
+    "counties": [
+      "Bibb",
+      "Perry",
+      "Shelby"
+    ],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "Alabama only",
+    "threats": "Falling water quality, chiefly from wastewater, and silt from mining, road building, and the clearing of drilling sites.",
+    "notes": "",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/Cahaba-Shiner-Cahaba-River-NWR.JPG?itok=Osh0siRf",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2022-06/Cahaba-Shiner-Cahaba-River-NWR.JPG?itok=bt7gOewR",
+      "page": "https://www.fws.gov/media/cahaba-shiner-notropis-cahabae",
+      "w": 4032,
+      "h": 3024,
+      "alt": "A Cahaba shiner.",
+      "caption": "A Cahaba shiner at Cahaba River National Wildlife Refuge.",
+      "credit": "Jenna King/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: Cahaba shiner",
+        "url": "https://www.fws.gov/species/cahaba-shiner-notropis-cahabae"
+      },
+      {
+        "label": "FWS recovery plan (1992)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/920423.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: Cahaba shiner",
+        "url": "https://www.outdooralabama.com/shiners/cahaba"
+      }
+    ]
+  },
+  {
+    "slug": "palezone-shiner",
+    "common": "Palezone shiner",
+    "scientific": "Notropis albizonatus",
+    "otherNames": [],
+    "kind": "Minnow",
+    "family": "Leuciscidae (minnows)",
+    "status": "E",
+    "listedDate": "1993-04-27",
+    "fr": "58 FR 25758",
+    "habitatType": "Clear upland streams",
+    "season": null,
+    "summary": "A slender minnow with a pale stripe above a dark one, found in Alabama only in the Paint Rock River.",
+    "description": "A slender, spindle-shaped minnow, 1.2 to 2.4 inches long, with a pointed snout and large eyes.  A narrow dark band runs from snout to tail, with a pale stripe above it.",
+    "habitat": "Clear, permanent upland creeks and small rivers, in runs and the flowing heads of pools, over clean bedrock, cobble, and gravel mixed with sand.",
+    "life": "It spawns from about the middle of May to early July, and lives three to four years.",
+    "alabama": "It lives only in the upper Paint Rock River system, in Jackson County, along about 17 miles of stream.",
+    "counties": [
+      "Jackson"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Two separate populations: the Paint Rock River in Alabama, and the Little South Fork of the Cumberland River in Kentucky",
+    "threats": "Water pollution, dams, the straightening of streams, the loss of streamside trees, and silt.  With only two populations, a drought or a spill could do great harm.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan amendment",
+        "url": "https://www.fws.gov/sites/default/files/documents/news-attached-files/Palezone%20Shiner%20Recovery%20Plan%20Amendment.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: palezone shiner",
+        "url": "https://www.outdooralabama.com/shiners/palezone"
+      }
+    ]
+  }
+]

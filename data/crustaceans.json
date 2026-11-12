@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "alabama-cave-shrimp",
+    "common": "Alabama cave shrimp",
+    "scientific": "Palaemonias alabamae",
+    "otherNames": [],
+    "kind": "Cave shrimp",
+    "family": "Atyidae (freshwater shrimps)",
+    "status": "E",
+    "listedDate": "1988-09-07",
+    "fr": "53 FR 34696",
+    "habitatType": "Cave pools",
+    "season": null,
+    "summary": "A colorless, nearly transparent shrimp that lives in the pools of a few caves around Huntsville.",
+    "description": "A small shrimp, up to 0.8 inch long, without color and largely transparent.  It looks much like the Kentucky cave shrimp, which is also endangered, but is smaller and has a shorter beak.",
+    "habitat": "Pools in caves.",
+    "alabama": "Two populations are confirmed, in two separate groundwater basins.  One is in a cave on Redstone Arsenal, in Madison County, and the other is in a nearby cave system.  Shrimp have been seen in two more caves, and it is not clear whether those are populations of their own.  The shrimp has not been seen since the early 1970s in the Madison County cave where it was first found, and a report from western Jackson County has not been confirmed.",
+    "counties": ["Madison"],
+    "range": "Alabama only",
+    "threats": "Polluted runoff, which steadily fouls the water of the caves, and building and forest clearing on the land that drains into them.  Water tests at one cave suggest that the deep groundwater may be polluted as well.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      { "label": "FWS species profile: Alabama cave shrimp", "url": "https://www.fws.gov/species/alabama-cave-shrimp-palaemonias-alabamae" },
+      { "label": "FWS recovery plan amendment", "url": "https://ecos.fws.gov/docs/recovery_plan/Alabama%20Cave%20Shrimp_Recovery%20Plan%20Amendement.pdf" }
+    ]
+  },
+  {
+    "slug": "slenderclaw-crayfish",
+    "common": "Slenderclaw crayfish",
+    "scientific": "Cambarus cracens",
+    "otherNames": [],
+    "kind": "Crayfish",
+    "family": "Cambaridae (crayfishes)",
+    "status": "E",
+    "listedDate": "2021-09-08",
+    "fr": "86 FR 50264",
+    "habitatType": "Rocky streams",
+    "season": null,
+    "summary": "A small crayfish with long, slim claws, found only in a few streams on Sand Mountain.",
+    "description": "A fairly small crayfish with a long, slender front claw.  The largest on record had a body shell 1.56 inches long.  Some are plain olive green to rusty brown, and others are mottled, pale gray to straw with rusty red to dark brown speckles.",
+    "habitat": "Small to medium flowing streams with boulders and cobble to shelter under and with their native streamside plants intact.",
+    "life": "Very little is known of how it lives.  It is thought to mature in its first year and to live two to three years.",
+    "alabama": "It lives only in two watersheds on Sand Mountain, in DeKalb and Marshall Counties, in streams that flow to the Tennessee River at Guntersville Lake.  Five sites are known today.  It has not been found since the 1970s at the place where it was first collected, or at three other old sites.",
+    "counties": ["DeKalb", "Marshall"],
+    "waters": ["Tennessee"],
+    "range": "Alabama only",
+    "threats": "Chiefly the virile crayfish, _Faxonius virilis_, a species from elsewhere that is moving into its streams.  Pollution and runoff from farms, livestock, and unpaved roads also harm its habitat.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      { "label": "FWS species profile: slenderclaw crayfish", "url": "https://www.fws.gov/species/slenderclaw-crayfish-cambarus-cracens" },
+      { "label": "FWS recovery plan (2025)", "url": "https://ecos.fws.gov/docs/recovery_plan/082445%2020250320_SlenderclawCrayfish_RP.pdf" }
+    ]
+  }
+]

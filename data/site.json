@@ -79,6 +79,23 @@
         "cfr",
         "eoa-animals",
         "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
       ]
     },
     {
@@ -102,6 +119,106 @@
         "cfr",
         "eoa-animals",
         "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ]
+    },
+    {
+      "id": "fishes",
+      "file": "data/fishes.json",
+      "title": "Fishes",
+      "one": "fish",
+      "many": "fishes",
+      "heading": "Federally listed fishes of Alabama",
+      "kindLabel": "Kind of fish",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": {
+        "place": "waters"
+      },
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ],
+      "note": "The snail darter is no longer here.  It was removed from the federal list in 2022.  Sawfish, sharks, and other fishes of the sea, which fall to NOAA Fisheries, are not covered."
+    },
+    {
+      "id": "crustaceans",
+      "file": "data/crustaceans.json",
+      "title": "Crustaceans",
+      "one": "crustacean",
+      "many": "crustaceans",
+      "heading": "Federally listed crustaceans of Alabama",
+      "kindLabel": "Kind of crustacean",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
       ]
     },
     {

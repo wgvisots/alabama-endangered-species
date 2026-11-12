@@ -103,7 +103,9 @@ const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 const setOf = (e) => (e.presence === 'historical' ? 'gone'
   : e.status === 'SAT' ? 'sat'
     : STATUS[e.status].listed ? 'listed' : 'proposed');
-const inText = (e) => e.nameInText || e.common;
+// A common name as it reads mid-sentence: "the spotfin chub", but "the Alabama sturgeon".
+const PROPER = /^(Alabama|American|Anthony's|Barbour's|Black Warrior|Cahaba|Canoe Creek|Chipola|Choctaw|Coosa|Cumberland|Cumberlandian|Escambia|Florida|Georgia|Gulf|Indiana|Kemp's|Kral's|Louisiana|Mitchell's|Mohr's|Morefield's|Perdido|Price's|Red Hills|Tennessee|West Indian)\b/;
+const inText = (e) => e.nameInText || (PROPER.test(e.common) ? e.common : e.common[0].toLowerCase() + e.common.slice(1));
 
 function seasonStrip(e, g) {
   if (!e.season) {
@@ -303,7 +305,7 @@ function groupLede(g) {
     if (n('T')) bits.push(`${n('T')} as threatened`);
     if (n('XN')) bits.push(`${n('XN')} as an experimental population`);
     const split = bits.length === 1
-      ? `all listed ${bits[0].replace(/^\d+ /, '')}`
+      ? `${listed.length === 2 ? 'both' : 'all'} listed ${bits[0].replace(/^\d+ /, '')}`
       : oxford(bits.map((b, i) => (i ? b : b.replace(/^(\d+) /, '$1 listed '))));
     out.push(`Alabama has ${listed.length} ${g.many} on the federal list of endangered and threatened species: ${split}.`);
   }
