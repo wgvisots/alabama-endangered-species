@@ -182,6 +182,49 @@
       "note": "The snail darter is no longer here.  It was removed from the federal list in 2022.  Sawfish, sharks, and other fishes of the sea, which fall to NOAA Fisheries, are not covered."
     },
     {
+      "id": "snails",
+      "file": "data/snails.json",
+      "title": "Snails",
+      "one": "snail",
+      "many": "snails",
+      "heading": "Federally listed snails of Alabama",
+      "kindLabel": "Kind of snail",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": {
+        "place": "waters"
+      },
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ],
+      "note": "The snail darter is no longer here.  It was removed from the federal list in 2022.  Sawfish, sharks, and other fishes of the sea, which fall to NOAA Fisheries, are not covered."
+    },
+    {
       "id": "crustaceans",
       "file": "data/crustaceans.json",
       "title": "Crustaceans",

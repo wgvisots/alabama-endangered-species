@@ -1,0 +1,481 @@
+[
+  {
+    "slug": "slender-campeloma",
+    "common": "Slender campeloma",
+    "scientific": "Campeloma decampi",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Viviparidae (live-bearing river snails)",
+    "status": "E",
+    "listedDate": "2000-02-25",
+    "fr": "65 FR 10033",
+    "habitatType": "Creek bottoms",
+    "season": null,
+    "summary": "A burrowing snail that bears live young, found only in a few creeks of the Tennessee Valley.",
+    "description": "A medium to large snail, up to about 1.4 inches long, with an egg-shaped, cone-like shell that tapers to a pointed spire and is marked with faint lines.",
+    "habitat": "It burrows in soft sand, mud, and rotting leaves, in slow to moderate current.",
+    "life": "Like the other snails of its family, it bears live young instead of laying eggs.  It does not seem to live more than three years.",
+    "alabama": "It lives only in north Alabama, in creeks that run to the Tennessee River: Limestone, Piney, and Round Island Creeks in Limestone County, and, by the Service's account, Cypress Creek in Lauderdale County.  Its range has shrunk by at least three-quarters, and Wheeler Reservoir stands between the populations that are left.",
+    "counties": [
+      "Lauderdale",
+      "Limestone"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Alabama only",
+    "threats": "Runoff from farms, silt, and waste, which foul the water; pesticides from cotton fields; roads, railroads, and power lines that cross the creeks; and the clearing of land.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: slender campeloma",
+        "url": "https://www.fws.gov/species/slender-campeloma-campeloma-decampi"
+      },
+      {
+        "label": "FWS: armored snail and slender campeloma designated as endangered (2000)",
+        "url": "https://www.fws.gov/story/2001-02/armored-snail-and-slender-campeloma-designated-endangered-species"
+      },
+      {
+        "label": "Outdoor Alabama: live-bearing snails",
+        "url": "https://www.outdooralabama.com/aquatic-snails/live-bearing-snails-family-viviparidae"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/7009"
+      }
+    ]
+  },
+  {
+    "slug": "armored-snail",
+    "common": "Armored snail",
+    "scientific": "Pyrgulopsis pachyta",
+    "otherNames": [
+      "armored marstonia",
+      "Marstonia pachyta"
+    ],
+    "kind": "Pebblesnail",
+    "family": "Hydrobiidae (pebblesnails)",
+    "status": "E",
+    "listedDate": "2000-02-25",
+    "fr": "65 FR 10033",
+    "habitatType": "Creek edges",
+    "season": null,
+    "summary": "A tiny snail of submerged roots and mosses, found only in two creek systems of Limestone County.",
+    "description": "The sources read for this entry do not describe the shell.  It is one of the pebblesnails, a family of very small snails.",
+    "habitat": "It is most plentiful in underwater masses of tree roots and in mosses along the edges of creeks.  It also lives on rocks, sunken leaves and wood, and water plants.",
+    "alabama": "It lives only in the Limestone Creek and Piney Creek watersheds of Limestone County.  Where it occurs it can be common.",
+    "counties": [
+      "Limestone"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Alabama only",
+    "threats": "Above all, falling water quality: silt, and runoff carrying fertilizer and other pollutants.  Wheeler Dam has cut its creeks off from one another, and drought, flood, and invading plants and mussels add to the risk.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS draft recovery plan (2023)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/079553%2020230912_DRAFT_Armored%20Snail%20Recovery%20Plan.pdf"
+      },
+      {
+        "label": "FWS: armored snail and slender campeloma designated as endangered (2000)",
+        "url": "https://www.fws.gov/story/2001-02/armored-snail-and-slender-campeloma-designated-endangered-species"
+      },
+      {
+        "label": "Outdoor Alabama: pebblesnails",
+        "url": "https://www.outdooralabama.com/aquatic-snails/pebblesnails-family-hydrobiidae"
+      }
+    ]
+  },
+  {
+    "slug": "lacy-elimia",
+    "common": "Lacy elimia",
+    "scientific": "Elimia crenatella",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "T",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A small, dark, strongly ridged snail that clusters on the rocks of three creeks in Talladega County.",
+    "description": "A small snail with a cone-shaped shell less than half an inch long, strongly ridged, dark brown to black, and often purple inside.",
+    "habitat": "Rocky shoals and gravel bars in fast, well-aired water, where it gathers in tight clusters on the larger rocks.",
+    "alabama": "It once lived in the main Coosa River from St. Clair County to Chilton County, and in several tributaries.  It survives in three creeks in Talladega County, and is plentiful in only one of them.",
+    "counties": [
+      "Talladega"
+    ],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "Dams drowned the fast shoals it needs and cut its populations off from one another.  Silt, pollution from runoff and wastewater, and water short of oxygen wear at what is left.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      },
+      {
+        "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "rough-hornsnail",
+    "common": "Rough hornsnail",
+    "scientific": "Pleurocera foremani",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "E",
+    "listedDate": "2010-11-02",
+    "fr": "75 FR 67512",
+    "habitatType": "River bottoms",
+    "season": null,
+    "summary": "A long, knobbed snail of the Coosa River system, now down to a few short stretches of water.",
+    "description": "A long, thick, pyramid-shaped shell up to about 1.3 inches, with as many as nine yellowish-brown whorls.  A double row of prominent knobs on the lower whorls sets it apart from other hornsnails.",
+    "habitat": "Gravel, cobble, bedrock, and mud in moderate current, usually three to ten feet deep.",
+    "alabama": "It lives only in the Coosa River system of Alabama.  It once ranged along about 200 miles of the river and nine tributaries.  It is now known from lower Yellowleaf Creek in Shelby County, from the Coosa River below Wetumpka in Elmore County, and from Mitchell Reservoir in Coosa and Chilton Counties.",
+    "counties": [
+      "Chilton",
+      "Coosa",
+      "Elmore",
+      "Shelby"
+    ],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "Dams, which broke its range into pieces that cannot reach one another, along with runoff carrying silt and fertilizer, spills, drought, and the small size of what remains.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "Final listing rule for the Georgia pigtoe, interrupted rocksnail, and rough hornsnail (2010)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/2010-27417.pdf"
+      },
+      {
+        "label": "FWS recovery plan amendment",
+        "url": "https://fws.gov/sites/default/files/documents/news-attached-files/Rough%20hornsnail%20Recovery%20Plan%20Amendment.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "cylindrical-lioplax",
+    "common": "Cylindrical lioplax",
+    "scientific": "Lioplax cyclostomaformis",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Viviparidae (live-bearing river snails)",
+    "status": "E",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "An olive-green snail that lives in pockets of mud under the big rocks of the Cahaba's shoals.",
+    "description": "A long shell, up to about 1.1 inches, olive-green outside and bluish inside the opening.",
+    "habitat": "Small deposits of mud beneath large rocks, in the fast water of shoals.",
+    "alabama": "It once lived in the Alabama, Black Warrior, Coosa, and Cahaba river systems.  It is now known only from about 15 miles of the Cahaba River above the Fall Line, in Bibb and Shelby Counties.",
+    "counties": [
+      "Bibb",
+      "Shelby"
+    ],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "Alabama only today; once Georgia as well",
+    "threats": "Dams drowned the fast shoals it needs and cut its populations off from one another.  Silt, pollution from runoff and wastewater, and water short of oxygen wear at what is left.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: live-bearing snails",
+        "url": "https://www.outdooralabama.com/aquatic-snails/live-bearing-snails-family-viviparidae"
+      }
+    ]
+  },
+  {
+    "slug": "flat-pebblesnail",
+    "common": "Flat pebblesnail",
+    "scientific": "Lepyrium showalteri",
+    "otherNames": [],
+    "kind": "Pebblesnail",
+    "family": "Hydrobiidae (pebblesnails)",
+    "status": "E",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A flattened snail under a fifth of an inch across, clinging to smooth stones at two places in the Cahaba system.",
+    "description": "A very small snail with a flattened, oval shell, about a sixth of an inch high and a fifth of an inch wide, with a sunken spire.",
+    "habitat": "Clean, smooth stones in the rapid current of river shoals, where it lays its eggs in capsules.",
+    "alabama": "It once lived in the Coosa, Cahaba, and Little Cahaba Rivers.  It is now known from one site on the Little Cahaba in Bibb County, and from one series of shoals on the Cahaba in Shelby County.",
+    "counties": [
+      "Bibb",
+      "Shelby"
+    ],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "Alabama only",
+    "threats": "Dams drowned the fast shoals it needs and cut its populations off from one another.  Silt, pollution from runoff and wastewater, and water short of oxygen wear at what is left.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: pebblesnails",
+        "url": "https://www.outdooralabama.com/aquatic-snails/pebblesnails-family-hydrobiidae"
+      }
+    ]
+  },
+  {
+    "slug": "anthonys-riversnail",
+    "common": "Anthony's riversnail",
+    "scientific": "Athearnia anthonyi",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "E",
+    "listedDate": "1994-04-15",
+    "fr": "59 FR 17994",
+    "habitatType": "Rivers and large creeks",
+    "season": null,
+    "summary": "A heavy, knobbed snail of the Tennessee River, reduced to two populations, both in Alabama.",
+    "description": "A thick, heavy, oval shell up to about an inch long, with a short spire and large, uneven bumps on the shoulder.  It is yellowish green to dark brown, with bands that fade as the snail ages.",
+    "habitat": "Flowing water in large rivers and the lower reaches of large creeks, over gravel, cobble, and boulders, and on sunken logs and plants.",
+    "alabama": "It once lived in the Tennessee River from Knoxville down to Muscle Shoals.  Two populations survive: one in the Tennessee River in Jackson County, and one in lower Limestone Creek, in Limestone County.  In 2003, 4,000 snails were transplanted from Limestone Creek.",
+    "counties": [
+      "Jackson",
+      "Limestone"
+    ],
+    "waters": [
+      "Tennessee"
+    ],
+    "range": "Alabama, and perhaps Tennessee",
+    "threats": "Dams flooded most of its river habitat, and poor use of the land harmed the tributaries.",
+    "notes": "A rule of June 14, 2001 (66 FR 32250) also set up an experimental population of this snail in the free-flowing reach of the Tennessee River below Wilson Dam.",
+    "image": null,
+    "photoElsewhere": {
+      "label": "A photo by Paul Johnson, Alabama Department of Conservation and Natural Resources, on the FWS site",
+      "url": "https://www.fws.gov/media/anthonys-riversnail-limestone-creek-paul-johnson-2014"
+    },
+    "refs": [
+      {
+        "label": "Outdoor Alabama: Anthony's riversnail",
+        "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/anthonys-riversnail"
+      },
+      {
+        "label": "FWS Tennessee office: status and habitat of federally listed fauna",
+        "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "interrupted-rocksnail",
+    "common": "Interrupted rocksnail",
+    "scientific": "Leptoxis foremani",
+    "otherNames": [
+      "Downie's round riversnail"
+    ],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "E",
+    "listedDate": "2010-11-02",
+    "fr": "75 FR 67512",
+    "presence": "historical",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A snail of the Coosa's shoals that was thought extinct until 1997, and survives in a single reach of river in Georgia.",
+    "description": "A small to medium snail with a thick, nearly round shell up to about an inch long, with a very low spire.  It is dark brown to olive, sometimes spotted, and finely ridged.",
+    "habitat": "Shoals and riffles of rivers, on rock, boulders, cobble, and gravel swept clean by moderate to strong current.",
+    "alabama": "It once lived in the Coosa River from northwest Georgia down to Elmore County, and in lower Terrapin Creek in Cherokee County.  It has been lost from more than 95 percent of that range.  Hatchery-raised snails have been released in the Coosa in Alabama more than once, and none of those trials has taken hold.",
+    "counties": [],
+    "countiesText": "None today; once the Coosa from Cherokee to Elmore",
+    "range": "About seven miles of the Oostanaula River in Georgia",
+    "threats": "The dams on the Coosa, which destroyed its shoals and still govern the flow and quality of the water, along with predation by fish.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "Final listing rule for the Georgia pigtoe, interrupted rocksnail, and rough hornsnail (2010)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/2010-27417.pdf"
+      },
+      {
+        "label": "FWS recovery plan amendment",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/Interrupted%20Rocksnail%20Recovery%20Plan%20Amendment.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: interrupted rocksnail",
+        "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/interrupted-rocksnail"
+      }
+    ]
+  },
+  {
+    "slug": "painted-rocksnail",
+    "common": "Painted rocksnail",
+    "scientific": "Leptoxis taeniata",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "T",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A rounded, banded snail that once ranged farther than any other rocksnail of the Mobile basin, and now holds three creeks.",
+    "description": "A small to medium snail with a rounded shell about three-quarters of an inch long, yellowish to olive-brown, usually with four dark bands.",
+    "habitat": "Cobble, gravel, and other hard surfaces in the strong current of riffles and shoals.",
+    "alabama": "It once lived in the Coosa River and its tributaries, the main Alabama River, and the Cahaba below the Fall Line.  It survives in the lower reaches of three creeks of the Coosa system, in Calhoun, Shelby, and Talladega Counties.",
+    "counties": [
+      "Calhoun",
+      "Shelby",
+      "Talladega"
+    ],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "Dams drowned the fast shoals it needs and cut its populations off from one another.  Silt, pollution from runoff and wastewater, and water short of oxygen wear at what is left.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "plicate-rocksnail",
+    "common": "Plicate rocksnail",
+    "scientific": "Leptoxis plicata",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "E",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A rounded snail with a folded shell, found only in the shoals of the Locust Fork in Jefferson County.",
+    "description": "A rounded, fairly thick shell about three-quarters of an inch long, often with strong folds on the largest whorl.  It is brown to dark yellowish-green, usually with four bands, and the opening is bluish-white.",
+    "habitat": "Shallow shoals of gravel, cobble, and boulders in flowing water, often under large flat rocks.",
+    "alabama": "It once lived in the Black Warrior, Little Warrior, and Tombigbee Rivers, and has been lost from more than 90 percent of that range.  It now lives only along about 20 miles of the Locust Fork of the Black Warrior, in Jefferson County.  More than 5,000 hatchery-raised snails were released there in 2011 and 2012, and they bred.",
+    "counties": [
+      "Jefferson"
+    ],
+    "waters": [
+      "Black Warrior"
+    ],
+    "range": "Alabama only",
+    "threats": "The damming of its rivers for navigation, along with poor water quality, silt, and pollution.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: plicate rocksnail",
+        "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/plicate-rocksnail"
+      }
+    ]
+  },
+  {
+    "slug": "round-rocksnail",
+    "common": "Round rocksnail",
+    "scientific": "Leptoxis ampla",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "T",
+    "listedDate": "1998-10-28",
+    "fr": "63 FR 57610",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A rounded, often banded snail of the shoals of the Cahaba River and a few of its creeks.",
+    "description": "A rounded shell about three-quarters of an inch long, with a distinct shoulder on the largest whorl.  It may be yellow, dark brown, or olive green, and often has four bands.",
+    "habitat": "Hard surfaces in the strong current of riffles and shoals.",
+    "alabama": "It once lived in the Cahaba and Little Cahaba Rivers and in the Coosa and several of its tributaries.  It survives in a series of shoals on the Cahaba River in Bibb and Shelby Counties, and in the lower Little Cahaba and two creeks in Bibb County.",
+    "counties": [
+      "Bibb",
+      "Shelby"
+    ],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "Alabama only",
+    "threats": "Dams drowned the fast shoals it needs and cut its populations off from one another.  Silt, pollution from runoff and wastewater, and water short of oxygen wear at what is left.",
+    "notes": "",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS recovery plan for six Mobile River basin snails (2005)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "tulotoma",
+    "common": "Tulotoma",
+    "nameInText": "tulotoma",
+    "scientific": "Tulotoma magnifica",
+    "otherNames": [
+      "tulotoma snail",
+      "Alabama live-bearing snail"
+    ],
+    "kind": "River snail",
+    "family": "Viviparidae (live-bearing river snails)",
+    "status": "T",
+    "listedDate": "1991-01-09",
+    "fr": "56 FR 797",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A knobbed snail the size of a golf ball, moved from endangered to threatened in 2011 as it recovered.",
+    "description": "A globe-shaped snail about the size of a golf ball, its shell ringed with spiral rows of knobs.",
+    "habitat": "The undersides of large rocks, in shoals and runs with moderate to swift current.",
+    "alabama": "It once lived in the Coosa River from St. Clair County down into the Alabama River as far as Clarke and Monroe Counties.  It now lives in the Coosa River below Jordan Dam, in Elmore County, where the largest population is, and in six creeks that feed the Coosa.",
+    "counties": [],
+    "waters": [
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "The recovery plan lays the loss of more than 20 kinds of snail from the Coosa to the dams that turned the river into a chain of lakes.  The tulotoma held on below the last dam and in the creeks.",
+    "notes": "Listed as endangered in 1991, and reclassified as threatened on June 2, 2011 (76 FR 31866), when the Service judged it to be well on the road to recovery.",
+    "image": null,
+    "photoElsewhere": {
+      "label": "A photo by Paul Johnson, Alabama Department of Conservation and Natural Resources, on the FWS site",
+      "url": "https://www.fws.gov/media/tulotoma-snail-choccoloco-creek-paul-jjohnson-adcnr-2010-05-26"
+    },
+    "refs": [
+      {
+        "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: live-bearing snails",
+        "url": "https://www.outdooralabama.com/aquatic-snails/live-bearing-snails-family-viviparidae"
+      },
+      {
+        "label": "FWS: Endangered Species Act milestones of the 2010s",
+        "url": "https://www.fws.gov/esa50/our-history/2010s"
+      }
+    ]
+  }
+]
