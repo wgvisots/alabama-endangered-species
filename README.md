@@ -113,6 +113,6 @@ See [SECURITY.md](SECURITY.md).
 
 Copyright 2026 wgvisots.
 
-The text and code in this repository are licensed under the Apache License, Version 2.0.  See [LICENSE](LICENSE).
-
-The photos shown on the site are not part of this repository and are not covered by that license.  Each is in the public domain and is credited where it appears.
+- **Written content** is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).  That covers the species entries in `data/`, the About page text in `src/about.html`, this README, and the pages built from them in `docs/`.  See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).  A fitting credit is "Alabama Endangered Species, by wgvisots, CC BY 4.0."
+- **Code** is licensed under the Apache License, Version 2.0.  That covers `build.mjs`, `src/app.js`, `src/styles.css`, and the page templates inside the build.  See [LICENSE](LICENSE).
+- **Photos** shown on the site are not part of this repository and are covered by neither license.  Each is in the public domain and is credited where it appears.

@@ -5,7 +5,9 @@
   "siteUrl": "https://wgvisots.github.io/alabama-endangered-species/",
   "repoUrl": "https://github.com/wgvisots/alabama-endangered-species",
   "reviewed": "2026-11-11",
-  "imageHosts": ["https://www.fws.gov/"],
+  "imageHosts": [
+    "https://www.fws.gov/"
+  ],
   "featured": "plants/green-pitcher-plant",
   "groups": [
     {
@@ -22,7 +24,11 @@
       "seasonNone": "No flowers; spreads by spores",
       "seasonSort": "Flowering time",
       "seasonHelp": "The strip beside each plant shows the months it flowers.  A filled square is a month in flower.",
-      "filters": true,
+      "filters": {
+        "habitat": true,
+        "place": "counties",
+        "season": true
+      },
       "habitats": [
         "Bogs, seeps, and wet prairies",
         "Glades and outcrops",
@@ -30,7 +36,11 @@
         "Woods and pinelands",
         "Bluffs, cliffs, and sinkholes"
       ],
-      "generalSources": ["fws-al", "cfr", "eoa"]
+      "generalSources": [
+        "fws-al",
+        "cfr",
+        "eoa"
+      ]
     },
     {
       "id": "insects",
@@ -48,7 +58,12 @@
       "seasonHelp": "The strip beside an insect shows the months its adults fly in Alabama, where a source gives them.",
       "filters": false,
       "habitats": null,
-      "generalSources": ["fws-contacts", "cfr", "eoa-animals", "aba"]
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "aba"
+      ]
     }
   ],
   "sources": [
