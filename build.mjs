@@ -75,9 +75,10 @@ const esc = (s) => String(s)
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
 // Italicize a scientific name, leaving rank markers such as "var." upright.
-const sci = (name) => name.split(' ')
-  .map((w) => (/^(var\.|ssp\.|subsp\.|f\.)$/.test(w) ? esc(w) : `<i>${esc(w)}</i>`))
-  .join(' ');
+// Italics for a scientific name or a title, with rank words such as "var." left upright.
+const sci = (name) => name.split(/ (var\.|ssp\.|subsp\.|f\.) /)
+  .map((part, i) => (i % 2 ? ` ${esc(part)} ` : `<i>${esc(part)}</i>`))
+  .join('');
 
 // Prose fields may mark a scientific name with underscores: _Sarracenia rubra_.
 const prose = (s) => String(s).split(/_([^_]+)_/)
@@ -186,12 +187,19 @@ function validate(groups, site) {
           if (!e.image[key]) bad(`image is missing ${key}`);
         }
         for (const key of ['thumb', 'full']) {
-          if (!site.imageHosts.some((h) => String(e.image[key]).startsWith(h))) {
-            bad(`image ${key} must be hosted on one of: ${site.imageHosts.join(', ')}`);
+          const v = String(e.image[key]);
+          if (isRemote(v)) {
+            if (!site.imageHosts.some((h) => v.startsWith(h))) {
+              bad(`image ${key} must be hosted on one of: ${site.imageHosts.join(', ')}, or be a file in src/images/`);
+            }
+          } else if (!LOCAL_IMAGE.test(v)) {
+            bad(`image ${key} "${v}" must be an https address or the name of a .jpg or .png file in src/images/`);
           }
         }
+        for (const f of e.image.badFiles || []) bad(`image file src/images/${f} is missing or is not a JPEG or PNG`);
+        if (e.image.kind && !['photo', 'drawing'].includes(e.image.kind)) bad(`image kind "${e.image.kind}" must be photo or drawing`);
         checkLink(where, e.image.page, 'image page');
-        if (!(e.image.w > 0 && e.image.h > 0)) bad('image needs w and h');
+        if (!(e.image.badFiles || []).length && !(e.image.w > 0 && e.image.h > 0)) bad('image needs w and h');
       }
       if (e.photoElsewhere) checkLink(where, e.photoElsewhere.url, 'photoElsewhere');
     }
@@ -249,15 +257,72 @@ ${body}
 `;
 }
 
+// ---------- pictures ----------
+
+// A picture is either loaded from an allowed host, or is a file kept in src/images/.
+const isRemote = (v) => /^https:\/\//.test(String(v));
+const LOCAL_IMAGE = /^[a-z0-9][a-z0-9-]*\.(jpg|png)$/;
+const imgSrc = (rel, v) => (isRemote(v) ? v : `${rel}assets/images/${v}`);
+const isDrawing = (e) => e.image && e.image.kind === 'drawing';
+const pictureWord = (e) => (isDrawing(e) ? 'Drawing' : 'Photo');
+const sourceName = (image) => image.source || host(image.page).replace(/^www\./, '');
+
+// Width and height of a PNG or JPEG, read from its header.
+function imageSize(buf) {
+  if (buf.length > 24 && buf.readUInt32BE(0) === 0x89504e47) {
+    return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  }
+  if (buf.length > 4 && buf[0] === 0xff && buf[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < buf.length) {
+      if (buf[i] !== 0xff) { i += 1; continue; }
+      const marker = buf[i + 1];
+      if (marker === 0xff) { i += 1; continue; }
+      const isFrame = marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker);
+      if (isFrame) return { w: buf.readUInt16BE(i + 7), h: buf.readUInt16BE(i + 5) };
+      const bare = marker === 0x01 || (marker >= 0xd0 && marker <= 0xd8);
+      i += bare ? 2 : 2 + buf.readUInt16BE(i + 2);
+    }
+  }
+  return null;
+}
+
+// Reads the size of every local picture, and notes the files that are missing or unreadable.
+async function readLocalImages(groups) {
+  const used = new Set();
+  for (const g of groups) {
+    for (const e of g.entries) {
+      if (!e.image) continue;
+      for (const key of ['thumb', 'full']) {
+        const v = e.image[key];
+        if (!v || isRemote(v) || !LOCAL_IMAGE.test(v)) continue;
+        let size = null;
+        try {
+          size = imageSize(await readFile(path.join(ROOT, 'src/images', v)));
+        } catch {
+          size = null;
+        }
+        if (!size) {
+          e.image.badFiles = [...(e.image.badFiles || []), v];
+        } else {
+          used.add(v);
+          if (key === 'full') Object.assign(e.image, size);
+        }
+      }
+    }
+  }
+  return used;
+}
+
 // ---------- shared pieces ----------
 
-function photoThumb(e) {
+function photoThumb(e, rel) {
   if (!e.image) {
     return '<div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>';
   }
   return `<div class="thumb" data-photo>
-          <img src="${esc(e.image.thumb)}" alt="" width="${e.image.w}" height="${e.image.h}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
+          <img src="${esc(imgSrc(rel, e.image.thumb))}" alt="" width="${e.image.w}" height="${e.image.h}" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          <span class="thumb-fallback" hidden>${pictureWord(e)} unavailable</span>
         </div>`;
 }
 
@@ -268,8 +333,8 @@ function featureFigure(site, groups, rel) {
   if (!e) return '';
   return `
       <figure class="hero-photo" data-photo>
-        <a href="${rel}${g.id}/${e.slug}/"><img src="${esc(e.image.full)}" alt="${esc(e.image.alt)}" width="${e.image.w}" height="${e.image.h}" decoding="async" referrerpolicy="no-referrer"></a>
-        <figcaption>${esc(e.common)}.  Photo: ${esc(e.image.credit)}, ${esc(e.image.license.toLowerCase())}.</figcaption>
+        <a href="${rel}${g.id}/${e.slug}/"><img src="${esc(imgSrc(rel, e.image.full))}" alt="${esc(e.image.alt)}" width="${e.image.w}" height="${e.image.h}" decoding="async" referrerpolicy="no-referrer"></a>
+        <figcaption>${esc(e.common)}.  ${pictureWord(e)}: ${esc(e.image.credit)}, ${esc(e.image.license.toLowerCase())}.</figcaption>
       </figure>`;
 }
 
@@ -374,7 +439,7 @@ function entryRow(e, g) {
     .join(' ').toLowerCase();
   const placeField = g.filters && g.filters.place;
   return `        <li class="entry" data-status="${e.status}" data-habitat="${esc(e.habitatType)}" data-places="${esc(placeField ? (e[placeField] || []).join('|') : '')}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
-        ${g.entries.some((x) => x.image) ? photoThumb(e) : '<!-- no photos in this group yet -->'}
+        ${g.entries.some((x) => x.image) ? photoThumb(e, '../') : '<!-- no photos in this group yet -->'}
         <div class="entry-text">
           <h3><a href="${e.slug}/">${esc(e.common)}</a></h3>
           <p class="sci">${sci(e.scientific)}</p>
@@ -484,9 +549,11 @@ function renderEntry(site, groups, g, i) {
   let photo;
   if (e.image) {
     photo = `          <figure class="photo" data-photo>
-            <img src="${esc(e.image.full)}" alt="${esc(e.image.alt)}" width="${e.image.w}" height="${e.image.h}" decoding="async" referrerpolicy="no-referrer">
-            <p class="photo-fallback" hidden>The photo could not be loaded from fws.gov.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">See it on the Fish &amp; Wildlife Service site.</a></p>
-            <figcaption>${prose(e.image.caption)}  Photo: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at fws.gov</a></figcaption>
+            <img src="${esc(imgSrc('../../', e.image.full))}" alt="${esc(e.image.alt)}" width="${e.image.w}" height="${e.image.h}" decoding="async" referrerpolicy="no-referrer">
+            <p class="photo-fallback" hidden>${isRemote(e.image.full) && sourceName(e.image) === 'fws.gov'
+    ? `The photo could not be loaded from fws.gov.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">See it on the Fish &amp; Wildlife Service site.</a>`
+    : `The ${pictureWord(e).toLowerCase()} could not be loaded.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">See the original.</a>`}</p>
+            <figcaption>${prose(e.image.caption)}  ${pictureWord(e)}: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at ${esc(sourceName(e.image))}</a></figcaption>
           </figure>`;
   } else {
     const profile = e.refs.find((r) => /fws\.gov\/species\/|ecos\.fws\.gov\/ecp\/species\//.test(r.url));
@@ -582,9 +649,11 @@ function renderAbout(site, groups, template) {
   const all = groups.flatMap((g) => g.entries.map((e) => ({ e, g })));
   const link = (x) => `<a href="../${x.g.id}/${x.e.slug}/">${esc(x.e.common)}</a>`;
   const sources = site.sources.map((s) => `        <li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a> <span class="host">${esc(host(s.url))}</span><br>${esc(s.use)}</li>`).join('\n');
-  const credits = all.filter((x) => x.e.image).map((x) => `        <li>${link(x)}: ${esc(x.e.image.credit)}.  ${esc(x.e.image.license)}.  <a href="${esc(x.e.image.page)}" rel="noopener noreferrer">Original</a></li>`).join('\n');
-  const nPd = all.filter((x) => x.e.image && x.e.image.license === 'Public domain').length;
-  const nOpen = all.filter((x) => x.e.image).length - nPd;
+  const credits = all.filter((x) => x.e.image).map((x) => `        <li>${link(x)}${isDrawing(x.e) ? ', a drawing' : ''}: ${esc(x.e.image.credit)}.  ${esc(x.e.image.license)}.  <a href="${esc(x.e.image.page)}" rel="noopener noreferrer">Original</a></li>`).join('\n');
+  const photos = all.filter((x) => x.e.image && !isDrawing(x.e));
+  const drawings = all.filter((x) => isDrawing(x.e));
+  const nPd = photos.filter((x) => x.e.image.license === 'Public domain').length;
+  const nOpen = photos.length - nPd;
 
   const fill = {
     coverage: oxford(groups.map((g) => count(g.entries.length, g.one, g.many))),
@@ -596,7 +665,10 @@ function renderAbout(site, groups, template) {
     contentLicenseUrl: esc(`${site.repoUrl}/blob/main/LICENSE-CC-BY-4.0`),
     sources,
     credits,
-    withPhotos: all.filter((x) => x.e.image).length,
+    withPhotos: photos.length,
+    drawingsNote: drawings.length
+      ? `  ${drawings.length === 1 ? 'One more has' : `Another ${drawings.length} have`} a drawing instead: an old plate or figure in the public domain, copied into this site and credited to the naturalist who made it and the library or museum that scanned it.`
+      : '',
     missingByGroup: oxford(groups.filter((g) => g.entries.some((e) => !e.image))
       .map((g) => {
         const n = g.entries.filter((e) => !e.image).length;
@@ -652,13 +724,14 @@ async function main() {
     groups.push({ ...g, entries });
   }
 
+  const localImages = await readLocalImages(groups);
   const problems = validate(groups, site);
   if (problems.length) {
     console.error(`Data problems (${problems.length}):\n  ${problems.join('\n  ')}`);
     process.exit(1);
   }
   for (const g of groups) {
-    console.log(`Data OK: ${g.title}: ${tally(g)}; ${g.entries.filter((e) => e.image).length} of ${g.entries.length} with photos.`);
+    console.log(`Data OK: ${g.title}: ${tally(g)}; ${g.entries.filter((e) => e.image).length} of ${g.entries.length} with pictures.`);
   }
   if (validateOnly) return;
 
@@ -686,6 +759,11 @@ async function main() {
   await mkdir(path.join(OUT, 'assets'), { recursive: true });
   for (const f of ['styles.css', 'app.js', 'favicon.svg']) {
     await copyFile(path.join(ROOT, 'src', f), path.join(OUT, 'assets', f));
+  }
+
+  if (localImages.size) await mkdir(path.join(OUT, 'assets/images'), { recursive: true });
+  for (const f of localImages) {
+    await copyFile(path.join(ROOT, 'src/images', f), path.join(OUT, 'assets/images', f));
   }
 
   // Tell GitHub Pages to serve the folder as it is, without running Jekyll.
