@@ -1,32 +1,39 @@
     <article class="page">
       <h1>About and sources</h1>
-      <p class="lede">This site gathers, in one place, what the public record says about the plants and animals in Alabama that are protected under the federal Endangered Species Act.  It begins with the plants.</p>
+      <p class="lede">This site gathers, in one place, what the public record says about the plants and animals in Alabama that are protected under the federal Endangered Species Act.  It is being built one group at a time.</p>
 
       <h2>What is covered</h2>
-      <p>The {{count}} plants here are the ones the U.S. Fish &amp; Wildlife Service's Alabama field office lists as federally protected in the state: {{endangered}} endangered and {{threatened}} threatened.  Under the Act, an endangered species is in danger of extinction, and a threatened species is likely to become endangered.</p>
-      <p>Not covered yet: the state's listed animals, plants that are candidates for listing, and the many plants Alabama tracks as rare that have no federal status.</p>
+      <p>So far: {{coverage}}.  Under the Act, an endangered species is in danger of extinction, and a threatened species is likely to become endangered.</p>
+      <p>Three kinds of entry appear, and each group's page keeps them apart.</p>
+      <ul>
+        <li>Most are species on the federal list that live in Alabama today.</li>
+        <li>Some are on the federal list and once lived in Alabama, but are thought to be gone from the state.  They are marked as such.</li>
+        <li>A few have only been proposed for listing.  A proposal protects nothing until a final rule follows, and those entries say so.</li>
+      </ul>
+      <p>Not covered yet: the other groups of animals, candidates that have not reached a proposal, and the many plants and animals Alabama tracks as rare that have no federal status.</p>
 
       <h2>How it was put together</h2>
       <ol>
-        <li>The list of plants, and the months each one flowers, come from the Fish &amp; Wildlife Service's Alabama field office.</li>
-        <li>Each plant's status, listing date, and Federal Register citation were checked against the federal list itself, 50 CFR 17.12.  The listing date is the day the final rule was published.</li>
-        <li>Descriptions, habitats, and threats were written from Fish &amp; Wildlife Service species profiles, recovery plans, status assessments, and five-year reviews.  Where those were thin, Wikipedia filled the gap, and the entry's references say so.</li>
-        <li>Alabama counties come from a federal document where one names them, and otherwise from the Encyclopedia of Alabama.</li>
+        <li>The plants, and the months each one flowers, come from the list kept by the Fish &amp; Wildlife Service's Alabama field office.</li>
+        <li>The insects come from the Service's list of the species its Alabama office answers for.  The Encyclopedia of Alabama supplied the listed insect that has been lost from the state.</li>
+        <li>Each species' status, listing date, and Federal Register citation were checked against the federal lists themselves, 50 CFR 17.11 for wildlife and 17.12 for plants.  The listing date is the day the final rule was published.</li>
+        <li>Descriptions, habitats, and threats were written from Fish &amp; Wildlife Service species profiles, recovery plans, status assessments, and five-year reviews.  Where those were thin, other sources filled the gap, and the entry's references name them.</li>
+        <li>Alabama counties come from a federal document where one names them.  Otherwise they come from the Encyclopedia of Alabama for plants and the Alabama Butterfly Atlas for butterflies.</li>
       </ol>
       <p>Every entry links to the documents it was drawn from.  The whole site was last checked against them on {{reviewed}}.</p>
 
       <h2>What to keep in mind</h2>
       <ul>
-        <li>Listings change.  A plant can be added, removed, or reclassified after the date above.</li>
-        <li>County lists mix current and older records.  A county's name on an entry does not mean the plant still grows there, and it never means the plant is easy to find.</li>
-        <li>Places are given by county or river only.  Exact sites are left out on purpose, because rare plants are dug up by collectors.</li>
-        <li>This is not an identification guide.  Many of these plants have common look-alikes, and telling them apart can take a botanist.</li>
-        <li>Botanists and the federal list do not always use the same name for a plant.  Entries are filed under the name on the federal list and give the others.</li>
-        <li>If you find one of these plants, photograph it and leave it where it is.  Federal law restricts collecting and selling listed plants.</li>
+        <li>Listings change.  A species can be added, removed, or reclassified after the date above.</li>
+        <li>County lists mix current and older records.  A county's name on an entry does not mean the species still lives there, and it never means it is easy to find.</li>
+        <li>Places are given by county or river only.  Exact sites are left out on purpose, because rare plants are dug up, and rare butterflies netted, by collectors.</li>
+        <li>This is not an identification guide.  Many of these species have common look-alikes, and telling them apart can take a specialist.</li>
+        <li>Scientists and the federal list do not always use the same name.  Entries are filed under the name on the federal list and give the others.</li>
+        <li>If you find one of these species, photograph it and leave it where it is.  Federal law restricts collecting and selling listed species.</li>
       </ul>
 
       <h2>Photos</h2>
-      <p>The photos are public domain images from the Fish &amp; Wildlife Service's media library, and they load directly from fws.gov.  So far {{withPhotos}} of the {{count}} plants have one.  No public domain or openly licensed photo has been found yet for {{missingPhotos}}.</p>
+      <p>The photos are public domain images from the Fish &amp; Wildlife Service's media library, and they load directly from fws.gov.  So far {{withPhotos}} of the {{total}} entries have one.  No public domain or openly licensed photo has been found yet for {{missingPhotos}}.</p>
       <ul class="credits">
 {{credits}}
       </ul>
@@ -38,6 +45,9 @@
 
       <h2>Corrections</h2>
       <p>If something here is wrong or out of date, please <a href="{{issuesUrl}}" rel="noopener noreferrer">open an issue on GitHub</a> and say where the better information can be found.</p>
+
+      <h2>License</h2>
+      <p>The text and code of this site are released under the <a href="{{licenseUrl}}" rel="noopener noreferrer">Apache License, Version 2.0</a>.  The photos are not covered by it.  Each one is in the public domain and is credited where it appears.</p>
 
       <h2>Privacy</h2>
       <p>This site sets no cookies, runs no analytics, and loads no outside scripts or fonts.  Your browser fetches the photos from fws.gov, so that server sees the request for the image, though it is not told which page asked.</p>

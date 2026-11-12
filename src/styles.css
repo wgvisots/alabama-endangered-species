@@ -148,7 +148,8 @@ p {
 
 .site-header nav {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
 }
 
 .site-header nav a {
@@ -243,6 +244,168 @@ p {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
     gap: 3.5rem;
   }
+
+  .hero-plain {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.hero-plain h1 {
+  max-width: 16ch;
+}
+
+.hero .home-title {
+  max-width: 17ch;
+}
+
+/* ---------- home: the contents ---------- */
+
+.dot {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  margin-right: 0.45em;
+  flex: none;
+}
+
+.dot-E {
+  color: var(--endangered);
+  background: currentColor;
+}
+
+.dot-T {
+  color: var(--threatened);
+}
+
+.dot-P {
+  color: var(--muted);
+  border-style: dotted;
+}
+
+.key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.key > span {
+  white-space: nowrap;
+}
+
+.group {
+  border-top: 1px solid var(--rule);
+  padding-block: 2rem 2.5rem;
+}
+
+.group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.group-head h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+
+.group-head h2 a {
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
+.group-count {
+  color: var(--muted);
+}
+
+.names {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 2.5rem;
+}
+
+.names li {
+  break-inside: avoid;
+  display: flex;
+  align-items: baseline;
+  padding-block: 0.3rem;
+  line-height: 1.4;
+}
+
+.names a {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.names a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.names .sci {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.name-tag {
+  display: inline-block;
+  margin-top: 0.15rem;
+  padding: 0 0.45em;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+@media (min-width: 44rem) {
+  .names {
+    columns: 2;
+  }
+
+  .names .sci {
+    display: inline;
+    margin-left: 0.3em;
+  }
+
+  .name-tag {
+    margin-top: 0;
+    margin-left: 0.4em;
+  }
+}
+
+/* ---------- group pages: sets of entries ---------- */
+
+.set-title {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.set-note {
+  color: var(--muted);
+  margin: 0.4rem 0 1.25rem;
+  max-width: 62ch;
+}
+
+.count + .set-title,
+#list-title + .set-title {
+  margin-top: 0.5rem;
+}
+
+.notice {
+  margin-bottom: 2rem;
+  padding: 0.9rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--threatened);
+  border-radius: 3px;
+  max-width: 70ch;
 }
 
 /* ---------- home: filters ---------- */
@@ -497,6 +660,14 @@ p {
   color: var(--threatened);
 }
 
+.status-P {
+  color: var(--muted);
+}
+
+.status-P::before {
+  border-style: dotted;
+}
+
 @media (min-width: 40rem) {
   .entry {
     grid-template-columns: 6rem minmax(0, 1fr);
@@ -573,6 +744,12 @@ p {
   margin-top: 0.5rem;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.bloom-note-alone {
+  margin-top: 0;
+  color: var(--ink);
+  font-size: inherit;
 }
 
 .empty {
@@ -738,8 +915,8 @@ p {
 }
 
 .cite {
+  display: inline-block;
   color: var(--muted);
-  white-space: nowrap;
 }
 
 @media (min-width: 60rem) {

@@ -4,8 +4,53 @@
   "basePath": "/alabama-endangered-species/",
   "siteUrl": "https://wgvisots.github.io/alabama-endangered-species/",
   "repoUrl": "https://github.com/wgvisots/alabama-endangered-species",
-  "reviewed": "2026-11-12",
+  "reviewed": "2026-11-11",
   "imageHosts": ["https://www.fws.gov/"],
+  "featured": "plants/green-pitcher-plant",
+  "groups": [
+    {
+      "id": "plants",
+      "file": "data/plants.json",
+      "title": "Plants",
+      "one": "plant",
+      "many": "plants",
+      "heading": "Federally listed plants of Alabama",
+      "kindLabel": "Kind of plant",
+      "habitatHeading": "Where it grows",
+      "seasonFact": "Flowering",
+      "seasonLabel": "In flower",
+      "seasonNone": "No flowers; spreads by spores",
+      "seasonSort": "Flowering time",
+      "seasonHelp": "The strip beside each plant shows the months it flowers.  A filled square is a month in flower.",
+      "filters": true,
+      "habitats": [
+        "Bogs, seeps, and wet prairies",
+        "Glades and outcrops",
+        "Streams and shoals",
+        "Woods and pinelands",
+        "Bluffs, cliffs, and sinkholes"
+      ],
+      "generalSources": ["fws-al", "cfr", "eoa"]
+    },
+    {
+      "id": "insects",
+      "file": "data/insects.json",
+      "title": "Insects",
+      "one": "insect",
+      "many": "insects",
+      "heading": "Federally listed insects of Alabama",
+      "kindLabel": "Kind of insect",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Adults active",
+      "seasonLabel": "Adults flying",
+      "seasonNone": "",
+      "seasonSort": "Flight season",
+      "seasonHelp": "The strip beside an insect shows the months its adults fly in Alabama, where a source gives them.",
+      "filters": false,
+      "habitats": null,
+      "generalSources": ["fws-contacts", "cfr", "eoa-animals", "aba"]
+    }
+  ],
   "sources": [
     {
       "id": "fws-al",
@@ -14,22 +59,46 @@
       "use": "The list of plants and their flowering periods."
     },
     {
-      "id": "cfr",
-      "label": "Code of Federal Regulations, 50 CFR 17.12: List of Endangered and Threatened Plants",
-      "url": "https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17",
-      "use": "Each plant's status, listing date, and Federal Register citation."
+      "id": "fws-contacts",
+      "label": "U.S. Fish & Wildlife Service: Species Point of Contact in Alabama",
+      "url": "https://www.fws.gov/project/species-point-contact-alabama",
+      "use": "The animals the Service's Alabama office answers for, group by group."
     },
     {
-      "id": "cfr-lii",
-      "label": "50 CFR 17.12 as published by the Legal Information Institute, Cornell Law School",
+      "id": "cfr",
+      "label": "Code of Federal Regulations, 50 CFR Part 17: the Lists of Endangered and Threatened Wildlife and Plants",
+      "url": "https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17",
+      "use": "Each species' status, listing date, and Federal Register citation."
+    },
+    {
+      "id": "cfr-lii-plants",
+      "label": "50 CFR 17.12, the plant list, as published by the Legal Information Institute, Cornell Law School",
       "url": "https://www.law.cornell.edu/cfr/text/50/17.12",
-      "use": "The copy of the federal list that was read for this site."
+      "use": "The copy of the federal plant list that was read for this site."
+    },
+    {
+      "id": "cfr-lii-wildlife",
+      "label": "50 CFR 17.11, the wildlife list, as published by the Legal Information Institute, Cornell Law School",
+      "url": "https://www.law.cornell.edu/cfr/text/50/17.11",
+      "use": "The copy of the federal wildlife list that was read for this site."
     },
     {
       "id": "eoa",
       "label": "Encyclopedia of Alabama: Endangered and Threatened Plants of Alabama, by L. J. Davenport, C. Oberholster, and B. R. Keener",
       "url": "https://encyclopediaofalabama.org/article/endangered-and-threatened-plants-of-alabama/",
-      "use": "Alabama counties, where a federal document does not give them."
+      "use": "Alabama counties for plants, where a federal document does not give them."
+    },
+    {
+      "id": "eoa-animals",
+      "label": "Encyclopedia of Alabama: Endangered and Threatened Animal Species of Alabama",
+      "url": "https://encyclopediaofalabama.org/article/endangered-and-threatened-animal-species-of-alabama/",
+      "use": "Which listed animals once lived in Alabama and are thought to be gone."
+    },
+    {
+      "id": "aba",
+      "label": "Alabama Butterfly Atlas",
+      "url": "https://alabama.butterflyatlas.usf.edu/",
+      "use": "Alabama counties, flight seasons, and habits for butterflies."
     },
     {
       "id": "apa",

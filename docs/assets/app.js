@@ -1,4 +1,4 @@
-// Enhancements for the plant list.  Every page reads fine without this file:
+// Enhancements for the species lists.  Every page reads fine without this file:
 // it adds filtering and sorting, marks the current month on the flowering
 // strips, and swaps in a note when a photo cannot be loaded.
 (function () {
@@ -21,14 +21,14 @@
     else img.addEventListener('error', function () { photoFailed(img); });
   });
 
-  // ---- mark this month on every flowering strip ----
+  // ---- mark this month on every season strip ----
   document.querySelectorAll('.bloom .m[data-m="' + month + '"]').forEach(function (cell) {
     cell.classList.add('now');
   });
   var nowNote = document.getElementById('now-note');
   if (nowNote) nowNote.hidden = false;
 
-  // ---- filters (home page only) ----
+  // ---- filters (only on a group page that has them) ----
   var form = document.getElementById('controls');
   var list = document.getElementById('entries');
   if (!form || !list) return;
@@ -42,7 +42,9 @@
   var sort = form.elements.sort;
   var now = form.elements.now;
 
-  document.getElementById('now-label').textContent = 'In flower in ' + MONTHS[month - 1];
+  var one = form.dataset.one;
+  var many = form.dataset.many;
+  document.getElementById('now-label').textContent = form.dataset.now + ' ' + MONTHS[month - 1];
   form.hidden = false;
   form.addEventListener('submit', function (e) { e.preventDefault(); });
 
@@ -62,7 +64,7 @@
     if (s.status && d.status !== s.status) return false;
     if (s.habitat && d.habitat !== s.habitat) return false;
     if (s.county && d.counties.split('|').indexOf(s.county) === -1) return false;
-    if (s.now && d.bloom.split(' ').indexOf(String(month)) === -1) return false;
+    if (s.now && d.season.split(' ').indexOf(String(month)) === -1) return false;
     if (s.q) {
       var words = s.q.split(/\s+/);
       for (var i = 0; i < words.length; i += 1) {
@@ -109,7 +111,7 @@
     var shown = 0;
 
     var ordered = entries.slice().sort(function (a, b) {
-      if (s.sort === 'bloom') {
+      if (s.sort === 'season') {
         var diff = Number(a.dataset.first) - Number(b.dataset.first);
         if (diff) return diff;
       }
@@ -122,9 +124,10 @@
       list.appendChild(el);
     });
 
+    var noun = entries.length === 1 ? one : many;
     count.textContent = shown === entries.length
-      ? entries.length + ' plants'
-      : shown + ' of ' + entries.length + ' plants';
+      ? entries.length + ' ' + noun
+      : shown + ' of ' + entries.length + ' ' + noun;
     empty.hidden = shown !== 0;
     list.hidden = shown === 0;
     writeUrl(s);
