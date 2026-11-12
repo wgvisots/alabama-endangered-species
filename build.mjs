@@ -234,6 +234,7 @@ function layout(site, groups, { title, description, rel, canonical, body, curren
     <div class="wrap site-header-inner">
       <a class="site-name" href="${rel}">${esc(site.title)}</a>
       <nav aria-label="Site">
+        <a href="${rel}report/"${mark('report')}>Report a sighting</a>
         <a href="${rel}about/"${mark('about')}>About and sources</a>
       </nav>
     </div>
@@ -249,7 +250,7 @@ ${body}
   <footer class="site-footer">
     <div class="wrap">
       <p>Checked against federal sources on ${longDate(site.reviewed)}.  Listings change, so confirm a species' status with the U.S. Fish &amp; Wildlife Service before you rely on it.</p>
-      <p><a href="${rel}about/">About and sources</a> <a href="${esc(site.repoUrl)}" rel="noopener noreferrer">Source on GitHub</a> <a href="${rel}about/#license">Text under CC BY 4.0, code under Apache 2.0</a></p>
+      <p><a href="${rel}report/">Report a sighting</a> <a href="${rel}about/">About and sources</a> <a href="${esc(site.repoUrl)}" rel="noopener noreferrer">Source on GitHub</a> <a href="${rel}about/#license">Text under CC BY 4.0, code under Apache 2.0</a></p>
     </div>
   </footer>
 </body>
@@ -625,6 +626,7 @@ ${general}
           <dl>
 ${facts}
           </dl>
+          <p class="facts-report">Seen one?  <a href="../../report/">How to report a sighting</a>, and how to look without doing harm.</p>
         </aside>
       </div>
       <nav class="pager" aria-label="More ${g.many}">
@@ -694,6 +696,22 @@ function renderAbout(site, groups, template) {
   });
 }
 
+function renderReport(site, groups, template) {
+  const fill = { issuesUrl: esc(`${site.repoUrl}/issues`) };
+  const body = template.replace(/\{\{(\w+)\}\}/g, (m, key) => {
+    if (!(key in fill)) throw new Error(`report.html uses an unknown placeholder: ${m}`);
+    return fill[key];
+  });
+  return layout(site, groups, {
+    title: `Report a sighting | ${site.title}`,
+    description: 'How to report a sighting of an endangered or threatened species in Alabama: how to look without doing harm, what to write down, and who would like to hear of it.',
+    rel: '../',
+    canonical: 'report/',
+    body,
+    current: 'report',
+  });
+}
+
 function render404(site, groups) {
   const body = `    <section class="hero hero-plain">
       <div class="hero-text">
@@ -742,7 +760,7 @@ async function main() {
     await writeFile(full, content);
   };
 
-  const urls = ['', 'about/'];
+  const urls = ['', 'about/', 'report/'];
   await write('index.html', renderHome(site, groups));
   for (const g of groups) {
     await write(`${g.id}/index.html`, renderGroup(site, groups, g));
@@ -754,6 +772,8 @@ async function main() {
   }
   const aboutTemplate = await readFile(path.join(ROOT, 'src/about.html'), 'utf8');
   await write('about/index.html', renderAbout(site, groups, aboutTemplate));
+  const reportTemplate = await readFile(path.join(ROOT, 'src/report.html'), 'utf8');
+  await write('report/index.html', renderReport(site, groups, reportTemplate));
   await write('404.html', render404(site, groups));
 
   await mkdir(path.join(OUT, 'assets'), { recursive: true });

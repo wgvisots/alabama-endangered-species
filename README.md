@@ -12,7 +12,7 @@ The site is served at <https://wgvisots.github.io/alabama-endangered-species/>.
 | --- | --- |
 | `data/plants.json`, `data/mussels.json`, and the rest | One file for each group, with one record per species.  These are the files to edit. |
 | `data/site.json` | The site's name, address, review date, groups, general sources, and the hosts that photos may load from. |
-| `src/` | The stylesheet, the script, the icon, and the text of the About page. |
+| `src/` | The stylesheet, the script, the icon, and the text of the About page and the page on reporting a sighting. |
 | `src/images/` | Pictures kept in the repository: public-domain drawings, and any photo that is not loaded from another site. |
 | `build.mjs` | Turns `data/` and `src/` into the finished site. |
 | `docs/` | The finished site, which GitHub Pages serves.  Do not edit it by hand; it is rebuilt from scratch every time. |
