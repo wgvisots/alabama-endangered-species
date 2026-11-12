@@ -1,8 +1,8 @@
 # Alabama Endangered Species
 
-A compendium of the plants and animals in Alabama that are protected under the federal Endangered Species Act.  It is being built one group at a time.  So far it covers the plants and the insects.
+A compendium of the plants and animals in Alabama that are protected under the federal Endangered Species Act.  It covers mammals, birds, reptiles, amphibians, fishes, mussels, snails, crustaceans, insects, and plants.
 
-Each entry says what the species looks like, where it lives, where in Alabama it is found, why it is at risk, when to look for it, and where to read more.
+Each entry says what the species looks like, where it lives, where in Alabama it is found, why it is at risk, and where to read more.
 
 The site is served at <https://wgvisots.github.io/alabama-endangered-species/>.
 
@@ -10,7 +10,7 @@ The site is served at <https://wgvisots.github.io/alabama-endangered-species/>.
 
 | Path | What it holds |
 | --- | --- |
-| `data/plants.json`, `data/insects.json` | One record per species.  These are the files to edit. |
+| `data/plants.json`, `data/mussels.json`, and the rest | One file for each group, with one record per species.  These are the files to edit. |
 | `data/site.json` | The site's name, address, review date, groups, general sources, and the hosts that photos may load from. |
 | `src/` | The stylesheet, the script, the icon, and the text of the About page. |
 | `build.mjs` | Turns `data/` and `src/` into the finished site. |
@@ -39,13 +39,16 @@ GitHub Pages serves the `docs/` folder of the `main` branch.  A change goes live
 
 If the site ever moves to another address, change `basePath` and `siteUrl` in `data/site.json` and rebuild.
 
-## The three kinds of entry
+## The four kinds of entry
 
 Each group's page keeps these apart.
 
-- **Listed, and found in Alabama.**  The ordinary case.
+- **Listed, and found in Alabama.**  The ordinary case: status `E`, `T`, or `XN`.
+- **Listed only for its likeness to another species.**  Status `SAT`.  The species is not in danger itself.
+- **Proposed for listing.**  Status `P` or `PE`.  A proposal protects nothing until a final rule follows, and the pages say so.
 - **Listed, but thought to be gone from Alabama.**  Set `"presence": "historical"`.
-- **Proposed for listing.**  Set `"status": "P"`.  A proposal protects nothing until a final rule follows, and the pages say so.
+
+When a proposed species is listed, change its `status`, replace `proposedDate` with `listedDate`, and put the final rule's citation in `fr`.
 
 ## Editing an entry
 
@@ -55,43 +58,47 @@ Each record has these fields.
 | --- | --- |
 | `slug` | The address of the page: lowercase letters, digits, and hyphens. |
 | `common`, `scientific` | The names.  `scientific` is the name on the federal list. |
-| `nameInText` | Optional.  The common name as it reads in the middle of a sentence, if that differs: `monarch`, not `Monarch`. |
+| `nameInText` | Optional.  The common name as it reads in the middle of a sentence, when the build would get it wrong.  The build lowercases the first letter unless the name begins with a place or a person. |
 | `otherNames` | Other common and scientific names. |
 | `kind`, `family` | What sort of plant or animal it is, and its family. |
-| `status` | `E` for endangered, `T` for threatened, `P` for proposed threatened. |
-| `listedDate`, `fr` | For a listed species: the date the final listing rule was published, and its Federal Register citation. |
+| `status` | `E` endangered, `T` threatened, `SAT` threatened by similarity of appearance, `XN` experimental population, `P` proposed threatened, `PE` proposed endangered. |
+| `listedDate`, `fr` | For a listed species: the date the final listing rule was published, and its Federal Register citation, such as `58 FR 14330`. |
 | `proposedDate`, `fr` | For a proposed species: the date of the proposal, and how to cite it. |
 | `presence` | Optional.  `historical` for a listed species that once lived in Alabama and is not known here today. |
 | `habitatType` | A short phrase.  For plants it must be one of the habitat groups named in `data/site.json`. |
-| `season` | The months to look for it, as numbers 1 to 12: flowering for a plant, flight for an insect.  `null` where that does not apply or no source gives months. |
+| `season` | The months to look for it, as numbers 1 to 12: flowering for a plant, flight for an insect, nesting for a sea turtle.  `null` where that does not apply or no source gives months. |
 | `seasonNote` | The season in words. |
 | `seasonShort` | Optional.  A few words to show in the list when `season` is `null`. |
-| `summary`, `description`, `habitat`, `life`, `alabama`, `threats`, `notes` | The text of the entry.  `life` and `notes` are optional.  Wrap a scientific name in underscores, `_Sarracenia rubra_`, to set it in italics. |
+| `summary`, `habitat`, `alabama`, `threats` | The required text of the entry. |
+| `description`, `life`, `notes` | Optional text.  Leave `description` out when no source describes the species; do not write one from memory. |
 | `counties` | Alabama counties.  The build rejects a name that is not one of the 67. |
-| `countiesText` | Required when `counties` is empty: what to show instead, such as `All 67`. |
+| `waters` | Optional.  The river systems it lives in, from the list in `data/site.json`.  The fish, mussel, and snail pages can be narrowed by these. |
+| `countiesText` | Required when `counties` and `waters` are both empty.  When `counties` is empty, it is shown in their place: `All 67`, or `Paint Rock River`. |
 | `range` | The whole range, in a phrase. |
 | `image` | A photo, or `null`.  See below. |
 | `photoElsewhere` | Optional: a link to a photo that cannot be shown here. |
 | `refs` | The documents the entry was written from. |
 
-The build stops with a list of problems if a record is missing a field, names a county that does not exist, links to a page that is not `https`, or points a photo at a host that is not allowed.
+In any text field, wrap a scientific name in underscores, `_Sarracenia rubra_`, to set it in italics.
+
+The build stops with a list of problems if a record is missing a field, names a county or river system that does not exist, links to a page that is not `https`, or points a photo at a host that is not allowed.
 
 ## Adding a group
 
-Add a data file, then describe the group in the `groups` list of `data/site.json`: its name, its nouns, the headings and labels its pages use, whether its list has filters, and its general sources.  The build makes the group's list page, its entry pages, its place in the contents, and its link in the header.
+Add a data file, then describe the group in the `groups` list of `data/site.json`: its name, its nouns, the headings and labels its pages use, whether its list has filters, an optional note, and its general sources.  The build makes the group's list page, its entry pages, its place in the contents, and its link in the header.
 
 ## Rules the entries follow
 
 - **Every claim comes from a cited document.**  If the sources say little, the entry says little.
-- **Status comes from the federal lists themselves,** 50 CFR 17.11 and 17.12, not from a secondary source.
-- **Places stop at the county or the river.**  Exact sites are left out, because rare species are taken by collectors.
+- **Status comes from the federal list itself,** 50 CFR 17.11 and 17.12, not from a secondary source.  Proposals come from the Service's list of species proposed for listing.
+- **Places stop at the county, the river, or the creek.**  Exact sites, and the names of caves and most springs, are left out, because rare species are taken by collectors.
 - **The text is written fresh.**  Nothing is copied from a source.
 
 ## Photos
 
 Only photos in the public domain or under an open license are shown, each with its credit.  At present they all come from the U.S. Fish & Wildlife Service media library and load directly from `fws.gov`.  Nothing is copied into this repository.
 
-Some entries have no photo yet.  The About page of the site lists them.
+Many entries have no photo yet, and no mussel or snail has one.  The About page of the site gives the count for each group.
 
 To allow photos from another host, add it to `imageHosts` in `data/site.json`.  The build then permits it in the site's content security policy.
 
@@ -99,9 +106,11 @@ To allow photos from another host, add it to `imageHosts` in `data/site.json`.  
 
 - [Alabama Listed Plants](https://www.fws.gov/project/alabama-listed-plants) and [Species Point of Contact in Alabama](https://www.fws.gov/project/species-point-contact-alabama), U.S. Fish & Wildlife Service
 - [50 CFR Part 17](https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17), the Lists of Endangered and Threatened Wildlife and Plants
+- [Species Proposed for Listing](https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on), U.S. Fish & Wildlife Service
 - [Endangered and Threatened Plants of Alabama](https://encyclopediaofalabama.org/article/endangered-and-threatened-plants-of-alabama/) and [Endangered and Threatened Animal Species of Alabama](https://encyclopediaofalabama.org/article/endangered-and-threatened-animal-species-of-alabama/), Encyclopedia of Alabama
+- [Outdoor Alabama](https://www.outdooralabama.com/), the Alabama Department of Conservation and Natural Resources, including its [list of the state's freshwater mussels](https://www.outdooralabama.com/freshwater-mussels-alabama/alabama-freshwater-mussel-list)
 - [Alabama Butterfly Atlas](https://alabama.butterflyatlas.usf.edu/)
-- The species profiles, recovery plans, status assessments, and five-year reviews linked from each entry
+- The species profiles, recovery plans, status assessments, five-year reviews, and listing rules linked from each entry
 
 The entries were last checked against these on November 11, 2026.  Listings change.
 
@@ -115,4 +124,4 @@ Copyright 2026 wgvisots.
 
 - **Written content** is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).  That covers the species entries in `data/`, the About page text in `src/about.html`, this README, and the pages built from them in `docs/`.  See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).  A fitting credit is "Alabama Endangered Species, by wgvisots, CC BY 4.0."
 - **Code** is licensed under the Apache License, Version 2.0.  That covers `build.mjs`, `src/app.js`, `src/styles.css`, and the page templates inside the build.  See [LICENSE](LICENSE).
-- **Photos** shown on the site are not part of this repository and are covered by neither license.  Each is in the public domain and is credited where it appears.
+- **Photos** shown on the site are not part of this repository and are covered by neither license.  Each is in the public domain or under an open license of its own, and is credited where it appears.

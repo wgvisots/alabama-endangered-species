@@ -143,9 +143,10 @@ function validate(groups, site) {
     for (const e of g.entries) {
       const where = `${g.id}/${e.slug || e.common || '?'}`;
       const bad = (msg) => problems.push(`${where}: ${msg}`);
+      if ('description' in e && (typeof e.description !== 'string' || !e.description.trim())) bad('description is empty; leave it out instead');
 
       for (const key of ['slug', 'common', 'scientific', 'kind', 'family', 'status', 'fr',
-        'habitatType', 'summary', 'description', 'habitat', 'alabama', 'range', 'threats']) {
+        'habitatType', 'summary', 'habitat', 'alabama', 'range', 'threats']) {
         if (typeof e[key] !== 'string' || !e[key].trim()) bad(`missing ${key}`);
       }
       if (!/^[a-z0-9-]+$/.test(e.slug || '')) bad('slug must be lowercase letters, digits, and hyphens');
@@ -351,7 +352,7 @@ ${names}
   const body = `    <section class="hero">
       <div class="hero-text">
         <h1 class="home-title">Endangered plants and animals of Alabama</h1>
-        <p class="lede">A compendium of the species in Alabama protected under the federal Endangered Species Act.  It covers ${all.length} species in ${groups.length} groups, ${nListed} of them listed and found in the state today.</p>
+        <p class="lede">A compendium of the species in Alabama protected under the federal Endangered Species Act.  It covers ${all.length} species and subspecies in ${groups.length} groups, ${nListed} of them listed and found in the state today.</p>
         <p class="hero-note key">${key}</p>
       </div>${featureFigure(site, groups, '')}
     </section>
@@ -373,7 +374,7 @@ function entryRow(e, g) {
     .join(' ').toLowerCase();
   const placeField = g.filters && g.filters.place;
   return `        <li class="entry" data-status="${e.status}" data-habitat="${esc(e.habitatType)}" data-places="${esc(placeField ? (e[placeField] || []).join('|') : '')}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
-        ${photoThumb(e)}
+        ${g.entries.some((x) => x.image) ? photoThumb(e) : '<!-- no photos in this group yet -->'}
         <div class="entry-text">
           <h3><a href="${e.slug}/">${esc(e.common)}</a></h3>
           <p class="sci">${sci(e.scientific)}</p>
@@ -440,7 +441,7 @@ function renderGroup(site, groups, g) {
     const head = several ? `
       <h2 class="set-title">${SETS[set].heading}</h2>${SETS[set].note ? `\n      <p class="set-note">${SETS[set].note}</p>` : ''}` : '';
     return `${head}
-      <ul class="entries"${id ? ` id="${id}"` : ''}>
+      <ul class="entries${g.entries.some((x) => x.image) ? '' : ' entries-plain'}"${id ? ` id="${id}"` : ''}>
 ${rows.map((e) => entryRow(e, g)).join('\n')}
       </ul>`;
   };
@@ -488,9 +489,10 @@ function renderEntry(site, groups, g, i) {
             <figcaption>${prose(e.image.caption)}  Photo: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at fws.gov</a></figcaption>
           </figure>`;
   } else {
+    const profile = e.refs.find((r) => /fws\.gov\/species\/|ecos\.fws\.gov\/ecp\/species\//.test(r.url));
     const elsewhere = e.photoElsewhere
       ? `  <a href="${esc(e.photoElsewhere.url)}" rel="noopener noreferrer">${esc(e.photoElsewhere.label)}.</a>`
-      : `  The <a href="${esc(e.refs[0].url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.`;
+      : profile ? `  The <a href="${esc(profile.url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.` : '';
     photo = `          <div class="photo-missing">
             <p>No photo here yet.  This site only shows photos that are in the public domain or openly licensed, and none has been found for this ${g.one}.${elsewhere}</p>
           </div>`;
@@ -521,7 +523,8 @@ function renderEntry(site, groups, g, i) {
     e.season || e.seasonNote ? [g.seasonFact || 'Season', `${e.season ? season : ''}<span class="bloom-note${e.season ? '' : ' bloom-note-alone'}">${esc(e.seasonNote || '')}</span>`] : null,
     ['Habitat', esc(e.habitatType)],
     e.waters && e.waters.length ? ['Alabama waters', esc(e.waters.join(', '))] : null,
-    e.counties.length || e.countiesText ? ['Alabama counties', esc(e.counties.length ? e.counties.join(', ') : e.countiesText)] : null,
+    e.counties.length ? ['Alabama counties', esc(e.counties.join(', '))]
+      : e.countiesText ? ['Where in Alabama', esc(e.countiesText)] : null,
     ['Whole range', esc(e.range)],
   ].filter(Boolean).map(([k, v]) => `            <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n');
 
@@ -580,7 +583,8 @@ function renderAbout(site, groups, template) {
   const link = (x) => `<a href="../${x.g.id}/${x.e.slug}/">${esc(x.e.common)}</a>`;
   const sources = site.sources.map((s) => `        <li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a> <span class="host">${esc(host(s.url))}</span><br>${esc(s.use)}</li>`).join('\n');
   const credits = all.filter((x) => x.e.image).map((x) => `        <li>${link(x)}: ${esc(x.e.image.credit)}.  ${esc(x.e.image.license)}.  <a href="${esc(x.e.image.page)}" rel="noopener noreferrer">Original</a></li>`).join('\n');
-  const missing = all.filter((x) => !x.e.image).map(link);
+  const nPd = all.filter((x) => x.e.image && x.e.image.license === 'Public domain').length;
+  const nOpen = all.filter((x) => x.e.image).length - nPd;
 
   const fill = {
     coverage: oxford(groups.map((g) => count(g.entries.length, g.one, g.many))),
@@ -593,7 +597,15 @@ function renderAbout(site, groups, template) {
     sources,
     credits,
     withPhotos: all.filter((x) => x.e.image).length,
-    missingPhotos: oxford(missing),
+    missingByGroup: oxford(groups.filter((g) => g.entries.some((e) => !e.image))
+      .map((g) => {
+        const n = g.entries.filter((e) => !e.image).length;
+        const many = `<a href="../${g.id}/">${g.many}</a>`;
+        return n === g.entries.length ? `all ${n} ${many}` : `${n} of the ${g.entries.length} ${many}`;
+      })),
+    photoLicenses: nOpen
+      ? `${nPd} are in the public domain, and ${nOpen} ${nOpen === 1 ? 'is' : 'are'} under a Creative Commons license that asks only for credit.`
+      : 'All are in the public domain.',
   };
   const body = template.replace(/\{\{(\w+)\}\}/g, (m, key) => {
     if (!(key in fill)) throw new Error(`about.html uses an unknown placeholder: ${m}`);

@@ -750,6 +750,25 @@ p {
   }
 }
 
+/* A group with no photos at all drops the thumbnail column. */
+.entries-plain .entry {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.entries-plain .entry-side {
+  grid-column: 1;
+}
+
+@media (min-width: 62rem) {
+  .entries-plain .entry {
+    grid-template-columns: minmax(0, 1fr) 19.5rem;
+  }
+
+  .entries-plain .entry-side {
+    grid-column: 2;
+  }
+}
+
 /* ---------- the flowering strip ---------- */
 
 .bloom {

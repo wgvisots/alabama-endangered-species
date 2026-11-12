@@ -3,7 +3,9 @@
     "slug": "gray-bat",
     "common": "Gray bat",
     "scientific": "Myotis grisescens",
-    "otherNames": ["gray myotis"],
+    "otherNames": [
+      "gray myotis"
+    ],
     "kind": "Bat",
     "family": "Vespertilionidae (evening bats)",
     "status": "E",
@@ -33,16 +35,27 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: gray bat", "url": "https://www.fws.gov/species/gray-bat-myotis-grisescens" },
-      { "label": "Outdoor Alabama: gray myotis", "url": "https://www.outdooralabama.com/bats/gray-myotis" },
-      { "label": "FWS: Bats in Alabama", "url": "https://www.fws.gov/office/alabama-ecological-services/bats-alabama" }
+      {
+        "label": "FWS species profile: gray bat",
+        "url": "https://www.fws.gov/species/gray-bat-myotis-grisescens"
+      },
+      {
+        "label": "Outdoor Alabama: gray myotis",
+        "url": "https://www.outdooralabama.com/bats/gray-myotis"
+      },
+      {
+        "label": "FWS: Bats in Alabama",
+        "url": "https://www.fws.gov/office/alabama-ecological-services/bats-alabama"
+      }
     ]
   },
   {
     "slug": "indiana-bat",
     "common": "Indiana bat",
     "scientific": "Myotis sodalis",
-    "otherNames": ["Indiana myotis"],
+    "otherNames": [
+      "Indiana myotis"
+    ],
     "kind": "Bat",
     "family": "Vespertilionidae (evening bats)",
     "status": "E",
@@ -72,17 +85,31 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: Indiana bat", "url": "https://www.fws.gov/species/indiana-bat-myotis-sodalis" },
-      { "label": "Outdoor Alabama: Indiana myotis", "url": "https://www.outdooralabama.com/bats/indiana-myotis" },
-      { "label": "FWS five-year review", "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/1504.pdf" },
-      { "label": "FWS: Bats in Alabama", "url": "https://www.fws.gov/office/alabama-ecological-services/bats-alabama" }
+      {
+        "label": "FWS species profile: Indiana bat",
+        "url": "https://www.fws.gov/species/indiana-bat-myotis-sodalis"
+      },
+      {
+        "label": "Outdoor Alabama: Indiana myotis",
+        "url": "https://www.outdooralabama.com/bats/indiana-myotis"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/1504.pdf"
+      },
+      {
+        "label": "FWS: Bats in Alabama",
+        "url": "https://www.fws.gov/office/alabama-ecological-services/bats-alabama"
+      }
     ]
   },
   {
     "slug": "northern-long-eared-bat",
     "common": "Northern long-eared bat",
     "scientific": "Myotis septentrionalis",
-    "otherNames": ["northern long-eared myotis"],
+    "otherNames": [
+      "northern long-eared myotis"
+    ],
     "kind": "Bat",
     "family": "Vespertilionidae (evening bats)",
     "status": "E",
@@ -112,10 +139,22 @@
       "license": "CC BY 2.0"
     },
     "refs": [
-      { "label": "FWS species profile: northern long-eared bat", "url": "https://www.fws.gov/species/northern-long-eared-bat-myotis-septentrionalis" },
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/9045" },
-      { "label": "Outdoor Alabama: northern long-eared myotis", "url": "https://www.outdooralabama.com/bats/northern-long-eared-myotis" },
-      { "label": "Outdoor Alabama: breeding population discovered in coastal Alabama", "url": "https://www.outdooralabama.com/articles/breeding-population-endangered-northern-long-eared-bats-discovered-coastal-alabama" }
+      {
+        "label": "FWS species profile: northern long-eared bat",
+        "url": "https://www.fws.gov/species/northern-long-eared-bat-myotis-septentrionalis"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/9045"
+      },
+      {
+        "label": "Outdoor Alabama: northern long-eared myotis",
+        "url": "https://www.outdooralabama.com/bats/northern-long-eared-myotis"
+      },
+      {
+        "label": "Outdoor Alabama: breeding population discovered in coastal Alabama",
+        "url": "https://www.outdooralabama.com/articles/breeding-population-endangered-northern-long-eared-bats-discovered-coastal-alabama"
+      }
     ]
   },
   {
@@ -123,7 +162,9 @@
     "common": "Tricolored bat",
     "nameInText": "tricolored bat",
     "scientific": "Perimyotis subflavus",
-    "otherNames": ["tri-colored bat"],
+    "otherNames": [
+      "tri-colored bat"
+    ],
     "kind": "Bat",
     "family": "Vespertilionidae (evening bats)",
     "status": "PE",
@@ -153,33 +194,58 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: tricolored bat", "url": "https://www.fws.gov/species/tricolored-bat-perimyotis-subflavus" },
-      { "label": "FWS: proposal to list the tricolored bat as endangered (2022)", "url": "https://www.fws.gov/press-release/2022-09/proposal-list-tricolored-bat-endangered" },
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/10515" },
-      { "label": "Outdoor Alabama: tri-colored bat", "url": "https://www.outdooralabama.com/bats/tri-colored-bat" }
+      {
+        "label": "FWS species profile: tricolored bat",
+        "url": "https://www.fws.gov/species/tricolored-bat-perimyotis-subflavus"
+      },
+      {
+        "label": "FWS: proposal to list the tricolored bat as endangered (2022)",
+        "url": "https://www.fws.gov/press-release/2022-09/proposal-list-tricolored-bat-endangered"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/10515"
+      },
+      {
+        "label": "Outdoor Alabama: tri-colored bat",
+        "url": "https://www.outdooralabama.com/bats/tri-colored-bat"
+      }
     ]
   },
   {
     "slug": "west-indian-manatee",
     "common": "West Indian manatee",
     "scientific": "Trichechus manatus",
-    "otherNames": ["manatee"],
+    "otherNames": [
+      "manatee"
+    ],
     "kind": "Marine mammal",
     "family": "Trichechidae (manatees)",
     "status": "T",
     "listedDate": "1967-03-11",
     "fr": "32 FR 4001",
     "habitatType": "Coastal waters and rivers",
-    "season": [4, 5, 6, 7, 8, 9, 10],
+    "season": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "seasonNote": "They reach the northern Gulf coast around early April and leave for Florida by October",
     "summary": "A large, slow, plant-eating mammal that summers in Alabama's coastal waters and winters in Florida.",
     "description": "A large aquatic mammal that never leaves the water.  It grazes on seagrass and other water plants, and favors shallow grass beds near deeper channels.",
     "habitat": "Warm, shallow coastal waters, bays, and rivers with seagrass and a source of fresh water.  In winter it must find warm water, such as springs and the outflows of power plants, because long exposure to cold can kill it.",
     "alabama": "A warm-season visitor.  Manatees arrive on the northern Gulf coast around early April, as the water warms, and return to Florida by October.  The Dauphin Island Sea Lab has tagged and tracked manatees in Alabama waters since 2009, and collects sightings from the public.",
-    "counties": ["Baldwin", "Mobile"],
+    "counties": [
+      "Baldwin",
+      "Mobile"
+    ],
     "range": "Florida and Puerto Rico in the United States, with summer wanderers along the Gulf and Atlantic coasts",
     "threats": "Collisions with boats, which are the leading cause of death from human activity, and the loss of warm-water refuges in winter.  If you see one, slow down, cut the motor, and stay at least 100 feet away.",
-    "notes": "Listed as endangered in 1967, and reclassified as threatened by a rule published April 5, 2017 (82 FR 16668).",
+    "notes": "Listed as endangered in 1967, and reclassified as threatened by a rule published April 5, 2017 (82 FR 16668).  The Service has proposed to list the Florida manatee, the kind that visits Alabama, as a threatened subspecies in its own right, and the Antillean manatee as endangered.  Until a final rule is published, the listing above stands.",
     "image": {
       "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2011-01/18660.jpg?itok=YNz9q5Nl",
       "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2011-01/18660.jpg?itok=XGjoMkpu",
@@ -192,11 +258,30 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/4469" },
-      { "label": "Final rule reclassifying the manatee as threatened (2017)", "url": "https://www.fws.gov/sites/default/files/federal_register_document/2017-06657.pdf" },
-      { "label": "FWS five-year review", "url": "https://ecos.fws.gov/docs/five_year_review/doc3771.pdf" },
-      { "label": "Dauphin Island Sea Lab: manatee season in the northern Gulf", "url": "https://disl.edu/news/2023/manatee-season-is-underway-in-the-northern-gulf-of-mexico-your-help-is-needed-to-report-sightings" },
-      { "label": "Dauphin Island Sea Lab: manatees in Alabama waters", "url": "https://www.disl.edu/who-we-are/rcarmichael/projects/wimanateeal/" }
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/4469"
+      },
+      {
+        "label": "Final rule reclassifying the manatee as threatened (2017)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/2017-06657.pdf"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc3771.pdf"
+      },
+      {
+        "label": "Dauphin Island Sea Lab: manatee season in the northern Gulf",
+        "url": "https://disl.edu/news/2023/manatee-season-is-underway-in-the-northern-gulf-of-mexico-your-help-is-needed-to-report-sightings"
+      },
+      {
+        "label": "Dauphin Island Sea Lab: manatees in Alabama waters",
+        "url": "https://www.disl.edu/who-we-are/rcarmichael/projects/wimanateeal/"
+      },
+      {
+        "label": "ECOS: species proposed for listing",
+        "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on"
+      }
     ]
   },
   {
@@ -216,7 +301,9 @@
     "habitat": "Coastal dunes: the frontal dunes, and the higher scrub dunes behind them, which give refuge when storms wash over the beach.",
     "life": "It is active at night and eats seeds, fruit, and insects.  It breeds all year, most in winter, and an average mouse lives about nine months.",
     "alabama": "Found only in Baldwin County, on the Fort Morgan Peninsula and in Gulf Shores and Orange Beach, including the Perdue Unit of Bon Secour National Wildlife Refuge.  The Service's review put its range at about 2,450 acres along some 13 miles of coast.",
-    "counties": ["Baldwin"],
+    "counties": [
+      "Baldwin"
+    ],
     "range": "Alabama only",
     "threats": "Loss of dunes to building, hurricanes, feral cats, artificial lighting, and a rising sea.  The mouse recovered slowly from the hurricanes of 2004 and 2005, and its numbers swing widely.",
     "notes": "",
@@ -232,10 +319,22 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS five-year review", "url": "https://ecos.fws.gov/docs/five_year_review/doc2996.pdf" },
-      { "label": "FWS: critical habitat for the Alabama beach mouse", "url": "https://www.fws.gov/species-publication-action/designation-critical-habitat-alabama-beach-mouse" },
-      { "label": "FWS: The Little Mouse and the Beach House", "url": "https://www.fws.gov/story/2025-01/little-mouse-and-beach-house" },
-      { "label": "Bon Secour National Wildlife Refuge: species", "url": "https://www.fws.gov/refuge/bon-secour/species" }
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc2996.pdf"
+      },
+      {
+        "label": "FWS: critical habitat for the Alabama beach mouse",
+        "url": "https://www.fws.gov/species-publication-action/designation-critical-habitat-alabama-beach-mouse"
+      },
+      {
+        "label": "FWS: The Little Mouse and the Beach House",
+        "url": "https://www.fws.gov/story/2025-01/little-mouse-and-beach-house"
+      },
+      {
+        "label": "Bon Secour National Wildlife Refuge: species",
+        "url": "https://www.fws.gov/refuge/bon-secour/species"
+      }
     ]
   },
   {
@@ -255,7 +354,9 @@
     "habitat": "Frontal dunes covered in sea oats, and the scrub dunes behind them.  The two need to stay connected.",
     "life": "It is active at night, and lives mostly on the seeds of sea oats and beach grass.  When seeds run short, in late winter and early spring, it turns to insects and the fruit of sea rocket.",
     "alabama": "Perdido Key spans the state line.  Critical habitat for the mouse includes a unit at Gulf State Park, along with Perdido Key State Park, Gulf Islands National Seashore, and private land on the Florida side.",
-    "counties": ["Baldwin"],
+    "counties": [
+      "Baldwin"
+    ],
     "range": "Perdido Key, in Alabama and Florida",
     "threats": "Loss of dunes to building, feral cats, artificial lighting, and trash that draws predators and competitors.  Moving mice between sites is credited with saving the population in the 1980s.",
     "notes": "Critical habitat was revised by a rule published October 12, 2006 (71 FR 60238).",
@@ -271,8 +372,14 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: Perdido Key beach mouse", "url": "https://www.fws.gov/species/perdido-key-beach-mouse-peromyscus-polionotus-trissyllepsis" },
-      { "label": "Critical habitat rule for beach mice (2006)", "url": "https://www.fws.gov/sites/default/files/federal_register_document/06-8481.pdf" }
+      {
+        "label": "FWS species profile: Perdido Key beach mouse",
+        "url": "https://www.fws.gov/species/perdido-key-beach-mouse-peromyscus-polionotus-trissyllepsis"
+      },
+      {
+        "label": "Critical habitat rule for beach mice (2006)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/06-8481.pdf"
+      }
     ]
   },
   {
@@ -300,8 +407,14 @@
     "notes": "",
     "image": null,
     "refs": [
-      { "label": "FWS: Red Wolf Recovery Program", "url": "https://www.fws.gov/project/red-wolf-recovery-program" },
-      { "label": "Outdoor Alabama: red wolf", "url": "https://www.outdooralabama.com/carnivores/red-wolf" }
+      {
+        "label": "FWS: Red Wolf Recovery Program",
+        "url": "https://www.fws.gov/project/red-wolf-recovery-program"
+      },
+      {
+        "label": "Outdoor Alabama: red wolf",
+        "url": "https://www.outdooralabama.com/carnivores/red-wolf"
+      }
     ]
   },
   {
@@ -309,7 +422,11 @@
     "common": "Florida panther",
     "nameInText": "Florida panther",
     "scientific": "Puma concolor coryi",
-    "otherNames": ["cougar", "puma", "mountain lion"],
+    "otherNames": [
+      "cougar",
+      "puma",
+      "mountain lion"
+    ],
     "kind": "Carnivore",
     "family": "Felidae (cats)",
     "status": "E",
@@ -329,9 +446,18 @@
     "notes": "",
     "image": null,
     "refs": [
-      { "label": "FWS species profile: Florida panther", "url": "https://www.fws.gov/species/florida-panther-puma-concolor-coryi" },
-      { "label": "FWS recovery plan (2008)", "url": "https://ecos.fws.gov/docs/recovery_plan/081218.pdf" },
-      { "label": "Outdoor Alabama: cougar", "url": "https://www.outdooralabama.com/carnivores/cougar" }
+      {
+        "label": "FWS species profile: Florida panther",
+        "url": "https://www.fws.gov/species/florida-panther-puma-concolor-coryi"
+      },
+      {
+        "label": "FWS recovery plan (2008)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/081218.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: cougar",
+        "url": "https://www.outdooralabama.com/carnivores/cougar"
+      }
     ]
   }
 ]

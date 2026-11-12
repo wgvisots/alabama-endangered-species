@@ -47,12 +47,12 @@
     ]
   },
   {
-    "slug": "armored-snail",
-    "common": "Armored snail",
-    "scientific": "Pyrgulopsis pachyta",
+    "slug": "armored-marstonia",
+    "common": "Armored marstonia",
+    "scientific": "Marstonia pachyta",
     "otherNames": [
-      "armored marstonia",
-      "Marstonia pachyta"
+      "armored snail",
+      "Pyrgulopsis pachyta"
     ],
     "kind": "Pebblesnail",
     "family": "Hydrobiidae (pebblesnails)",
@@ -475,6 +475,49 @@
       {
         "label": "FWS: Endangered Species Act milestones of the 2010s",
         "url": "https://www.fws.gov/esa50/our-history/2010s"
+      }
+    ]
+  },
+  {
+    "slug": "oblong-rocksnail",
+    "common": "Oblong rocksnail",
+    "scientific": "Leptoxis compacta",
+    "otherNames": [],
+    "kind": "River snail",
+    "family": "Pleuroceridae (hornsnails, riversnails, and rocksnails)",
+    "status": "PE",
+    "proposedDate": "2023-10-31",
+    "fr": "FR Doc. 2023-23994",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "A snail of the Cahaba River that was thought extinct, was found again, and is proposed for listing as endangered.",
+    "description": "A snail about the size of a nickel, with a yellow-green shell and black bands on its head.",
+    "habitat": "Large boulders and bedrock in shoals, mostly toward the middle of the river.  It grazes on the film of algae and bacteria on the rock, and needs clean, free-flowing water.",
+    "alabama": "It lives only in the Cahaba River.  It once ranged through Bibb and Shelby Counties, and is now found along 5.7 miles of river, about 11 percent of its former range.  Before 2012 it was thought to be extinct.",
+    "counties": [],
+    "waters": [
+      "Cahaba"
+    ],
+    "range": "Alabama only",
+    "threats": "Silt, farming, and runoff from towns and storms, which have damaged the water of the Cahaba's tributaries.",
+    "notes": "The Service proposed listing it as endangered on October 31, 2023.  No final rule had been published when this site was last checked.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS: questions and answers on the oblong rocksnail",
+        "url": "https://www.fws.gov/question-answer/oblong-rocksnail-frequently-asked-questions"
+      },
+      {
+        "label": "Outdoor Alabama: oblong rocksnail",
+        "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/oblong-rocksnail"
+      },
+      {
+        "label": "Proposed rule to list the oblong rocksnail (2023)",
+        "url": "https://www.federalregister.gov/documents/2023/10/31/2023-23994/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-oblong-rocksnail"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/2809"
       }
     ]
   }

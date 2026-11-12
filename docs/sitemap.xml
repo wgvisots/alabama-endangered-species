@@ -35,6 +35,7 @@
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/reptiles/kemps-ridley-sea-turtle/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/reptiles/leatherback-sea-turtle/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/reptiles/loggerhead-sea-turtle/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/reptiles/southern-hognose-snake/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/amphibians/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/amphibians/black-warrior-waterdog/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/amphibians/dusky-gopher-frog/</loc><lastmod>2026-11-11</lastmod></url>
@@ -47,6 +48,7 @@
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/blue-shiner/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/boulder-darter/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/cahaba-shiner/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/coal-darter/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/goldline-darter/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/gulf-sturgeon/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/palezone-shiner/</loc><lastmod>2026-11-11</lastmod></url>
@@ -58,13 +60,78 @@
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/trispot-darter/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/vermilion-darter/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/fishes/watercress-darter/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/alabama-hickorynut/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/alabama-lampmussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/alabama-moccasinshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/alabama-pearlshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/birdwing-pearlymussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/black-clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/canoe-creek-clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/chipola-slabshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/choctaw-bean/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/coosa-moccasinshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/cracking-pearlymussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/cumberland-bean/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/cumberland-moccasinshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/cumberland-monkeyface/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/cumberlandian-combshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/dark-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/dromedary-pearlymussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/fanshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/finelined-pocketbook/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/finerayed-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/fluted-kidneyshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/fuzzy-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/georgia-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/gulf-moccasinshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/heavy-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/inflated-heelsplitter/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/littlewing-pearlymussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/longsolid/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/narrow-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/orangefoot-pimpleback/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/orangenacre-mucket/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/oval-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/ovate-clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/oyster-mussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/pale-lilliput/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/pink-mucket/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/purple-bankclimber/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/purple-cats-paw/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/rabbitsfoot/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/ring-pink/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/rough-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/round-ebonyshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/round-hickorynut/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/scaleshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/sheepnose/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/shiny-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/shinyrayed-pocketbook/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/slabside-pearlymussel/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/snuffbox/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-combshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-elktoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-kidneyshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/southern-sandshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/spectaclecase/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/tapered-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/tennessee-clubshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/tennessee-pigtoe/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/triangular-kidneyshell/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/white-wartyback/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/mussels/winged-mapleleaf/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/anthonys-riversnail/</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/armored-snail/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/armored-marstonia/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/cylindrical-lioplax/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/flat-pebblesnail/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/interrupted-rocksnail/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/lacy-elimia/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/oblong-rocksnail/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/painted-rocksnail/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/plicate-rocksnail/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://wgvisots.github.io/alabama-endangered-species/snails/rough-hornsnail/</loc><lastmod>2026-11-11</lastmod></url>

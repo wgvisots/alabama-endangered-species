@@ -767,5 +767,51 @@
         "url": "https://www.outdooralabama.com/shiners/palezone"
       }
     ]
+  },
+  {
+    "slug": "coal-darter",
+    "common": "Coal darter",
+    "scientific": "Percina brevicauda",
+    "otherNames": [],
+    "kind": "Darter",
+    "family": "Percidae (perches and darters)",
+    "status": "P",
+    "proposedDate": "2023-12-21",
+    "fr": "FR Doc. 2023-27873",
+    "habitatType": "River shoals",
+    "season": null,
+    "summary": "One of Alabama's smallest darters, found only in the Mobile basin, and proposed for listing as threatened.",
+    "description": "A very small darter, 1.2 to 1.8 inches long, with a rounded body and a blunt snout.  It has a dark bar below the eye, a spot on the gill cover, and 8 to 12 oval blotches along each side.  Breeding males darken heavily on the head and underside, which gives the fish its name.",
+    "habitat": "Shoals of flowing rivers and larger streams, over gravel, cobble, or sand, in swift current.",
+    "life": "Adults ready to spawn have been taken in the Cahaba River in May and June.  Little else is known of how it lives.",
+    "alabama": "It lives only in Alabama.  It is widespread in the main channel of the Cahaba River, from near Leeds down past the Fall Line near Centreville.  It is uncommon in the Locust and Blackburn Forks of the Black Warrior system, and in a few parts of the Coosa system.",
+    "counties": [],
+    "waters": [
+      "Cahaba",
+      "Black Warrior",
+      "Coosa"
+    ],
+    "range": "Alabama only",
+    "threats": "The loss and decline of its habitat as the land around its rivers changes, and a changing climate.",
+    "notes": "The Service proposed listing it as threatened on December 21, 2023.  A second notice on the proposal followed on April 8, 2024.  No final rule had been published when this site was last checked.",
+    "image": null,
+    "refs": [
+      {
+        "label": "Outdoor Alabama: coal darter",
+        "url": "https://www.outdooralabama.com/darters/coal"
+      },
+      {
+        "label": "FWS: the coal darter proposal (2023)",
+        "url": "https://www.fws.gov/press-release/2023-12/coal-darter-proposal"
+      },
+      {
+        "label": "Proposed rule to list the coal darter (2023)",
+        "url": "https://www.federalregister.gov/documents/2023/12/21/2023-27873/endangered-and-threatened-wildlife-and-plants-threatened-species-status-for-coal-darter-with-section"
+      },
+      {
+        "label": "ECOS: species proposed for listing",
+        "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on"
+      }
+    ]
   }
 ]
