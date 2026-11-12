@@ -12,7 +12,8 @@ The site is served at <https://wgvisots.github.io/alabama-endangered-species/>.
 | --- | --- |
 | `data/plants.json`, `data/mussels.json`, and the rest | One file for each group, with one record per species.  These are the files to edit. |
 | `data/site.json` | The site's name, address, review date, groups, general sources, and the hosts that photos may load from. |
-| `src/` | The stylesheet, the script, the icon, and the text of the About page. |
+| `src/` | The stylesheet, the script, the icon, and the text of the About page and the page on reporting a sighting. |
+| `src/images/` | Pictures kept in the repository: public-domain drawings, and any photo that is not loaded from another site. |
 | `build.mjs` | Turns `data/` and `src/` into the finished site. |
 | `docs/` | The finished site, which GitHub Pages serves.  Do not edit it by hand; it is rebuilt from scratch every time. |
 
@@ -75,7 +76,7 @@ Each record has these fields.
 | `waters` | Optional.  The river systems it lives in, from the list in `data/site.json`.  The fish, mussel, and snail pages can be narrowed by these. |
 | `countiesText` | Required when `counties` and `waters` are both empty.  When `counties` is empty, it is shown in their place: `All 67`, or `Paint Rock River`. |
 | `range` | The whole range, in a phrase. |
-| `image` | A photo, or `null`.  See below. |
+| `image` | A photo or a drawing, or `null`.  See below. |
 | `photoElsewhere` | Optional: a link to a photo that cannot be shown here. |
 | `refs` | The documents the entry was written from. |
 
@@ -94,11 +95,27 @@ Add a data file, then describe the group in the `groups` list of `data/site.json
 - **Places stop at the county, the river, or the creek.**  Exact sites, and the names of caves and most springs, are left out, because rare species are taken by collectors.
 - **The text is written fresh.**  Nothing is copied from a source.
 
-## Photos
+## Photos and drawings
 
-Only photos in the public domain or under an open license are shown, each with its credit.  At present they all come from the U.S. Fish & Wildlife Service media library and load directly from `fws.gov`.  Nothing is copied into this repository.
+Only pictures in the public domain or under an open license are shown, each with its credit.  They come two ways.
 
-Many entries have no photo yet, and no mussel or snail has one.  The About page of the site gives the count for each group.
+- **Photos loaded from another site.**  At present these all come from the U.S. Fish & Wildlife Service media library and load directly from `fws.gov`.  `thumb` and `full` are `https` addresses, and `w` and `h` give the size of the original.
+- **Pictures kept here.**  Put two JPEG or PNG files in `src/images/`, one about 650 pixels on its long side and one about 1,300, with lowercase names such as `black-rail-audubon-650.jpg`.  `thumb` and `full` are the two file names.  The build reads the size from the file, so leave `w` and `h` out.
+
+An `image` record has these fields.
+
+| Field | Meaning |
+| --- | --- |
+| `thumb`, `full` | The small and large versions, as above. |
+| `kind` | Optional.  `drawing` for a plate or figure; the page then says "Drawing" where it would say "Photo". |
+| `page` | The page the picture came from. |
+| `source` | Optional.  How to name that page in the link under the picture, such as `the National Gallery of Art`.  Without it the link gives the site's address. |
+| `alt` | What the picture shows, for readers who cannot see it. |
+| `caption` | A sentence for under the picture.  For a drawing, give the title of the plate, the work it comes from, and the year. |
+| `credit` | Who made it, and for a scan, the library or museum that holds it. |
+| `license` | `Public domain`, or the name of the open license. |
+
+Many entries have no picture yet, and no mussel or snail has one.  The About page of the site gives the count for each group.
 
 To allow photos from another host, add it to `imageHosts` in `data/site.json`.  The build then permits it in the site's content security policy.
 
@@ -124,4 +141,4 @@ Copyright 2026 wgvisots.
 
 - **Written content** is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).  That covers the species entries in `data/`, the About page text in `src/about.html`, this README, and the pages built from them in `docs/`.  See [LICENSE-CC-BY-4.0](LICENSE-CC-BY-4.0).  A fitting credit is "Alabama Endangered Species, by wgvisots, CC BY 4.0."
 - **Code** is licensed under the Apache License, Version 2.0.  That covers `build.mjs`, `src/app.js`, `src/styles.css`, and the page templates inside the build.  See [LICENSE](LICENSE).
-- **Photos** shown on the site are not part of this repository and are covered by neither license.  Each is in the public domain or under an open license of its own, and is credited where it appears.
+- **Photos and drawings** are covered by neither license.  The photos load from `fws.gov` and are not part of this repository.  The drawings in `src/images/` are old plates in the public domain.  Each picture is credited where it appears.

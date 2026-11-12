@@ -924,6 +924,17 @@ p {
   margin-top: 0;
 }
 
+.page h3 {
+  font-size: 1.25rem;
+  margin: 1.7rem 0 0.5rem;
+}
+
+/* A list of organizations, each with a line or two of explanation. */
+.page .contacts li {
+  margin-bottom: 1rem;
+  max-width: 70ch;
+}
+
 .refs,
 .credits {
   margin: 0;
@@ -960,6 +971,15 @@ p {
   border-radius: 4px;
   padding: 1.25rem 1.4rem;
   align-self: start;
+}
+
+.facts-report {
+  margin: 1.1rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .facts dl {
@@ -1061,4 +1081,9 @@ p {
     background: #fff;
     color: #000;
   }
+}
+
+/* Keep a telephone number on one line. */
+a[href^="tel:"] {
+  white-space: nowrap;
 }
