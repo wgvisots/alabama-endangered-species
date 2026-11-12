@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; img-src &#39;self&#39; https://www.fws.gov; style-src &#39;self&#39;; script-src &#39;self&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
   <meta name="referrer" content="no-referrer">
-  <title>Federally listed plants of Alabama | Alabama Endangered Species</title>
-  <meta name="description" content="The 23 plants in Alabama protected under the federal Endangered Species Act, with descriptions, flowering times, counties, and references.">
-  <meta name="robots" content="noindex">
+  <title>Alabama Endangered Species: the federally listed plants and animals of Alabama</title>
+  <meta name="description" content="The plants and animals in Alabama protected under the federal Endangered Species Act, with descriptions, seasons, counties, and references.  So far: plants and insects.">
+  <link rel="canonical" href="https://wgvisots.github.io/alabama-endangered-species/">
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/styles.css">
   <script src="./assets/app.js" defer></script>
@@ -18,7 +18,8 @@
     <div class="wrap site-header-inner">
       <a class="site-name" href="./">Alabama Endangered Species</a>
       <nav aria-label="Site">
-        <a href="./" aria-current="page">Plants</a>
+        <a href="./plants/">Plants</a>
+        <a href="./insects/">Insects</a>
         <a href="./about/">About and sources</a>
       </nav>
     </div>
@@ -26,9 +27,9 @@
   <main id="main" class="wrap">
     <section class="hero">
       <div class="hero-text">
-        <h1>Federally listed plants of Alabama</h1>
-        <p class="lede">Alabama has 23 plants protected under the federal Endangered Species Act: 14 listed as endangered and 9 as threatened.  Each entry says what the plant looks like, where it grows, why it is at risk, and where to read more.</p>
-        <p class="hero-note">The strip beside each plant shows the months it flowers.  A filled square is a month in flower.<span id="now-note" hidden>  The outlined square is this month.</span></p>
+        <h1 class="home-title">Endangered plants and animals of Alabama</h1>
+        <p class="lede">A compendium, one group at a time, of the species in Alabama protected under the federal Endangered Species Act.  So far it covers plants and insects: 23 plants and 1 insect listed and found here today.</p>
+        <p class="hero-note key"><span><span class="dot dot-E" aria-hidden="true"></span>Endangered</span> <span><span class="dot dot-T" aria-hidden="true"></span>Threatened</span> <span><span class="dot dot-P" aria-hidden="true"></span>Proposed</span></p>
       </div>
       <figure class="hero-photo" data-photo>
         <a href="plants/green-pitcher-plant/"><img src="https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/banner_images/2022-07/green-pitcher-plant.jpg?itok=_q3z1K8h" alt="A yellow green pitcher plant flower rising above a stand of pitchers." width="5771" height="3847" decoding="async" referrerpolicy="no-referrer"></a>
@@ -36,415 +37,54 @@
       </figure>
     </section>
 
-    <section aria-labelledby="list-title">
-      <h2 id="list-title" class="visually-hidden">The plants</h2>
-      <form class="controls" id="controls" hidden>
-        <div class="field field-search">
-          <label for="q">Search</label>
-          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or county">
-        </div>
-        <fieldset class="field segmented">
-          <legend>Status</legend>
-          <label><input type="radio" name="status" value="" checked><span>All 23</span></label>
-          <label><input type="radio" name="status" value="E"><span>Endangered 14</span></label>
-          <label><input type="radio" name="status" value="T"><span>Threatened 9</span></label>
-        </fieldset>
-        <div class="field">
-          <label for="habitat">Habitat</label>
-          <select id="habitat" name="habitat">
-            <option value="">Any habitat</option>
-            <option>Bogs, seeps, and wet prairies</option>
-            <option>Glades and outcrops</option>
-            <option>Streams and shoals</option>
-            <option>Woods and pinelands</option>
-            <option>Bluffs, cliffs, and sinkholes</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="county">County</label>
-          <select id="county" name="county">
-            <option value="">Any county</option>
-            <option>Autauga</option>
-            <option>Baldwin</option>
-            <option>Bibb</option>
-            <option>Blount</option>
-            <option>Bullock</option>
-            <option>Butler</option>
-            <option>Calhoun</option>
-            <option>Chambers</option>
-            <option>Cherokee</option>
-            <option>Chilton</option>
-            <option>Clay</option>
-            <option>Colbert</option>
-            <option>Conecuh</option>
-            <option>Coosa</option>
-            <option>Covington</option>
-            <option>Cullman</option>
-            <option>Dallas</option>
-            <option>DeKalb</option>
-            <option>Elmore</option>
-            <option>Etowah</option>
-            <option>Franklin</option>
-            <option>Geneva</option>
-            <option>Henry</option>
-            <option>Jackson</option>
-            <option>Jefferson</option>
-            <option>Lawrence</option>
-            <option>Lee</option>
-            <option>Lowndes</option>
-            <option>Madison</option>
-            <option>Marion</option>
-            <option>Marshall</option>
-            <option>Mobile</option>
-            <option>Monroe</option>
-            <option>Morgan</option>
-            <option>Randolph</option>
-            <option>Russell</option>
-            <option>Shelby</option>
-            <option>St. Clair</option>
-            <option>Sumter</option>
-            <option>Tallapoosa</option>
-            <option>Tuscaloosa</option>
-            <option>Walker</option>
-            <option>Washington</option>
-            <option>Wilcox</option>
-            <option>Winston</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="sort">Sort by</label>
-          <select id="sort" name="sort">
-            <option value="name">Name</option>
-            <option value="bloom">Flowering time</option>
-          </select>
-        </div>
-        <label class="check"><input type="checkbox" id="now" name="now"> <span id="now-label">In flower this month</span></label>
-      </form>
-      <p class="count" id="count" aria-live="polite">23 plants</p>
-      <ul class="entries" id="entries">
-      <li class="entry" data-status="E" data-habitat="Bogs, seeps, and wet prairies" data-counties="Autauga|Chilton|Elmore" data-bloom="4 5 6" data-first="4" data-name="alabama canebrake pitcher plant" data-search="alabama canebrake pitcher plant sarracenia rubra ssp. alabamensis alabama pitcherplant sarracenia alabamensis sarraceniaceae (pitcher plant family) bogs, seeps, and wet prairies autauga chilton elmore">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/alabama-canebrake-pitcher-plant/">Alabama canebrake pitcher plant</a></h3>
-          <p class="sci"><i>Sarracenia</i> <i>rubra</i> ssp. <i>alabamensis</i></p>
-          <p class="entry-summary">A maroon-flowered pitcher plant found only in a few seepage bogs in central Alabama.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: April, May, and June"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Bogs, seeps, and wet prairies" data-counties="Cherokee|Etowah|St. Clair" data-bloom="4 5" data-first="4" data-name="alabama leather flower" data-search="alabama leather flower clematis socialis ranunculaceae (buttercup family) bogs, seeps, and wet prairies cherokee etowah st. clair">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/alabama-leather-flower/">Alabama leather flower</a></h3>
-          <p class="sci"><i>Clematis</i> <i>socialis</i></p>
-          <p class="entry-summary">A low clematis that does not climb, known from a handful of colonies with blue-violet bells.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: April and May"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Bluffs, cliffs, and sinkholes" data-counties="Winston" data-bloom="" data-first="99" data-name="alabama streak-sorus fern" data-search="alabama streak-sorus fern thelypteris pilosa var. alabamensis alabama maiden fern leptogramma burksiorum thelypteris burksiorum thelypteridaceae (maiden fern family) bluffs, cliffs, and sinkholes winston">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/alabama-streak-sorus-fern/">Alabama streak-sorus fern</a></h3>
-          <p class="sci"><i>Thelypteris</i> <i>pilosa</i> var. <i>alabamensis</i></p>
-          <p class="entry-summary">A small fern of shaded sandstone overhangs, known from a single river drainage.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Bluffs, cliffs, and sinkholes</span></p>
-          <p class="bloom-none">No flowers; spreads by spores</p>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Woods and pinelands" data-counties="Baldwin|Bullock|Geneva|Mobile" data-bloom="4 5 6" data-first="4" data-name="american chaffseed" data-search="american chaffseed schwalbea americana chaffseed orobanchaceae (broomrape family) woods and pinelands baldwin bullock geneva mobile">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-09/1776.JPG?itok=-VWnO_j_" alt="" width="2048" height="1536" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/american-chaffseed/">American chaffseed</a></h3>
-          <p class="sci"><i>Schwalbea</i> <i>americana</i></p>
-          <p class="entry-summary">A hairy, purple-flowered herb of fire-kept pine savannas that takes part of its food from the roots of its neighbors.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: April, May, and June"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Bluffs, cliffs, and sinkholes" data-counties="Jackson|Morgan" data-bloom="" data-first="99" data-name="american hart&#39;s-tongue fern" data-search="american hart&#39;s-tongue fern asplenium scolopendrium var. americanum hart&#39;s tonguefern aspleniaceae (spleenwort family) bluffs, cliffs, and sinkholes jackson morgan">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2020-12/AHTF-johnwiley-USFWS.jpeg?itok=y4nngOAi" alt="" width="1500" height="1125" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/american-harts-tongue-fern/">American hart&#39;s-tongue fern</a></h3>
-          <p class="sci"><i>Asplenium</i> <i>scolopendrium</i> var. <i>americanum</i></p>
-          <p class="entry-summary">A strap-leaved evergreen fern that survives in the South only in cool limestone sinkholes.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Bluffs, cliffs, and sinkholes</span></p>
-          <p class="bloom-none">No flowers; spreads by spores</p>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Glades and outcrops" data-counties="Lawrence|Morgan" data-bloom="3 4" data-first="3" data-name="fleshy-fruit gladecress" data-search="fleshy-fruit gladecress leavenworthia crassa fleshyfruit gladecress brassicaceae (mustard family) glades and outcrops lawrence morgan">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2023-08/FFGC2_0.png?itok=wykeygVr" alt="" width="4000" height="3000" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/fleshy-fruit-gladecress/">Fleshy-fruit gladecress</a></h3>
-          <p class="sci"><i>Leavenworthia</i> <i>crassa</i></p>
-          <p class="entry-summary">A winter annual of cedar glades that grows nowhere on earth but two counties in north Alabama.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Glades and outcrops</span></p>
-          <div class="bloom" role="img" aria-label="In flower: March and April"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Woods and pinelands" data-counties="Geneva" data-bloom="5 6" data-first="5" data-name="gentian pinkroot" data-search="gentian pinkroot spigelia gentianoides purpleflower pinkroot loganiaceae (logania family) woods and pinelands geneva">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/gentian-pinkroot/">Gentian pinkroot</a></h3>
-          <p class="sci"><i>Spigelia</i> <i>gentianoides</i></p>
-          <p class="entry-summary">A small pink-flowered herb of fire-kept pinelands, with a close relative on the Bibb County glades.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: May and June"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Bluffs, cliffs, and sinkholes" data-counties="Bibb|Dallas|Elmore|Monroe|Russell|Sumter|Wilcox" data-bloom="3 4" data-first="3" data-name="georgia rockcress" data-search="georgia rockcress arabis georgiana brassicaceae (mustard family) bluffs, cliffs, and sinkholes bibb dallas elmore monroe russell sumter wilcox">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/georgia-rockcress/">Georgia rockcress</a></h3>
-          <p class="sci"><i>Arabis</i> <i>georgiana</i></p>
-          <p class="entry-summary">A white-flowered mustard of steep river bluffs.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Bluffs, cliffs, and sinkholes</span></p>
-          <div class="bloom" role="img" aria-label="In flower: March and April"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Bogs, seeps, and wet prairies" data-counties="Cherokee|DeKalb|Elmore|Etowah|Jackson|Marshall" data-bloom="4 5 6" data-first="4" data-name="green pitcher plant" data-search="green pitcher plant sarracenia oreophila green pitcherplant sarraceniaceae (pitcher plant family) bogs, seeps, and wet prairies cherokee dekalb elmore etowah jackson marshall">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-07/green-pitcher-plant.jpg?itok=eJoSOnBf" alt="" width="5771" height="3847" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/green-pitcher-plant/">Green pitcher plant</a></h3>
-          <p class="sci"><i>Sarracenia</i> <i>oreophila</i></p>
-          <p class="entry-summary">A carnivorous plant of upland bogs and seeps, known from northeast Alabama and a few sites in Georgia and North Carolina.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: April, May, and June"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Streams and shoals" data-counties="Cherokee|Cullman|DeKalb|Tuscaloosa|Walker" data-bloom="5 6 7 8 9 10" data-first="5" data-name="harperella" data-search="harperella ptilimnium nodosum piedmont mock bishopweed apiaceae (carrot family) streams and shoals cherokee cullman dekalb tuscaloosa walker">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-11/Harperella.jpg?itok=vNqEGpOX" alt="" width="1200" height="2119" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/harperella/">Harperella</a></h3>
-          <p class="sci"><i>Ptilimnium</i> <i>nodosum</i></p>
-          <p class="entry-summary">A slender, quill-leaved member of the carrot family that grows on rocky stream shoals.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Streams and shoals</span></p>
-          <div class="bloom" role="img" aria-label="In flower: May, June, July, August, September, and October"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m on" data-m="9">S</span><span class="m on" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Streams and shoals" data-counties="Cherokee|Coosa|DeKalb|Winston" data-bloom="5 6 7" data-first="5" data-name="kral&#39;s water-plantain" data-search="kral&#39;s water-plantain sagittaria secundifolia little river arrowhead alismataceae (water-plantain family) streams and shoals cherokee coosa dekalb winston">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/krals-water-plantain/">Kral&#39;s water-plantain</a></h3>
-          <p class="sci"><i>Sagittaria</i> <i>secundifolia</i></p>
-          <p class="entry-summary">An aquatic arrowhead rooted among the boulders of a few clear, rocky streams.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Streams and shoals</span></p>
-          <div class="bloom" role="img" aria-label="In flower: May, June, and July"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Glades and outcrops" data-counties="Colbert|Franklin|Jefferson|Lawrence|Morgan" data-bloom="7 8" data-first="7" data-name="leafy prairie clover" data-search="leafy prairie clover dalea foliosa leafy prairie-clover fabaceae (pea family) glades and outcrops colbert franklin jefferson lawrence morgan">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-12/Leafy-Prairie-Clover.JPG?itok=ZQPWI7zq" alt="" width="3024" height="4032" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/leafy-prairie-clover/">Leafy prairie clover</a></h3>
-          <p class="sci"><i>Dalea</i> <i>foliosa</i></p>
-          <p class="entry-summary">A purple-flowered prairie clover of thin-soiled limestone glades.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Glades and outcrops</span></p>
-          <div class="bloom" role="img" aria-label="In flower: July and August"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Glades and outcrops" data-counties="Chambers|Randolph|Tallapoosa" data-bloom="3 4" data-first="3" data-name="little amphianthus" data-search="little amphianthus amphianthus pusillus pool sprite snorkelwort gratiola amphiantha plantaginaceae (plantain family) glades and outcrops chambers randolph tallapoosa">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2017-03/26793.jpg?itok=HZ1t2tJF" alt="" width="2448" height="3264" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/little-amphianthus/">Little amphianthus</a></h3>
-          <p class="sci"><i>Amphianthus</i> <i>pusillus</i></p>
-          <p class="entry-summary">A thumbnail-sized annual that lives its whole life in rain pools on granite outcrops.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Glades and outcrops</span></p>
-          <div class="bloom" role="img" aria-label="In flower: March and April"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Streams and shoals" data-counties="Conecuh|Covington|Mobile|Monroe|Washington" data-bloom="" data-first="99" data-name="louisiana quillwort" data-search="louisiana quillwort isoetes louisianensis isoetaceae (quillwort family) streams and shoals conecuh covington mobile monroe washington">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/louisiana-quillwort/">Louisiana quillwort</a></h3>
-          <p class="sci"><i>Isoetes</i> <i>louisianensis</i></p>
-          <p class="entry-summary">A grass-like relative of the ferns that grows on sandbars in small streams.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Streams and shoals</span></p>
-          <p class="bloom-none">No flowers; spreads by spores</p>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Glades and outcrops" data-counties="Colbert|Franklin|Lawrence" data-bloom="3 4" data-first="3" data-name="lyrate bladderpod" data-search="lyrate bladderpod lesquerella lyrata lyreleaf bladderpod paysonia lyrata brassicaceae (mustard family) glades and outcrops colbert franklin lawrence">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2024-03/lyrate-bladderpod-tnc-prairie-grove-glades-preserve-al-rob-hurt-usfws.JPG?itok=FyeX0-Z4" alt="" width="4032" height="3024" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/lyrate-bladderpod/">Lyrate bladderpod</a></h3>
-          <p class="sci"><i>Lesquerella</i> <i>lyrata</i></p>
-          <p class="entry-summary">A yellow-flowered annual mustard known from just three populations, all in northwest Alabama.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Glades and outcrops</span></p>
-          <div class="bloom" role="img" aria-label="In flower: March and April"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Glades and outcrops" data-counties="Bibb|Blount|Calhoun|Cherokee|Cullman|Etowah|Jefferson|Walker" data-bloom="5 6" data-first="5" data-name="mohr&#39;s barbara&#39;s buttons" data-search="mohr&#39;s barbara&#39;s buttons marshallia mohrii coosa barbara&#39;s buttons asteraceae (aster family) glades and outcrops bibb blount calhoun cherokee cullman etowah jefferson walker">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/mohrs-barbaras-buttons/">Mohr&#39;s Barbara&#39;s buttons</a></h3>
-          <p class="sci"><i>Marshallia</i> <i>mohrii</i></p>
-          <p class="entry-summary">A pale pink, button-flowered herb of moist glades and prairie openings.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Glades and outcrops</span></p>
-          <div class="bloom" role="img" aria-label="In flower: May and June"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Woods and pinelands" data-counties="Jackson|Madison" data-bloom="5 6 7" data-first="5" data-name="morefield&#39;s leather flower" data-search="morefield&#39;s leather flower clematis morefieldii huntsville vasevine ranunculaceae (buttercup family) woods and pinelands jackson madison">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/morefields-leather-flower/">Morefield&#39;s leather flower</a></h3>
-          <p class="sci"><i>Clematis</i> <i>morefieldii</i></p>
-          <p class="entry-summary">A climbing clematis with pinkish, urn-shaped flowers, found on wooded limestone slopes near Huntsville.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: May, June, and July"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Woods and pinelands" data-counties="Covington|Wilcox" data-bloom="2 3" data-first="2" data-name="pondberry" data-search="pondberry lindera melissifolia southern spicebush lauraceae (laurel family) woods and pinelands covington wilcox">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-03/1874.jpg?itok=TS2A-mNo" alt="" width="2048" height="1536" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/pondberry/">Pondberry</a></h3>
-          <p class="sci"><i>Lindera</i> <i>melissifolia</i></p>
-          <p class="entry-summary">A low, thicket-forming shrub of seasonally flooded woods that flowers before its leaves appear.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: February and March"><span class="m" data-m="1">J</span><span class="m on" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Woods and pinelands" data-counties="Autauga|Butler|Dallas|Jackson|Lawrence|Lowndes|Madison|Marshall|Monroe|Wilcox" data-bloom="6 7" data-first="6" data-name="price&#39;s potato-bean" data-search="price&#39;s potato-bean apios priceana price&#39;s groundnut traveler&#39;s delight fabaceae (pea family) woods and pinelands autauga butler dallas jackson lawrence lowndes madison marshall monroe wilcox">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/prices-potato-bean/">Price&#39;s potato-bean</a></h3>
-          <p class="sci"><i>Apios</i> <i>priceana</i></p>
-          <p class="entry-summary">A twining vine of forest openings that grows from a single large tuber.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: June and July"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m on" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Woods and pinelands" data-counties="Bullock|Henry|Lee" data-bloom="3 4" data-first="3" data-name="relict trillium" data-search="relict trillium trillium reliquum confederate wakerobin confederate trillium melanthiaceae (bunchflower family) woods and pinelands bullock henry lee">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2017-03/26789.jpg?itok=22_r49eT" alt="" width="2448" height="3264" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/relict-trillium/">Relict trillium</a></h3>
-          <p class="sci"><i>Trillium</i> <i>reliquum</i></p>
-          <p class="entry-summary">A spring wildflower with mottled leaves and a stem that curves along the ground.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Woods and pinelands</span></p>
-          <div class="bloom" role="img" aria-label="In flower: March and April"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Bogs, seeps, and wet prairies" data-counties="Bibb|Calhoun|Franklin|Shelby" data-bloom="8 9" data-first="8" data-name="tennessee yellow-eyed grass" data-search="tennessee yellow-eyed grass xyris tennesseensis tennessee yelloweyed grass xyridaceae (yellow-eyed grass family) bogs, seeps, and wet prairies bibb calhoun franklin shelby">
-        <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
-        <div class="entry-text">
-          <h3><a href="plants/tennessee-yellow-eyed-grass/">Tennessee yellow-eyed grass</a></h3>
-          <p class="sci"><i>Xyris</i> <i>tennesseensis</i></p>
-          <p class="entry-summary">A clump-forming wetland plant whose small yellow flowers open for only a few hours a day.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: August and September"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m on" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="T" data-habitat="Bogs, seeps, and wet prairies" data-counties="Calhoun|Clay|Marion|Tuscaloosa" data-bloom="7 8" data-first="7" data-name="white fringeless orchid" data-search="white fringeless orchid platanthera integrilabia monkeyface orchidaceae (orchid family) bogs, seeps, and wet prairies calhoun clay marion tuscaloosa">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-06/8229.jpg?itok=r5K6IPsp" alt="" width="1200" height="1840" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/white-fringeless-orchid/">White fringeless orchid</a></h3>
-          <p class="sci"><i>Platanthera</i> <i>integrilabia</i></p>
-          <p class="entry-summary">A white, sweet-scented orchid of shaded seeps and streamhead swamps.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-T">Threatened</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: July and August"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m on" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m" data-m="9">S</span><span class="m" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      <li class="entry" data-status="E" data-habitat="Bogs, seeps, and wet prairies" data-counties="Cherokee" data-bloom="8 9 10" data-first="8" data-name="whorled sunflower" data-search="whorled sunflower helianthus verticillatus asteraceae (aster family) bogs, seeps, and wet prairies cherokee">
-        <div class="thumb" data-photo>
-          <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2022-05/Helianthus%20verticillatus%20clean%201_0.jpg?itok=8hd4JSxT" alt="" width="2560" height="2293" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-          <span class="thumb-fallback" hidden>Photo unavailable</span>
-        </div>
-        <div class="entry-text">
-          <h3><a href="plants/whorled-sunflower/">Whorled sunflower</a></h3>
-          <p class="sci"><i>Helianthus</i> <i>verticillatus</i></p>
-          <p class="entry-summary">A sunflower of wet prairie remnants, known in Alabama only from Cherokee County.</p>
-        </div>
-        <div class="entry-side">
-          <p class="entry-tags"><span class="status status-E">Endangered</span> <span class="habitat">Bogs, seeps, and wet prairies</span></p>
-          <div class="bloom" role="img" aria-label="In flower: August, September, and October"><span class="m" data-m="1">J</span><span class="m" data-m="2">F</span><span class="m" data-m="3">M</span><span class="m" data-m="4">A</span><span class="m" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m on" data-m="9">S</span><span class="m on" data-m="10">O</span><span class="m" data-m="11">N</span><span class="m" data-m="12">D</span></div>
-        </div>
-      </li>
-      </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No plants match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
+    <section class="group" aria-labelledby="g-plants">
+      <div class="group-head">
+        <h2 id="g-plants"><a href="plants/">Plants</a></h2>
+        <p class="group-count">23 listed: 14 endangered and 9 threatened</p>
       </div>
+      <ul class="names">
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/alabama-canebrake-pitcher-plant/">Alabama canebrake pitcher plant</a> <span class="sci"><i>Sarracenia</i> <i>rubra</i> ssp. <i>alabamensis</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/alabama-leather-flower/">Alabama leather flower</a> <span class="sci"><i>Clematis</i> <i>socialis</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/alabama-streak-sorus-fern/">Alabama streak-sorus fern</a> <span class="sci"><i>Thelypteris</i> <i>pilosa</i> var. <i>alabamensis</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/american-chaffseed/">American chaffseed</a> <span class="sci"><i>Schwalbea</i> <i>americana</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/american-harts-tongue-fern/">American hart&#39;s-tongue fern</a> <span class="sci"><i>Asplenium</i> <i>scolopendrium</i> var. <i>americanum</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/fleshy-fruit-gladecress/">Fleshy-fruit gladecress</a> <span class="sci"><i>Leavenworthia</i> <i>crassa</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/gentian-pinkroot/">Gentian pinkroot</a> <span class="sci"><i>Spigelia</i> <i>gentianoides</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/georgia-rockcress/">Georgia rockcress</a> <span class="sci"><i>Arabis</i> <i>georgiana</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/green-pitcher-plant/">Green pitcher plant</a> <span class="sci"><i>Sarracenia</i> <i>oreophila</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/harperella/">Harperella</a> <span class="sci"><i>Ptilimnium</i> <i>nodosum</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/krals-water-plantain/">Kral&#39;s water-plantain</a> <span class="sci"><i>Sagittaria</i> <i>secundifolia</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/leafy-prairie-clover/">Leafy prairie clover</a> <span class="sci"><i>Dalea</i> <i>foliosa</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/little-amphianthus/">Little amphianthus</a> <span class="sci"><i>Amphianthus</i> <i>pusillus</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/louisiana-quillwort/">Louisiana quillwort</a> <span class="sci"><i>Isoetes</i> <i>louisianensis</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/lyrate-bladderpod/">Lyrate bladderpod</a> <span class="sci"><i>Lesquerella</i> <i>lyrata</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/mohrs-barbaras-buttons/">Mohr&#39;s Barbara&#39;s buttons</a> <span class="sci"><i>Marshallia</i> <i>mohrii</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/morefields-leather-flower/">Morefield&#39;s leather flower</a> <span class="sci"><i>Clematis</i> <i>morefieldii</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/pondberry/">Pondberry</a> <span class="sci"><i>Lindera</i> <i>melissifolia</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/prices-potato-bean/">Price&#39;s potato-bean</a> <span class="sci"><i>Apios</i> <i>priceana</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/relict-trillium/">Relict trillium</a> <span class="sci"><i>Trillium</i> <i>reliquum</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/tennessee-yellow-eyed-grass/">Tennessee yellow-eyed grass</a> <span class="sci"><i>Xyris</i> <i>tennesseensis</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="plants/white-fringeless-orchid/">White fringeless orchid</a> <span class="sci"><i>Platanthera</i> <i>integrilabia</i></span><span class="visually-hidden">, threatened</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="plants/whorled-sunflower/">Whorled sunflower</a> <span class="sci"><i>Helianthus</i> <i>verticillatus</i></span><span class="visually-hidden">, endangered</span></span></li>
+      </ul>
+    </section>
+
+    <section class="group" aria-labelledby="g-insects">
+      <div class="group-head">
+        <h2 id="g-insects"><a href="insects/">Insects</a></h2>
+        <p class="group-count">1 listed, 1 proposed, 1 gone from Alabama</p>
+      </div>
+      <ul class="names">
+          <li><span class="dot dot-T" aria-hidden="true"></span><span class="name"><a href="insects/american-burying-beetle/">American burying beetle</a> <span class="sci"><i>Nicrophorus</i> <i>americanus</i></span><span class="visually-hidden">, threatened</span> <span class="name-tag">gone from Alabama</span></span></li>
+          <li><span class="dot dot-E" aria-hidden="true"></span><span class="name"><a href="insects/mitchells-satyr/">Mitchell&#39;s satyr</a> <span class="sci"><i>Neonympha</i> <i>mitchellii</i> <i>mitchellii</i></span><span class="visually-hidden">, endangered</span></span></li>
+          <li><span class="dot dot-P" aria-hidden="true"></span><span class="name"><a href="insects/monarch/">Monarch</a> <span class="sci"><i>Danaus</i> <i>plexippus</i></span><span class="visually-hidden">, proposed threatened</span> <span class="name-tag">proposed</span></span></li>
+      </ul>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <p>Checked against federal sources on November 12, 2026.  Listings change, so confirm a plant's status with the U.S. Fish &amp; Wildlife Service before you rely on it.</p>
-      <p><a href="./about/">About and sources</a> <a href="https://github.com/wgvisots/alabama-endangered-species" rel="noopener noreferrer">Source on GitHub</a></p>
+      <p>Checked against federal sources on November 11, 2026.  Listings change, so confirm a species' status with the U.S. Fish &amp; Wildlife Service before you rely on it.</p>
+      <p><a href="./about/">About and sources</a> <a href="https://github.com/wgvisots/alabama-endangered-species" rel="noopener noreferrer">Source on GitHub</a> <a href="https://github.com/wgvisots/alabama-endangered-species/blob/main/LICENSE" rel="noopener noreferrer">Text and code under the Apache License 2.0</a></p>
     </div>
   </footer>
 </body>

@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "mitchells-satyr",
+    "common": "Mitchell's satyr",
+    "scientific": "Neonympha mitchellii mitchellii",
+    "otherNames": [
+      "Mitchell's satyr butterfly"
+    ],
+    "kind": "Butterfly",
+    "family": "Nymphalidae (brush-footed butterflies)",
+    "status": "E",
+    "listedDate": "1992-05-20",
+    "fr": "57 FR 21564",
+    "presence": "present",
+    "habitatType": "Beaver wetlands",
+    "season": [
+      6,
+      8
+    ],
+    "seasonNote": "Two broods in Alabama: the first usually flies in June, the second in August",
+    "summary": "A small brown butterfly of shaded sedge wetlands, unknown in Alabama until a chance sighting in 2000.",
+    "description": "A small brown butterfly with a wingspan of about 1.75 inches.  The upper sides of the wings are plain.  The undersides carry a row of round black eyespots ringed in yellow, set between two reddish-orange lines, and the spots on the hindwing are the largest.  Its flight is low and bobbing.  Several other satyrs look much like it, so the Alabama Butterfly Atlas advises weighing the place and the season along with the markings.",
+    "habitat": "Wetlands where sunny sedge meadow meets shaded swamp forest.  In Alabama this ground is usually made, and kept open, by beavers over many years.  In Michigan and Indiana the butterfly lives in fens fed by mineral-rich springs.",
+    "life": "The caterpillars feed on sedges, and in Alabama also on several grasses, including the invasive Japanese stilt grass.  Half-grown caterpillars pass the winter and finish growing in spring.  Adults live two to three weeks.  They seldom visit flowers, avoid direct sun, and are most active late in the afternoon and on warm, overcast days.",
+    "alabama": "First seen in the state on June 3, 2000, along a Bibb County roadside, more than 500 miles from the nearest population then known.  Searches since have found small, scattered colonies in Bibb, Fayette, Hale, and Tuscaloosa Counties, most of them in the Oakmulgee Ranger District of Talladega National Forest.",
+    "counties": [
+      "Bibb",
+      "Fayette",
+      "Hale",
+      "Tuscaloosa"
+    ],
+    "range": "Michigan, Indiana, Virginia, Mississippi, and Alabama; gone from New Jersey and Ohio",
+    "threats": "Loss and draining of wetlands, changes to the flow of water, and plant succession: as shrubs and trees close in, a site stops supporting the butterfly.  Its habitat in Alabama is temporary by nature, and some of the first sites found no longer hold it.  Pesticides, and the small size and isolation of the colonies, add to the risk.",
+    "notes": "The butterfly was listed by emergency rule on June 25, 1991 (56 FR 28825), and by final rule the next year.  The southern colonies, found in Alabama, Mississippi, and Virginia since the late 1990s, have been studied to learn whether they belong with the Michigan and Indiana butterflies or are a subspecies of their own.  The Fish & Wildlife Service includes them in the range of Mitchell's satyr.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2025-03/mitchells-banner-edit.jpg?itok=kpCs8gvd",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2025-03/mitchells-banner-edit.jpg?itok=cr0Nf0bD",
+      "page": "https://www.fws.gov/media/mitchells-satyr-butterfly-alabama",
+      "w": 2560,
+      "h": 1707,
+      "alt": "A Mitchell's satyr butterfly resting on a leaf.",
+      "caption": "Mitchell's satyr in Alabama, June 2023.",
+      "credit": "David Pavlik/John Ball Zoo, via USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: Mitchell's satyr butterfly",
+        "url": "https://www.fws.gov/species/mitchells-satyr-butterfly-neonympha-mitchellii-mitchellii"
+      },
+      {
+        "label": "Alabama Butterfly Atlas: Mitchell's satyr",
+        "url": "https://alabama.butterflyatlas.usf.edu/species/details/101/"
+      },
+      {
+        "label": "Alabama Butterfly Atlas identification sheet",
+        "url": "https://alabama.butterflyatlas.usf.edu/static/documents/butterfly-id/aba-id-mitchells-satyr-20191204.pdf"
+      },
+      {
+        "label": "Wikipedia: Neonympha mitchellii",
+        "url": "https://en.wikipedia.org/wiki/Neonympha_mitchellii"
+      }
+    ]
+  },
+  {
+    "slug": "monarch",
+    "common": "Monarch",
+    "scientific": "Danaus plexippus",
+    "otherNames": [
+      "monarch butterfly"
+    ],
+    "kind": "Butterfly",
+    "family": "Nymphalidae (brush-footed butterflies)",
+    "status": "P",
+    "proposedDate": "2024-12-12",
+    "fr": "FR Doc. 2024-28855",
+    "presence": "present",
+    "habitatType": "Open, sunny country",
+    "season": null,
+    "seasonShort": "Spring and fall, on migration",
+    "seasonNote": "Most are seen in spring and fall, as the migration passes through; counts peak in October",
+    "summary": "The familiar orange-and-black migrant, proposed for listing as threatened but not yet protected.",
+    "description": "A large butterfly with a wingspan of 3 to 5 inches.  The wings are orange with black veins and a wide black border dotted with white.  Males are the brighter, and carry a dark scent patch on each hindwing.  The caterpillar is banded in white, black, and yellow, with a pair of long black filaments at each end.  The chrysalis is green with gold dots.",
+    "habitat": "Sunny, open places of nearly any kind: fields, roadsides, wet ground, coasts, and gardens.  It needs milkweed for its caterpillars and flowers for nectar.",
+    "life": "The caterpillars eat only milkweeds and their close relatives.  Several short-lived generations breed through spring and summer.  The last generation of the year flies south, as far as 3,000 miles, to winter in high fir forests in central Mexico, and those butterflies can live six to nine months.",
+    "alabama": "Recorded in every county.  Most Alabamians see monarchs only in spring and fall, as the migration passes through, and the highest counts have come from Baldwin County in October.  Some monarchs spend the winter on the Gulf Coast, roosting in trees at Fort Morgan and near Fairhope.",
+    "counties": [],
+    "countiesText": "All 67",
+    "range": "North and South America; in North America, an eastern and a western population migrate on either side of the Rocky Mountains",
+    "threats": "Loss of milkweed across the breeding range, logging at the wintering grounds in Mexico, and a parasite that weakens caterpillars and adults.  The Service puts the chance that the eastern migratory population will be extinct by 2080 at 56 to 74 percent.",
+    "notes": "The Fish & Wildlife Service proposed listing the monarch as threatened on December 12, 2024.  No final rule has followed, so the monarch has no protection under the Act today.  Under a court settlement filed on September 30, 2026, the Service is to make its final decision by June 6, 2030.  For gardeners, the Alabama Butterfly Atlas recommends native milkweeds over tropical milkweed, which can prolong breeding and spread the parasite.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2015-09/18211.jpg?itok=aZdra-mE",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/images/2015-09/18211.jpg?itok=xFPXILqg",
+      "page": "https://www.fws.gov/media/adult-monarch-butterfly-milkweed-1",
+      "w": 5616,
+      "h": 3744,
+      "alt": "An adult monarch butterfly on a milkweed flower.",
+      "caption": "An adult monarch on milkweed.",
+      "credit": "Ryan Hagerty/USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: monarch",
+        "url": "https://www.fws.gov/species/monarch-danaus-plexippus"
+      },
+      {
+        "label": "FWS: Save the Monarch",
+        "url": "https://www.fws.gov/our-work/pollinators/save-monarch"
+      },
+      {
+        "label": "Proposed rule to list the monarch as threatened (2024)",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2024-12-12/pdf/2024-28855.pdf"
+      },
+      {
+        "label": "FWS: Monarch conservation in Alabama",
+        "url": "https://www.fws.gov/project/monarch-conservation-alabama"
+      },
+      {
+        "label": "Alabama Butterfly Atlas: monarch",
+        "url": "https://alabama.butterflyatlas.usf.edu/species/details/47/"
+      },
+      {
+        "label": "Monarch Joint Venture: Endangered Species Act status",
+        "url": "https://monarchjointventure.org/monarch-biology/status/esa"
+      }
+    ],
+    "nameInText": "monarch"
+  },
+  {
+    "slug": "american-burying-beetle",
+    "common": "American burying beetle",
+    "scientific": "Nicrophorus americanus",
+    "otherNames": [
+      "giant carrion beetle"
+    ],
+    "kind": "Beetle",
+    "family": "Silphidae (carrion beetles)",
+    "status": "T",
+    "listedDate": "1989-07-13",
+    "fr": "54 FR 29652",
+    "presence": "historical",
+    "habitatType": "Open country and woods",
+    "season": null,
+    "seasonShort": "Not found in Alabama today",
+    "seasonNote": "Where it survives, adults are active from about May to September",
+    "summary": "A large black-and-orange carrion beetle that buries small carcasses to feed its young.  It is thought to be gone from Alabama.",
+    "description": "A shiny black beetle 1 to 1.8 inches long, marked in orange-red: two scalloped spots on each wing cover, a patch on the head, orange clubs on the antennae, and a large mark on the shield behind the head.  That last mark is the sure sign.  No other burying beetle in North America has it.",
+    "habitat": "It is not particular.  It has been found in wet meadows, grasslands, pastures, shrublands, and open woods.  What it needs is a supply of small dead birds and mammals.",
+    "life": "Adults are active at night from late spring to early fall, and can fly as far as 18 miles in a night in search of carrion.  A male and a female bury a small carcass together, shape it into a ball, and raise 12 to 18 young on it, feeding the larvae themselves.  Adults live about a year.",
+    "alabama": "The beetle once ranged over at least 35 states.  The University of Alabama's museums hold American burying beetles in the Löding Beetle Collection, gathered across Alabama, and chiefly around Mobile, between 1900 and 1930.  The Encyclopedia of Alabama calls the species possibly extirpated in the state, and says surveys of suitable habitat are needed to be sure.",
+    "counties": [],
+    "countiesText": "None known today",
+    "range": "Parts of Arkansas, Kansas, Nebraska, Oklahoma, and South Dakota, and Block Island, Rhode Island, with reintroduced populations in Massachusetts, Missouri, and Ohio",
+    "threats": "The Service now names a warming climate as the greatest threat to most surviving populations, along with the loss of habitat to development and cropland.  Why the beetle vanished from most of the East is less certain.  One leading idea is that changes to the land left too few carcasses of the right size.",
+    "notes": "Listed as endangered in 1989, and reclassified as threatened on October 15, 2020 (85 FR 65241).  A reintroduced population in southwestern Missouri is listed separately, as an experimental population.",
+    "image": {
+      "thumb": "https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-11/American%20Burying%20Beetle%20at%20RWPZ.jpg?itok=o3uA6QmA",
+      "full": "https://www.fws.gov/sites/default/files/styles/max_1300x1300/public/2021-11/American%20Burying%20Beetle%20at%20RWPZ.jpg?itok=r5n7yK9i",
+      "page": "https://www.fws.gov/media/american-burying-beetle-rwpzjpg",
+      "w": 4032,
+      "h": 3024,
+      "alt": "An American burying beetle, black with orange-red markings.",
+      "caption": "An American burying beetle bred in the conservation program at Roger Williams Park Zoo.",
+      "credit": "USFWS",
+      "license": "Public domain"
+    },
+    "refs": [
+      {
+        "label": "FWS species profile: American burying beetle",
+        "url": "https://www.fws.gov/species/american-burying-beetle-nicrophorus-americanus"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/66"
+      },
+      {
+        "label": "Final rule reclassifying the beetle as threatened (2020)",
+        "url": "https://www.fws.gov/sites/default/files/federal_register_document/2020-19810.pdf"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/165011"
+      },
+      {
+        "label": "FWS recovery plan (1991)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/910927.pdf"
+      },
+      {
+        "label": "University of Alabama Museums: collections spotlight on the American burying beetle",
+        "url": "https://news.ua.edu/?p=88927"
+      },
+      {
+        "label": "Wikipedia: Nicrophorus americanus",
+        "url": "https://en.wikipedia.org/wiki/Nicrophorus_americanus"
+      }
+    ]
+  }
+]

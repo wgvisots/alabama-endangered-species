@@ -8,17 +8,17 @@
       "snorkelwort",
       "Gratiola amphiantha"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Plantaginaceae (plantain family)",
     "status": "T",
     "listedDate": "1988-02-05",
     "fr": "53 FR 3560",
     "habitatType": "Glades and outcrops",
-    "bloom": [
+    "season": [
       3,
       4
     ],
-    "bloomNote": "March to April",
+    "seasonNote": "March to April",
     "summary": "A thumbnail-sized annual that lives its whole life in rain pools on granite outcrops.",
     "description": "A tiny aquatic annual only a few centimeters long.  A rosette of small leaves sits underwater, and a thread-like stem carries a pair of floating oval leaves, up to about 8 mm long, to the surface.  The flowers are white and only a few millimeters wide.  It grows fast and can mature in under three weeks.",
     "habitat": "Shallow, temporary pools on granite and gneiss outcrops.  The pools hold water in late winter and spring and are dry by summer.",
@@ -65,17 +65,17 @@
       "Price's groundnut",
       "traveler's delight"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Fabaceae (pea family)",
     "status": "T",
     "listedDate": "1990-01-05",
     "fr": "55 FR 429",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       6,
       7
     ],
-    "bloomNote": "Late June to mid-July; plants do not flower every year",
+    "seasonNote": "Late June to mid-July; plants do not flower every year",
     "summary": "A twining vine of forest openings that grows from a single large tuber.",
     "description": "A perennial twining vine that climbs 3 to 5 meters from a thick tuber, which can reach about 18 cm across.  The leaves are 20 to 30 cm long and usually have seven leaflets.  The pea-like flowers are greenish-white to brownish-pink with a magenta tip and hang in dense clusters.  The pods are 12 to 15 cm long.",
     "habitat": "Openings in mixed hardwood forest, often on rocky wooded slopes where a ravine meets a creek bottom.  Some populations persist along road and utility rights-of-way.",
@@ -124,17 +124,17 @@
     "common": "Georgia rockcress",
     "scientific": "Arabis georgiana",
     "otherNames": [],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Brassicaceae (mustard family)",
     "status": "T",
     "listedDate": "2014-09-12",
     "fr": "79 FR 54627",
     "habitatType": "Bluffs, cliffs, and sinkholes",
-    "bloom": [
+    "season": [
       3,
       4
     ],
-    "bloomNote": "March to April; fruit from May into early July",
+    "seasonNote": "March to April; fruit from May into early July",
     "summary": "A white-flowered mustard of steep river bluffs.",
     "description": "A perennial herb up to about 90 cm tall.  It has a basal rosette of toothed, lance-shaped leaves 4 to 8 cm long, and smaller leaves that partly clasp the stem.  The flowers are white with four petals, and the fruit is a slender, upright pod 5 to 7 cm long.",
     "habitat": "Steep river bluffs with shallow soil over rock, rock outcrops, and sandy, eroding riverbanks, in full to partial sun.  It occasionally grows in limestone glades.",
@@ -186,14 +186,14 @@
     "otherNames": [
       "hart's tonguefern"
     ],
-    "group": "Fern or fern ally",
+    "kind": "Fern or fern ally",
     "family": "Aspleniaceae (spleenwort family)",
     "status": "T",
     "listedDate": "1989-07-14",
     "fr": "54 FR 29726",
     "habitatType": "Bluffs, cliffs, and sinkholes",
-    "bloom": null,
-    "bloomNote": "A fern; it reproduces by spores and has no flowers",
+    "season": null,
+    "seasonNote": "A fern; it reproduces by spores and has no flowers",
     "summary": "A strap-leaved evergreen fern that survives in the South only in cool limestone sinkholes.",
     "description": "An evergreen fern with a crown of undivided, strap-shaped fronds, typically 35 to 40 cm long and 2 to 4.5 cm wide, with smooth edges and ear-like lobes at the base.  The spore clusters are brown lines set in two rows on the underside of each frond.",
     "habitat": "Cool, moist, shaded limestone.  In the North it grows on talus slopes and boulder fields.  In the South it is confined to sinkholes and cave mouths, which stay cooler than the land around them.",
@@ -238,18 +238,18 @@
     "otherNames": [
       "Huntsville vasevine"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Ranunculaceae (buttercup family)",
     "status": "E",
     "listedDate": "1992-05-20",
     "fr": "57 FR 21562",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       5,
       6,
       7
     ],
-    "bloomNote": "May to July",
+    "seasonNote": "May to July",
     "summary": "A climbing clematis with pinkish, urn-shaped flowers, found on wooded limestone slopes near Huntsville.",
     "description": "A perennial vine that climbs to about 5 meters.  The young shoots are covered in dense white hairs, and the compound leaves are velvety underneath, with the end leaflets turned into tendrils.  The flowers are urn-shaped, pinkish, and 2 to 2.5 cm long, borne singly or in small groups where the leaves meet the stem.",
     "habitat": "Rocky limestone woods with large boulders, often near seeps and streams, where it climbs over shrubs and rocks.",
@@ -294,17 +294,17 @@
     "common": "Alabama leather flower",
     "scientific": "Clematis socialis",
     "otherNames": [],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Ranunculaceae (buttercup family)",
     "status": "E",
     "listedDate": "1986-09-26",
     "fr": "51 FR 34420",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       4,
       5
     ],
-    "bloomNote": "Late April to May",
+    "seasonNote": "Late April to May",
     "summary": "A low clematis that does not climb, known from a handful of colonies with blue-violet bells.",
     "description": "Unlike most clematis, it does not climb.  It spreads by underground stems and forms dense patches of upright shoots up to about 30 cm tall.  Each shoot carries one or a few urn-shaped, blue-violet flowers 2 to 3 cm long.  The lower leaves are simple and narrow, and the upper leaves are divided into three to five leaflets.",
     "habitat": "Wet, silty-clay flats near creeks, at the edge of bottomland woods and in grass and sedge openings.  Every known site has been altered by people, and several are on road or utility rights-of-way.",
@@ -344,17 +344,17 @@
     "otherNames": [
       "leafy prairie-clover"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Fabaceae (pea family)",
     "status": "E",
     "listedDate": "1991-05-01",
     "fr": "56 FR 19953",
     "habitatType": "Glades and outcrops",
-    "bloom": [
+    "season": [
       7,
       8
     ],
-    "bloomNote": "Late July to early August",
+    "seasonNote": "Late July to early August",
     "summary": "A purple-flowered prairie clover of thin-soiled limestone glades.",
     "description": "A perennial herb 20 to 80 cm tall, with several upright stems from a hard root crown.  The leaves are divided into small, hairless, oval leaflets.  The flowers are small and purple, packed into dense, cone-shaped spikes at the stem tips.",
     "habitat": "Thin soils over limestone in cedar glades, barrens, and prairie openings, often where seepage keeps the ground moist.",
@@ -408,18 +408,18 @@
     "common": "Whorled sunflower",
     "scientific": "Helianthus verticillatus",
     "otherNames": [],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Asteraceae (aster family)",
     "status": "E",
     "listedDate": "2014-08-01",
     "fr": "79 FR 44712",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       8,
       9,
       10
     ],
-    "bloomNote": "Late August to early October",
+    "seasonNote": "Late August to early October",
     "summary": "A sunflower of wet prairie remnants, known in Alabama only from Cherokee County.",
     "description": "A perennial sunflower with yellow flower heads.  The name _verticillatus_ means whorled, for leaves set in rings around the stem.  The sources read for this entry give little more, so see the species status assessment for a full botanical description.",
     "habitat": "Remnant wet prairies and swales at the heads of small streams, on acidic silty and sandy loams, in full sun among grasses such as little bluestem and Indian grass.  Most surviving patches are in old fields and along roadsides, railroads, and farm streams.",
@@ -469,14 +469,14 @@
     "common": "Louisiana quillwort",
     "scientific": "Isoetes louisianensis",
     "otherNames": [],
-    "group": "Fern or fern ally",
+    "kind": "Fern or fern ally",
     "family": "Isoetaceae (quillwort family)",
     "status": "E",
     "listedDate": "1992-10-28",
     "fr": "57 FR 48741",
     "habitatType": "Streams and shoals",
-    "bloom": null,
-    "bloomNote": "A quillwort; it reproduces by spores and has no flowers",
+    "season": null,
+    "seasonNote": "A quillwort; it reproduces by spores and has no flowers",
     "summary": "A grass-like relative of the ferns that grows on sandbars in small streams.",
     "description": "A small, semi-aquatic plant that looks like a tuft of grass.  Its slender, hollow, quill-like leaves can reach about 40 cm long and 2 to 3 mm wide, and spiral out from a two-lobed base.  It makes no flowers; the spores form inside the widened bases of the leaves.",
     "habitat": "Sand and gravel bars and wet banks of small to medium streams, where the plants are often under water after rain.",
@@ -518,17 +518,17 @@
     "otherNames": [
       "fleshyfruit gladecress"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Brassicaceae (mustard family)",
     "status": "E",
     "listedDate": "2014-08-01",
     "fr": "79 FR 44712",
     "habitatType": "Glades and outcrops",
-    "bloom": [
+    "season": [
       3,
       4
     ],
-    "bloomNote": "March to April; seed is ripe by late April and the plants are dead by the end of May",
+    "seasonNote": "March to April; seed is ripe by late April and the plants are dead by the end of May",
     "summary": "A winter annual of cedar glades that grows nowhere on earth but two counties in north Alabama.",
     "description": "A hairless winter annual 10 to 40 cm tall.  The leaves form a flat rosette and are deeply lobed, with the end lobe much the largest.  The four-petaled flowers are yellow with orange, or white with yellow, and both forms often grow in the same population.  The fruit is a plump, rounded pod about 12 mm long with a slender beak.",
     "habitat": "Open, sunny cedar glades on thin soil over limestone, wet in winter and spring and baked dry in summer.  Most remaining plants are in glade-like pastures, roadsides, and field edges.  Seeds sprout in September and October, and the plants pass the winter as rosettes.",
@@ -586,17 +586,17 @@
       "lyreleaf bladderpod",
       "Paysonia lyrata"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Brassicaceae (mustard family)",
     "status": "T",
     "listedDate": "1990-09-28",
     "fr": "55 FR 39864",
     "habitatType": "Glades and outcrops",
-    "bloom": [
+    "season": [
       3,
       4
     ],
-    "bloomNote": "March to April",
+    "seasonNote": "March to April",
     "summary": "A yellow-flowered annual mustard known from just three populations, all in northwest Alabama.",
     "description": "An annual 10 to 30 cm tall, with short hairs on the stems and leaves.  The basal leaves are lyre-shaped, with a large rounded end lobe.  The stem leaves have no stalks and clasp the stem with small ear-like lobes.  The flowers are bright yellow, and the seed pods are smooth and nearly round.",
     "habitat": "Cedar glades on limestone.  The surviving populations grow in glade-like disturbed ground: pastures, roadsides, and cultivated fields.",
@@ -642,17 +642,17 @@
     "otherNames": [
       "southern spicebush"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Lauraceae (laurel family)",
     "status": "E",
     "listedDate": "1986-07-31",
     "fr": "51 FR 27495",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       2,
       3
     ],
-    "bloomNote": "Late February to March, before the leaves; fruit is ripe in October",
+    "seasonNote": "Late February to March, before the leaves; fruit is ripe in October",
     "summary": "A low, thicket-forming shrub of seasonally flooded woods that flowers before its leaves appear.",
     "description": "A deciduous shrub, usually low but now and then over 6 feet tall, that spreads by runners into colonies.  The thin, drooping leaves smell of sassafras when crushed.  Small, pale yellow flowers open in late winter before the leaves, with male and female flowers on separate plants.  The fruit is a bright red, oval drupe about half an inch long.",
     "habitat": "Seasonally flooded wetlands: bottomland hardwood forest, and the margins of sinks, ponds, and depressions, usually in light shade.",
@@ -697,17 +697,17 @@
     "otherNames": [
       "Coosa Barbara's buttons"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Asteraceae (aster family)",
     "status": "T",
     "listedDate": "1988-09-07",
     "fr": "53 FR 34698",
     "habitatType": "Glades and outcrops",
-    "bloom": [
+    "season": [
       5,
       6
     ],
-    "bloomNote": "May to June",
+    "seasonNote": "May to June",
     "summary": "A pale pink, button-flowered herb of moist glades and prairie openings.",
     "description": "An upright perennial 1 to 2.5 feet tall.  The firm, lance-shaped leaves have three parallel veins and are largest near the base.  Each stem carries several flower heads about an inch across, made up entirely of tubular flowers that are white to pale pink or lavender.",
     "habitat": "Open to partly shaded ground dominated by grasses and sedges: dolomite glades, prairie remnants, stream margins, and woodland openings.  Several populations are on roadsides and utility rights-of-way.",
@@ -756,17 +756,17 @@
     "otherNames": [
       "monkeyface"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Orchidaceae (orchid family)",
     "status": "T",
     "listedDate": "2016-09-13",
     "fr": "81 FR 62826",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       7,
       8
     ],
-    "bloomNote": "Mid-July to late August",
+    "seasonNote": "Mid-July to late August",
     "summary": "A white, sweet-scented orchid of shaded seeps and streamhead swamps.",
     "description": "A perennial orchid up to about 2 feet tall, with a loose spike of up to 20 white, fragrant flowers.  Each flower has a long, curving nectar spur and a rounded lip without the fringe that marks its relatives.",
     "habitat": "Wet, flat, boggy ground at the heads of streams and on seepage slopes, in partial shade, often with sphagnum moss.",
@@ -813,13 +813,13 @@
     "otherNames": [
       "piedmont mock bishopweed"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Apiaceae (carrot family)",
     "status": "E",
     "listedDate": "1988-09-28",
     "fr": "53 FR 37978",
     "habitatType": "Streams and shoals",
-    "bloom": [
+    "season": [
       5,
       6,
       7,
@@ -827,7 +827,7 @@
       9,
       10
     ],
-    "bloomNote": "Pond plants begin in May; river plants begin in late June or July and flower until frost",
+    "seasonNote": "Pond plants begin in May; river plants begin in late June or July and flower until frost",
     "summary": "A slender, quill-leaved member of the carrot family that grows on rocky stream shoals.",
     "description": "A perennial herb 6 to 36 inches tall.  Its leaves are reduced to hollow, quill-like tubes, and its small white flowers are held in flat-topped clusters that resemble Queen Anne's lace.",
     "habitat": "Gravelly and rocky shoals of clear streams, and the edges of shallow upland ponds.  It tolerates only a narrow range of water depths.",
@@ -871,18 +871,18 @@
     "otherNames": [
       "Little River arrowhead"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Alismataceae (water-plantain family)",
     "status": "T",
     "listedDate": "1990-04-13",
     "fr": "55 FR 13907",
     "habitatType": "Streams and shoals",
-    "bloom": [
+    "season": [
       5,
       6,
       7
     ],
-    "bloomNote": "Flowers infrequently, from May into July and sometimes into fall",
+    "seasonNote": "Flowers infrequently, from May into July and sometimes into fall",
     "summary": "An aquatic arrowhead rooted among the boulders of a few clear, rocky streams.",
     "description": "A perennial aquatic herb with a stout rhizome.  The leaves take their shape from the water: in fast shallows they are stiff, sickle-shaped, and 5 to 8 cm long, and in quiet pools they are quill-like and 10 to 30 cm long.  The flower stalks are 10 to 50 cm tall, with white male flowers 1 to 1.5 cm wide.",
     "habitat": "Frequently exposed shoals and quiet pools up to about a meter deep, rooted among loose boulders in narrow streams bordered by steep slopes.",
@@ -923,18 +923,18 @@
     "otherNames": [
       "green pitcherplant"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Sarraceniaceae (pitcher plant family)",
     "status": "E",
     "listedDate": "1979-09-21",
     "fr": "44 FR 54922",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       4,
       5,
       6
     ],
-    "bloomNote": "Mid-April to early June",
+    "seasonNote": "Mid-April to early June",
     "summary": "A carnivorous plant of upland bogs and seeps, known from northeast Alabama and a few sites in Georgia and North Carolina.",
     "description": "A carnivorous perennial that grows from a rhizome.  In spring it sends up hooded, tube-shaped pitcher leaves 20 to 75 cm tall, green to yellow-green and sometimes veined with maroon, and a single yellow flower on a stalk 45 to 70 cm tall.  By late summer the pitchers wither and are replaced by flat, sickle-shaped leaves.",
     "habitat": "Seepage bogs, sandstone streambanks, and moist oak-pine woodland on poor, acidic soils.  Its sites dry out quickly in midsummer.",
@@ -988,18 +988,18 @@
       "Alabama pitcherplant",
       "Sarracenia alabamensis"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Sarraceniaceae (pitcher plant family)",
     "status": "E",
     "listedDate": "1989-03-10",
     "fr": "54 FR 10150",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       4,
       5,
       6
     ],
-    "bloomNote": "Late April to early June",
+    "seasonNote": "Late April to early June",
     "summary": "A maroon-flowered pitcher plant found only in a few seepage bogs in central Alabama.",
     "description": "A carnivorous perennial that grows from a rhizome and makes two sets of pitchers each year.  The spring pitchers are 20 to 50 cm long and curve backward.  The summer pitchers are larger, 20 to 70 cm, and stand upright.  The flowers are maroon, borne singly on stalks up to 60 cm tall, and open with the spring pitchers.",
     "habitat": "Permanently wet hillside seepage bogs, where a layer of clay near the surface holds the water.  It cannot stand shade and depends on fire to keep its bogs open.",
@@ -1043,18 +1043,18 @@
     "otherNames": [
       "chaffseed"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Orobanchaceae (broomrape family)",
     "status": "E",
     "listedDate": "1992-09-29",
     "fr": "57 FR 44703",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       4,
       5,
       6
     ],
-    "bloomNote": "April to June in the South",
+    "seasonNote": "April to June in the South",
     "summary": "A hairy, purple-flowered herb of fire-kept pine savannas that takes part of its food from the roots of its neighbors.",
     "description": "An upright perennial, hairy throughout, with stems that branch only at the base and stalkless leaves that overlap in a spiral.  The showy flowers are reddish-purple and five-lobed.  It is a partial parasite: its roots fasten onto the roots of other plants.",
     "habitat": "Open, moist, acidic sandy or peaty ground in longleaf pine flatwoods and savannas kept open by fire.",
@@ -1097,17 +1097,17 @@
     "otherNames": [
       "purpleflower pinkroot"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Loganiaceae (logania family)",
     "status": "E",
     "listedDate": "1990-11-26",
     "fr": "55 FR 49046",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       5,
       6
     ],
-    "bloomNote": "May to June at peak; plants have been seen in flower from April to October",
+    "seasonNote": "May to June at peak; plants have been seen in flower from April to October",
     "summary": "A small pink-flowered herb of fire-kept pinelands, with a close relative on the Bibb County glades.",
     "description": "A perennial herb with a slender, reddish-tinged stem up to about 30 cm tall and opposite leaves up to 5 cm long.  The pink, tubular flowers are up to 3 cm long, with five pointed lobes that stay nearly closed at the tip.",
     "habitat": "Well-drained upland pine woods kept open by fire, in longleaf pine and wiregrass country, and mixed pine, oak, and hickory woods.",
@@ -1147,14 +1147,14 @@
       "Leptogramma burksiorum",
       "Thelypteris burksiorum"
     ],
-    "group": "Fern or fern ally",
+    "kind": "Fern or fern ally",
     "family": "Thelypteridaceae (maiden fern family)",
     "status": "T",
     "listedDate": "1992-07-08",
     "fr": "57 FR 30164",
     "habitatType": "Bluffs, cliffs, and sinkholes",
-    "bloom": null,
-    "bloomNote": "A fern; it reproduces by spores and has no flowers",
+    "season": null,
+    "seasonNote": "A fern; it reproduces by spores and has no flowers",
     "summary": "A small fern of shaded sandstone overhangs, known from a single river drainage.",
     "description": "A small fern with narrow, once-divided fronds, usually 3.5 to 10 cm long and 1.3 to 3.3 cm wide, dull yellow-green and finely hairy on both sides.  The spore clusters are elongated streaks, about 5 mm long, without the protective flap that most ferns have.  That streak gives the plant its name.",
     "habitat": "Shaded, humid sandstone overhangs and rock faces along the river, under forest that keeps the rock cool and moist.",
@@ -1185,17 +1185,17 @@
       "Confederate wakerobin",
       "Confederate trillium"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Melanthiaceae (bunchflower family)",
     "status": "E",
     "listedDate": "1988-04-04",
     "fr": "53 FR 10879",
     "habitatType": "Woods and pinelands",
-    "bloom": [
+    "season": [
       3,
       4
     ],
-    "bloomNote": "March to April, before the forest canopy leafs out",
+    "seasonNote": "March to April, before the forest canopy leafs out",
     "summary": "A spring wildflower with mottled leaves and a stem that curves along the ground.",
     "description": "A perennial herb with a whorl of three mottled leaves, patterned in greens, bronze, and purple, often with a silver stripe along the midvein.  The smooth stem is S-shaped and tends to lie along the ground.  A single stalkless flower sits at the center of the leaves, with petals that range from dark purple to greenish or yellow.",
     "habitat": "Moist, rich soils in undisturbed hardwood forest, often along stream banks and small floodplains.",
@@ -1241,17 +1241,17 @@
     "otherNames": [
       "Tennessee yelloweyed grass"
     ],
-    "group": "Flowering plant",
+    "kind": "Flowering plant",
     "family": "Xyridaceae (yellow-eyed grass family)",
     "status": "E",
     "listedDate": "1991-07-26",
     "fr": "56 FR 34151",
     "habitatType": "Bogs, seeps, and wet prairies",
-    "bloom": [
+    "season": [
       8,
       9
     ],
-    "bloomNote": "August to September; each flower opens in late morning and withers by mid-afternoon",
+    "seasonNote": "August to September; each flower opens in late morning and withers by mid-afternoon",
     "summary": "A clump-forming wetland plant whose small yellow flowers open for only a few hours a day.",
     "description": "A perennial that grows in clumps from fleshy, bulb-like bases, 2.3 to 3.3 feet tall.  The leaves are long, narrow, twisted, and deep green.  Brown, cone-shaped flower heads sit singly on slender stalks, and from each a pale yellow flower about a fifth of an inch across opens in late morning.",
     "habitat": "Open or lightly shaded seeps, fens, wet meadows, and gravelly stream edges, on thin, near-neutral soils over limestone and similar rock.",
