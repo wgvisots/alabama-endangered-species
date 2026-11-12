@@ -5,32 +5,306 @@
   "siteUrl": "https://wgvisots.github.io/alabama-endangered-species/",
   "repoUrl": "https://github.com/wgvisots/alabama-endangered-species",
   "reviewed": "2026-11-11",
-  "imageHosts": ["https://www.fws.gov/"],
+  "imageHosts": [
+    "https://www.fws.gov/"
+  ],
   "featured": "plants/green-pitcher-plant",
   "groups": [
     {
-      "id": "plants",
-      "file": "data/plants.json",
-      "title": "Plants",
-      "one": "plant",
-      "many": "plants",
-      "heading": "Federally listed plants of Alabama",
-      "kindLabel": "Kind of plant",
-      "habitatHeading": "Where it grows",
-      "seasonFact": "Flowering",
-      "seasonLabel": "In flower",
-      "seasonNone": "No flowers; spreads by spores",
-      "seasonSort": "Flowering time",
-      "seasonHelp": "The strip beside each plant shows the months it flowers.  A filled square is a month in flower.",
-      "filters": true,
-      "habitats": [
-        "Bogs, seeps, and wet prairies",
-        "Glades and outcrops",
-        "Streams and shoals",
-        "Woods and pinelands",
-        "Bluffs, cliffs, and sinkholes"
+      "id": "mammals",
+      "file": "data/mammals.json",
+      "title": "Mammals",
+      "one": "mammal",
+      "many": "mammals",
+      "heading": "Federally listed mammals of Alabama",
+      "kindLabel": "Kind of mammal",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "In Alabama",
+      "seasonLabel": "In Alabama",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "The strip beside the manatee shows the months it is usually in Alabama waters.",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
       ],
-      "generalSources": ["fws-al", "cfr", "eoa"]
+      "note": "Whales and other animals of the open sea, which fall to NOAA Fisheries, are not covered here."
+    },
+    {
+      "id": "birds",
+      "file": "data/birds.json",
+      "title": "Birds",
+      "one": "bird",
+      "many": "birds",
+      "heading": "Federally listed birds of Alabama",
+      "kindLabel": "Kind of bird",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "In Alabama",
+      "seasonLabel": "In Alabama",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "The strip beside a bird shows the months it is in Alabama, where a source gives them.",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "note": "The wood stork is no longer here.  A rule published on February 10, 2026 removed it from the federal list."
+    },
+    {
+      "id": "reptiles",
+      "file": "data/reptiles.json",
+      "title": "Reptiles",
+      "one": "reptile",
+      "many": "reptiles",
+      "heading": "Federally listed reptiles of Alabama",
+      "kindLabel": "Kind of reptile",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Nesting",
+      "seasonLabel": "Nesting",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "The strip beside a sea turtle shows the months it nests on Alabama beaches.",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ]
+    },
+    {
+      "id": "amphibians",
+      "file": "data/amphibians.json",
+      "title": "Amphibians",
+      "one": "amphibian",
+      "many": "amphibians",
+      "heading": "Federally listed amphibians of Alabama",
+      "kindLabel": "Kind of amphibian",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ]
+    },
+    {
+      "id": "fishes",
+      "file": "data/fishes.json",
+      "title": "Fishes",
+      "one": "fish",
+      "many": "fishes",
+      "heading": "Federally listed fishes of Alabama",
+      "kindLabel": "Kind of fish",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": {
+        "place": "waters"
+      },
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ],
+      "note": "The snail darter is no longer here.  It was removed from the federal list in 2022.  Sawfish, sharks, and other fishes of the sea, which fall to NOAA Fisheries, are not covered."
+    },
+    {
+      "id": "mussels",
+      "file": "data/mussels.json",
+      "title": "Mussels",
+      "one": "mussel",
+      "many": "mussels",
+      "heading": "Federally listed mussels of Alabama",
+      "kindLabel": "Kind of mussel",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": {
+        "place": "waters"
+      },
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ],
+      "note": "A freshwater mussel begins life as a larva that must ride for a time on a fish, so a mussel is lost wherever its host fish is shut out.  Many of these entries rest on recovery plans and state lists that are some years old.  A few say nothing of the shell, because no source read for them describes it."
+    },
+    {
+      "id": "snails",
+      "file": "data/snails.json",
+      "title": "Snails",
+      "one": "snail",
+      "many": "snails",
+      "heading": "Federally listed snails of Alabama",
+      "kindLabel": "Kind of snail",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": {
+        "place": "waters"
+      },
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ]
+    },
+    {
+      "id": "crustaceans",
+      "file": "data/crustaceans.json",
+      "title": "Crustaceans",
+      "one": "crustacean",
+      "many": "crustaceans",
+      "heading": "Federally listed crustaceans of Alabama",
+      "kindLabel": "Kind of crustacean",
+      "habitatHeading": "Where it lives",
+      "seasonFact": "Season",
+      "seasonLabel": "Season",
+      "seasonNone": "",
+      "seasonSort": "",
+      "seasonHelp": "",
+      "filters": false,
+      "habitats": null,
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "oa"
+      ],
+      "waters": [
+        "Tennessee",
+        "Black Warrior",
+        "Cahaba",
+        "Coosa",
+        "Tallapoosa",
+        "Alabama",
+        "Tombigbee",
+        "Mobile-Tensaw Delta",
+        "Escatawpa",
+        "Perdido",
+        "Conecuh",
+        "Yellow",
+        "Choctawhatchee and Pea",
+        "Chattahoochee",
+        "Chipola"
+      ]
     },
     {
       "id": "insects",
@@ -48,7 +322,44 @@
       "seasonHelp": "The strip beside an insect shows the months its adults fly in Alabama, where a source gives them.",
       "filters": false,
       "habitats": null,
-      "generalSources": ["fws-contacts", "cfr", "eoa-animals", "aba"]
+      "generalSources": [
+        "fws-contacts",
+        "cfr",
+        "eoa-animals",
+        "aba"
+      ]
+    },
+    {
+      "id": "plants",
+      "file": "data/plants.json",
+      "title": "Plants",
+      "one": "plant",
+      "many": "plants",
+      "heading": "Federally listed plants of Alabama",
+      "kindLabel": "Kind of plant",
+      "habitatHeading": "Where it grows",
+      "seasonFact": "Flowering",
+      "seasonLabel": "In flower",
+      "seasonNone": "No flowers; spreads by spores",
+      "seasonSort": "Flowering time",
+      "seasonHelp": "The strip beside each plant shows the months it flowers.  A filled square is a month in flower.",
+      "filters": {
+        "habitat": true,
+        "place": "counties",
+        "season": true
+      },
+      "habitats": [
+        "Bogs, seeps, and wet prairies",
+        "Glades and outcrops",
+        "Streams and shoals",
+        "Woods and pinelands",
+        "Bluffs, cliffs, and sinkholes"
+      ],
+      "generalSources": [
+        "fws-al",
+        "cfr",
+        "eoa"
+      ]
     }
   ],
   "sources": [
@@ -83,6 +394,12 @@
       "use": "The copy of the federal wildlife list that was read for this site."
     },
     {
+      "id": "ecos-proposed",
+      "label": "U.S. Fish & Wildlife Service, ECOS: Species Proposed for Listing",
+      "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on",
+      "use": "Which species have been proposed for listing and are not yet on the list."
+    },
+    {
       "id": "eoa",
       "label": "Encyclopedia of Alabama: Endangered and Threatened Plants of Alabama, by L. J. Davenport, C. Oberholster, and B. R. Keener",
       "url": "https://encyclopediaofalabama.org/article/endangered-and-threatened-plants-of-alabama/",
@@ -93,6 +410,12 @@
       "label": "Encyclopedia of Alabama: Endangered and Threatened Animal Species of Alabama",
       "url": "https://encyclopediaofalabama.org/article/endangered-and-threatened-animal-species-of-alabama/",
       "use": "Which listed animals once lived in Alabama and are thought to be gone."
+    },
+    {
+      "id": "oa",
+      "label": "Outdoor Alabama, the site of the Alabama Department of Conservation and Natural Resources",
+      "url": "https://www.outdooralabama.com/",
+      "use": "Descriptions of many animals, and where in Alabama they are found."
     },
     {
       "id": "aba",

@@ -14,15 +14,25 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
   'August', 'September', 'October', 'November', 'December'];
 
 // E and T are on the federal list.  P is only proposed, and carries no protection.
+// SAT is "threatened due to similarity of appearance": listed only because it
+// looks like a species that is in trouble.  XN is an experimental population.
 const STATUS = {
   E: { label: 'Endangered', sentence: 'endangered', listed: true },
   T: { label: 'Threatened', sentence: 'threatened', listed: true },
+  SAT: { label: 'Threatened by similarity of appearance', sentence: 'threatened by similarity of appearance', listed: true },
+  XN: { label: 'Experimental population', sentence: 'an experimental population', listed: true },
   P: { label: 'Proposed threatened', sentence: 'proposed for listing as threatened', listed: false },
+  PE: { label: 'Proposed endangered', sentence: 'proposed for listing as endangered', listed: false },
 };
 
-// Every entry falls in one of three sets, shown apart on a group's page.
+// Every entry falls in one of four sets, shown apart on a group's page.
+const SET_ORDER = ['listed', 'sat', 'proposed', 'gone'];
 const SETS = {
   listed: { heading: 'Listed, and found in Alabama' },
+  sat: {
+    heading: 'Listed only for their likeness to another species',
+    note: 'Not in danger themselves.  Each is on the list because it is hard to tell from a species that is, and the listing limits collecting or trade.',
+  },
   proposed: {
     heading: 'Proposed for listing',
     note: 'Not protected under the Endangered Species Act unless a final rule lists it.',
@@ -90,15 +100,19 @@ const oxford = (items) => {
 };
 
 const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
-const setOf = (e) => (e.presence === 'historical' ? 'gone' : STATUS[e.status].listed ? 'listed' : 'proposed');
-const inText = (e) => e.nameInText || e.common;
+const setOf = (e) => (e.presence === 'historical' ? 'gone'
+  : e.status === 'SAT' ? 'sat'
+    : STATUS[e.status].listed ? 'listed' : 'proposed');
+// A common name as it reads mid-sentence: "the spotfin chub", but "the Alabama sturgeon".
+const PROPER = /^(Alabama|American|Anthony's|Barbour's|Black Warrior|Cahaba|Canoe Creek|Chipola|Choctaw|Coosa|Cumberland|Cumberlandian|Escambia|Florida|Georgia|Gulf|Indiana|Kemp's|Kral's|Louisiana|Mitchell's|Mohr's|Morefield's|Perdido|Price's|Red Hills|Tennessee|West Indian)\b/;
+const inText = (e) => e.nameInText || (PROPER.test(e.common) ? e.common : e.common[0].toLowerCase() + e.common.slice(1));
 
 function seasonStrip(e, g) {
   if (!e.season) {
-    const text = e.seasonShort || g.seasonNone;
+    const text = e.seasonShort || g.seasonNone || '';
     return text ? `<p class="bloom-none">${esc(text)}</p>` : '';
   }
-  const label = `${g.seasonLabel}: ${oxford(e.season.map((m) => MONTHS[m - 1]))}`;
+  const label = `${g.seasonLabel || 'Season'}: ${oxford(e.season.map((m) => MONTHS[m - 1]))}`;
   const cells = MONTHS.map((name, i) => {
     const on = e.season.includes(i + 1);
     return `<span class="m${on ? ' on' : ''}" data-m="${i + 1}">${name[0]}</span>`;
@@ -129,10 +143,10 @@ function validate(groups, site) {
     for (const e of g.entries) {
       const where = `${g.id}/${e.slug || e.common || '?'}`;
       const bad = (msg) => problems.push(`${where}: ${msg}`);
+      if ('description' in e && (typeof e.description !== 'string' || !e.description.trim())) bad('description is empty; leave it out instead');
 
       for (const key of ['slug', 'common', 'scientific', 'kind', 'family', 'status', 'fr',
-        'habitatType', 'seasonNote', 'summary', 'description', 'habitat', 'alabama', 'range',
-        'threats']) {
+        'habitatType', 'summary', 'habitat', 'alabama', 'range', 'threats']) {
         if (typeof e[key] !== 'string' || !e[key].trim()) bad(`missing ${key}`);
       }
       if (!/^[a-z0-9-]+$/.test(e.slug || '')) bad('slug must be lowercase letters, digits, and hyphens');
@@ -150,13 +164,16 @@ function validate(groups, site) {
       }
       if (!['present', 'historical', undefined].includes(e.presence)) bad(`presence must be present or historical, got ${e.presence}`);
       if (g.habitats && !g.habitats.includes(e.habitatType)) bad(`unknown habitatType: ${e.habitatType}`);
-      if (e.season !== null) {
+      if (e.season !== null && e.season !== undefined) {
         const ok = Array.isArray(e.season) && e.season.length > 0
           && e.season.every((m) => Number.isInteger(m) && m >= 1 && m <= 12);
         if (!ok) bad('season must be null or a list of month numbers 1-12');
       }
       if (!Array.isArray(e.counties)) bad('counties must be a list');
-      else if (e.counties.length === 0 && !e.countiesText) bad('give counties, or countiesText to say why there are none');
+      else if (e.counties.length === 0 && !e.countiesText && !(e.waters && e.waters.length)) bad('give counties, waters, or countiesText to say why there are none');
+      if (e.waters !== undefined && !(Array.isArray(e.waters) && e.waters.every((w) => typeof w === 'string' && w.trim()))) bad('waters must be a list of names');
+      if (g.waters) for (const w of e.waters || []) if (!g.waters.includes(w)) bad(`not one of this group's waters: ${w}`);
+      if (e.season === undefined) bad('season must be given, as null or a list of months');
       for (const c of e.counties || []) if (!AL_COUNTIES.has(c)) bad(`not an Alabama county: ${c}`);
       if (!Array.isArray(e.otherNames)) bad('otherNames must be a list');
       if (!Array.isArray(e.refs) || e.refs.length === 0) bad('needs at least one reference');
@@ -186,10 +203,8 @@ function validate(groups, site) {
 // ---------- page shell ----------
 
 function layout(site, groups, { title, description, rel, canonical, body, current }) {
-  const nav = [
-    ...groups.map((g) => ({ id: g.id, href: `${rel}${g.id}/`, label: g.title })),
-    { id: 'about', href: `${rel}about/`, label: 'About and sources' },
-  ].map((n) => `<a href="${n.href}"${n.id === current ? ' aria-current="page"' : ''}>${n.label}</a>`).join('\n        ');
+  const mark = (id) => (id === current ? ' aria-current="page"' : '');
+  const groupNav = groups.map((g) => `<a href="${rel}${g.id}/"${mark(g.id)}>${g.title}</a>`).join('\n        ');
 
   return `<!doctype html>
 <html lang="en">
@@ -211,7 +226,12 @@ function layout(site, groups, { title, description, rel, canonical, body, curren
     <div class="wrap site-header-inner">
       <a class="site-name" href="${rel}">${esc(site.title)}</a>
       <nav aria-label="Site">
-        ${nav}
+        <a href="${rel}about/"${mark('about')}>About and sources</a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <nav class="groups-nav" aria-label="Groups">
+        ${groupNav}
       </nav>
     </div>
   </header>
@@ -221,7 +241,7 @@ ${body}
   <footer class="site-footer">
     <div class="wrap">
       <p>Checked against federal sources on ${longDate(site.reviewed)}.  Listings change, so confirm a species' status with the U.S. Fish &amp; Wildlife Service before you rely on it.</p>
-      <p><a href="${rel}about/">About and sources</a> <a href="${esc(site.repoUrl)}" rel="noopener noreferrer">Source on GitHub</a> <a href="${esc(site.repoUrl)}/blob/main/LICENSE" rel="noopener noreferrer">Text and code under the Apache License 2.0</a></p>
+      <p><a href="${rel}about/">About and sources</a> <a href="${esc(site.repoUrl)}" rel="noopener noreferrer">Source on GitHub</a> <a href="${rel}about/#license">Text under CC BY 4.0, code under Apache 2.0</a></p>
     </div>
   </footer>
 </body>
@@ -258,50 +278,64 @@ function tally(g) {
   const by = (set) => g.entries.filter((e) => setOf(e) === set);
   const listed = by('listed');
   const nE = listed.filter((e) => e.status === 'E').length;
-  const nT = listed.length - nE;
-  const parts = [`${listed.length} listed`];
+  const nT = listed.filter((e) => e.status === 'T').length;
+  const plainSplit = nE + nT === listed.length && nE && nT;
+  const parts = [plainSplit ? `${listed.length} listed: ${nE} endangered and ${nT} threatened` : `${listed.length} listed`];
+  if (by('sat').length) parts.push(`${by('sat').length} listed for likeness`);
   if (by('proposed').length) parts.push(`${by('proposed').length} proposed`);
   if (by('gone').length) parts.push(`${by('gone').length} gone from Alabama`);
-  if (parts.length === 1 && nE && nT) return `${listed.length} listed: ${nE} endangered and ${nT} threatened`;
-  return parts.join(', ');
+  return parts.join(plainSplit ? '; ' : ', ');
 }
 
 function groupLede(g) {
   const by = (set) => g.entries.filter((e) => setOf(e) === set);
   const listed = by('listed');
+  const sat = by('sat');
   const proposed = by('proposed');
   const gone = by('gone');
-  const nE = listed.filter((e) => e.status === 'E').length;
-  const nT = listed.length - nE;
+  const n = (st) => listed.filter((e) => e.status === st).length;
   const out = [];
 
   if (listed.length === 0) {
     out.push(`No ${g.one} found in Alabama today is on the federal list of endangered and threatened species.`);
   } else if (listed.length === 1) {
-    out.push(`Alabama has one ${g.one} protected under the federal Endangered Species Act: ${inText(listed[0])}, listed as ${STATUS[listed[0].status].sentence}.`);
+    out.push(`Alabama has one ${g.one} on the federal list of endangered and threatened species: the ${inText(listed[0])}, listed as ${STATUS[listed[0].status].sentence}.`);
   } else {
-    const split = nE && nT ? `${nE} listed as endangered and ${nT} as threatened`
-      : `all listed as ${nE ? 'endangered' : 'threatened'}`;
-    out.push(`Alabama has ${listed.length} ${g.many} protected under the federal Endangered Species Act: ${split}.`);
+    const bits = [];
+    if (n('E')) bits.push(`${n('E')} as endangered`);
+    if (n('T')) bits.push(`${n('T')} as threatened`);
+    if (n('XN')) bits.push(`${n('XN')} as an experimental population`);
+    const split = bits.length === 1
+      ? `${listed.length === 2 ? 'both' : 'all'} listed ${bits[0].replace(/^\d+ /, '')}`
+      : oxford(bits.map((b, i) => (i ? b : b.replace(/^(\d+) /, '$1 listed '))));
+    out.push(`Alabama has ${listed.length} ${g.many} on the federal list of endangered and threatened species: ${split}.`);
   }
+  if (sat.length === 1) out.push(`One more, the ${inText(sat[0])}, is on the list only because it is hard to tell from a species in danger.`);
+  else if (sat.length > 1) out.push(`Another ${sat.length} are on the list only because they are hard to tell from species in danger.`);
   if (proposed.length === 1) out.push(`One more, the ${inText(proposed[0])}, has been proposed for listing.`);
-  else if (proposed.length > 1) out.push(`${proposed.length} more have been proposed for listing.`);
+  else if (proposed.length > 1) out.push(`Another ${proposed.length} have been proposed for listing.`);
   if (gone.length === 1) out.push(`One listed ${g.one}, the ${inText(gone[0])}, once lived here and is thought to be gone.`);
-  else if (gone.length > 1) out.push(`${gone.length} listed ${g.many} once lived here and are thought to be gone.`);
+  else if (gone.length > 1) out.push(`Another ${gone.length} listed ${g.many} once lived here and are thought to be gone.`);
   return out.join('  ');
 }
 
 // ---------- pages ----------
 
 function renderHome(site, groups) {
+  const all = groups.flatMap((g) => g.entries);
   const covered = oxford(groups.map((g) => g.many));
-  const listedNow = groups.map((g) => count(g.entries.filter((e) => setOf(e) === 'listed').length, g.one, g.many));
+  const nListed = all.filter((e) => setOf(e) === 'listed').length;
+  const present = new Set(all.map((e) => e.status));
+  const KEY = [['E', 'Endangered'], ['T', 'Threatened'], ['XN', 'Experimental population'], ['SAT', 'Listed for likeness'], ['P', 'Proposed']];
+  const key = KEY.filter(([st]) => present.has(st) || (st === 'P' && present.has('PE')))
+    .map(([st, label]) => `<span><span class="dot dot-${st}" aria-hidden="true"></span>${label}</span>`).join(' ');
 
   const sections = groups.map((g) => {
     const names = g.entries.map((e) => {
       const set = setOf(e);
       const tag = set === 'gone' ? ' <span class="name-tag">gone from Alabama</span>'
-        : set === 'proposed' ? ' <span class="name-tag">proposed</span>' : '';
+        : set === 'proposed' ? ' <span class="name-tag">proposed</span>'
+          : set === 'sat' ? ' <span class="name-tag">listed for likeness</span>' : '';
       return `          <li><span class="dot dot-${e.status}" aria-hidden="true"></span><span class="name"><a href="${g.id}/${e.slug}/">${esc(e.common)}</a> <span class="sci">${sci(e.scientific)}</span><span class="visually-hidden">, ${STATUS[e.status].label.toLowerCase()}</span>${tag}</span></li>`;
     }).join('\n');
     return `    <section class="group" aria-labelledby="g-${g.id}">
@@ -318,8 +352,8 @@ ${names}
   const body = `    <section class="hero">
       <div class="hero-text">
         <h1 class="home-title">Endangered plants and animals of Alabama</h1>
-        <p class="lede">A compendium, one group at a time, of the species in Alabama protected under the federal Endangered Species Act.  So far it covers ${covered}: ${oxford(listedNow)} listed and found here today.</p>
-        <p class="hero-note key"><span><span class="dot dot-E" aria-hidden="true"></span>Endangered</span> <span><span class="dot dot-T" aria-hidden="true"></span>Threatened</span> <span><span class="dot dot-P" aria-hidden="true"></span>Proposed</span></p>
+        <p class="lede">A compendium of the species in Alabama protected under the federal Endangered Species Act.  It covers ${all.length} species and subspecies in ${groups.length} groups, ${nListed} of them listed and found in the state today.</p>
+        <p class="hero-note key">${key}</p>
       </div>${featureFigure(site, groups, '')}
     </section>
 
@@ -327,7 +361,7 @@ ${sections}`;
 
   return layout(site, groups, {
     title: `${site.title}: the federally listed plants and animals of Alabama`,
-    description: `The plants and animals in Alabama protected under the federal Endangered Species Act, with descriptions, seasons, counties, and references.  So far: ${covered}.`,
+    description: `The plants and animals in Alabama protected under the federal Endangered Species Act, with descriptions, places, and references: ${covered}.`,
     rel: './',
     canonical: '',
     body,
@@ -336,10 +370,11 @@ ${sections}`;
 }
 
 function entryRow(e, g) {
-  const hay = [e.common, e.scientific, ...e.otherNames, e.family, e.habitatType, ...e.counties]
+  const hay = [e.common, e.scientific, ...e.otherNames, e.family, e.habitatType, ...e.counties, ...(e.waters || [])]
     .join(' ').toLowerCase();
-  return `        <li class="entry" data-status="${e.status}" data-habitat="${esc(e.habitatType)}" data-counties="${esc(e.counties.join('|'))}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
-        ${photoThumb(e)}
+  const placeField = g.filters && g.filters.place;
+  return `        <li class="entry" data-status="${e.status}" data-habitat="${esc(e.habitatType)}" data-places="${esc(placeField ? (e[placeField] || []).join('|') : '')}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
+        ${g.entries.some((x) => x.image) ? photoThumb(e) : '<!-- no photos in this group yet -->'}
         <div class="entry-text">
           <h3><a href="${e.slug}/">${esc(e.common)}</a></h3>
           <p class="sci">${sci(e.scientific)}</p>
@@ -356,36 +391,39 @@ function renderGroup(site, groups, g) {
   const by = (set) => g.entries.filter((e) => setOf(e) === set);
   const listed = by('listed');
   const nE = listed.filter((e) => e.status === 'E').length;
-  const nT = listed.length - nE;
-  const counties = [...new Set(listed.flatMap((e) => e.counties))].sort((a, b) => a.localeCompare(b));
-  const several = ['proposed', 'gone'].some((s) => by(s).length);
+  const nT = listed.filter((e) => e.status === 'T').length;
+  const several = SET_ORDER.filter((s) => by(s).length).length > 1;
+  const f = g.filters || null;
+  const place = f && f.place;
+  const places = place ? [...new Set(listed.flatMap((e) => e[place] || []))].sort((x, y) => x.localeCompare(y)) : [];
+  const placeLabel = place === 'waters' ? 'River system' : 'County';
 
-  const controls = g.filters ? `
-      <form class="controls" id="controls" data-one="${esc(g.one)}" data-many="${esc(g.many)}" data-now="${esc(g.seasonLabel)} in" hidden>
+  const controls = f ? `
+      <form class="controls" id="controls" data-one="${esc(g.one)}" data-many="${esc(g.many)}" data-now="${esc(g.seasonLabel || '')} in" hidden>
         <div class="field field-search">
           <label for="q">Search</label>
-          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or county">
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or ${placeLabel.toLowerCase()}">
         </div>
         <fieldset class="field segmented">
           <legend>Status</legend>
           <label><input type="radio" name="status" value="" checked><span>All ${listed.length}</span></label>
           <label><input type="radio" name="status" value="E"><span>Endangered ${nE}</span></label>
           <label><input type="radio" name="status" value="T"><span>Threatened ${nT}</span></label>
-        </fieldset>
+        </fieldset>${g.habitats ? `
         <div class="field">
           <label for="habitat">Habitat</label>
           <select id="habitat" name="habitat">
             <option value="">Any habitat</option>
             ${g.habitats.map((h) => `<option>${esc(h)}</option>`).join('\n            ')}
           </select>
-        </div>
+        </div>` : ''}${place ? `
         <div class="field">
-          <label for="county">County</label>
-          <select id="county" name="county">
-            <option value="">Any county</option>
-            ${counties.map((c) => `<option>${esc(c)}</option>`).join('\n            ')}
+          <label for="place">${placeLabel}</label>
+          <select id="place" name="place">
+            <option value="">Any ${placeLabel.toLowerCase()}</option>
+            ${places.map((c) => `<option>${esc(c)}</option>`).join('\n            ')}
           </select>
-        </div>
+        </div>` : ''}${f.season ? `
         <div class="field">
           <label for="sort">Sort by</label>
           <select id="sort" name="sort">
@@ -393,7 +431,7 @@ function renderGroup(site, groups, g) {
             <option value="season">${esc(g.seasonSort)}</option>
           </select>
         </div>
-        <label class="check"><input type="checkbox" id="now" name="now"> <span id="now-label">${esc(g.seasonLabel)} this month</span></label>
+        <label class="check"><input type="checkbox" id="now" name="now"> <span id="now-label">${esc(g.seasonLabel)} this month</span></label>` : ''}
       </form>
       <p class="count" id="count" aria-live="polite">${count(listed.length, g.one, g.many)}</p>` : '';
 
@@ -403,7 +441,7 @@ function renderGroup(site, groups, g) {
     const head = several ? `
       <h2 class="set-title">${SETS[set].heading}</h2>${SETS[set].note ? `\n      <p class="set-note">${SETS[set].note}</p>` : ''}` : '';
     return `${head}
-      <ul class="entries"${id ? ` id="${id}"` : ''}>
+      <ul class="entries${g.entries.some((x) => x.image) ? '' : ' entries-plain'}"${id ? ` id="${id}"` : ''}>
 ${rows.map((e) => entryRow(e, g)).join('\n')}
       </ul>`;
   };
@@ -413,8 +451,7 @@ ${rows.map((e) => entryRow(e, g)).join('\n')}
       <div class="hero-text">
         <h1>${esc(g.heading)}</h1>
         <p class="lede">${esc(groupLede(g))}  Each entry says what the ${g.one} looks like, ${g.habitatHeading.toLowerCase()}, why it is at risk, and where to read more.</p>
-        <p class="hero-note">${esc(g.seasonHelp)}<span id="now-note" hidden>  The outlined square is this month.</span></p>
-      </div>${figure}
+${g.seasonHelp ? `        <p class="hero-note">${esc(g.seasonHelp)}<span id="now-note" hidden>  The outlined square is this month.</span></p>\n` : ''}${g.note ? `        <p class="hero-note">${esc(g.note)}</p>\n` : ''}      </div>${figure}
     </section>
 
     <section aria-labelledby="list-title">
@@ -422,7 +459,7 @@ ${rows.map((e) => entryRow(e, g)).join('\n')}
       <div class="empty" id="empty" hidden>
         <p>No ${g.many} match these filters.</p>
         <button type="button" id="clear">Clear filters</button>
-      </div>${list('proposed')}${list('gone')}
+      </div>${list('sat')}${list('proposed')}${list('gone')}
     </section>`;
 
   return layout(site, groups, {
@@ -452,9 +489,10 @@ function renderEntry(site, groups, g, i) {
             <figcaption>${prose(e.image.caption)}  Photo: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at fws.gov</a></figcaption>
           </figure>`;
   } else {
+    const profile = e.refs.find((r) => /fws\.gov\/species\/|ecos\.fws\.gov\/ecp\/species\//.test(r.url));
     const elsewhere = e.photoElsewhere
       ? `  <a href="${esc(e.photoElsewhere.url)}" rel="noopener noreferrer">${esc(e.photoElsewhere.label)}.</a>`
-      : `  The <a href="${esc(e.refs[0].url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.`;
+      : profile ? `  The <a href="${esc(profile.url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.` : '';
     photo = `          <div class="photo-missing">
             <p>No photo here yet.  This site only shows photos that are in the public domain or openly licensed, and none has been found for this ${g.one}.${elsewhere}</p>
           </div>`;
@@ -464,7 +502,11 @@ function renderEntry(site, groups, g, i) {
     ? `      <p class="notice"><strong>Thought to be gone from Alabama.</strong>  This ${g.one} is on the federal list and once lived in the state, but it is not known here today.</p>\n`
     : set === 'proposed'
       ? `      <p class="notice"><strong>Proposed, not listed.</strong>  This ${g.one} has no protection under the Endangered Species Act unless a final rule lists it.</p>\n`
-      : '';
+      : set === 'sat'
+        ? `      <p class="notice"><strong>Listed for its likeness, not its rarity.</strong>  This ${g.one} is on the federal list only because it is hard to tell from a species that is in danger.</p>\n`
+        : e.status === 'XN'
+          ? `      <p class="notice"><strong>An experimental population.</strong>  The ${g.many === 'birds' ? 'birds' : 'animals'} in Alabama belong to a population released to bring the species back, which the Act treats under looser rules than it does the species elsewhere.</p>\n`
+          : '';
 
   const dated = st.listed
     ? ['Listed', `${longDate(e.listedDate)} <span class="cite">(${esc(e.fr)})</span>`]
@@ -478,9 +520,11 @@ function renderEntry(site, groups, g, i) {
     [g.kindLabel, esc(e.kind)],
     ['Family', esc(e.family)],
     e.otherNames.length ? ['Also called', e.otherNames.map((x) => (/^[A-Z][a-z]+ [a-z]/.test(x) ? sci(x) : esc(x))).join(', ')] : null,
-    [g.seasonFact, `${e.season ? season : ''}<span class="bloom-note${e.season ? '' : ' bloom-note-alone'}">${esc(e.seasonNote)}</span>`],
+    e.season || e.seasonNote ? [g.seasonFact || 'Season', `${e.season ? season : ''}<span class="bloom-note${e.season ? '' : ' bloom-note-alone'}">${esc(e.seasonNote || '')}</span>`] : null,
     ['Habitat', esc(e.habitatType)],
-    ['Alabama counties', esc(e.counties.length ? e.counties.join(', ') : e.countiesText)],
+    e.waters && e.waters.length ? ['Alabama waters', esc(e.waters.join(', '))] : null,
+    e.counties.length ? ['Alabama counties', esc(e.counties.join(', '))]
+      : e.countiesText ? ['Where in Alabama', esc(e.countiesText)] : null,
     ['Whole range', esc(e.range)],
   ].filter(Boolean).map(([k, v]) => `            <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n');
 
@@ -539,7 +583,8 @@ function renderAbout(site, groups, template) {
   const link = (x) => `<a href="../${x.g.id}/${x.e.slug}/">${esc(x.e.common)}</a>`;
   const sources = site.sources.map((s) => `        <li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a> <span class="host">${esc(host(s.url))}</span><br>${esc(s.use)}</li>`).join('\n');
   const credits = all.filter((x) => x.e.image).map((x) => `        <li>${link(x)}: ${esc(x.e.image.credit)}.  ${esc(x.e.image.license)}.  <a href="${esc(x.e.image.page)}" rel="noopener noreferrer">Original</a></li>`).join('\n');
-  const missing = all.filter((x) => !x.e.image).map(link);
+  const nPd = all.filter((x) => x.e.image && x.e.image.license === 'Public domain').length;
+  const nOpen = all.filter((x) => x.e.image).length - nPd;
 
   const fill = {
     coverage: oxford(groups.map((g) => count(g.entries.length, g.one, g.many))),
@@ -548,10 +593,19 @@ function renderAbout(site, groups, template) {
     repoUrl: esc(site.repoUrl),
     issuesUrl: esc(`${site.repoUrl}/issues`),
     licenseUrl: esc(`${site.repoUrl}/blob/main/LICENSE`),
+    contentLicenseUrl: esc(`${site.repoUrl}/blob/main/LICENSE-CC-BY-4.0`),
     sources,
     credits,
     withPhotos: all.filter((x) => x.e.image).length,
-    missingPhotos: oxford(missing),
+    missingByGroup: oxford(groups.filter((g) => g.entries.some((e) => !e.image))
+      .map((g) => {
+        const n = g.entries.filter((e) => !e.image).length;
+        const many = `<a href="../${g.id}/">${g.many}</a>`;
+        return n === g.entries.length ? `all ${n} ${many}` : `${n} of the ${g.entries.length} ${many}`;
+      })),
+    photoLicenses: nOpen
+      ? `${nPd} are in the public domain, and ${nOpen} ${nOpen === 1 ? 'is' : 'are'} under a Creative Commons license that asks only for credit.`
+      : 'All are in the public domain.',
   };
   const body = template.replace(/\{\{(\w+)\}\}/g, (m, key) => {
     if (!(key in fill)) throw new Error(`about.html uses an unknown placeholder: ${m}`);

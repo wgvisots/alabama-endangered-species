@@ -164,6 +164,34 @@ p {
   border-bottom-color: var(--bloom);
 }
 
+.site-header-inner {
+  padding-bottom: 0.5rem;
+}
+
+.site-header .groups-nav {
+  gap: 0.1rem 1.4rem;
+  padding-bottom: 0.7rem;
+  font-size: 0.97rem;
+}
+
+.site-header .groups-nav a {
+  color: var(--muted);
+}
+
+.site-header .groups-nav a[aria-current="page"],
+.site-header .groups-nav a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 40rem) {
+  .site-header .groups-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+  }
+}
+
 .site-footer {
   margin-top: 5rem;
   border-top: 1px solid var(--rule);
@@ -279,9 +307,16 @@ p {
   color: var(--threatened);
 }
 
-.dot-P {
+.dot-P,
+.dot-PE {
   color: var(--muted);
   border-style: dotted;
+}
+
+.dot-SAT,
+.dot-XN {
+  color: var(--threatened);
+  border-style: dashed;
 }
 
 .key {
@@ -660,12 +695,25 @@ p {
   color: var(--threatened);
 }
 
-.status-P {
+.status-P,
+.status-PE {
   color: var(--muted);
 }
 
-.status-P::before {
+.status-P::before,
+.status-PE::before {
   border-style: dotted;
+}
+
+.status-SAT,
+.status-XN {
+  color: var(--threatened);
+  white-space: normal;
+}
+
+.status-SAT::before,
+.status-XN::before {
+  border-style: dashed;
 }
 
 @media (min-width: 40rem) {
@@ -699,6 +747,25 @@ p {
   .entry-tags {
     display: grid;
     gap: 0.15rem;
+  }
+}
+
+/* A group with no photos at all drops the thumbnail column. */
+.entries-plain .entry {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.entries-plain .entry-side {
+  grid-column: 1;
+}
+
+@media (min-width: 62rem) {
+  .entries-plain .entry {
+    grid-template-columns: minmax(0, 1fr) 19.5rem;
+  }
+
+  .entries-plain .entry-side {
+    grid-column: 2;
   }
 }
 

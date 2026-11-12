@@ -37,14 +37,15 @@
   var count = document.getElementById('count');
   var empty = document.getElementById('empty');
   var q = form.elements.q;
-  var habitat = form.elements.habitat;
-  var county = form.elements.county;
-  var sort = form.elements.sort;
-  var now = form.elements.now;
-
+  var habitat = form.elements.habitat || null;
+  var place = form.elements.place || null;
+  var sort = form.elements.sort || null;
+  var now = form.elements.now || null;
   var one = form.dataset.one;
   var many = form.dataset.many;
-  document.getElementById('now-label').textContent = form.dataset.now + ' ' + MONTHS[month - 1];
+
+  var nowLabel = document.getElementById('now-label');
+  if (nowLabel) nowLabel.textContent = form.dataset.now + ' ' + MONTHS[month - 1];
   form.hidden = false;
   form.addEventListener('submit', function (e) { e.preventDefault(); });
 
@@ -52,10 +53,10 @@
     return {
       q: q.value.trim().toLowerCase(),
       status: form.elements.status.value,
-      habitat: habitat.value,
-      county: county.value,
-      sort: sort.value,
-      now: now.checked
+      habitat: habitat ? habitat.value : '',
+      place: place ? place.value : '',
+      sort: sort ? sort.value : 'name',
+      now: now ? now.checked : false
     };
   }
 
@@ -63,7 +64,7 @@
     var d = el.dataset;
     if (s.status && d.status !== s.status) return false;
     if (s.habitat && d.habitat !== s.habitat) return false;
-    if (s.county && d.counties.split('|').indexOf(s.county) === -1) return false;
+    if (s.place && d.places.split('|').indexOf(s.place) === -1) return false;
     if (s.now && d.season.split(' ').indexOf(String(month)) === -1) return false;
     if (s.q) {
       var words = s.q.split(/\s+/);
@@ -79,7 +80,7 @@
     if (s.q) p.set('q', s.q);
     if (s.status) p.set('status', s.status);
     if (s.habitat) p.set('habitat', s.habitat);
-    if (s.county) p.set('county', s.county);
+    if (s.place) p.set('place', s.place);
     if (s.sort !== 'name') p.set('sort', s.sort);
     if (s.now) p.set('now', '1');
     var qs = p.toString();
@@ -91,6 +92,7 @@
   function readUrl() {
     var p = new URLSearchParams(location.search);
     function pick(select, value) {
+      if (!select || !value) return;
       for (var i = 0; i < select.options.length; i += 1) {
         if (select.options[i].value === value || select.options[i].text === value) {
           select.selectedIndex = i;
@@ -100,10 +102,10 @@
     }
     if (p.get('q')) q.value = p.get('q');
     if (p.get('status') === 'E' || p.get('status') === 'T') form.elements.status.value = p.get('status');
-    if (p.get('habitat')) pick(habitat, p.get('habitat'));
-    if (p.get('county')) pick(county, p.get('county'));
-    if (p.get('sort')) pick(sort, p.get('sort'));
-    now.checked = p.get('now') === '1';
+    pick(habitat, p.get('habitat'));
+    pick(place, p.get('place') || p.get('county'));
+    pick(sort, p.get('sort'));
+    if (now) now.checked = p.get('now') === '1';
   }
 
   function update() {
