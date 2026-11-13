@@ -118,7 +118,17 @@
     "range": "Fifteen states, from New York to northern Alabama and Mississippi, with a separate population in Missouri",
     "threats": "Silt in streams, poor water quality, loss of habitat, disease, and collecting for the pet trade.  Of 626 populations on record, 41 percent are believed gone, and most of the rest are declining.",
     "notes": "The Missouri population was listed as endangered in 2021.  The Service proposed listing the eastern hellbender throughout its range on December 13, 2024.  No final rule has followed, so Alabama's hellbenders have no protection under the Act today.",
-    "image": null,
+    "image": {
+      "thumb": "hellbender-holbrook-650.jpg",
+      "full": "hellbender-holbrook-1300.jpg",
+      "kind": "drawing",
+      "page": "https://artvee.com/artist/john-edwards-holbrook/page/4",
+      "source": "Artvee",
+      "alt": "A lithograph of a hellbender seen from the side: a long, flattened, gray-green salamander with dark flecks, a broad head, tiny eyes, short legs, a fold of loose skin along its side, and a tail flattened like a paddle.",
+      "caption": "\"Menopoma Alleghanensis,\" a plate from the fifth volume of John Edwards Holbrook's _North American Herpetology_, 1842.  The name on the plate is an old one for the hellbender.",
+      "credit": "T. R. Peale, lithographed by P. S. Duval.  Scan from Artvee",
+      "license": "Public domain"
+    },
     "refs": [
       {
         "label": "FWS species profile: eastern hellbender",

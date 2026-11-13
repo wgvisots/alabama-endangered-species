@@ -499,7 +499,17 @@
     "range": "The Caribbean and the western Atlantic, among other tropical seas",
     "threats": "Hunting for tortoiseshell, which goes on through illegal trade, along with coastal development, lights on nesting beaches, pollution, boat strikes, and capture in fishing gear.",
     "notes": "",
-    "image": null,
+    "image": {
+      "thumb": "hawksbill-catesby-650.jpg",
+      "full": "hawksbill-catesby-1300.jpg",
+      "kind": "drawing",
+      "page": "https://www.nga.gov/artworks/73663-hawks-bill-turtle-testudo-caretta",
+      "source": "the National Gallery of Art",
+      "alt": "A hand-colored etching of a hawksbill turtle on sand, seen from the side, with its hooked beak raised.  Its brown shell is mottled, with a saw-toothed rear edge.  A nest of round eggs lies in a hollow beside it.",
+      "caption": "\"The Hawks-bill Turtle,\" plate 39 in the second volume of Mark Catesby's _The Natural History of Carolina, Florida, and the Bahama Islands_, published between 1731 and 1743.  A nest of eggs lies beside the turtle.  Catesby's Latin name for it, _Testudo caretta_, is not the one in use today.",
+      "credit": "Mark Catesby.  Courtesy National Gallery of Art, Washington, Collection of Dr. and Mrs. George Benjamin Green",
+      "license": "Public domain"
+    },
     "refs": [
       {
         "label": "FWS species profile: hawksbill sea turtle",
@@ -754,7 +764,17 @@
     "range": "The coastal plain of the Southeast.  The state names Georgia, South Carolina, and Florida as places where it still lives.",
     "threats": "It is declining throughout its range, and the state's account says the reasons are not known.",
     "notes": "The Service proposed listing it as threatened on August 29, 2025, and reopened the proposal for comment on June 8, 2026 (91 FR 34597).  No final rule had been published when this site was last checked.",
-    "image": null,
+    "image": {
+      "thumb": "southern-hognose-holbrook-650.jpg",
+      "full": "southern-hognose-holbrook-1300.jpg",
+      "kind": "drawing",
+      "page": "https://artvee.com/artist/john-edwards-holbrook/page/4",
+      "source": "Artvee",
+      "alt": "A hand-colored lithograph of a stout brown snake lying in a loose curve.  It has dark blotches along its back, a pale belly, and a sharply upturned snout.",
+      "caption": "\"Heterodon simus,\" a plate from John Edwards Holbrook's _North American Herpetology_, 1842.  The snake still carries that name.",
+      "credit": "Rogers, lithographed by P. S. Duval.  Scan from Artvee",
+      "license": "Public domain"
+    },
     "refs": [
       {
         "label": "Outdoor Alabama: southern hognose snake",

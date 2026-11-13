@@ -591,20 +591,23 @@ function renderEntry(site, groups, g, i) {
   const st = STATUS[e.status];
   const set = setOf(e);
 
+  // Where to look for a photo, for an entry that has none or has only a drawing.
+  const profile = e.refs.find((r) => /fws\.gov\/species\/|ecos\.fws\.gov\/ecp\/species\//.test(r.url));
+  const elsewhere = e.photoElsewhere
+    ? `  <a href="${esc(e.photoElsewhere.url)}" rel="noopener noreferrer">${esc(e.photoElsewhere.label)}.</a>`
+    : profile ? `  The <a href="${esc(profile.url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.` : '';
+
   let photo;
   if (e.image) {
+    const noPhoto = isDrawing(e) ? `\n              <span class="photo-also">This site has no photo of this ${g.one} yet.${elsewhere}</span>` : '';
     photo = `          <figure class="photo" data-photo>
             <img src="${esc(imgSrc('../../', e.image.full))}" alt="${esc(e.image.alt)}" width="${e.image.w}" height="${e.image.h}" decoding="async" referrerpolicy="no-referrer">
             <p class="photo-fallback" hidden>${isRemote(e.image.full) && sourceName(e.image) === 'fws.gov'
     ? `The photo could not be loaded from fws.gov.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">See it on the Fish &amp; Wildlife Service site.</a>`
     : `The ${pictureWord(e).toLowerCase()} could not be loaded.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">See the original.</a>`}</p>
-            <figcaption>${prose(e.image.caption)}  ${pictureWord(e)}: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at ${esc(sourceName(e.image))}</a></figcaption>
+            <figcaption>${prose(e.image.caption)}  ${pictureWord(e)}: ${esc(e.image.credit)}.  ${esc(e.image.license)}.  <a href="${esc(e.image.page)}" rel="noopener noreferrer">Original at ${esc(sourceName(e.image))}</a>${noPhoto}</figcaption>
           </figure>`;
   } else {
-    const profile = e.refs.find((r) => /fws\.gov\/species\/|ecos\.fws\.gov\/ecp\/species\//.test(r.url));
-    const elsewhere = e.photoElsewhere
-      ? `  <a href="${esc(e.photoElsewhere.url)}" rel="noopener noreferrer">${esc(e.photoElsewhere.label)}.</a>`
-      : profile ? `  The <a href="${esc(profile.url)}" rel="noopener noreferrer">Fish &amp; Wildlife Service profile</a> is the best place to look for one.` : '';
     photo = `          <div class="photo-missing">
             <p>No photo here yet.  This site only shows photos that are in the public domain or openly licensed, and none has been found for this ${g.one}.${elsewhere}</p>
           </div>`;
@@ -724,13 +727,14 @@ function renderAbout(site, groups, template) {
     ranksAsOf: esc(site.ranks.asOf),
     withRanks: all.filter((x) => x.e.ranks).length,
     drawingsNote: drawings.length
-      ? `  ${drawings.length === 1 ? 'One more has' : `Another ${drawings.length} have`} a drawing instead: an old plate or figure in the public domain, copied into this site and credited to the naturalist who made it and the library or museum that scanned it.`
+      ? `  ${drawings.length === 1 ? 'One more has' : `Another ${drawings.length} have`} a drawing instead: an old plate in the public domain, copied into this site and credited to the people who made it and to the library, museum, or site that supplied the scan.  A plate shows the animal as a naturalist of the day understood it, and the name lettered on it is often not the one in use today.`
       : '',
     missingByGroup: oxford(groups.filter((g) => g.entries.some((e) => !e.image))
       .map((g) => {
         const n = g.entries.filter((e) => !e.image).length;
         const many = `<a href="../${g.id}/">${g.many}</a>`;
-        return n === g.entries.length ? `all ${n} ${many}` : `${n} of the ${g.entries.length} ${many}`;
+        if (n === g.entries.length) return n === 2 ? `both ${many}` : `all ${n} ${many}`;
+        return `${n} of the ${g.entries.length} ${many}`;
       })),
     photoLicenses: nOpen
       ? `${nPd} are in the public domain, and ${nOpen} ${nOpen === 1 ? 'is' : 'are'} under a Creative Commons license that asks only for credit.`

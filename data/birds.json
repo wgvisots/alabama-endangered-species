@@ -206,7 +206,17 @@
     "range": "The Atlantic and Gulf coasts, parts of the Great Plains, the Caribbean, and south to Brazil",
     "threats": "Loss and breaking up of marshes, changes to their water, a rising sea, contaminants, predators, and disturbance by people.",
     "notes": "",
-    "image": null,
+    "image": {
+      "thumb": "black-rail-audubon-650.jpg",
+      "full": "black-rail-audubon-1300.jpg",
+      "kind": "drawing",
+      "page": "https://www.nga.gov/collection/art-object-page.32490.html",
+      "source": "the National Gallery of Art",
+      "alt": "A hand-colored engraving of two black rails at the edge of a marsh.  The grown bird is dark, with white speckles on its back and wings, a chestnut patch behind the neck, and a red eye.  A smaller, plainer young bird faces it, in front of tall grass.",
+      "caption": "\"Least Water-hen,\" plate 349 of John James Audubon's _The Birds of America_, engraved by Robert Havell in 1836.  It shows a male and a young bird, under the old name _Rallus jamaicensis_.",
+      "credit": "Robert Havell after John James Audubon.  Courtesy National Gallery of Art, Washington, Gift of Mrs. Walter B. James",
+      "license": "Public domain"
+    },
     "photoElsewhere": {
       "label": "A photo by Christy Hand, South Carolina Department of Natural Resources, on the FWS site (copyrighted, shown there by permission)",
       "url": "https://www.fws.gov/media/eastern-black-rail-0"

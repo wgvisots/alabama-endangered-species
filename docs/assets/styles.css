@@ -885,6 +885,11 @@ p {
   max-width: 70ch;
 }
 
+.photo-also {
+  display: block;
+  margin-top: 0.35rem;
+}
+
 .photo.photo-failed img {
   display: none;
 }
