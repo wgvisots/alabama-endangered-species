@@ -98,14 +98,14 @@ Add a data file, then describe the group in the `groups` list of `data/site.json
 - **Places stop at the county, the river, or the creek.**  Exact sites, and the names of caves and most springs, are left out, because rare species are taken by collectors.
 - **The text is written fresh.**  Nothing is copied from a source.
 - **Ranks are not statuses.**  NatureServe ranks come from the Alabama Natural Heritage Program's published list, are shown with its date, and are never used to decide what belongs on the site.
-- **Sources are used on their owners' terms.**  A stated copyright, license, or credit line is followed to the letter, and a picture with no stated rights is not used.  A page that its site has closed to automated readers is not read by one, and requests to any one site are kept few.
+- **Sources are used on their owners' terms.**  A stated copyright, license, or credit line is followed to the letter.  A picture with no stated rights is not used, unless it was published more than 95 years ago, which puts it in the public domain in the United States.  A page that its site has closed to automated readers is not read by one, and requests to any one site are kept few.
 
 ## Photos and drawings
 
 Only pictures in the public domain or under an open license are shown, each with its credit.  They come two ways.
 
 - **Photos loaded from another site.**  At present these all come from the U.S. Fish & Wildlife Service media library and load directly from `fws.gov`.  `thumb` and `full` are `https` addresses, and `w` and `h` give the size of the original.
-- **Pictures kept here.**  Put two JPEG or PNG files in `src/images/`, one about 650 pixels on its long side and one about 1,300, with lowercase names such as `black-rail-audubon-650.jpg`.  `thumb` and `full` are the two file names.  The build reads the size from the file, so leave `w` and `h` out.
+- **Pictures kept here.**  Put two JPEG or PNG files in `src/images/`, one about 650 pixels on its long side and one about 1,300, with lowercase names such as `black-rail-audubon-650.jpg`.  If the scan is smaller than 1,300 pixels, keep the large file at the scan's own size and do not enlarge it.  Blank paper around the figure may be trimmed away, but keep the title lettered on the plate.  Strip the file's metadata.  `thumb` and `full` are the two file names.  The build reads the size from the file, so leave `w` and `h` out.
 
 An `image` record has these fields.
 
@@ -117,7 +117,7 @@ An `image` record has these fields.
 | `source` | Optional.  How to name that page in the link under the picture, such as `the National Gallery of Art`.  Without it the link gives the site's address. |
 | `alt` | What the picture shows, for readers who cannot see it. |
 | `caption` | A sentence for under the picture.  For a drawing, give the title of the plate, the work it comes from, and the year. |
-| `credit` | Who made it, and for a scan, the library or museum that holds it. |
+| `credit` | Who made it, and for a scan, the library, museum, or site that supplied it.  If the source asks for a form of words, use it exactly. |
 | `license` | `Public domain`, or the name of the open license. |
 
 Many entries have no picture yet, and no mussel or snail has one.  The About page of the site gives the count for each group.

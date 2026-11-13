@@ -433,7 +433,17 @@
     "range": "One wild population, in eastern North Carolina",
     "threats": "Gunshots and vehicle strikes, and interbreeding with coyotes, which grows worse as the wolves grow fewer.  The red wolf was declared extinct in the wild in 1980, and a few dozen now live wild in North Carolina.",
     "notes": "",
-    "image": null,
+    "image": {
+      "thumb": "red-wolf-audubon-650.jpg",
+      "full": "red-wolf-audubon-997.jpg",
+      "kind": "drawing",
+      "page": "https://www.biodiversitylibrary.org/part/322385",
+      "source": "the Biodiversity Heritage Library",
+      "alt": "A hand-colored lithograph of a red wolf walking along a stream bank with its nose to the ground.  Its coat is reddish brown, streaked with black along the back, and its tail is tipped with black.  Shells and a horn lie on the sand in front of it.",
+      "caption": "\"Red Texan Wolf,\" plate 82 in the second volume of John James Audubon and John Bachman's _The Quadrupeds of North America_, 1851.  The authors took it for a red variety of the gray wolf, and did not count it a species of its own.",
+      "credit": "J. W. Audubon, put on stone by W. E. Hitchcock, and printed and colored by J. T. Bowen.  Scan from Duke University Libraries, by way of the Biodiversity Heritage Library",
+      "license": "Public domain"
+    },
     "refs": [
       {
         "label": "FWS: Red Wolf Recovery Program",
