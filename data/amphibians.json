@@ -16,7 +16,14 @@
     "habitat": "Mature hardwood forest with a closed canopy, on steep slopes and in moist ravines, where ledges of limestone lie over siltstone that holds water.  It lives in small burrows and cracks in that rock.",
     "life": "It lives about ten years and breeds slowly, laying 6 to 10 eggs in its burrow.  The young hatch as small salamanders, with no stage in the water.",
     "alabama": "Its whole range is about 60,000 acres of the Red Hills, between the Alabama River on the west and the Conecuh River on the east, in Butler, Conecuh, Covington, Crenshaw, Monroe, and Wilcox Counties.",
-    "counties": ["Butler", "Conecuh", "Covington", "Crenshaw", "Monroe", "Wilcox"],
+    "counties": [
+      "Butler",
+      "Conecuh",
+      "Covington",
+      "Crenshaw",
+      "Monroe",
+      "Wilcox"
+    ],
     "range": "Alabama only",
     "threats": "The Service's profile does not list threats.  The salamander's small range, slow breeding, and need for mature, shaded forest leave it little margin.",
     "notes": "The Encyclopedia of Alabama notes that it was the first amphibian in North America to receive federal protection.",
@@ -32,8 +39,15 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: Red Hills salamander", "url": "https://www.fws.gov/species/red-hills-salamander-phaeognathus-hubrichti" }
-    ]
+      {
+        "label": "FWS species profile: Red Hills salamander",
+        "url": "https://www.fws.gov/species/red-hills-salamander-phaeognathus-hubrichti"
+      }
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "black-warrior-waterdog",
@@ -51,23 +65,42 @@
     "description": "A large aquatic salamander up to 9.5 inches long, with a flattened head and body, feathery gills on the outside, and four toes on each foot.  It is usually brown, sometimes spotted, with a dark stripe through the eye.",
     "habitat": "Medium and large streams with bottoms of clay or bedrock and little sand, and with rock crevices and slabs for shelter and for laying eggs.",
     "alabama": "Found only in Alabama, in streams above the Fall Line in the Black Warrior River basin.  It is known from 14 scattered sites in the Sipsey Fork, Locust Fork, Mulberry Fork, North River, and their tributaries, in Blount, Tuscaloosa, Walker, and Winston Counties.",
-    "counties": ["Blount", "Tuscaloosa", "Walker", "Winston"],
-    "waters": ["Black Warrior"],
+    "counties": [
+      "Blount",
+      "Tuscaloosa",
+      "Walker",
+      "Winston"
+    ],
+    "waters": [
+      "Black Warrior"
+    ],
     "range": "Alabama only",
     "threats": "Silt, above all.  Heavy siltation fills the crevices it shelters in, cuts its food, and smothers its nests and eggs.",
     "notes": "",
     "image": null,
     "refs": [
-      { "label": "FWS species profile: Black Warrior waterdog", "url": "https://www.fws.gov/species/black-warrior-waterdog-necturus-alabamensis" },
-      { "label": "Outdoor Alabama: Black Warrior waterdog", "url": "https://www.outdooralabama.com/salamanders/black-warrior-waterdog" }
-    ]
+      {
+        "label": "FWS species profile: Black Warrior waterdog",
+        "url": "https://www.fws.gov/species/black-warrior-waterdog-necturus-alabamensis"
+      },
+      {
+        "label": "Outdoor Alabama: Black Warrior waterdog",
+        "url": "https://www.outdooralabama.com/salamanders/black-warrior-waterdog"
+      }
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "eastern-hellbender",
     "common": "Eastern hellbender",
     "nameInText": "eastern hellbender",
     "scientific": "Cryptobranchus alleganiensis alleganiensis",
-    "otherNames": ["hellbender"],
+    "otherNames": [
+      "hellbender"
+    ],
     "kind": "Salamander",
     "family": "Cryptobranchidae (giant salamanders)",
     "status": "PE",
@@ -87,17 +120,36 @@
     "notes": "The Missouri population was listed as endangered in 2021.  The Service proposed listing the eastern hellbender throughout its range on December 13, 2024.  No final rule has followed, so Alabama's hellbenders have no protection under the Act today.",
     "image": null,
     "refs": [
-      { "label": "FWS species profile: eastern hellbender", "url": "https://www.fws.gov/species/eastern-hellbender-cryptobranchus-alleganiensis-alleganiensis" },
-      { "label": "FWS: proposal to list the eastern hellbender as endangered (2024)", "url": "https://www.fws.gov/press-release/2024-12/proposal-list-eastern-hellbender-endangered" },
-      { "label": "FWS: questions and answers on the proposal", "url": "https://www.fws.gov/question-answer/questions-and-answers-proposal-list-eastern-hellbender-endangered-under-endangered" },
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/9039" }
-    ]
+      {
+        "label": "FWS species profile: eastern hellbender",
+        "url": "https://www.fws.gov/species/eastern-hellbender-cryptobranchus-alleganiensis-alleganiensis"
+      },
+      {
+        "label": "FWS: proposal to list the eastern hellbender as endangered (2024)",
+        "url": "https://www.fws.gov/press-release/2024-12/proposal-list-eastern-hellbender-endangered"
+      },
+      {
+        "label": "FWS: questions and answers on the proposal",
+        "url": "https://www.fws.gov/question-answer/questions-and-answers-proposal-list-eastern-hellbender-endangered-under-endangered"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/9039"
+      }
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1S2",
+      "globalOf": "species"
+    }
   },
   {
     "slug": "reticulated-flatwoods-salamander",
     "common": "Reticulated flatwoods salamander",
     "scientific": "Ambystoma bishopi",
-    "otherNames": ["flatwoods salamander"],
+    "otherNames": [
+      "flatwoods salamander"
+    ],
     "kind": "Salamander",
     "family": "Ambystomatidae (mole salamanders)",
     "status": "E",
@@ -117,17 +169,36 @@
     "notes": "",
     "image": null,
     "refs": [
-      { "label": "FWS five-year review", "url": "https://ecos.fws.gov/docs/five_year_review/doc4617.pdf" },
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/8939" },
-      { "label": "FWS recovery plan (2021)", "url": "https://ecos.fws.gov/docs/recovery_plan/20210615_RETICULATED_Flatwoods_Salamander_RP.pdf" },
-      { "label": "FWS species status assessment (2020)", "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/196957" }
-    ]
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc4617.pdf"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/8939"
+      },
+      {
+        "label": "FWS recovery plan (2021)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/20210615_RETICULATED_Flatwoods_Salamander_RP.pdf"
+      },
+      {
+        "label": "FWS species status assessment (2020)",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/196957"
+      }
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "SX"
+    }
   },
   {
     "slug": "dusky-gopher-frog",
     "common": "Dusky gopher frog",
     "scientific": "Rana sevosa",
-    "otherNames": ["Mississippi gopher frog", "Lithobates sevosus"],
+    "otherNames": [
+      "Mississippi gopher frog",
+      "Lithobates sevosus"
+    ],
     "kind": "Frog",
     "family": "Ranidae (true frogs)",
     "status": "E",
@@ -147,8 +218,18 @@
     "notes": "",
     "image": null,
     "refs": [
-      { "label": "FWS recovery plan (2015)", "url": "https://ecos.fws.gov/docs/recovery_plan/2015_07_16_Final%20RP_R_sevosa_08212015%20(1).pdf" },
-      { "label": "FWS: proposed rule to list the Mississippi gopher frog", "url": "https://www.fws.gov/species-publication-action/proposed-rule-list-mississippi-gopher-frog-distinct-population-segment" }
-    ]
+      {
+        "label": "FWS recovery plan (2015)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/2015_07_16_Final%20RP_R_sevosa_08212015%20(1).pdf"
+      },
+      {
+        "label": "FWS: proposed rule to list the Mississippi gopher frog",
+        "url": "https://www.fws.gov/species-publication-action/proposed-rule-list-mississippi-gopher-frog-distinct-population-segment"
+      }
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SH"
+    }
   }
 ]

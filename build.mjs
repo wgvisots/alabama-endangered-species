@@ -23,10 +23,11 @@ const STATUS = {
   XN: { label: 'Experimental population', sentence: 'an experimental population', listed: true },
   P: { label: 'Proposed threatened', sentence: 'proposed for listing as threatened', listed: false },
   PE: { label: 'Proposed endangered', sentence: 'proposed for listing as endangered', listed: false },
+  UR: { label: 'Under review', sentence: 'under review for listing', listed: false },
 };
 
-// Every entry falls in one of four sets, shown apart on a group's page.
-const SET_ORDER = ['listed', 'sat', 'proposed', 'gone'];
+// Every entry falls in one of five sets, shown apart on a group's page.
+const SET_ORDER = ['listed', 'sat', 'proposed', 'review', 'gone'];
 const SETS = {
   listed: { heading: 'Listed, and found in Alabama' },
   sat: {
@@ -36,6 +37,10 @@ const SETS = {
   proposed: {
     heading: 'Proposed for listing',
     note: 'Not protected under the Endangered Species Act unless a final rule lists it.',
+  },
+  review: {
+    heading: 'Under review for listing',
+    note: 'The Service has found that listing may be warranted, and is studying the species.  A review protects nothing.',
   },
   gone: {
     heading: 'Listed, but thought to be gone from Alabama',
@@ -103,7 +108,8 @@ const oxford = (items) => {
 const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
 const setOf = (e) => (e.presence === 'historical' ? 'gone'
   : e.status === 'SAT' ? 'sat'
-    : STATUS[e.status].listed ? 'listed' : 'proposed');
+    : e.status === 'UR' ? 'review'
+      : STATUS[e.status].listed ? 'listed' : 'proposed');
 // A common name as it reads mid-sentence: "the spotfin chub", but "the Alabama sturgeon".
 const PROPER = /^(Alabama|American|Anthony's|Barbour's|Black Warrior|Cahaba|Canoe Creek|Chipola|Choctaw|Coosa|Cumberland|Cumberlandian|Escambia|Florida|Georgia|Gulf|Indiana|Kemp's|Kral's|Louisiana|Mitchell's|Mohr's|Morefield's|Perdido|Price's|Red Hills|Tennessee|West Indian)\b/;
 const inText = (e) => e.nameInText || (PROPER.test(e.common) ? e.common : e.common[0].toLowerCase() + e.common.slice(1));
@@ -160,8 +166,15 @@ function validate(groups, site) {
       } else if (st.listed) {
         if (!isDate(e.listedDate)) bad(`listedDate must be YYYY-MM-DD, got ${e.listedDate}`);
         if (!/^\d+ FR \d+$/.test(e.fr || '')) bad(`fr must look like "53 FR 3560", got ${e.fr}`);
+      } else if (e.status === 'UR') {
+        if (!isDate(e.reviewDate)) bad(`reviewDate must be YYYY-MM-DD, got ${e.reviewDate}`);
       } else if (!isDate(e.proposedDate)) {
         bad(`proposedDate must be YYYY-MM-DD, got ${e.proposedDate}`);
+      }
+      if (e.ranks) {
+        if (e.ranks.global && !/^G[1-5HXU]/.test(e.ranks.global)) bad(`ranks.global "${e.ranks.global}" must begin with G1 to G5, GH, GX, or GU`);
+        if (e.ranks.state && !/^S([1-5HXU]|NA|NR)/.test(e.ranks.state)) bad(`ranks.state "${e.ranks.state}" must begin with S1 to S5, SH, SX, SU, SNA, or SNR`);
+        if (!e.ranks.global && !e.ranks.state) bad('ranks needs a global rank, a state rank, or both');
       }
       if (!['present', 'historical', undefined].includes(e.presence)) bad(`presence must be present or historical, got ${e.presence}`);
       if (g.habitats && !g.habitats.includes(e.habitatType)) bad(`unknown habitatType: ${e.habitatType}`);
@@ -258,6 +271,32 @@ ${body}
 `;
 }
 
+// ---------- NatureServe ranks ----------
+
+const RANK_WORDS = {
+  1: 'critically imperiled', 2: 'imperiled', 3: 'vulnerable', 4: 'apparently secure', 5: 'secure',
+  U: 'not rankable', NR: 'not yet ranked', NA: 'no rank applies',
+};
+
+// "G5T1" -> "critically imperiled worldwide, as a subspecies or variety".
+function rankWords(code, scope) {
+  const where = scope === 'G' ? 'worldwide' : 'in Alabama';
+  // For a subspecies or variety, the T part is the rank that counts.
+  const own = scope === 'G' && code.includes('T') ? code.slice(code.indexOf('T')) : code;
+  const parts = [...own.matchAll(/[GST](NA|NR|[1-5HXU])/g)].map((m) => m[1]);
+  const word = (x) => (x === 'H' ? (scope === 'G' ? 'possibly extinct' : 'possibly gone')
+    : x === 'X' ? (scope === 'G' ? 'presumed extinct' : 'presumed gone')
+      : RANK_WORDS[x]);
+  const words = [...new Set(parts.map(word))];
+  let out = words.length > 1 ? `${words[0]} to ${words[1]}` : words[0];
+  if (parts[0] === 'NA') return `${out} ${where}`;
+  if (/gone$/.test(out)) out += ' from Alabama';
+  else if (!/extinct$/.test(out)) out += ` ${where}`;
+  if (own !== code) out += ', as a subspecies or variety';
+  if (scope === 'S' && /N$/.test(code) && parts[0] !== 'NA') out += ', for birds that do not breed here';
+  return out;
+}
+
 // ---------- pictures ----------
 
 // A picture is either loaded from an allowed host, or is a file kept in src/images/.
@@ -349,6 +388,7 @@ function tally(g) {
   const parts = [plainSplit ? `${listed.length} listed: ${nE} endangered and ${nT} threatened` : `${listed.length} listed`];
   if (by('sat').length) parts.push(`${by('sat').length} listed for likeness`);
   if (by('proposed').length) parts.push(`${by('proposed').length} proposed`);
+  if (by('review').length) parts.push(`${by('review').length} under review`);
   if (by('gone').length) parts.push(`${by('gone').length} gone from Alabama`);
   return parts.join(plainSplit ? '; ' : ', ');
 }
@@ -380,6 +420,9 @@ function groupLede(g) {
   else if (sat.length > 1) out.push(`Another ${sat.length} are on the list only because they are hard to tell from species in danger.`);
   if (proposed.length === 1) out.push(`One more, the ${inText(proposed[0])}, has been proposed for listing.`);
   else if (proposed.length > 1) out.push(`Another ${proposed.length} have been proposed for listing.`);
+  const review = by('review');
+  if (review.length === 1) out.push(`One more, the ${inText(review[0])}, is under review for listing.`);
+  else if (review.length > 1) out.push(`Another ${review.length} are under review for listing.`);
   if (gone.length === 1) out.push(`One listed ${g.one}, the ${inText(gone[0])}, once lived here and is thought to be gone.`);
   else if (gone.length > 1) out.push(`Another ${gone.length} listed ${g.many} once lived here and are thought to be gone.`);
   return out.join('  ');
@@ -392,7 +435,7 @@ function renderHome(site, groups) {
   const covered = oxford(groups.map((g) => g.many));
   const nListed = all.filter((e) => setOf(e) === 'listed').length;
   const present = new Set(all.map((e) => e.status));
-  const KEY = [['E', 'Endangered'], ['T', 'Threatened'], ['XN', 'Experimental population'], ['SAT', 'Listed for likeness'], ['P', 'Proposed']];
+  const KEY = [['E', 'Endangered'], ['T', 'Threatened'], ['XN', 'Experimental population'], ['SAT', 'Listed for likeness'], ['P', 'Proposed'], ['UR', 'Under review']];
   const key = KEY.filter(([st]) => present.has(st) || (st === 'P' && present.has('PE')))
     .map(([st, label]) => `<span><span class="dot dot-${st}" aria-hidden="true"></span>${label}</span>`).join(' ');
 
@@ -401,6 +444,7 @@ function renderHome(site, groups) {
       const set = setOf(e);
       const tag = set === 'gone' ? ' <span class="name-tag">gone from Alabama</span>'
         : set === 'proposed' ? ' <span class="name-tag">proposed</span>'
+          : set === 'review' ? ' <span class="name-tag">under review</span>'
           : set === 'sat' ? ' <span class="name-tag">listed for likeness</span>' : '';
       return `          <li><span class="dot dot-${e.status}" aria-hidden="true"></span><span class="name"><a href="${g.id}/${e.slug}/">${esc(e.common)}</a> <span class="sci">${sci(e.scientific)}</span><span class="visually-hidden">, ${STATUS[e.status].label.toLowerCase()}</span>${tag}</span></li>`;
     }).join('\n');
@@ -525,7 +569,7 @@ ${g.seasonHelp ? `        <p class="hero-note">${esc(g.seasonHelp)}<span id="now
       <div class="empty" id="empty" hidden>
         <p>No ${g.many} match these filters.</p>
         <button type="button" id="clear">Clear filters</button>
-      </div>${list('sat')}${list('proposed')}${list('gone')}
+      </div>${list('sat')}${list('proposed')}${list('review')}${list('gone')}
     </section>`;
 
   return layout(site, groups, {
@@ -570,15 +614,23 @@ function renderEntry(site, groups, g, i) {
     ? `      <p class="notice"><strong>Thought to be gone from Alabama.</strong>  This ${g.one} is on the federal list and once lived in the state, but it is not known here today.</p>\n`
     : set === 'proposed'
       ? `      <p class="notice"><strong>Proposed, not listed.</strong>  This ${g.one} has no protection under the Endangered Species Act unless a final rule lists it.</p>\n`
+      : set === 'review'
+        ? `      <p class="notice"><strong>Under review, not listed.</strong>  The Fish &amp; Wildlife Service is studying whether to list this ${g.one}.  Until it does, the ${g.one} has no protection under the Endangered Species Act.</p>\n`
       : set === 'sat'
         ? `      <p class="notice"><strong>Listed for its likeness, not its rarity.</strong>  This ${g.one} is on the federal list only because it is hard to tell from a species that is in danger.</p>\n`
         : e.status === 'XN'
           ? `      <p class="notice"><strong>An experimental population.</strong>  The ${g.many === 'birds' ? 'birds' : 'animals'} in Alabama belong to a population released to bring the species back, which the Act treats under looser rules than it does the species elsewhere.</p>\n`
           : '';
 
-  const dated = st.listed
-    ? ['Listed', `${longDate(e.listedDate)} <span class="cite">(${esc(e.fr)})</span>`]
-    : ['Proposed', `${longDate(e.proposedDate)} <span class="cite">(${esc(e.fr)})</span>`];
+  const cite = e.fr ? ` <span class="cite">(${esc(e.fr)})</span>` : '';
+  const dated = st.listed ? ['Listed', `${longDate(e.listedDate)}${cite}`]
+    : e.status === 'UR' ? ['Review opened', `${longDate(e.reviewDate)}${cite}`]
+      : ['Proposed', `${longDate(e.proposedDate)}${cite}`];
+  const ranks = e.ranks ? ['NatureServe ranks', [
+    e.ranks.global ? `<span class="rank">${esc(e.ranks.global)}</span> ${esc(rankWords(e.ranks.global, 'G'))}${e.ranks.globalOf === 'species' ? ', for the species as a whole' : ''}` : '',
+    e.ranks.state ? `<span class="rank">${esc(e.ranks.state)}</span> ${esc(rankWords(e.ranks.state, 'S'))}` : '',
+    `<a class="rank-note" href="../../about/#ranks">What the ranks mean</a>`,
+  ].filter(Boolean).join('<br>')] : null;
   const season = seasonStrip(e, g);
 
   const facts = [
@@ -594,6 +646,7 @@ function renderEntry(site, groups, g, i) {
     e.counties.length ? ['Alabama counties', esc(e.counties.join(', '))]
       : e.countiesText ? ['Where in Alabama', esc(e.countiesText)] : null,
     ['Whole range', esc(e.range)],
+    ranks,
   ].filter(Boolean).map(([k, v]) => `            <div><dt>${k}</dt><dd>${v}</dd></div>`).join('\n');
 
   const link = (url, label) => `            <li><a href="${esc(url)}" rel="noopener noreferrer">${esc(label)}</a> <span class="host">${esc(host(url))}</span></li>`;
@@ -668,6 +721,8 @@ function renderAbout(site, groups, template) {
     sources,
     credits,
     withPhotos: photos.length,
+    ranksAsOf: esc(site.ranks.asOf),
+    withRanks: all.filter((x) => x.e.ranks).length,
     drawingsNote: drawings.length
       ? `  ${drawings.length === 1 ? 'One more has' : `Another ${drawings.length} have`} a drawing instead: an old plate or figure in the public domain, copied into this site and credited to the naturalist who made it and the library or museum that scanned it.`
       : '',

@@ -40,16 +40,17 @@ GitHub Pages serves the `docs/` folder of the `main` branch.  A change goes live
 
 If the site ever moves to another address, change `basePath` and `siteUrl` in `data/site.json` and rebuild.
 
-## The four kinds of entry
+## The five kinds of entry
 
 Each group's page keeps these apart.
 
 - **Listed, and found in Alabama.**  The ordinary case: status `E`, `T`, or `XN`.
 - **Listed only for its likeness to another species.**  Status `SAT`.  The species is not in danger itself.
 - **Proposed for listing.**  Status `P` or `PE`.  A proposal protects nothing until a final rule follows, and the pages say so.
+- **Under review for listing.**  Status `UR`.  The Service has found that listing may be warranted, and has proposed nothing.
 - **Listed, but thought to be gone from Alabama.**  Set `"presence": "historical"`.
 
-When a proposed species is listed, change its `status`, replace `proposedDate` with `listedDate`, and put the final rule's citation in `fr`.
+When a species moves a step, change its `status` and its date field to match: `reviewDate`, then `proposedDate`, then `listedDate`, with the citation of the latest notice or rule in `fr`.
 
 ## Editing an entry
 
@@ -62,9 +63,11 @@ Each record has these fields.
 | `nameInText` | Optional.  The common name as it reads in the middle of a sentence, when the build would get it wrong.  The build lowercases the first letter unless the name begins with a place or a person. |
 | `otherNames` | Other common and scientific names. |
 | `kind`, `family` | What sort of plant or animal it is, and its family. |
-| `status` | `E` endangered, `T` threatened, `SAT` threatened by similarity of appearance, `XN` experimental population, `P` proposed threatened, `PE` proposed endangered. |
+| `status` | `E` endangered, `T` threatened, `SAT` threatened by similarity of appearance, `XN` experimental population, `P` proposed threatened, `PE` proposed endangered, `UR` under review. |
 | `listedDate`, `fr` | For a listed species: the date the final listing rule was published, and its Federal Register citation, such as `58 FR 14330`. |
 | `proposedDate`, `fr` | For a proposed species: the date of the proposal, and how to cite it. |
+| `reviewDate`, `fr` | For a species under review: the date of the finding that opened the review, and its citation. |
+| `ranks` | Optional.  The NatureServe ranks, as `{ "global": "G5T1", "state": "S1" }`.  Add `"globalOf": "species"` when the source ranks the whole species and the entry is a subspecies.  Copy the codes exactly as the source gives them. |
 | `presence` | Optional.  `historical` for a listed species that once lived in Alabama and is not known here today. |
 | `habitatType` | A short phrase.  For plants it must be one of the habitat groups named in `data/site.json`. |
 | `season` | The months to look for it, as numbers 1 to 12: flowering for a plant, flight for an insect, nesting for a sea turtle.  `null` where that does not apply or no source gives months. |
@@ -94,6 +97,8 @@ Add a data file, then describe the group in the `groups` list of `data/site.json
 - **Status comes from the federal list itself,** 50 CFR 17.11 and 17.12, not from a secondary source.  Proposals come from the Service's list of species proposed for listing.
 - **Places stop at the county, the river, or the creek.**  Exact sites, and the names of caves and most springs, are left out, because rare species are taken by collectors.
 - **The text is written fresh.**  Nothing is copied from a source.
+- **Ranks are not statuses.**  NatureServe ranks come from the Alabama Natural Heritage Program's published list, are shown with its date, and are never used to decide what belongs on the site.
+- **Sources are used on their owners' terms.**  A stated copyright, license, or credit line is followed to the letter, and a picture with no stated rights is not used.  A page that its site has closed to automated readers is not read by one, and requests to any one site are kept few.
 
 ## Photos and drawings
 
@@ -126,6 +131,7 @@ To allow photos from another host, add it to `imageHosts` in `data/site.json`.  
 - [Species Proposed for Listing](https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on), U.S. Fish & Wildlife Service
 - [Endangered and Threatened Plants of Alabama](https://encyclopediaofalabama.org/article/endangered-and-threatened-plants-of-alabama/) and [Endangered and Threatened Animal Species of Alabama](https://encyclopediaofalabama.org/article/endangered-and-threatened-animal-species-of-alabama/), Encyclopedia of Alabama
 - [Outdoor Alabama](https://www.outdooralabama.com/), the Alabama Department of Conservation and Natural Resources, including its [list of the state's freshwater mussels](https://www.outdooralabama.com/freshwater-mussels-alabama/alabama-freshwater-mussel-list)
+- [Alabama Inventory List](https://htmlscript.auburn.edu/academic/cosam/natural_history_museum/alnhp/data/documents/2021_trackinglist.pdf), Alabama Natural Heritage Program, October 2021, for the NatureServe ranks
 - [Alabama Butterfly Atlas](https://alabama.butterflyatlas.usf.edu/)
 - The species profiles, recovery plans, status assessments, five-year reviews, and listing rules linked from each entry
 

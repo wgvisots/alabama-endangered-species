@@ -418,6 +418,24 @@
       "use": "Descriptions of many animals, and where in Alabama they are found."
     },
     {
+      "id": "alnhp-list",
+      "label": "Alabama Natural Heritage Program: Alabama Inventory List, the Rare, Threatened, and Endangered Plants and Animals of Alabama (October 2021)",
+      "url": "https://htmlscript.auburn.edu/academic/cosam/natural_history_museum/alnhp/data/documents/2021_trackinglist.pdf",
+      "use": "The NatureServe ranks shown on the entries, worldwide and in Alabama."
+    },
+    {
+      "id": "natureserve-ranks",
+      "label": "NatureServe: conservation status ranks",
+      "url": "https://natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories",
+      "use": "What the ranks mean."
+    },
+    {
+      "id": "natureserve-explorer",
+      "label": "NatureServe Explorer",
+      "url": "https://explorer.natureserve.org/",
+      "use": "The place to look up the current rank of any species.  The ranks on this site were not taken from it."
+    },
+    {
       "id": "aba",
       "label": "Alabama Butterfly Atlas",
       "url": "https://alabama.butterflyatlas.usf.edu/",
@@ -435,5 +453,9 @@
       "url": "https://www.outdooralabama.com/sites/default/files/SGCN-PLANT-LIST_0.pdf",
       "use": "State conservation ranks, including many rare plants that are not on the federal list.  Further reading."
     }
-  ]
+  ],
+  "ranks": {
+    "asOf": "October 2021",
+    "source": "alnhp-list"
+  }
 }

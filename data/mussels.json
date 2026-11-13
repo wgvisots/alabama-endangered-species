@@ -41,7 +41,11 @@
         "label": "Outdoor Alabama: mussel list, Medionidus",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/medionidus"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "coosa-moccasinshell",
@@ -79,13 +83,20 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1Q",
+      "state": "SX"
+    }
   },
   {
     "slug": "dark-pigtoe",
     "common": "Dark pigtoe",
     "scientific": "Pleurobema furvum",
-    "otherNames": [],
+    "otherNames": [
+      "warrior pigtoe",
+      "Pleurobema rubellum"
+    ],
     "kind": "Freshwater mussel",
     "family": "Unionidae (river mussels)",
     "status": "E",
@@ -116,7 +127,11 @@
         "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "finelined-pocketbook",
@@ -165,7 +180,11 @@
         "label": "Outdoor Alabama: mussel list, Hamiota",
         "url": "https://outdooralabama.com/alabama-freshwater-mussel-list/hamiota"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "orangenacre-mucket",
@@ -217,7 +236,11 @@
         "label": "Outdoor Alabama: mussel list, Hamiota",
         "url": "https://outdooralabama.com/alabama-freshwater-mussel-list/hamiota"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "ovate-clubshell",
@@ -257,7 +280,11 @@
         "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "southern-clubshell",
@@ -300,7 +327,11 @@
         "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "southern-pigtoe",
@@ -334,7 +365,11 @@
         "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "triangular-kidneyshell",
@@ -376,7 +411,11 @@
         "label": "Outdoor Alabama: mussel list, Ptychobranchus",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/ptychobranchus"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "georgia-pigtoe",
@@ -410,7 +449,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/6494"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "canoe-creek-clubshell",
@@ -447,7 +490,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/4693"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "southern-combshell",
@@ -484,7 +531,11 @@
         "label": "Outdoor Alabama: mussel list, Epioblasma",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/epioblasma"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "heavy-pigtoe",
@@ -523,7 +574,11 @@
         "label": "FWS recovery plan amendment",
         "url": "https://ecos.fws.gov/docs/recovery_plan/Heavy%20Pigtoe%20Recovery%20Plan%20Amendment.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "inflated-heelsplitter",
@@ -562,7 +617,11 @@
         "label": "FWS species profile: Alabama heelsplitter",
         "url": "https://www.fws.gov/species/alabama-heelsplitter-potamilus-inflatus"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1G2Q",
+      "state": "S1S2"
+    }
   },
   {
     "slug": "black-clubshell",
@@ -597,7 +656,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "GH",
+      "state": "SX"
+    }
   },
   {
     "slug": "alabama-pearlshell",
@@ -639,7 +702,11 @@
         "label": "Outdoor Alabama: Alabama freshwater mussel list",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/alabama-freshwater-mussel-list"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "round-ebonyshell",
@@ -679,7 +746,11 @@
         "label": "Outdoor Alabama: mussel list, Fusconaia",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/fusconaia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "southern-kidneyshell",
@@ -724,7 +795,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/7539"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "choctaw-bean",
@@ -778,7 +853,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/5038"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "tapered-pigtoe",
@@ -819,7 +898,11 @@
         "label": "Outdoor Alabama: mussel list, Fusconaia",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/fusconaia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "narrow-pigtoe",
@@ -860,7 +943,11 @@
         "label": "Outdoor Alabama: mussel list, Fusconaia",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/fusconaia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "southern-sandshell",
@@ -906,7 +993,11 @@
         "label": "Outdoor Alabama: mussel list, Hamiota",
         "url": "https://outdooralabama.com/alabama-freshwater-mussel-list/hamiota"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "fuzzy-pigtoe",
@@ -951,7 +1042,11 @@
         "label": "Final listing rule for eight Gulf coast mussels (2012)",
         "url": "https://www.fws.gov/sites/default/files/federal_register_document/2012-24161.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "shinyrayed-pocketbook",
@@ -992,7 +1087,11 @@
         "label": "Outdoor Alabama: mussel list, Hamiota",
         "url": "https://outdooralabama.com/alabama-freshwater-mussel-list/hamiota"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "gulf-moccasinshell",
@@ -1029,7 +1128,11 @@
         "label": "Outdoor Alabama: mussel list, Medionidus",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/medionidus"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "oval-pigtoe",
@@ -1066,7 +1169,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/4132"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "purple-bankclimber",
@@ -1102,7 +1209,11 @@
         "label": "Outdoor Alabama: Alabama freshwater mussel list",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/alabama-freshwater-mussel-list"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "chipola-slabshell",
@@ -1120,7 +1231,7 @@
     "summary": "A chestnut, banded mussel of the Chipola River, last recorded in Alabama from one creek in Houston County.",
     "description": "A medium-sized shell, about 3.3 inches long, oval and somewhat swollen, chestnut, often with alternating light and dark bands, and salmon-colored inside.",
     "habitat": "Muddy sand in moderate current.",
-    "alabama": "The state counts it as gone from Alabama.  The last record was from a creek in Houston County.",
+    "alabama": "The state's mussel list counts it as gone from Alabama, and gives its last record as a creek in Houston County.  The Alabama Natural Heritage Program's list of 2021 does not agree: it ranks the mussel as critically imperiled in the state, not as gone.",
     "counties": [],
     "countiesText": "None today; once Houston",
     "range": "The middle Chipola River system, in Florida",
@@ -1143,8 +1254,16 @@
       {
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/1775?sId=1775"
+      },
+      {
+        "label": "Alabama Natural Heritage Program: Alabama Inventory List (2021)",
+        "url": "https://htmlscript.auburn.edu/academic/cosam/natural_history_museum/alnhp/data/documents/2021_trackinglist.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "pink-mucket",
@@ -1182,7 +1301,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "ring-pink",
@@ -1198,7 +1321,7 @@
     "season": null,
     "summary": "A mussel of gravel and sand bars in big rivers, which may or may not still live below Wilson Dam.",
     "habitat": "Medium to large rivers, on bars of gravel and sand, usually in flowing water.",
-    "alabama": "The state's list calls it rare and says only that remnant populations may survive below Wilson Dam.",
+    "alabama": "The state's mussel list calls it rare and says only that remnant populations may survive below Wilson Dam.  The Alabama Natural Heritage Program's list of 2021 goes further, and ranks it as presumed gone from the state.",
     "counties": [
       "Colbert",
       "Lauderdale"
@@ -1218,8 +1341,16 @@
       {
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      },
+      {
+        "label": "Alabama Natural Heritage Program: Alabama Inventory List (2021)",
+        "url": "https://htmlscript.auburn.edu/academic/cosam/natural_history_museum/alnhp/data/documents/2021_trackinglist.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "fanshell",
@@ -1257,7 +1388,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "orangefoot-pimpleback",
@@ -1273,14 +1408,11 @@
     "fr": "41 FR 24062",
     "habitatType": "Large rivers",
     "season": null,
-    "summary": "A mussel of deep, steadily flowing water over the shoals of big rivers.",
+    "summary": "A mussel of deep, steadily flowing water over the shoals of big rivers, which the state's heritage program now presumes gone from Alabama.",
     "habitat": "Riffles and shoals of sand, gravel, and cobble in medium to large rivers, mostly in deep water with a steady current.",
-    "alabama": "It is on the federal list for Alabama as a mussel of the Tennessee River.  The sources read for this entry do not say where in the river it survives.",
+    "alabama": "It is a mussel of the Tennessee River.  The Alabama Natural Heritage Program's list of 2021 ranks it as presumed gone from the state, and no source read for this entry places it in Alabama today.",
     "counties": [],
-    "waters": [
-      "Tennessee"
-    ],
-    "countiesText": "Not named in the sources read",
+    "countiesText": "None today; once the Tennessee River",
     "range": "Large rivers of the Ohio River basin",
     "threats": "Chiefly the dams.  The shoals of the Tennessee River, where it lived, now lie under reservoirs, and what is left of its range is broken into pieces.  Silt and pollution press on the survivors.",
     "notes": "",
@@ -1293,8 +1425,17 @@
       {
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
+      },
+      {
+        "label": "Alabama Natural Heritage Program: Alabama Inventory List (2021)",
+        "url": "https://htmlscript.auburn.edu/academic/cosam/natural_history_museum/alnhp/data/documents/2021_trackinglist.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    },
+    "presence": "historical"
   },
   {
     "slug": "white-wartyback",
@@ -1332,7 +1473,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "sheepnose",
@@ -1369,7 +1514,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "rough-pigtoe",
@@ -1406,7 +1555,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "spectaclecase",
@@ -1451,7 +1604,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/7867"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "rabbitsfoot",
@@ -1488,7 +1645,12 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3G4",
+      "state": "S1",
+      "globalOf": "species"
+    }
   },
   {
     "slug": "slabside-pearlymussel",
@@ -1524,7 +1686,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "snuffbox",
@@ -1565,7 +1731,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/4135"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "pale-lilliput",
@@ -1600,7 +1770,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "round-hickorynut",
@@ -1640,7 +1814,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/9879"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G4",
+      "state": "S2"
+    }
   },
   {
     "slug": "longsolid",
@@ -1677,7 +1855,11 @@
         "label": "Outdoor Alabama: mussel list, Fusconaia",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/fusconaia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "alabama-lampmussel",
@@ -1719,7 +1901,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "finerayed-pigtoe",
@@ -1760,7 +1946,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "shiny-pigtoe",
@@ -1799,7 +1989,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "cumberlandian-combshell",
@@ -1839,7 +2033,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "cracking-pearlymussel",
@@ -1878,7 +2076,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "birdwing-pearlymussel",
@@ -1919,7 +2121,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "clubshell",
@@ -1957,7 +2163,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1G2",
+      "state": "SX"
+    }
   },
   {
     "slug": "cumberland-bean",
@@ -1998,7 +2208,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "cumberland-monkeyface",
@@ -2037,7 +2251,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "dromedary-pearlymussel",
@@ -2074,7 +2292,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "oyster-mussel",
@@ -2115,7 +2337,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "purple-cats-paw",
@@ -2159,7 +2385,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "winged-mapleleaf",
@@ -2225,7 +2455,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "fluted-kidneyshell",
@@ -2262,7 +2496,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "SX"
+    }
   },
   {
     "slug": "scaleshell",
@@ -2294,7 +2532,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1G2",
+      "state": "SX"
+    }
   },
   {
     "slug": "alabama-hickorynut",
@@ -2330,7 +2572,11 @@
         "label": "Outdoor Alabama: mussel list, Obovaria",
         "url": "https://outdooralabama.com/alabama-freshwater-mussel-list/obovaria"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "southern-elktoe",
@@ -2371,7 +2617,11 @@
         "label": "Outdoor Alabama: mussels extinct or gone from Alabama",
         "url": "https://www.outdooralabama.com/freshwater-mussels-alabama/extinct-or-extirpated"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "tennessee-clubshell",
@@ -2403,7 +2653,11 @@
         "label": "Proposed rule for the Tennessee clubshell, Tennessee pigtoe, and Cumberland moccasinshell (2023)",
         "url": "https://www.federalregister.gov/documents/2023/08/22/2023-17844/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-tennessee-clubshell"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "tennessee-pigtoe",
@@ -2439,7 +2693,11 @@
         "label": "Outdoor Alabama: mussel list, Pleuronaia",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/pleuronaia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "cumberland-moccasinshell",
@@ -2475,6 +2733,10 @@
         "label": "Outdoor Alabama: mussel list, Medionidus",
         "url": "https://www.outdooralabama.com/alabama-freshwater-mussel-list/medionidus"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3G4",
+      "state": "S1"
+    }
   }
 ]

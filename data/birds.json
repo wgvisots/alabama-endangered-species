@@ -3,7 +3,9 @@
     "slug": "red-cockaded-woodpecker",
     "common": "Red-cockaded woodpecker",
     "scientific": "Dryobates borealis",
-    "otherNames": ["Picoides borealis"],
+    "otherNames": [
+      "Picoides borealis"
+    ],
     "kind": "Woodpecker",
     "family": "Picidae (woodpeckers)",
     "status": "T",
@@ -33,11 +35,27 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: red-cockaded woodpecker", "url": "https://www.fws.gov/species/red-cockaded-woodpecker-dryobates-borealis" },
-      { "label": "FWS: reclassification of the red-cockaded woodpecker", "url": "https://www.fws.gov/question-answer/reclassification-red-cockaded-woodpecker" },
-      { "label": "FWS species status assessment", "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/257450" },
-      { "label": "Outdoor Alabama: Alabama's woodpeckers", "url": "https://www.outdooralabama.com/wildlife-articles/alabamas-woodpeckers" }
-    ]
+      {
+        "label": "FWS species profile: red-cockaded woodpecker",
+        "url": "https://www.fws.gov/species/red-cockaded-woodpecker-dryobates-borealis"
+      },
+      {
+        "label": "FWS: reclassification of the red-cockaded woodpecker",
+        "url": "https://www.fws.gov/question-answer/reclassification-red-cockaded-woodpecker"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/257450"
+      },
+      {
+        "label": "Outdoor Alabama: Alabama's woodpeckers",
+        "url": "https://www.outdooralabama.com/wildlife-articles/alabamas-woodpeckers"
+      }
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "piping-plover",
@@ -50,14 +68,28 @@
     "listedDate": "1985-12-11",
     "fr": "50 FR 50726",
     "habitatType": "Beaches and tidal flats",
-    "season": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12],
+    "season": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
     "seasonNote": "In Alabama from about August to May, with the most birds in winter",
     "summary": "A small, sand-colored shorebird that winters on the islands at the mouth of Mobile Bay.",
     "description": "A small shorebird about 7 inches long, sandy brown above and white below, with orange legs.  In breeding dress it has a black band across the forehead, another across the breast, and an orange bill tipped black.  In winter, when Alabama sees it, the bands are gone and the bill is black.",
     "habitat": "Sandy beaches and tidal flats on the coast.  Inland, it nests on the bare shores of lakes and on river sandbars.",
     "life": "It picks small invertebrates from the surface of the sand.  The chicks feed themselves from the day they hatch.",
     "alabama": "A winter visitor.  The chief sites are Pelican Island, Little Dauphin Island, and parts of Dauphin Island, with occasional birds at the western tip of the Fort Morgan Peninsula.  Fewer than 40 usually winter in the state at once, where more than 200 once did.",
-    "counties": ["Baldwin", "Mobile"],
+    "counties": [
+      "Baldwin",
+      "Mobile"
+    ],
     "range": "Breeds on the Atlantic coast, the Great Lakes, and the northern Great Plains; winters on the southern Atlantic and Gulf coasts",
     "threats": "In Alabama: loss of habitat, disturbance by people, predators, and the decline of the tidal flats where it feeds.",
     "notes": "The birds of the Great Lakes are listed separately, as endangered.  Those from the Atlantic coast and the northern Great Plains are threatened.",
@@ -73,17 +105,35 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: piping plover", "url": "https://www.fws.gov/species/piping-plover-charadrius-melodus" },
-      { "label": "Outdoor Alabama: piping plover", "url": "https://www.outdooralabama.com/shorebirds/piping-plover" },
-      { "label": "Encyclopedia of Alabama: piping plover", "url": "https://encyclopediaofalabama.org/article/piping-plover/" },
-      { "label": "FWS five-year review", "url": "https://ecos.fws.gov/docs/five_year_review/doc6378.pdf" }
-    ]
+      {
+        "label": "FWS species profile: piping plover",
+        "url": "https://www.fws.gov/species/piping-plover-charadrius-melodus"
+      },
+      {
+        "label": "Outdoor Alabama: piping plover",
+        "url": "https://www.outdooralabama.com/shorebirds/piping-plover"
+      },
+      {
+        "label": "Encyclopedia of Alabama: piping plover",
+        "url": "https://encyclopediaofalabama.org/article/piping-plover/"
+      },
+      {
+        "label": "FWS five-year review",
+        "url": "https://ecos.fws.gov/docs/five_year_review/doc6378.pdf"
+      }
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1N"
+    }
   },
   {
     "slug": "rufa-red-knot",
     "common": "Rufa red knot",
     "scientific": "Calidris canutus rufa",
-    "otherNames": ["red knot"],
+    "otherNames": [
+      "red knot"
+    ],
     "kind": "Shorebird",
     "family": "Scolopacidae (sandpipers)",
     "status": "T",
@@ -113,16 +163,32 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: rufa red knot", "url": "https://www.fws.gov/species/rufa-red-knot-calidris-canutus-rufa" },
-      { "label": "FWS recovery plan (2023)", "url": "https://ecos.fws.gov/docs/recovery_plan/2023_red%20knot%20recovery%20plan_final_508%20compliant%20signed.pdf" },
-      { "label": "FWS species status assessment", "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/187781" }
-    ]
+      {
+        "label": "FWS species profile: rufa red knot",
+        "url": "https://www.fws.gov/species/rufa-red-knot-calidris-canutus-rufa"
+      },
+      {
+        "label": "FWS recovery plan (2023)",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/2023_red%20knot%20recovery%20plan_final_508%20compliant%20signed.pdf"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/187781"
+      }
+    ],
+    "ranks": {
+      "global": "G4",
+      "state": "S2N",
+      "globalOf": "species"
+    }
   },
   {
     "slug": "eastern-black-rail",
     "common": "Eastern black rail",
     "scientific": "Laterallus jamaicensis jamaicensis",
-    "otherNames": ["black rail"],
+    "otherNames": [
+      "black rail"
+    ],
     "kind": "Marsh bird",
     "family": "Rallidae (rails)",
     "status": "T",
@@ -141,12 +207,29 @@
     "threats": "Loss and breaking up of marshes, changes to their water, a rising sea, contaminants, predators, and disturbance by people.",
     "notes": "",
     "image": null,
-    "photoElsewhere": { "label": "A photo by Christy Hand, South Carolina Department of Natural Resources, on the FWS site (copyrighted, shown there by permission)", "url": "https://www.fws.gov/media/eastern-black-rail-0" },
+    "photoElsewhere": {
+      "label": "A photo by Christy Hand, South Carolina Department of Natural Resources, on the FWS site (copyrighted, shown there by permission)",
+      "url": "https://www.fws.gov/media/eastern-black-rail-0"
+    },
     "refs": [
-      { "label": "FWS species profile: eastern black rail", "url": "https://www.fws.gov/species/eastern-black-rail-laterallus-jamaicensis-jamaicensis" },
-      { "label": "FWS species status assessment", "url": "https://ecos.fws.gov/ServCat/DownloadFile/154242" },
-      { "label": "FWS recovery outline", "url": "https://ecos.fws.gov/docs/recovery_plan/20210318_EBLRA_Recovery%20Outline_signed%20(1).pdf" }
-    ]
+      {
+        "label": "FWS species profile: eastern black rail",
+        "url": "https://www.fws.gov/species/eastern-black-rail-laterallus-jamaicensis-jamaicensis"
+      },
+      {
+        "label": "FWS species status assessment",
+        "url": "https://ecos.fws.gov/ServCat/DownloadFile/154242"
+      },
+      {
+        "label": "FWS recovery outline",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/20210318_EBLRA_Recovery%20Outline_signed%20(1).pdf"
+      }
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S2N",
+      "globalOf": "species"
+    }
   },
   {
     "slug": "whooping-crane",
@@ -182,17 +265,32 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: whooping crane", "url": "https://www.fws.gov/species/whooping-crane-grus-americana" },
-      { "label": "Wheeler National Wildlife Refuge: species", "url": "https://www.fws.gov/refuge/wheeler/species" },
-      { "label": "ECOS species profile", "url": "https://ecos.fws.gov/ecp/species/758" }
-    ]
+      {
+        "label": "FWS species profile: whooping crane",
+        "url": "https://www.fws.gov/species/whooping-crane-grus-americana"
+      },
+      {
+        "label": "Wheeler National Wildlife Refuge: species",
+        "url": "https://www.fws.gov/refuge/wheeler/species"
+      },
+      {
+        "label": "ECOS species profile",
+        "url": "https://ecos.fws.gov/ecp/species/758"
+      }
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1N"
+    }
   },
   {
     "slug": "ivory-billed-woodpecker",
     "common": "Ivory-billed woodpecker",
     "nameInText": "ivory-billed woodpecker",
     "scientific": "Campephilus principalis",
-    "otherNames": ["ivory-bill"],
+    "otherNames": [
+      "ivory-bill"
+    ],
     "kind": "Woodpecker",
     "family": "Picidae (woodpeckers)",
     "status": "E",
@@ -222,9 +320,22 @@
       "license": "Public domain"
     },
     "refs": [
-      { "label": "FWS species profile: ivory-billed woodpecker", "url": "https://www.fws.gov/species/ivory-billed-woodpecker-campephilus-principalis" },
-      { "label": "FWS recovery plan", "url": "https://ecos.fws.gov/docs/recovery_plan/100719.pdf" },
-      { "label": "Outdoor Alabama: Alabama's woodpeckers", "url": "https://www.outdooralabama.com/wildlife-articles/alabamas-woodpeckers" }
-    ]
+      {
+        "label": "FWS species profile: ivory-billed woodpecker",
+        "url": "https://www.fws.gov/species/ivory-billed-woodpecker-campephilus-principalis"
+      },
+      {
+        "label": "FWS recovery plan",
+        "url": "https://ecos.fws.gov/docs/recovery_plan/100719.pdf"
+      },
+      {
+        "label": "Outdoor Alabama: Alabama's woodpeckers",
+        "url": "https://www.outdooralabama.com/wildlife-articles/alabamas-woodpeckers"
+      }
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   }
 ]
