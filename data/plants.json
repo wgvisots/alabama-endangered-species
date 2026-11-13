@@ -83,8 +83,9 @@
     "seasonNote": "Late June to mid-July; plants do not flower every year",
     "summary": "A twining vine of forest openings that grows from a single large tuber.",
     "description": "A perennial twining vine that climbs 3 to 5 meters from a thick tuber, which can reach about 18 cm across.  The leaves are 20 to 30 cm long and usually have seven leaflets.  The pea-like flowers are greenish-white to brownish-pink with a magenta tip and hang in dense clusters.  The pods are 12 to 15 cm long.",
-    "habitat": "Openings in mixed hardwood forest, often on rocky wooded slopes where a ravine meets a creek bottom.  Some populations persist along road and utility rights-of-way.",
-    "alabama": "Reported from ten counties: Autauga, Butler, Dallas, Jackson, Lawrence, Lowndes, Madison, Marshall, Monroe, and Wilcox.",
+    "habitat": "Openings in mixed hardwood forest, often on rocky wooded slopes where a ravine meets a creek bottom.  It is often found on low, open ground near streams and on the banks of streams and rivers.  Some populations persist along road and utility rights-of-way.",
+    "life": "Bumble bees, other bees, and the hummingbird clearwing moth visit the flowers.  One study found that several kinds of bee pollinate it equally well, so it does not depend on any one of them.  A plant may lie dormant through a growing season and wait for better conditions, so every count of vines is an estimate.",
+    "alabama": "The Service's 2022 review counted 20 populations in nine Alabama counties: Autauga, Butler, Dallas, Jackson, Lawrence, Madison, Marshall, Monroe, and Wilcox.  That is about a third of the 57 known anywhere.  Four of the 20 were found after 2016, each with a dozen to two dozen plants.  Eleven had not been surveyed since 2016, and the review only presumes that they survive.  About a dozen are on public land or on private land held for conservation.  The Encyclopedia of Alabama also reports the vine from Lowndes County, which the review does not list.",
     "counties": [
       "Autauga",
       "Butler",
@@ -98,9 +99,13 @@
       "Wilcox"
     ],
     "range": "Alabama, Kentucky, Mississippi, and Tennessee; gone from Illinois",
-    "threats": "Habitat destruction is the main threat.  Disease, animals that eat the plant, and past digging of the tubers have also taken a toll.",
-    "notes": "",
+    "threats": "The Service's 2022 review names heavy logging, deep shade from the forest canopy, the upkeep of road and utility rights-of-way, and crowding by invasive plants as severe and lasting threats across its range.  It adds newer ones: feral hogs, which have done wide damage in an Alabama national forest where the vine grows, though no harm to the vines themselves is on record; weedkiller drifting from farm fields; insects that eat the leaves and flowers; and a changing climate, with more drought.  Many populations are small and cut off from one another, and too few seedlings grow up to flower.  Earlier accounts also blamed disease and the digging of the tubers.  The review found no evidence that disease is a threat today, and it does not count collecting as one.",
+    "notes": "The Service's five-year review of September 2022 recommended no change to its threatened status.  The recovery plan asks for at least 25 protected, self-sustaining populations that have held up for 10 years.  The review found that this had not been met, and counted 22 populations as adequately protected.",
     "image": null,
+    "photoElsewhere": {
+      "label": "A photo by David Duhl, on the cover of the Fish & Wildlife Service's 2022 five-year review (no license is given for it)",
+      "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/3971.pdf"
+    },
     "refs": [
       {
         "label": "FWS species profile: Price's potato-bean",
@@ -115,7 +120,7 @@
         "url": "https://ecos.fws.gov/docs/recovery_plan/930210.pdf"
       },
       {
-        "label": "FWS five-year review",
+        "label": "FWS five-year review (2022)",
         "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/3971.pdf"
       },
       {
