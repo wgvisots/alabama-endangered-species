@@ -308,7 +308,8 @@ p {
 }
 
 .dot-P,
-.dot-PE {
+.dot-PE,
+.dot-UR {
   color: var(--muted);
   border-style: dotted;
 }
@@ -696,12 +697,14 @@ p {
 }
 
 .status-P,
-.status-PE {
+.status-PE,
+.status-UR {
   color: var(--muted);
 }
 
 .status-P::before,
-.status-PE::before {
+.status-PE::before,
+.status-UR::before {
   border-style: dotted;
 }
 
@@ -971,6 +974,17 @@ p {
   border-radius: 4px;
   padding: 1.25rem 1.4rem;
   align-self: start;
+}
+
+.rank {
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-right: 0.15rem;
+}
+
+.rank-note {
+  font-size: 0.875rem;
 }
 
 .facts-report {

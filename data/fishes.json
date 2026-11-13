@@ -39,7 +39,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/50"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "alabama-sturgeon",
@@ -80,7 +84,11 @@
         "label": "Outdoor Alabama: Alabama sturgeon",
         "url": "https://outdooralabama.com/sturgeon/alabama-sturgeon"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "gulf-sturgeon",
@@ -140,7 +148,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/651"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3T2T3",
+      "state": "S1"
+    }
   },
   {
     "slug": "spring-pygmy-sunfish",
@@ -196,7 +208,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/652"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "spotfin-chub",
@@ -238,7 +254,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "SX"
+    }
   },
   {
     "slug": "boulder-darter",
@@ -287,7 +307,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "goldline-darter",
@@ -329,7 +353,11 @@
         "label": "Outdoor Alabama: goldline darter",
         "url": "https://www.outdooralabama.com/darters/goldline"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "rush-darter",
@@ -383,7 +411,11 @@
         "label": "FWS species profile: rush darter",
         "url": "https://www.fws.gov/species/rush-darter-etheostoma-phytophilum"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "slackwater-darter",
@@ -437,7 +469,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "trispot-darter",
@@ -481,7 +517,11 @@
         "label": "Final listing rule (2018)",
         "url": "https://www.fws.gov/policy/library/2018/2018-27976.html"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "vermilion-darter",
@@ -528,7 +568,11 @@
         "label": "FWS: Urban Darter Program",
         "url": "https://www.fws.gov/project/urban-darter-program"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "watercress-darter",
@@ -584,7 +628,11 @@
         "label": "FWS: Urban Darter Program",
         "url": "https://www.fws.gov/project/urban-darter-program"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "pygmy-sculpin",
@@ -624,7 +672,11 @@
         "label": "Outdoor Alabama: pygmy sculpin",
         "url": "https://www.outdooralabama.com/sculpin/pygmy-sculpin"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "blue-shiner",
@@ -674,7 +726,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/463"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "cahaba-shiner",
@@ -728,7 +784,11 @@
         "label": "Outdoor Alabama: Cahaba shiner",
         "url": "https://www.outdooralabama.com/shiners/cahaba"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "palezone-shiner",
@@ -766,7 +826,11 @@
         "label": "Outdoor Alabama: palezone shiner",
         "url": "https://www.outdooralabama.com/shiners/palezone"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "coal-darter",
@@ -812,6 +876,10 @@
         "label": "ECOS: species proposed for listing",
         "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   }
 ]

@@ -60,7 +60,12 @@
         "label": "Wikipedia: Neonympha mitchellii",
         "url": "https://en.wikipedia.org/wiki/Neonympha_mitchellii"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1S2",
+      "globalOf": "species"
+    }
   },
   {
     "slug": "monarch",
@@ -194,6 +199,52 @@
       {
         "label": "Wikipedia: Nicrophorus americanus",
         "url": "https://en.wikipedia.org/wiki/Nicrophorus_americanus"
+      }
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "SH"
+    }
+  },
+  {
+    "slug": "southern-plains-bumble-bee",
+    "common": "Southern Plains bumble bee",
+    "nameInText": "Southern Plains bumble bee",
+    "scientific": "Bombus fraternus",
+    "otherNames": [],
+    "kind": "Bumble bee",
+    "family": "Apidae (bees)",
+    "status": "UR",
+    "reviewDate": "2024-01-25",
+    "fr": "89 FR 4884",
+    "habitatType": "Open grassland",
+    "season": null,
+    "summary": "A large, short-haired bumble bee of open country, which the Fish & Wildlife Service is studying for listing.",
+    "description": "A large black and yellow bumble bee with uniformly short hair and a short head.  The head and thorax can be largely yellow.  Queens are just over an inch long.",
+    "habitat": "Open prairies, meadows, grasslands, and pine savannas.  The Xerces Society also finds it in towns.",
+    "alabama": "The Xerces Society counts Alabama among the states in its range.  The sources read for this entry say nothing more exact about where in the state it lives, and the Alabama Natural Heritage Program's list of 2021 does not track it.",
+    "counties": [],
+    "countiesText": "Not named in the sources read",
+    "range": "Historically 26 states, from the Southeast through the Great Plains and the Midwest",
+    "threats": "Loss of habitat and the use of pesticides are thought to be the largest causes.  Disease, parasites, competition with managed bees, and a changing climate are named as well.  The Xerces Society reports that it has grown scarcer among bumble bees over the past decade.",
+    "notes": "The Service was petitioned in July 2022 to list it as endangered.  On January 25, 2024 it found that listing may be warranted, and opened a review.  No proposal had followed when this site was last checked.",
+    "image": null,
+    "refs": [
+      {
+        "label": "FWS species profile: Southern Plains bumble bee",
+        "url": "https://fws.gov/species/southern-plains-bumble-bee-bombus-fraternus"
+      },
+      {
+        "label": "FWS: ten species get initial reviews (2024)",
+        "url": "https://fws.gov/press-release/2024-01/10-species-get-initial-reviews-endangered-species-act-petitions?page=0"
+      },
+      {
+        "label": "Xerces Society: Southern Plains bumble bee",
+        "url": "https://www.xerces.org/endangered-species/species-profiles/at-risk-bumble-bees/southern-plains-bumble-bee"
+      },
+      {
+        "label": "Xerces Society: one step closer to federal protection (2024)",
+        "url": "https://www.xerces.org/blog/southern-plains-bumble-bee-is-one-step-closer-to-federal-protection"
       }
     ]
   }

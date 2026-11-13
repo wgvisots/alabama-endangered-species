@@ -6,7 +6,8 @@
     "otherNames": [
       "pool sprite",
       "snorkelwort",
-      "Gratiola amphiantha"
+      "Gratiola amphiantha",
+      "granite pool sprite"
     ],
     "kind": "Flowering plant",
     "family": "Plantaginaceae (plantain family)",
@@ -55,7 +56,11 @@
         "label": "Wikipedia: Gratiola amphiantha",
         "url": "https://en.wikipedia.org/wiki/Gratiola_amphiantha"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "prices-potato-bean",
@@ -117,7 +122,11 @@
         "label": "Wikipedia: Apios priceana",
         "url": "https://en.wikipedia.org/wiki/Apios_priceana"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "georgia-rockcress",
@@ -177,7 +186,11 @@
         "label": "FWS recovery outline (2014)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/20150218GaRockCress%20Recovery%20Outline.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "american-harts-tongue-fern",
@@ -229,7 +242,11 @@
         "label": "FWS species status assessment (2019)",
         "url": "https://iris.fws.gov/APPS/ServCat/DownloadFile/174090"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G4T3",
+      "state": "S1"
+    }
   },
   {
     "slug": "morefields-leather-flower",
@@ -287,7 +304,11 @@
         "label": "Wikipedia: Clematis morefieldii",
         "url": "https://en.wikipedia.org/wiki/Clematis_morefieldii"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "alabama-leather-flower",
@@ -335,7 +356,11 @@
         "label": "Wikipedia: Clematis socialis",
         "url": "https://en.wikipedia.org/wiki/Clematis_socialis"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "leafy-prairie-clover",
@@ -401,7 +426,11 @@
         "label": "Wikipedia: Dalea foliosa",
         "url": "https://en.wikipedia.org/wiki/Dalea_foliosa"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "whorled-sunflower",
@@ -462,7 +491,11 @@
         "label": "Federal Register proposed critical habitat (2013)",
         "url": "https://www.fws.gov/sites/default/files/federal_register_document/2013-18456.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "louisiana-quillwort",
@@ -509,7 +542,11 @@
         "label": "Wikipedia: Isoetes louisianensis",
         "url": "https://en.wikipedia.org/wiki/Isoetes_louisianensis"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "fleshy-fruit-gladecress",
@@ -576,7 +613,11 @@
         "label": "Wikipedia: Leavenworthia crassa",
         "url": "https://en.wikipedia.org/wiki/Leavenworthia_crassa"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "lyrate-bladderpod",
@@ -633,7 +674,11 @@
         "label": "Wikipedia: Paysonia lyrata",
         "url": "https://en.wikipedia.org/wiki/Paysonia_lyrata"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "pondberry",
@@ -688,7 +733,11 @@
         "label": "Wikipedia: Lindera melissifolia",
         "url": "https://en.wikipedia.org/wiki/Lindera_melissifolia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "mohrs-barbaras-buttons",
@@ -747,7 +796,11 @@
         "label": "Wikipedia: Marshallia mohrii",
         "url": "https://en.wikipedia.org/wiki/Marshallia_mohrii"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S3"
+    }
   },
   {
     "slug": "white-fringeless-orchid",
@@ -804,7 +857,11 @@
         "label": "Wikipedia: Platanthera integrilabia",
         "url": "https://en.wikipedia.org/wiki/Platanthera_integrilabia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "harperella",
@@ -862,7 +919,11 @@
         "label": "Wikipedia: Harperella",
         "url": "https://en.wikipedia.org/wiki/Ptilimnium_nodosum"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "krals-water-plantain",
@@ -914,7 +975,11 @@
         "label": "Wikipedia: Sagittaria secundifolia",
         "url": "https://en.wikipedia.org/wiki/Sagittaria_secundifolia"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "green-pitcher-plant",
@@ -978,7 +1043,11 @@
         "label": "Wikipedia: Sarracenia oreophila",
         "url": "https://en.wikipedia.org/wiki/Sarracenia_oreophila"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "alabama-canebrake-pitcher-plant",
@@ -1034,7 +1103,11 @@
         "label": "FWS recovery plan amendment",
         "url": "https://ecos.fws.gov/docs/recovery_plan/Alabama%20Canebrake%20Pitcher%20Plant%20Recovery%20Plan%20Amendment_1.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3T1T2",
+      "state": "S1S2"
+    }
   },
   {
     "slug": "american-chaffseed",
@@ -1088,7 +1161,11 @@
         "label": "Wikipedia: Schwalbea",
         "url": "https://en.wikipedia.org/wiki/Schwalbea"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "gentian-pinkroot",
@@ -1136,7 +1213,11 @@
         "label": "Wikipedia: Spigelia gentianoides",
         "url": "https://en.wikipedia.org/wiki/Spigelia_gentianoides"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   },
   {
     "slug": "alabama-streak-sorus-fern",
@@ -1175,7 +1256,11 @@
         "label": "FWS recovery plan (1996)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/961025.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G4T1",
+      "state": "S1"
+    }
   },
   {
     "slug": "relict-trillium",
@@ -1232,7 +1317,11 @@
         "label": "Wikipedia: Trillium reliquum",
         "url": "https://en.wikipedia.org/wiki/Trillium_reliquum"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S2"
+    }
   },
   {
     "slug": "tennessee-yellow-eyed-grass",
@@ -1283,6 +1372,10 @@
         "label": "Wikipedia: Xyris tennesseensis",
         "url": "https://en.wikipedia.org/wiki/Xyris_tennesseensis"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S1"
+    }
   }
 ]

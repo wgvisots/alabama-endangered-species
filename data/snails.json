@@ -44,7 +44,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/7009"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "armored-marstonia",
@@ -88,7 +92,11 @@
         "label": "Outdoor Alabama: pebblesnails",
         "url": "https://www.outdooralabama.com/aquatic-snails/pebblesnails-family-hydrobiidae"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "lacy-elimia",
@@ -125,7 +133,11 @@
         "label": "FWS recovery plan for the Mobile River basin aquatic ecosystem (2000)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/001117.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "rough-hornsnail",
@@ -165,7 +177,11 @@
         "label": "FWS recovery plan amendment",
         "url": "https://fws.gov/sites/default/files/documents/news-attached-files/Rough%20hornsnail%20Recovery%20Plan%20Amendment.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "cylindrical-lioplax",
@@ -203,7 +219,11 @@
         "label": "Outdoor Alabama: live-bearing snails",
         "url": "https://www.outdooralabama.com/aquatic-snails/live-bearing-snails-family-viviparidae"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "flat-pebblesnail",
@@ -241,7 +261,11 @@
         "label": "Outdoor Alabama: pebblesnails",
         "url": "https://www.outdooralabama.com/aquatic-snails/pebblesnails-family-hydrobiidae"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "anthonys-riversnail",
@@ -283,7 +307,11 @@
         "label": "FWS Tennessee office: status and habitat of federally listed fauna",
         "url": "https://www.fws.gov/sites/default/files/documents/TFO_listed_Fauna.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "interrupted-rocksnail",
@@ -323,7 +351,11 @@
         "label": "Outdoor Alabama: interrupted rocksnail",
         "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/interrupted-rocksnail"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "SX"
+    }
   },
   {
     "slug": "painted-rocksnail",
@@ -358,7 +390,11 @@
         "label": "FWS recovery plan for six Mobile River basin snails (2005)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "plicate-rocksnail",
@@ -395,7 +431,11 @@
         "label": "Outdoor Alabama: plicate rocksnail",
         "url": "https://www.outdooralabama.com/hornsnail-riversnail-and-rocksnail-pleuroceridae/plicate-rocksnail"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "round-rocksnail",
@@ -429,7 +469,11 @@
         "label": "FWS recovery plan for six Mobile River basin snails (2005)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/051202.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "tulotoma",
@@ -476,7 +520,11 @@
         "label": "FWS: Endangered Species Act milestones of the 2010s",
         "url": "https://www.fws.gov/esa50/our-history/2010s"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "oblong-rocksnail",
@@ -519,6 +567,10 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/2809"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   }
 ]

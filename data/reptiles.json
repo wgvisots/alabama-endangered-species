@@ -45,7 +45,11 @@
         "label": "Range-wide conservation strategy for the gopher tortoise (2013)",
         "url": "https://www.fws.gov/sites/default/files/documents/FinalGopherTortoiseStrategy_0.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S3"
+    }
   },
   {
     "slug": "eastern-indigo-snake",
@@ -91,7 +95,11 @@
         "label": "FWS five-year review",
         "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/2780.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "black-pinesnake",
@@ -133,7 +141,11 @@
         "label": "Final listing rule (2015)",
         "url": "https://www.fws.gov/policy/library/2015/2015-25270.html"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G4T1?",
+      "state": "S2"
+    }
   },
   {
     "slug": "flattened-musk-turtle",
@@ -173,7 +185,11 @@
         "label": "FWS five-year review",
         "url": "https://ecos.fws.gov/docs/tess/species_nonpublish/2226.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S2"
+    }
   },
   {
     "slug": "alabama-red-bellied-turtle",
@@ -218,7 +234,11 @@
         "label": "FWS recovery plan (1990)",
         "url": "https://ecos.fws.gov/docs/recovery_plan/900108.pdf"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "loggerhead-sea-turtle",
@@ -278,7 +298,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/C00U"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "green-sea-turtle",
@@ -331,7 +355,11 @@
         "label": "Outdoor Alabama: what to know about sea turtles",
         "url": "https://www.outdooralabama.com/what-know-about-sea-turtles"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S1"
+    }
   },
   {
     "slug": "kemps-ridley-sea-turtle",
@@ -391,7 +419,11 @@
         "label": "Outdoor Alabama: what to know about sea turtles",
         "url": "https://www.outdooralabama.com/what-know-about-sea-turtles"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G1",
+      "state": "S1"
+    }
   },
   {
     "slug": "leatherback-sea-turtle",
@@ -437,7 +469,11 @@
         "label": "Outdoor Alabama: what to know about sea turtles",
         "url": "https://www.outdooralabama.com/what-know-about-sea-turtles"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "SNA"
+    }
   },
   {
     "slug": "hawksbill-sea-turtle",
@@ -521,7 +557,11 @@
         "label": "ECOS species profile",
         "url": "https://ecos.fws.gov/ecp/species/4658"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G3",
+      "state": "S3"
+    }
   },
   {
     "slug": "american-alligator",
@@ -593,7 +633,11 @@
         "label": "Outdoor Alabama: Alabama map turtle",
         "url": "https://www.outdooralabama.com/turtles/alabama-map-turtle"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G4",
+      "state": "S3"
+    }
   },
   {
     "slug": "escambia-map-turtle",
@@ -634,7 +678,11 @@
         "label": "Outdoor Alabama: Escambia map turtle",
         "url": "https://www.outdooralabama.com/turtles/escambia-map-turtle"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "barbours-map-turtle",
@@ -678,7 +726,11 @@
         "label": "Outdoor Alabama: Barbour's map turtle",
         "url": "https://www.outdooralabama.com/turtles/barbours-map-turtle"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "S2"
+    }
   },
   {
     "slug": "southern-hognose-snake",
@@ -720,6 +772,10 @@
         "label": "ECOS: species proposed for listing",
         "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?status=P&header=Species+Proposed+for+Listing&fleadreg=on&fstatus=on&finvpop=on"
       }
-    ]
+    ],
+    "ranks": {
+      "global": "G2",
+      "state": "SH"
+    }
   }
 ]
