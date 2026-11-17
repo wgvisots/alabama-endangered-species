@@ -89,7 +89,9 @@ The build stops with a list of problems if a record is missing a field, names a 
 
 ## Adding a group
 
-Add a data file, then describe the group in the `groups` list of `data/site.json`: its name, its nouns, the headings and labels its pages use, whether its list has filters, an optional note, and its general sources.  The build makes the group's list page, its entry pages, its place in the contents, and its link in the header.
+Add a data file, then describe the group in the `groups` list of `data/site.json`: its name, its nouns, the headings and labels its pages use, its filters, an optional note, and its general sources.
+
+Every group's page can be searched and narrowed by status, and the filters reach every entry on the page, the proposed and lost species included.  `filters` in `data/site.json` adds the rest where the data supports them: `"place": "counties"` or `"place": "waters"` for a list of counties or river systems, `"habitat": true` for the group's `habitats`, and `"season": true` for sorting by season and showing what is in season this month.  Add a place filter only when nearly every entry names its places that way.  An entry that gives its range in words, such as "Statewide," would vanish from a county filter and look absent.  The build makes the group's list page, its entry pages, its place in the contents, and its link in the header.
 
 ## Rules the entries follow
 

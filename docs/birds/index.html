@@ -49,9 +49,25 @@
 
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="visually-hidden">The birds</h2>
-      <h2 class="set-title">Listed, and found in Alabama</h2>
-      <ul class="entries" id="entries">
-        <li class="entry" data-status="T" data-habitat="Marshes" data-places="" data-season="" data-first="99" data-name="eastern black rail" data-search="eastern black rail laterallus jamaicensis jamaicensis black rail rallidae (rails) marshes">
+      <form class="controls" id="controls" data-one="bird" data-many="birds" data-now="In Alabama in" hidden>
+        <div class="field field-search">
+          <label for="q">Search</label>
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or habitat">
+        </div>
+
+        <fieldset class="field segmented">
+          <legend>Status</legend>
+          <label><input type="radio" name="status" value="" checked><span>All 6</span></label>
+          <label><input type="radio" name="status" value="E"><span>Endangered 1</span></label>
+          <label><input type="radio" name="status" value="T"><span>Threatened 4</span></label>
+          <label><input type="radio" name="status" value="XN"><span>Experimental 1</span></label>
+        </fieldset>
+      </form>
+      <p class="count" id="count" aria-live="polite">6 birds</p>
+      <div class="set" data-set="listed">
+        <h2 class="set-title">Listed, and found in Alabama</h2>
+      <ul class="entries">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Marshes" data-places="" data-season="" data-first="99" data-name="eastern black rail" data-search="eastern black rail laterallus jamaicensis jamaicensis black rail marsh bird rallidae (rails) marshes no recent records">
         <div class="thumb" data-photo>
           <img src="../assets/images/black-rail-audubon-650.jpg" alt="" width="1300" height="852" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Drawing unavailable</span>
@@ -66,7 +82,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Beaches and tidal flats" data-places="" data-season="1 2 3 4 5 8 9 10 11 12" data-first="1" data-name="piping plover" data-search="piping plover charadrius melodus charadriidae (plovers) beaches and tidal flats baldwin mobile">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Beaches and tidal flats" data-places="" data-season="1 2 3 4 5 8 9 10 11 12" data-first="1" data-name="piping plover" data-search="piping plover charadrius melodus shorebird charadriidae (plovers) beaches and tidal flats baldwin mobile ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2006-04/7521.jpg?itok=zeK6iD9C" alt="" width="1200" height="798" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -81,7 +97,7 @@
           <div class="bloom" role="img" aria-label="In Alabama: January, February, March, April, May, August, September, October, November, and December"><span class="m on" data-m="1">J</span><span class="m on" data-m="2">F</span><span class="m on" data-m="3">M</span><span class="m on" data-m="4">A</span><span class="m on" data-m="5">M</span><span class="m" data-m="6">J</span><span class="m" data-m="7">J</span><span class="m on" data-m="8">A</span><span class="m on" data-m="9">S</span><span class="m on" data-m="10">O</span><span class="m on" data-m="11">N</span><span class="m on" data-m="12">D</span></div>
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Old longleaf pine forest" data-places="" data-season="" data-first="99" data-name="red-cockaded woodpecker" data-search="red-cockaded woodpecker dryobates borealis picoides borealis picidae (woodpeckers) old longleaf pine forest">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Old longleaf pine forest" data-places="" data-season="" data-first="99" data-name="red-cockaded woodpecker" data-search="red-cockaded woodpecker dryobates borealis picoides borealis woodpecker picidae (woodpeckers) old longleaf pine forest not named in the sources read">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2023-04/RCW_Renee%20Bodine.jpg?itok=eWFj2fE6" alt="" width="3808" height="2720" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -96,7 +112,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Beaches and tidal flats" data-places="" data-season="" data-first="99" data-name="rufa red knot" data-search="rufa red knot calidris canutus rufa red knot scolopacidae (sandpipers) beaches and tidal flats">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Beaches and tidal flats" data-places="" data-season="" data-first="99" data-name="rufa red knot" data-search="rufa red knot calidris canutus rufa red knot shorebird scolopacidae (sandpipers) beaches and tidal flats the gulf coast">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2023-05/Rufa%20red%20knot.jpg?itok=VZaUKzPp" alt="" width="2048" height="1371" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -111,7 +127,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="XN" data-habitat="Wetlands and fields" data-places="" data-season="" data-first="99" data-name="whooping crane" data-search="whooping crane grus americana gruidae (cranes) wetlands and fields">
+        <li class="entry" data-status="XN" data-kind="XN" data-habitat="Wetlands and fields" data-places="" data-season="" data-first="99" data-name="whooping crane" data-search="whooping crane grus americana crane gruidae (cranes) wetlands and fields wheeler national wildlife refuge, in the tennessee valley">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-03-3/5037.jpg?itok=Wly2ULHU" alt="" width="1200" height="801" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -127,14 +143,12 @@
         </div>
       </li>
       </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No birds match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
       </div>
-      <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
-      <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
+      <div class="set" data-set="gone">
+        <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
+        <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
       <ul class="entries">
-        <li class="entry" data-status="E" data-habitat="Old bottomland forest" data-places="" data-season="" data-first="99" data-name="ivory-billed woodpecker" data-search="ivory-billed woodpecker campephilus principalis ivory-bill picidae (woodpeckers) old bottomland forest">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Old bottomland forest" data-places="" data-season="" data-first="99" data-name="ivory-billed woodpecker" data-search="ivory-billed woodpecker campephilus principalis ivory-bill woodpecker picidae (woodpeckers) old bottomland forest none today">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-02/kuhn-and-fledgeling-gallery.jpg?itok=PjPvi4Dh" alt="" width="2560" height="1725" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -150,6 +164,11 @@
         </div>
       </li>
       </ul>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <p>No birds match these filters.</p>
+        <button type="button" id="clear">Clear filters</button>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

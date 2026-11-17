@@ -47,8 +47,17 @@
 
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="visually-hidden">The crustaceans</h2>
-      <ul class="entries entries-plain" id="entries">
-        <li class="entry" data-status="E" data-habitat="Cave pools" data-places="" data-season="" data-first="99" data-name="alabama cave shrimp" data-search="alabama cave shrimp palaemonias alabamae atyidae (freshwater shrimps) cave pools madison">
+      <form class="controls" id="controls" data-one="crustacean" data-many="crustaceans" data-now="Season in" hidden>
+        <div class="field field-search">
+          <label for="q">Search</label>
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or habitat">
+        </div>
+
+      </form>
+      <p class="count" id="count" aria-live="polite">2 crustaceans</p>
+      <div class="set" data-set="listed">
+      <ul class="entries entries-plain">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Cave pools" data-places="" data-season="" data-first="99" data-name="alabama cave shrimp" data-search="alabama cave shrimp palaemonias alabamae cave shrimp atyidae (freshwater shrimps) cave pools madison ">
         <!-- no photos in this group yet -->
         <div class="entry-text">
           <h3><a href="alabama-cave-shrimp/">Alabama cave shrimp</a></h3>
@@ -60,7 +69,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Rocky streams" data-places="" data-season="" data-first="99" data-name="slenderclaw crayfish" data-search="slenderclaw crayfish cambarus cracens cambaridae (crayfishes) rocky streams dekalb marshall tennessee">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Rocky streams" data-places="" data-season="" data-first="99" data-name="slenderclaw crayfish" data-search="slenderclaw crayfish cambarus cracens crayfish cambaridae (crayfishes) rocky streams dekalb marshall tennessee ">
         <!-- no photos in this group yet -->
         <div class="entry-text">
           <h3><a href="slenderclaw-crayfish/">Slenderclaw crayfish</a></h3>
@@ -73,6 +82,7 @@
         </div>
       </li>
       </ul>
+      </div>
       <div class="empty" id="empty" hidden>
         <p>No crustaceans match these filters.</p>
         <button type="button" id="clear">Clear filters</button>

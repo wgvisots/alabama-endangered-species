@@ -49,9 +49,25 @@
 
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="visually-hidden">The mammals</h2>
-      <h2 class="set-title">Listed, and found in Alabama</h2>
-      <ul class="entries" id="entries">
-        <li class="entry" data-status="E" data-habitat="Coastal dunes" data-places="" data-season="" data-first="99" data-name="alabama beach mouse" data-search="alabama beach mouse peromyscus polionotus ammobates cricetidae (new world mice and rats) coastal dunes baldwin">
+      <form class="controls" id="controls" data-one="mammal" data-many="mammals" data-now="In Alabama in" hidden>
+        <div class="field field-search">
+          <label for="q">Search</label>
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or habitat">
+        </div>
+
+        <fieldset class="field segmented">
+          <legend>Status</legend>
+          <label><input type="radio" name="status" value="" checked><span>All 9</span></label>
+          <label><input type="radio" name="status" value="E"><span>Endangered 7</span></label>
+          <label><input type="radio" name="status" value="T"><span>Threatened 1</span></label>
+          <label><input type="radio" name="status" value="P"><span>Proposed 1</span></label>
+        </fieldset>
+      </form>
+      <p class="count" id="count" aria-live="polite">9 mammals</p>
+      <div class="set" data-set="listed">
+        <h2 class="set-title">Listed, and found in Alabama</h2>
+      <ul class="entries">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Coastal dunes" data-places="" data-season="" data-first="99" data-name="alabama beach mouse" data-search="alabama beach mouse peromyscus polionotus ammobates rodent cricetidae (new world mice and rats) coastal dunes baldwin ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-12/Alabama%20beach%20mouse%20Credit%20USFWS.jpg?itok=bTr-jD9k" alt="" width="1792" height="1344" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -66,7 +82,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Caves" data-places="" data-season="" data-first="99" data-name="gray bat" data-search="gray bat myotis grisescens gray myotis vespertilionidae (evening bats) caves">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Caves" data-places="" data-season="" data-first="99" data-name="gray bat" data-search="gray bat myotis grisescens gray myotis bat vespertilionidae (evening bats) caves statewide except the southwest; most common in the tennessee valley">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-03-6/25238.jpg?itok=fuKircR8" alt="" width="6042" height="4056" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -81,7 +97,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Caves and forests" data-places="" data-season="" data-first="99" data-name="indiana bat" data-search="indiana bat myotis sodalis indiana myotis vespertilionidae (evening bats) caves and forests">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Caves and forests" data-places="" data-season="" data-first="99" data-name="indiana bat" data-search="indiana bat myotis sodalis indiana myotis bat vespertilionidae (evening bats) caves and forests the northern third of the state">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2018-05/29697.jpg?itok=vOf9OBUQ" alt="" width="5760" height="3840" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -96,7 +112,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Caves and forests" data-places="" data-season="" data-first="99" data-name="northern long-eared bat" data-search="northern long-eared bat myotis septentrionalis northern long-eared myotis vespertilionidae (evening bats) caves and forests">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Caves and forests" data-places="" data-season="" data-first="99" data-name="northern long-eared bat" data-search="northern long-eared bat myotis septentrionalis northern long-eared myotis bat vespertilionidae (evening bats) caves and forests northwest alabama, and probably other northern uplands; also reported on the coast">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/scale_width_480/public/images/2024-10/northern-long-eared-bat-al-hicks-nydec.jpg?itok=Wvb5tPOZ" alt="" width="1200" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -111,7 +127,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Coastal dunes" data-places="" data-season="" data-first="99" data-name="perdido key beach mouse" data-search="perdido key beach mouse peromyscus polionotus trissyllepsis cricetidae (new world mice and rats) coastal dunes baldwin">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Coastal dunes" data-places="" data-season="" data-first="99" data-name="perdido key beach mouse" data-search="perdido key beach mouse peromyscus polionotus trissyllepsis rodent cricetidae (new world mice and rats) coastal dunes baldwin ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2014-04/28716.jpg?itok=PdJE0ZoW" alt="" width="2816" height="2112" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -126,7 +142,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Coastal waters and rivers" data-places="" data-season="4 5 6 7 8 9 10" data-first="4" data-name="west indian manatee" data-search="west indian manatee trichechus manatus manatee trichechidae (manatees) coastal waters and rivers baldwin mobile">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Coastal waters and rivers" data-places="" data-season="4 5 6 7 8 9 10" data-first="4" data-name="west indian manatee" data-search="west indian manatee trichechus manatus manatee marine mammal trichechidae (manatees) coastal waters and rivers baldwin mobile ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2011-01/18660.jpg?itok=YNz9q5Nl" alt="" width="4352" height="3264" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -142,14 +158,12 @@
         </div>
       </li>
       </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No mammals match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
       </div>
-      <h2 class="set-title">Proposed for listing</h2>
-      <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
+      <div class="set" data-set="proposed">
+        <h2 class="set-title">Proposed for listing</h2>
+        <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
       <ul class="entries">
-        <li class="entry" data-status="PE" data-habitat="Forests and caves" data-places="" data-season="" data-first="99" data-name="tricolored bat" data-search="tricolored bat perimyotis subflavus tri-colored bat vespertilionidae (evening bats) forests and caves">
+        <li class="entry" data-status="PE" data-kind="P" data-habitat="Forests and caves" data-places="" data-season="" data-first="99" data-name="tricolored bat" data-search="tricolored bat perimyotis subflavus tri-colored bat bat vespertilionidae (evening bats) forests and caves statewide">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-03-5/12502.jpg?itok=xIOm5xet" alt="" width="3872" height="2592" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -165,10 +179,12 @@
         </div>
       </li>
       </ul>
-      <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
-      <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
+      </div>
+      <div class="set" data-set="gone">
+        <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
+        <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
       <ul class="entries">
-        <li class="entry" data-status="E" data-habitat="Remote uplands and swamps" data-places="" data-season="" data-first="99" data-name="florida panther" data-search="florida panther puma concolor coryi cougar puma mountain lion felidae (cats) remote uplands and swamps">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Remote uplands and swamps" data-places="" data-season="" data-first="99" data-name="florida panther" data-search="florida panther puma concolor coryi cougar puma mountain lion carnivore felidae (cats) remote uplands and swamps none today">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="florida-panther/">Florida panther</a></h3>
@@ -180,7 +196,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Forests and swamps" data-places="" data-season="" data-first="99" data-name="red wolf" data-search="red wolf canis rufus canidae (dogs) forests and swamps">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Forests and swamps" data-places="" data-season="" data-first="99" data-name="red wolf" data-search="red wolf canis rufus carnivore canidae (dogs) forests and swamps none today">
         <div class="thumb" data-photo>
           <img src="../assets/images/red-wolf-audubon-650.jpg" alt="" width="997" height="686" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Drawing unavailable</span>
@@ -196,6 +212,11 @@
         </div>
       </li>
       </ul>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <p>No mammals match these filters.</p>
+        <button type="button" id="clear">Clear filters</button>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

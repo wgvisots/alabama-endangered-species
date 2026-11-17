@@ -106,6 +106,10 @@ const oxford = (items) => {
 };
 
 const count = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+// The status filter on a group page: proposed endangered and proposed threatened
+// share one choice.  Species gone from Alabama keep their status.
+const STATUS_FILTER = [['E', 'Endangered'], ['T', 'Threatened'], ['XN', 'Experimental'], ['SAT', 'Listed for likeness'], ['P', 'Proposed'], ['UR', 'Under review']];
+const statusKind = (st) => (st === 'PE' ? 'P' : st);
 const setOf = (e) => (e.presence === 'historical' ? 'gone'
   : e.status === 'SAT' ? 'sat'
     : e.status === 'UR' ? 'review'
@@ -480,10 +484,10 @@ ${sections}`;
 }
 
 function entryRow(e, g) {
-  const hay = [e.common, e.scientific, ...e.otherNames, e.family, e.habitatType, ...e.counties, ...(e.waters || [])]
+  const hay = [e.common, e.scientific, ...e.otherNames, e.kind, e.family, e.habitatType, ...e.counties, ...(e.waters || []), e.countiesText || '']
     .join(' ').toLowerCase();
   const placeField = g.filters && g.filters.place;
-  return `        <li class="entry" data-status="${e.status}" data-habitat="${esc(e.habitatType)}" data-places="${esc(placeField ? (e[placeField] || []).join('|') : '')}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
+  return `        <li class="entry" data-status="${e.status}" data-kind="${statusKind(e.status)}" data-habitat="${esc(e.habitatType)}" data-places="${esc(placeField ? (e[placeField] || []).join('|') : '')}" data-season="${e.season ? e.season.join(' ') : ''}" data-first="${e.season ? e.season[0] : 99}" data-name="${esc(e.common.toLowerCase())}" data-search="${esc(hay)}">
         ${g.entries.some((x) => x.image) ? photoThumb(e, '../') : '<!-- no photos in this group yet -->'}
         <div class="entry-text">
           <h3><a href="${e.slug}/">${esc(e.common)}</a></h3>
@@ -499,34 +503,37 @@ function entryRow(e, g) {
 
 function renderGroup(site, groups, g) {
   const by = (set) => g.entries.filter((e) => setOf(e) === set);
-  const listed = by('listed');
-  const nE = listed.filter((e) => e.status === 'E').length;
-  const nT = listed.filter((e) => e.status === 'T').length;
   const several = SET_ORDER.filter((s) => by(s).length).length > 1;
-  const f = g.filters || null;
-  const place = f && f.place;
-  const places = place ? [...new Set(listed.flatMap((e) => e[place] || []))].sort((x, y) => x.localeCompare(y)) : [];
+  // Every group page has filters.  Search and status always; habitat, place, and
+  // season only where the group's data supports them (see "filters" in site.json).
+  const f = g.filters || {};
+  const place = f.place;
+  const places = place ? [...new Set(g.entries.flatMap((e) => e[place] || []))].sort((x, y) => x.localeCompare(y)) : [];
   const placeLabel = place === 'waters' ? 'River system' : 'County';
+  // Status choices: only those present on this page, counted over every entry on it.
+  const kinds = STATUS_FILTER
+    .map(([k, label]) => [k, label, g.entries.filter((e) => statusKind(e.status) === k).length])
+    .filter(([, , n]) => n > 0);
 
-  const controls = f ? `
+  const controls = `
       <form class="controls" id="controls" data-one="${esc(g.one)}" data-many="${esc(g.many)}" data-now="${esc(g.seasonLabel || '')} in" hidden>
         <div class="field field-search">
           <label for="q">Search</label>
-          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or ${placeLabel.toLowerCase()}">
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="${places.length > 1 ? `Name, family, or ${placeLabel.toLowerCase()}` : 'Name, family, or habitat'}">
         </div>
+${kinds.length > 1 ? `
         <fieldset class="field segmented">
           <legend>Status</legend>
-          <label><input type="radio" name="status" value="" checked><span>All ${listed.length}</span></label>
-          <label><input type="radio" name="status" value="E"><span>Endangered ${nE}</span></label>
-          <label><input type="radio" name="status" value="T"><span>Threatened ${nT}</span></label>
-        </fieldset>${g.habitats ? `
+          <label><input type="radio" name="status" value="" checked><span>All ${g.entries.length}</span></label>
+          ${kinds.map(([k, label, n]) => `<label><input type="radio" name="status" value="${k}"><span>${label} ${n}</span></label>`).join('\n          ')}
+        </fieldset>` : ''}${g.habitats ? `
         <div class="field">
           <label for="habitat">Habitat</label>
           <select id="habitat" name="habitat">
             <option value="">Any habitat</option>
             ${g.habitats.map((h) => `<option>${esc(h)}</option>`).join('\n            ')}
           </select>
-        </div>` : ''}${place ? `
+        </div>` : ''}${places.length > 1 ? `
         <div class="field">
           <label for="place">${placeLabel}</label>
           <select id="place" name="place">
@@ -543,17 +550,19 @@ function renderGroup(site, groups, g) {
         </div>
         <label class="check"><input type="checkbox" id="now" name="now"> <span id="now-label">${esc(g.seasonLabel)} this month</span></label>` : ''}
       </form>
-      <p class="count" id="count" aria-live="polite">${count(listed.length, g.one, g.many)}</p>` : '';
+      <p class="count" id="count" aria-live="polite">${count(g.entries.length, g.one, g.many)}</p>`;
 
-  const list = (set, id) => {
+  const list = (set) => {
     const rows = by(set);
     if (!rows.length) return '';
     const head = several ? `
-      <h2 class="set-title">${SETS[set].heading}</h2>${SETS[set].note ? `\n      <p class="set-note">${SETS[set].note}</p>` : ''}` : '';
-    return `${head}
-      <ul class="entries${g.entries.some((x) => x.image) ? '' : ' entries-plain'}"${id ? ` id="${id}"` : ''}>
+        <h2 class="set-title">${SETS[set].heading}</h2>${SETS[set].note ? `\n        <p class="set-note">${SETS[set].note}</p>` : ''}` : '';
+    return `
+      <div class="set" data-set="${set}">${head}
+      <ul class="entries${g.entries.some((x) => x.image) ? '' : ' entries-plain'}">
 ${rows.map((e) => entryRow(e, g)).join('\n')}
-      </ul>`;
+      </ul>
+      </div>`;
   };
 
   const figure = site.featured.startsWith(`${g.id}/`) ? featureFigure(site, groups, '../') : '';
@@ -565,11 +574,11 @@ ${g.seasonHelp ? `        <p class="hero-note">${esc(g.seasonHelp)}<span id="now
     </section>
 
     <section aria-labelledby="list-title">
-      <h2 id="list-title" class="visually-hidden">The ${g.many}</h2>${controls}${list('listed', 'entries')}
+      <h2 id="list-title" class="visually-hidden">The ${g.many}</h2>${controls}${SET_ORDER.map(list).join('')}
       <div class="empty" id="empty" hidden>
         <p>No ${g.many} match these filters.</p>
         <button type="button" id="clear">Clear filters</button>
-      </div>${list('sat')}${list('proposed')}${list('review')}${list('gone')}
+      </div>
     </section>`;
 
   return layout(site, groups, {

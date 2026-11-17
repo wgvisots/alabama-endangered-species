@@ -28,12 +28,19 @@
   var nowNote = document.getElementById('now-note');
   if (nowNote) nowNote.hidden = false;
 
-  // ---- filters (only on a group page that has them) ----
+  // ---- filters (on every group page) ----
+  // A page holds up to five sets of entries (listed, likeness, proposed, under
+  // review, gone).  The filters apply to all of them, and a set with nothing left
+  // to show is hidden along with its heading.
   var form = document.getElementById('controls');
-  var list = document.getElementById('entries');
-  if (!form || !list) return;
+  if (!form) return;
+  var sets = Array.prototype.slice.call(document.querySelectorAll('.set')).map(function (box) {
+    var list = box.querySelector('.entries');
+    return { box: box, list: list, entries: Array.prototype.slice.call(list.children) };
+  });
+  if (!sets.length) return;
 
-  var entries = Array.prototype.slice.call(list.children);
+  var entries = sets.reduce(function (all, set) { return all.concat(set.entries); }, []);
   var count = document.getElementById('count');
   var empty = document.getElementById('empty');
   var q = form.elements.q;
@@ -52,7 +59,7 @@
   function state() {
     return {
       q: q.value.trim().toLowerCase(),
-      status: form.elements.status.value,
+      status: form.elements.status ? form.elements.status.value : '',
       habitat: habitat ? habitat.value : '',
       place: place ? place.value : '',
       sort: sort ? sort.value : 'name',
@@ -62,7 +69,7 @@
 
   function matches(el, s) {
     var d = el.dataset;
-    if (s.status && d.status !== s.status) return false;
+    if (s.status && d.kind !== s.status) return false;
     if (s.habitat && d.habitat !== s.habitat) return false;
     if (s.place && d.places.split('|').indexOf(s.place) === -1) return false;
     if (s.now && d.season.split(' ').indexOf(String(month)) === -1) return false;
@@ -101,7 +108,12 @@
       }
     }
     if (p.get('q')) q.value = p.get('q');
-    if (p.get('status') === 'E' || p.get('status') === 'T') form.elements.status.value = p.get('status');
+    var status = form.elements.status;
+    if (status && p.get('status')) {
+      for (var i = 0; i < status.length; i += 1) {
+        if (status[i].value === p.get('status')) status[i].checked = true;
+      }
+    }
     pick(habitat, p.get('habitat'));
     pick(place, p.get('place') || p.get('county'));
     pick(sort, p.get('sort'));
@@ -112,18 +124,23 @@
     var s = state();
     var shown = 0;
 
-    var ordered = entries.slice().sort(function (a, b) {
+    function order(a, b) {
       if (s.sort === 'season') {
         var diff = Number(a.dataset.first) - Number(b.dataset.first);
         if (diff) return diff;
       }
       return a.dataset.name < b.dataset.name ? -1 : a.dataset.name > b.dataset.name ? 1 : 0;
-    });
-    ordered.forEach(function (el) {
-      var ok = matches(el, s);
-      el.hidden = !ok;
-      if (ok) shown += 1;
-      list.appendChild(el);
+    }
+    sets.forEach(function (set) {
+      var inSet = 0;
+      set.entries.slice().sort(order).forEach(function (el) {
+        var ok = matches(el, s);
+        el.hidden = !ok;
+        if (ok) inSet += 1;
+        set.list.appendChild(el);
+      });
+      set.box.hidden = inSet === 0;
+      shown += inSet;
     });
 
     var noun = entries.length === 1 ? one : many;
@@ -131,7 +148,6 @@
       ? entries.length + ' ' + noun
       : shown + ' of ' + entries.length + ' ' + noun;
     empty.hidden = shown !== 0;
-    list.hidden = shown === 0;
     writeUrl(s);
   }
 

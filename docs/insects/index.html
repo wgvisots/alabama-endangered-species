@@ -48,9 +48,26 @@
 
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="visually-hidden">The insects</h2>
-      <h2 class="set-title">Listed, and found in Alabama</h2>
-      <ul class="entries" id="entries">
-        <li class="entry" data-status="E" data-habitat="Beaver wetlands" data-places="" data-season="6 8" data-first="6" data-name="mitchell&#39;s satyr" data-search="mitchell&#39;s satyr neonympha mitchellii mitchellii mitchell&#39;s satyr butterfly nymphalidae (brush-footed butterflies) beaver wetlands bibb fayette hale tuscaloosa">
+      <form class="controls" id="controls" data-one="insect" data-many="insects" data-now="Adults flying in" hidden>
+        <div class="field field-search">
+          <label for="q">Search</label>
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or habitat">
+        </div>
+
+        <fieldset class="field segmented">
+          <legend>Status</legend>
+          <label><input type="radio" name="status" value="" checked><span>All 4</span></label>
+          <label><input type="radio" name="status" value="E"><span>Endangered 1</span></label>
+          <label><input type="radio" name="status" value="T"><span>Threatened 1</span></label>
+          <label><input type="radio" name="status" value="P"><span>Proposed 1</span></label>
+          <label><input type="radio" name="status" value="UR"><span>Under review 1</span></label>
+        </fieldset>
+      </form>
+      <p class="count" id="count" aria-live="polite">4 insects</p>
+      <div class="set" data-set="listed">
+        <h2 class="set-title">Listed, and found in Alabama</h2>
+      <ul class="entries">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Beaver wetlands" data-places="" data-season="6 8" data-first="6" data-name="mitchell&#39;s satyr" data-search="mitchell&#39;s satyr neonympha mitchellii mitchellii mitchell&#39;s satyr butterfly butterfly nymphalidae (brush-footed butterflies) beaver wetlands bibb fayette hale tuscaloosa ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2025-03/mitchells-banner-edit.jpg?itok=kpCs8gvd" alt="" width="2560" height="1707" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -66,14 +83,12 @@
         </div>
       </li>
       </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No insects match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
       </div>
-      <h2 class="set-title">Proposed for listing</h2>
-      <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
+      <div class="set" data-set="proposed">
+        <h2 class="set-title">Proposed for listing</h2>
+        <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
       <ul class="entries">
-        <li class="entry" data-status="P" data-habitat="Open, sunny country" data-places="" data-season="" data-first="99" data-name="monarch" data-search="monarch danaus plexippus monarch butterfly nymphalidae (brush-footed butterflies) open, sunny country">
+        <li class="entry" data-status="P" data-kind="P" data-habitat="Open, sunny country" data-places="" data-season="" data-first="99" data-name="monarch" data-search="monarch danaus plexippus monarch butterfly butterfly nymphalidae (brush-footed butterflies) open, sunny country all 67">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2015-09/18211.jpg?itok=aZdra-mE" alt="" width="5616" height="3744" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -89,10 +104,12 @@
         </div>
       </li>
       </ul>
-      <h2 class="set-title">Under review for listing</h2>
-      <p class="set-note">The Service has found that listing may be warranted, and is studying the species.  A review protects nothing.</p>
+      </div>
+      <div class="set" data-set="review">
+        <h2 class="set-title">Under review for listing</h2>
+        <p class="set-note">The Service has found that listing may be warranted, and is studying the species.  A review protects nothing.</p>
       <ul class="entries">
-        <li class="entry" data-status="UR" data-habitat="Open grassland" data-places="" data-season="" data-first="99" data-name="southern plains bumble bee" data-search="southern plains bumble bee bombus fraternus apidae (bees) open grassland">
+        <li class="entry" data-status="UR" data-kind="UR" data-habitat="Open grassland" data-places="" data-season="" data-first="99" data-name="southern plains bumble bee" data-search="southern plains bumble bee bombus fraternus bumble bee apidae (bees) open grassland not named in the sources read">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="southern-plains-bumble-bee/">Southern Plains bumble bee</a></h3>
@@ -105,10 +122,12 @@
         </div>
       </li>
       </ul>
-      <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
-      <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
+      </div>
+      <div class="set" data-set="gone">
+        <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
+        <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
       <ul class="entries">
-        <li class="entry" data-status="T" data-habitat="Open country and woods" data-places="" data-season="" data-first="99" data-name="american burying beetle" data-search="american burying beetle nicrophorus americanus giant carrion beetle silphidae (carrion beetles) open country and woods">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Open country and woods" data-places="" data-season="" data-first="99" data-name="american burying beetle" data-search="american burying beetle nicrophorus americanus giant carrion beetle beetle silphidae (carrion beetles) open country and woods none known today">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/2021-11/American%20Burying%20Beetle%20at%20RWPZ.jpg?itok=o3uA6QmA" alt="" width="4032" height="3024" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -124,6 +143,11 @@
         </div>
       </li>
       </ul>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <p>No insects match these filters.</p>
+        <button type="button" id="clear">Clear filters</button>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

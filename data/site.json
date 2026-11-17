@@ -24,7 +24,7 @@
       "seasonNone": "",
       "seasonSort": "",
       "seasonHelp": "The strip beside the manatee shows the months it is usually in Alabama waters.",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
@@ -48,7 +48,7 @@
       "seasonNone": "",
       "seasonSort": "",
       "seasonHelp": "The strip beside a bird shows the months it is in Alabama, where a source gives them.",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
@@ -72,7 +72,7 @@
       "seasonNone": "",
       "seasonSort": "",
       "seasonHelp": "The strip beside a sea turtle shows the months it nests on Alabama beaches.",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
@@ -112,7 +112,7 @@
       "seasonNone": "",
       "seasonSort": "",
       "seasonHelp": "",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
@@ -280,7 +280,7 @@
       "seasonNone": "",
       "seasonSort": "",
       "seasonHelp": "",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
@@ -320,7 +320,7 @@
       "seasonNone": "",
       "seasonSort": "Flight season",
       "seasonHelp": "The strip beside an insect shows the months its adults fly in Alabama, where a source gives them.",
-      "filters": false,
+      "filters": {},
       "habitats": null,
       "generalSources": [
         "fws-contacts",
