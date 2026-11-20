@@ -47,9 +47,25 @@
 
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="visually-hidden">The amphibians</h2>
-      <h2 class="set-title">Listed, and found in Alabama</h2>
-      <ul class="entries" id="entries">
-        <li class="entry" data-status="E" data-habitat="Rocky streams" data-places="" data-season="" data-first="99" data-name="black warrior waterdog" data-search="black warrior waterdog necturus alabamensis proteidae (mudpuppies and waterdogs) rocky streams blount tuscaloosa walker winston black warrior">
+      <form class="controls" id="controls" data-one="amphibian" data-many="amphibians" data-now="Season in" hidden>
+        <div class="field field-search">
+          <label for="q">Search</label>
+          <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or habitat">
+        </div>
+
+        <fieldset class="field segmented">
+          <legend>Status</legend>
+          <label><input type="radio" name="status" value="" checked><span>All 5</span></label>
+          <label><input type="radio" name="status" value="E"><span>Endangered 3</span></label>
+          <label><input type="radio" name="status" value="T"><span>Threatened 1</span></label>
+          <label><input type="radio" name="status" value="P"><span>Proposed 1</span></label>
+        </fieldset>
+      </form>
+      <p class="count" id="count" aria-live="polite">5 amphibians</p>
+      <div class="set" data-set="listed">
+        <h2 class="set-title">Listed, and found in Alabama</h2>
+      <ul class="entries">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Rocky streams" data-places="" data-season="" data-first="99" data-name="black warrior waterdog" data-search="black warrior waterdog necturus alabamensis salamander proteidae (mudpuppies and waterdogs) rocky streams blount tuscaloosa walker winston black warrior ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="black-warrior-waterdog/">Black Warrior waterdog</a></h3>
@@ -61,7 +77,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Steep, shaded ravines" data-places="" data-season="" data-first="99" data-name="red hills salamander" data-search="red hills salamander phaeognathus hubrichti plethodontidae (lungless salamanders) steep, shaded ravines butler conecuh covington crenshaw monroe wilcox">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Steep, shaded ravines" data-places="" data-season="" data-first="99" data-name="red hills salamander" data-search="red hills salamander phaeognathus hubrichti salamander plethodontidae (lungless salamanders) steep, shaded ravines butler conecuh covington crenshaw monroe wilcox ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-03-1/2365.JPG?itok=rmr0l_yR" alt="" width="1200" height="801" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -77,14 +93,12 @@
         </div>
       </li>
       </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No amphibians match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
       </div>
-      <h2 class="set-title">Proposed for listing</h2>
-      <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
+      <div class="set" data-set="proposed">
+        <h2 class="set-title">Proposed for listing</h2>
+        <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
       <ul class="entries">
-        <li class="entry" data-status="PE" data-habitat="Cool, clear streams" data-places="" data-season="" data-first="99" data-name="eastern hellbender" data-search="eastern hellbender cryptobranchus alleganiensis alleganiensis hellbender cryptobranchidae (giant salamanders) cool, clear streams">
+        <li class="entry" data-status="PE" data-kind="P" data-habitat="Cool, clear streams" data-places="" data-season="" data-first="99" data-name="eastern hellbender" data-search="eastern hellbender cryptobranchus alleganiensis alleganiensis hellbender salamander cryptobranchidae (giant salamanders) cool, clear streams northern alabama">
         <div class="thumb" data-photo>
           <img src="../assets/images/hellbender-holbrook-650.jpg" alt="" width="1300" height="1084" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Drawing unavailable</span>
@@ -100,10 +114,12 @@
         </div>
       </li>
       </ul>
-      <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
-      <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
+      </div>
+      <div class="set" data-set="gone">
+        <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
+        <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
       <ul class="entries">
-        <li class="entry" data-status="E" data-habitat="Longleaf pine uplands" data-places="" data-season="" data-first="99" data-name="dusky gopher frog" data-search="dusky gopher frog rana sevosa mississippi gopher frog lithobates sevosus ranidae (true frogs) longleaf pine uplands">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Longleaf pine uplands" data-places="" data-season="" data-first="99" data-name="dusky gopher frog" data-search="dusky gopher frog rana sevosa mississippi gopher frog lithobates sevosus frog ranidae (true frogs) longleaf pine uplands none today; once mobile">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="dusky-gopher-frog/">Dusky gopher frog</a></h3>
@@ -115,7 +131,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Longleaf pine flatwoods" data-places="" data-season="" data-first="99" data-name="reticulated flatwoods salamander" data-search="reticulated flatwoods salamander ambystoma bishopi flatwoods salamander ambystomatidae (mole salamanders) longleaf pine flatwoods">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Longleaf pine flatwoods" data-places="" data-season="" data-first="99" data-name="reticulated flatwoods salamander" data-search="reticulated flatwoods salamander ambystoma bishopi flatwoods salamander salamander ambystomatidae (mole salamanders) longleaf pine flatwoods none today; once mobile, baldwin, covington, and houston">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="reticulated-flatwoods-salamander/">Reticulated flatwoods salamander</a></h3>
@@ -128,6 +144,11 @@
         </div>
       </li>
       </ul>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <p>No amphibians match these filters.</p>
+        <button type="button" id="clear">Clear filters</button>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

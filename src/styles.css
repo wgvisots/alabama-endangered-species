@@ -429,9 +429,13 @@ p {
   max-width: 62ch;
 }
 
-.count + .set-title,
-#list-title + .set-title {
+.count + .set > .set-title,
+#list-title + .set > .set-title {
   margin-top: 0.5rem;
+}
+
+.set[hidden] {
+  display: none;
 }
 
 .notice {

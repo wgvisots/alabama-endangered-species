@@ -53,11 +53,13 @@
           <label for="q">Search</label>
           <input type="search" id="q" name="q" autocomplete="off" placeholder="Name, family, or river system">
         </div>
+
         <fieldset class="field segmented">
           <legend>Status</legend>
-          <label><input type="radio" name="status" value="" checked><span>All 15</span></label>
+          <label><input type="radio" name="status" value="" checked><span>All 17</span></label>
           <label><input type="radio" name="status" value="E"><span>Endangered 8</span></label>
-          <label><input type="radio" name="status" value="T"><span>Threatened 7</span></label>
+          <label><input type="radio" name="status" value="T"><span>Threatened 8</span></label>
+          <label><input type="radio" name="status" value="P"><span>Proposed 1</span></label>
         </fieldset>
         <div class="field">
           <label for="place">River system</label>
@@ -75,10 +77,11 @@
           </select>
         </div>
       </form>
-      <p class="count" id="count" aria-live="polite">15 fishes</p>
-      <h2 class="set-title">Listed, and found in Alabama</h2>
-      <ul class="entries" id="entries">
-        <li class="entry" data-status="E" data-habitat="Cave waters" data-places="Tennessee" data-season="" data-first="99" data-name="alabama cavefish" data-search="alabama cavefish speoplatyrhinus poulsoni amblyopsidae (cavefishes) cave waters lauderdale tennessee">
+      <p class="count" id="count" aria-live="polite">17 fishes</p>
+      <div class="set" data-set="listed">
+        <h2 class="set-title">Listed, and found in Alabama</h2>
+      <ul class="entries">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Cave waters" data-places="Tennessee" data-season="" data-first="99" data-name="alabama cavefish" data-search="alabama cavefish speoplatyrhinus poulsoni cavefish amblyopsidae (cavefishes) cave waters lauderdale tennessee ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="alabama-cavefish/">Alabama cavefish</a></h3>
@@ -90,7 +93,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Large rivers" data-places="Alabama|Cahaba" data-season="" data-first="99" data-name="alabama sturgeon" data-search="alabama sturgeon scaphirhynchus suttkusi acipenseridae (sturgeons) large rivers alabama cahaba">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Large rivers" data-places="Alabama|Cahaba" data-season="" data-first="99" data-name="alabama sturgeon" data-search="alabama sturgeon scaphirhynchus suttkusi sturgeon acipenseridae (sturgeons) large rivers alabama cahaba ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="alabama-sturgeon/">Alabama sturgeon</a></h3>
@@ -102,7 +105,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Clear streams" data-places="Coosa" data-season="" data-first="99" data-name="blue shiner" data-search="blue shiner cyprinella caerulea leuciscidae (minnows) clear streams coosa">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Clear streams" data-places="Coosa" data-season="" data-first="99" data-name="blue shiner" data-search="blue shiner cyprinella caerulea minnow leuciscidae (minnows) clear streams coosa ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2024-08/903a9427.jpg?itok=52Q4yPoo" alt="" width="6720" height="4480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -117,7 +120,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Rocky riffles" data-places="Tennessee" data-season="" data-first="99" data-name="boulder darter" data-search="boulder darter etheostoma wapiti elk river darter percidae (perches and darters) rocky riffles lauderdale limestone tennessee">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Rocky riffles" data-places="Tennessee" data-season="" data-first="99" data-name="boulder darter" data-search="boulder darter etheostoma wapiti elk river darter darter percidae (perches and darters) rocky riffles lauderdale limestone tennessee ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="boulder-darter/">Boulder darter</a></h3>
@@ -129,7 +132,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="River shoals" data-places="Cahaba" data-season="" data-first="99" data-name="cahaba shiner" data-search="cahaba shiner notropis cahabae leuciscidae (minnows) river shoals bibb perry shelby cahaba">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="River shoals" data-places="Cahaba" data-season="" data-first="99" data-name="cahaba shiner" data-search="cahaba shiner notropis cahabae minnow leuciscidae (minnows) river shoals bibb perry shelby cahaba ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/Cahaba-Shiner-Cahaba-River-NWR.JPG?itok=Osh0siRf" alt="" width="4032" height="3024" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -144,7 +147,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Rocky riffles" data-places="Cahaba" data-season="" data-first="99" data-name="goldline darter" data-search="goldline darter percina aurolineata percidae (perches and darters) rocky riffles cahaba">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Rocky riffles" data-places="Cahaba" data-season="" data-first="99" data-name="goldline darter" data-search="goldline darter percina aurolineata darter percidae (perches and darters) rocky riffles cahaba ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2003-09/1816.jpg?itok=QPb2ydBi" alt="" width="2048" height="1536" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -159,7 +162,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Coastal rivers and the Gulf" data-places="Choctawhatchee and Pea|Conecuh|Mobile-Tensaw Delta|Alabama|Tombigbee" data-season="" data-first="99" data-name="gulf sturgeon" data-search="gulf sturgeon acipenser oxyrinchus desotoi atlantic sturgeon (gulf subspecies) acipenseridae (sturgeons) coastal rivers and the gulf choctawhatchee and pea conecuh mobile-tensaw delta alabama tombigbee">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Coastal rivers and the Gulf" data-places="Choctawhatchee and Pea|Conecuh|Mobile-Tensaw Delta|Alabama|Tombigbee" data-season="" data-first="99" data-name="gulf sturgeon" data-search="gulf sturgeon acipenser oxyrinchus desotoi atlantic sturgeon (gulf subspecies) sturgeon acipenseridae (sturgeons) coastal rivers and the gulf choctawhatchee and pea conecuh mobile-tensaw delta alabama tombigbee ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2018-07/29515.jpg?itok=Mc9SzWUn" alt="" width="5760" height="3840" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -174,7 +177,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Clear upland streams" data-places="Tennessee" data-season="" data-first="99" data-name="palezone shiner" data-search="palezone shiner notropis albizonatus leuciscidae (minnows) clear upland streams jackson tennessee">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Clear upland streams" data-places="Tennessee" data-season="" data-first="99" data-name="palezone shiner" data-search="palezone shiner notropis albizonatus minnow leuciscidae (minnows) clear upland streams jackson tennessee ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="palezone-shiner/">Palezone shiner</a></h3>
@@ -186,7 +189,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Springs" data-places="Coosa" data-season="" data-first="99" data-name="pygmy sculpin" data-search="pygmy sculpin cottus paulus cottus pygmaeus cottidae (sculpins) springs calhoun coosa">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Springs" data-places="Coosa" data-season="" data-first="99" data-name="pygmy sculpin" data-search="pygmy sculpin cottus paulus cottus pygmaeus sculpin cottidae (sculpins) springs calhoun coosa ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="pygmy-sculpin/">Pygmy sculpin</a></h3>
@@ -198,7 +201,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Spring-fed streams" data-places="Black Warrior" data-season="" data-first="99" data-name="rush darter" data-search="rush darter etheostoma phytophilum percidae (perches and darters) spring-fed streams etowah jefferson winston black warrior">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Spring-fed streams" data-places="Black Warrior" data-season="" data-first="99" data-name="rush darter" data-search="rush darter etheostoma phytophilum darter percidae (perches and darters) spring-fed streams etowah jefferson winston black warrior ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2005-10/13534.jpg?itok=ZKjRjCCs" alt="" width="1316" height="500" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -213,7 +216,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Slow creeks and seeps" data-places="Tennessee" data-season="" data-first="99" data-name="slackwater darter" data-search="slackwater darter etheostoma boschungi percidae (perches and darters) slow creeks and seeps tennessee">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Slow creeks and seeps" data-places="Tennessee" data-season="" data-first="99" data-name="slackwater darter" data-search="slackwater darter etheostoma boschungi darter percidae (perches and darters) slow creeks and seeps tennessee ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2024-03/slackwater-darter-cypress-creek-al-rob-hurt-usfws_0.JPG?itok=iuD9t91p" alt="" width="3264" height="2448" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -228,7 +231,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Springs" data-places="Tennessee" data-season="" data-first="99" data-name="spring pygmy sunfish" data-search="spring pygmy sunfish elassoma alabamae elassomatidae (pygmy sunfishes) springs limestone tennessee">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Springs" data-places="Tennessee" data-season="" data-first="99" data-name="spring pygmy sunfish" data-search="spring pygmy sunfish elassoma alabamae pygmy sunfish elassomatidae (pygmy sunfishes) springs limestone tennessee ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/spring-pygmy-sunfish-Matt-Laschet.jpg?itok=ylFTO0u-" alt="" width="5472" height="3648" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -243,7 +246,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="T" data-habitat="Slow creeks and seeps" data-places="Coosa" data-season="" data-first="99" data-name="trispot darter" data-search="trispot darter etheostoma trisella percidae (perches and darters) slow creeks and seeps coosa">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Slow creeks and seeps" data-places="Coosa" data-season="" data-first="99" data-name="trispot darter" data-search="trispot darter etheostoma trisella darter percidae (perches and darters) slow creeks and seeps coosa ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="trispot-darter/">Trispot darter</a></h3>
@@ -255,7 +258,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Rocky riffles" data-places="Black Warrior" data-season="" data-first="99" data-name="vermilion darter" data-search="vermilion darter etheostoma chermocki percidae (perches and darters) rocky riffles jefferson black warrior">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Rocky riffles" data-places="Black Warrior" data-season="" data-first="99" data-name="vermilion darter" data-search="vermilion darter etheostoma chermocki darter percidae (perches and darters) rocky riffles jefferson black warrior ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/images/2025-07/etheostoma-chermocki903a1359.jpg?itok=0imUuKK3" alt="" width="6720" height="4480" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -270,7 +273,7 @@
           
         </div>
       </li>
-        <li class="entry" data-status="E" data-habitat="Springs" data-places="Black Warrior" data-season="" data-first="99" data-name="watercress darter" data-search="watercress darter etheostoma nuchale percidae (perches and darters) springs jefferson black warrior">
+        <li class="entry" data-status="E" data-kind="E" data-habitat="Springs" data-places="Black Warrior" data-season="" data-first="99" data-name="watercress darter" data-search="watercress darter etheostoma nuchale darter percidae (perches and darters) springs jefferson black warrior ">
         <div class="thumb" data-photo>
           <img src="https://www.fws.gov/sites/default/files/styles/max_650x650/public/banner_images/2022-06/watercress-darter_0.jpg?itok=CR7EeqBB" alt="" width="4220" height="2832" loading="lazy" decoding="async" referrerpolicy="no-referrer">
           <span class="thumb-fallback" hidden>Photo unavailable</span>
@@ -286,14 +289,12 @@
         </div>
       </li>
       </ul>
-      <div class="empty" id="empty" hidden>
-        <p>No fishes match these filters.</p>
-        <button type="button" id="clear">Clear filters</button>
       </div>
-      <h2 class="set-title">Proposed for listing</h2>
-      <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
+      <div class="set" data-set="proposed">
+        <h2 class="set-title">Proposed for listing</h2>
+        <p class="set-note">Not protected under the Endangered Species Act unless a final rule lists it.</p>
       <ul class="entries">
-        <li class="entry" data-status="P" data-habitat="River shoals" data-places="Cahaba|Black Warrior|Coosa" data-season="" data-first="99" data-name="coal darter" data-search="coal darter percina brevicauda percidae (perches and darters) river shoals cahaba black warrior coosa">
+        <li class="entry" data-status="P" data-kind="P" data-habitat="River shoals" data-places="Cahaba|Black Warrior|Coosa" data-season="" data-first="99" data-name="coal darter" data-search="coal darter percina brevicauda darter percidae (perches and darters) river shoals cahaba black warrior coosa ">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="coal-darter/">Coal darter</a></h3>
@@ -306,10 +307,12 @@
         </div>
       </li>
       </ul>
-      <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
-      <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
+      </div>
+      <div class="set" data-set="gone">
+        <h2 class="set-title">Listed, but thought to be gone from Alabama</h2>
+        <p class="set-note">Federally listed species that once lived in the state and are not known here today.</p>
       <ul class="entries">
-        <li class="entry" data-status="T" data-habitat="Upland rivers" data-places="" data-season="" data-first="99" data-name="spotfin chub" data-search="spotfin chub erimonax monachus turquoise shiner cyprinella monacha leuciscidae (minnows) upland rivers">
+        <li class="entry" data-status="T" data-kind="T" data-habitat="Upland rivers" data-places="" data-season="" data-first="99" data-name="spotfin chub" data-search="spotfin chub erimonax monachus turquoise shiner cyprinella monacha minnow leuciscidae (minnows) upland rivers none today; once colbert and lauderdale">
         <div class="thumb thumb-empty" aria-hidden="true"><span>No photo yet</span></div>
         <div class="entry-text">
           <h3><a href="spotfin-chub/">Spotfin chub</a></h3>
@@ -322,6 +325,11 @@
         </div>
       </li>
       </ul>
+      </div>
+      <div class="empty" id="empty" hidden>
+        <p>No fishes match these filters.</p>
+        <button type="button" id="clear">Clear filters</button>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
